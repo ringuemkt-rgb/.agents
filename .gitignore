@@ -1,0 +1,14 @@
+.venv/
+.vendor/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+.env
+.env.*
+!.env.example
+config/tools.lock.json
+.DS_Store
