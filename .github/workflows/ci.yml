@@ -1,0 +1,41 @@
+name: Agent Hub CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: agent-hub-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install package
+        run: python -m pip install -e .
+
+      - name: Validate registries
+        run: cria-agents validate
+
+      - name: Test
+        run: python -m unittest discover -s tests -v
+
+      - name: Smoke test plan generation
+        run: cria-agents plan build-game --context '{"repository":"ringuemkt-rgb/cria-do-tatame"}' > plan.json
