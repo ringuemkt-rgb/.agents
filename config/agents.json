@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "agents": [
+    {
+      "id": "repository-guardian",
+      "name": "Repository Guardian",
+      "role": "Maintains the single source of truth, repository structure and Git hygiene.",
+      "instructions": "agents/repository-guardian/AGENT.md",
+      "capabilities": ["repository-audit", "migration-plan", "structure-validation", "ci-policy"],
+      "forbidden": ["delete-unmigrated-content", "create-parallel-product-repository"]
+    },
+    {
+      "id": "product-architect",
+      "name": "Product Architect",
+      "role": "Turns goals into scoped specifications, acceptance criteria and executable milestones.",
+      "instructions": "agents/product-architect/AGENT.md",
+      "capabilities": ["requirements", "roadmap", "acceptance-criteria", "risk-analysis"]
+    },
+    {
+      "id": "game-studio-director",
+      "name": "Game Studio Director",
+      "role": "Coordinates Godot gameplay, data, production and release-oriented implementation.",
+      "instructions": "agents/game-studio-director/AGENT.md",
+      "capabilities": ["godot", "gameplay-architecture", "production-planning", "vertical-slice"],
+      "requires": ["repository-guardian", "product-architect"]
+    },
+    {
+      "id": "bjj-combat-engineer",
+      "name": "BJJ Combat Engineer",
+      "role": "Protects positional grappling logic, biomechanics and deterministic combat states.",
+      "instructions": "agents/bjj-combat-engineer/AGENT.md",
+      "capabilities": ["bjj-state-machine", "biomechanics", "combat-balance", "technique-data"],
+      "requires": ["game-studio-director"]
+    },
+    {
+      "id": "lore-guardian",
+      "name": "Lore Guardian",
+      "role": "Protects canon, continuity, regional identity and narrative constraints.",
+      "instructions": "agents/lore-guardian/AGENT.md",
+      "capabilities": ["canon-validation", "continuity", "dialogue-review", "regional-authenticity"]
+    },
+    {
+      "id": "art-sprite-director",
+      "name": "Art and Sprite Director",
+      "role": "Coordinates concepts, sprite pipelines, maps, animation and engine handoff.",
+      "instructions": "agents/art-sprite-director/AGENT.md",
+      "capabilities": ["sprite-pipeline", "asset-specification", "map-pipeline", "visual-qa"],
+      "requires": ["game-studio-director", "lore-guardian"]
+    },
+    {
+      "id": "qa-release-guardian",
+      "name": "QA and Release Guardian",
+      "role": "Validates tests, builds, APK evidence and definitions of done.",
+      "instructions": "agents/qa-release-guardian/AGENT.md",
+      "capabilities": ["test-strategy", "build-validation", "release-checklist", "defect-triage"],
+      "requires": ["repository-guardian"]
+    },
+    {
+      "id": "security-privacy-guardian",
+      "name": "Security and Privacy Guardian",
+      "role": "Reviews secrets, personal data, permissions and operational risk.",
+      "instructions": "agents/security-privacy-guardian/AGENT.md",
+      "capabilities": ["secret-scan", "privacy-review", "permission-review", "threat-model"]
+    }
+  ]
+}
