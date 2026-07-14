@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "workflows": [
+    {
+      "id": "build-game",
+      "description": "Plan and execute a playable game increment with canon, combat, art and QA gates.",
+      "steps": [
+        {
+          "id": "audit",
+          "agent": "repository-guardian",
+          "deliverables": ["repository inventory", "reuse report", "risk list"]
+        },
+        {
+          "id": "specify",
+          "agent": "product-architect",
+          "needs": ["audit"],
+          "deliverables": ["scope", "acceptance criteria", "milestone plan"]
+        },
+        {
+          "id": "canon",
+          "agent": "lore-guardian",
+          "needs": ["specify"],
+          "deliverables": ["canon constraints", "continuity report"]
+        },
+        {
+          "id": "combat",
+          "agent": "bjj-combat-engineer",
+          "needs": ["specify", "canon"],
+          "deliverables": ["combat states", "technique contracts", "balance assumptions"]
+        },
+        {
+          "id": "implementation",
+          "agent": "game-studio-director",
+          "needs": ["combat"],
+          "deliverables": ["working vertical slice", "data changes", "test evidence"]
+        },
+        {
+          "id": "assets",
+          "agent": "art-sprite-director",
+          "needs": ["canon", "implementation"],
+          "deliverables": ["asset manifest", "engine-ready assets", "visual QA"]
+        },
+        {
+          "id": "security",
+          "agent": "security-privacy-guardian",
+          "needs": ["implementation"],
+          "deliverables": ["security review", "secret and permission findings"]
+        },
+        {
+          "id": "release-gate",
+          "agent": "qa-release-guardian",
+          "needs": ["assets", "security"],
+          "deliverables": ["test report", "build evidence", "release decision"]
+        }
+      ]
+    },
+    {
+      "id": "consolidate-repository",
+      "description": "Safely absorb useful work into one official repository and retire duplicates.",
+      "steps": [
+        {
+          "id": "inventory",
+          "agent": "repository-guardian",
+          "deliverables": ["repository matrix", "unique-file inventory"]
+        },
+        {
+          "id": "decide",
+          "agent": "product-architect",
+          "needs": ["inventory"],
+          "deliverables": ["canonical architecture", "migration decisions"]
+        },
+        {
+          "id": "privacy-check",
+          "agent": "security-privacy-guardian",
+          "needs": ["inventory"],
+          "deliverables": ["secret review", "sensitive-data report"]
+        },
+        {
+          "id": "migrate",
+          "agent": "repository-guardian",
+          "needs": ["decide", "privacy-check"],
+          "deliverables": ["migration commit", "deletion list"]
+        },
+        {
+          "id": "verify",
+          "agent": "qa-release-guardian",
+          "needs": ["migrate"],
+          "deliverables": ["validation report", "retirement approval"]
+        }
+      ]
+    },
+    {
+      "id": "create-game-assets",
+      "description": "Produce original sprites and maps with canon and engine-handoff validation.",
+      "steps": [
+        {
+          "id": "asset-brief",
+          "agent": "product-architect",
+          "deliverables": ["asset list", "technical dimensions", "acceptance criteria"]
+        },
+        {
+          "id": "canon-check",
+          "agent": "lore-guardian",
+          "needs": ["asset-brief"],
+          "deliverables": ["visual canon constraints"]
+        },
+        {
+          "id": "generate",
+          "agent": "art-sprite-director",
+          "needs": ["canon-check"],
+          "deliverables": ["transparent sprites", "manifests", "preview animations"]
+        },
+        {
+          "id": "engine-check",
+          "agent": "game-studio-director",
+          "needs": ["generate"],
+          "deliverables": ["Godot import", "scene integration"]
+        },
+        {
+          "id": "qa",
+          "agent": "qa-release-guardian",
+          "needs": ["engine-check"],
+          "deliverables": ["frame QA", "runtime validation"]
+        }
+      ]
+    },
+    {
+      "id": "release-mobile",
+      "description": "Prepare and validate an Android release without claiming success before evidence exists.",
+      "steps": [
+        {
+          "id": "preflight",
+          "agent": "repository-guardian",
+          "deliverables": ["clean working tree", "version report"]
+        },
+        {
+          "id": "security",
+          "agent": "security-privacy-guardian",
+          "needs": ["preflight"],
+          "deliverables": ["permission review", "credential review"]
+        },
+        {
+          "id": "build",
+          "agent": "game-studio-director",
+          "needs": ["security"],
+          "deliverables": ["build artifact", "build logs"]
+        },
+        {
+          "id": "release-gate",
+          "agent": "qa-release-guardian",
+          "needs": ["build"],
+          "deliverables": ["installation test", "smoke test", "release decision"]
+        }
+      ]
+    }
+  ]
+}
