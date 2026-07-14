@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "tools": [
+    {
+      "id": "agent-sprite-forge",
+      "repository": "https://github.com/0x0funky/agent-sprite-forge.git",
+      "ref": "main",
+      "destination": ".vendor/agent-sprite-forge",
+      "install_commands": ["python -m pip install -r requirements.txt"],
+      "enabled": true
+    },
+    {
+      "id": "sprite-gen",
+      "repository": "https://github.com/aldegad/sprite-gen.git",
+      "ref": "main",
+      "destination": ".vendor/sprite-gen",
+      "install_commands": ["python -m pip install -e ."],
+      "enabled": true
+    },
+    {
+      "id": "spec-kit",
+      "repository": "https://github.com/github/spec-kit.git",
+      "ref": "main",
+      "destination": ".vendor/spec-kit",
+      "install_commands": [],
+      "enabled": true
+    },
+    {
+      "id": "game-master",
+      "repository": "https://github.com/Sstobo/Claude-Code-Game-Master.git",
+      "ref": "main",
+      "destination": ".vendor/game-master",
+      "install_commands": [],
+      "enabled": true
+    },
+    {
+      "id": "game-development-reference",
+      "repository": "https://github.com/HermeticOrmus/claude-code-game-development.git",
+      "ref": "claude/game-dev-repository-017nfLKbbabCj73wES1Mvkpb",
+      "destination": ".vendor/game-development-reference",
+      "install_commands": [],
+      "enabled": true
+    },
+    {
+      "id": "agent-game-forge",
+      "repository": "https://github.com/0x0funky/agent-game-forge.git",
+      "ref": "main",
+      "destination": ".vendor/agent-game-forge",
+      "install_commands": [],
+      "enabled": true
+    },
+    {
+      "id": "character-animation-creator",
+      "repository": "https://github.com/tachikomared/character-animation-creator-skill.git",
+      "ref": "main",
+      "destination": ".vendor/character-animation-creator",
+      "install_commands": [],
+      "enabled": true
+    },
+    {
+      "id": "image-cockpit",
+      "repository": "https://github.com/dreiachse-cyber/image-cockpit-for-codex-workflows.git",
+      "ref": "main",
+      "destination": ".vendor/image-cockpit",
+      "install_commands": [],
+      "enabled": false
+    }
+  ]
+}
