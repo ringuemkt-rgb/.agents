@@ -1,5 +1,42 @@
 # Changelog — BOXE DE CRIA Carousel Orchestrator
 
+## 3.3.0-portable.1 — 2026-09-16
+
+### Evidence Fusion & Forensic Synthesis
+- Added `EVIDENCE_SYNTHESIS.md` as the canonical deep-research protocol.
+- Added three forensic depth tiers: Rapid Forensic, Deep Synthesis and Full Investigative Dossier.
+- Added Study Family Resolution to detect duplicate publications and overlapping cohorts.
+- Added Outcome Ontology & Harmonization to avoid mixing different constructs.
+- Added study-design-specific Risk-of-Bias routing.
+- Added Evidence Graph for support, contradiction, indirectness, cohort identity, mechanism, moderation and confounding.
+- Added causal-map/DAG layer for causal questions.
+- Added effect-normalization safeguards for OR/RR/HR/SMD/absolute effects.
+- Added clinical, methodological and statistical Heterogeneity Intelligence.
+- Added Contradiction Engine and Triangulation Matrix.
+- Added External Validity / Applicability mapping.
+- Added certainty assessment by outcome rather than one global science score.
+- Added Benefit–Harm Pairing and Missing-Evidence checks.
+- Added Integrated Conclusion Engine: known / likely / plausible / unknown / contradicted / what would change.
+- Hook Forge now runs only after Editorial Claim Lock.
+
+### Schemas
+- Added `schemas/evidence-graph.schema.json`.
+- Added `schemas/study-family-ledger.schema.json`.
+- Expanded `schemas/claim-ledger.schema.json` with study identity, effect, uncertainty, heterogeneity, applicability, certainty and missing-evidence fields.
+
+### Prompt compiler
+- Preserved the **56-block autonomous prompt contract**.
+- Evidence intelligence grows upstream instead of bloating each visual prompt with invisible methodology.
+
+### Preserved
+- Audience Intelligence and Problem–Audience Fit.
+- Fresh Research/Fresh Attention.
+- Hook Forge and Retention Engine.
+- Design Style Resolver + Magnificent Science 2.5D fallback.
+- Mestre Criago archetypes and Sarcasm Dial.
+- Copy/paste Brazilian Portuguese caption with controlled emojis.
+- Prompts by default; images only on explicit render request.
+
 ## 3.2.0-portable.1 — 2026-09-16
 
 ### Growth intelligence
@@ -10,7 +47,7 @@
 - Added Experiment Ledger for account-relative learning.
 
 ### Retention
-- Every slide now defines `PAYOFF_NOW`, `OPEN_LOOP`, `NEXT_SLIDE_DESIRE`, `ATTENTION_RESET` and `SWIPE_HANDOFF`.
+- Every slide defines `PAYOFF_NOW`, `OPEN_LOOP`, `NEXT_SLIDE_DESIRE`, `ATTENTION_RESET` and `SWIPE_HANDOFF`.
 - Empty cliffhangers are rejected.
 - Saveability is treated as recurring utility rather than CTA decoration.
 
