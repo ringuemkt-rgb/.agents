@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BDC Claim Ledger Entry",
+  "type": "object",
+  "required": ["claim", "evidence_state", "editorial_confidence", "direct_or_indirect"],
+  "properties": {
+    "claim_id": {"type": ["string", "null"]},
+    "claim": {"type": "string"},
+    "claim_type": {"type": ["string", "null"]},
+    "evidence_state": {
+      "type": "string",
+      "enum": ["VERIFIED_PRIMARY", "VERIFIED_CORROBORATED", "PARTIALLY_SUPPORTED", "UNVERIFIED", "CONTRADICTED", "SUPERSEDED", "INFERENCE", "ESTIMATE"]
+    },
+    "editorial_confidence": {
+      "type": "string",
+      "enum": ["CONFIRMADO", "FORTEMENTE SUSTENTADO", "SUSTENTADO COM RESSALVA", "EVIDÊNCIA LIMITADA", "INCONCLUSIVO", "CONTESTADO", "NÃO VERIFICADO", "NÃO PUBLICAR"]
+    },
+    "source_primary": {"type": ["string", "null"]},
+    "source_secondary": {"type": ["string", "null"]},
+    "population": {"type": ["string", "null"]},
+    "sample_n": {"type": ["integer", "null"]},
+    "context": {"type": ["string", "null"]},
+    "measure": {"type": ["string", "null"]},
+    "unit": {"type": ["string", "null"]},
+    "denominator": {"type": ["string", "null"]},
+    "period": {"type": ["string", "null"]},
+    "direct_or_indirect": {"type": "string", "enum": ["DIRECT", "INDIRECT", "MIXED"]},
+    "what_source_says": {"type": ["string", "null"]},
+    "what_source_does_not_say": {"type": ["string", "null"]},
+    "limitations": {"type": ["string", "null"]},
+    "contradiction": {"type": ["string", "null"]},
+    "alternative_explanation": {"type": ["string", "null"]},
+    "visualization_allowed": {"type": "boolean", "default": false},
+    "headline_allowed": {"type": "boolean", "default": false}
+  },
+  "additionalProperties": true
+}

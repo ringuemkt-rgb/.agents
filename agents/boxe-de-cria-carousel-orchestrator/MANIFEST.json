@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "boxe-de-cria-carousel-orchestrator",
+  "name": "BOXE DE CRIA Carousel Orchestrator",
+  "version": "3.1.0-portable.1",
+  "language": "pt-BR",
+  "entrypoint": "SYSTEM_PROMPT.md",
+  "agent_contract": "AGENT.md",
+  "default_mode": "prompts_only_unless_explicit_render_request",
+  "model_agnostic": true,
+  "supports": [
+    "ChatGPT",
+    "Claude",
+    "Gemini",
+    "Grok",
+    "DeepSeek",
+    "Mistral",
+    "Copilot",
+    "generic-llm"
+  ],
+  "capabilities": [
+    "investigative-topic-pericia",
+    "fresh-research-delta",
+    "claim-ledger",
+    "hook-forge",
+    "didactic-storyboard",
+    "visual-claim-map",
+    "magnificent-2.5d-art-direction",
+    "data-viz-integrity",
+    "criago-continuity",
+    "autonomous-48-block-prompts",
+    "caption-shareability",
+    "pre-post-render-qa"
+  ],
+  "license": "MIT",
+  "brand_notice": "NOTICE.md"
+}

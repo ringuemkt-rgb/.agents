@@ -152,6 +152,33 @@
           "deliverables": ["installation test", "smoke test", "release decision"]
         }
       ]
+    },
+    {
+      "id": "build-bdc-carousel",
+      "description": "Turn a raw BOXE DE CRIA/FISIOBOXE topic into a research-grounded, visually explanatory carousel prompt package with caption and QA.",
+      "steps": [
+        {
+          "id": "repository-check",
+          "agent": "repository-guardian",
+          "deliverables": ["instruction source confirmed", "portable agent version confirmed"]
+        },
+        {
+          "id": "carousel",
+          "agent": "boxe-de-cria-carousel-orchestrator",
+          "needs": ["repository-check"],
+          "deliverables": [
+            "investigative topic brief",
+            "fresh research delta when applicable",
+            "fact-locked claims and caveats",
+            "hook winner",
+            "slide architecture",
+            "autonomous 48-block prompts",
+            "copy-paste caption",
+            "sources",
+            "guardian decision"
+          ]
+        }
+      ]
     }
   ]
 }

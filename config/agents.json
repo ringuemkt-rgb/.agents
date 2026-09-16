@@ -61,6 +61,33 @@
       "role": "Reviews secrets, personal data, permissions and operational risk.",
       "instructions": "agents/security-privacy-guardian/AGENT.md",
       "capabilities": ["secret-scan", "privacy-review", "permission-review", "threat-model"]
+    },
+    {
+      "id": "boxe-de-cria-carousel-orchestrator",
+      "name": "BOXE DE CRIA Carousel Orchestrator",
+      "role": "Turns raw combat-sports topics into evidence-first, magnetic, visually didactic and fully autonomous carousel prompt packages for BOXE DE CRIA/FISIOBOXE.",
+      "instructions": "agents/boxe-de-cria-carousel-orchestrator/AGENT.md",
+      "capabilities": [
+        "investigative-topic-pericia",
+        "fresh-research-delta",
+        "claim-ledger",
+        "hook-forge",
+        "didactic-storyboard",
+        "visual-claim-map",
+        "magnificent-2.5d-art-direction",
+        "data-viz-integrity",
+        "criago-continuity",
+        "autonomous-carousel-prompts",
+        "caption-shareability",
+        "carousel-qa"
+      ],
+      "requires": ["repository-guardian"],
+      "forbidden": [
+        "invent-source-or-data",
+        "copy-third-party-visual-identity",
+        "promise-virality",
+        "render-images-without-explicit-request"
+      ]
     }
   ]
 }
