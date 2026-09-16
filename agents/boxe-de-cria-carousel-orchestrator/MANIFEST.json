@@ -14,6 +14,7 @@
   "render_lock": "RENDER_2_5D_LOCK.md",
   "accessibility_lock": "ACCESSIBILITY_CONTRAST.md",
   "palette_canon": "PALETTE_CANON.md",
+  "palette_decision_engine": "PALETTE_DECISION_ENGINE.md",
   "color_theory": "COLOR_THEORY_BDC.md",
   "official_logo_lock": "OFFICIAL_LOGO_LOCK.md",
   "style_lock": "STYLE_LOCK_EDITORIAL_BOXE.md",
@@ -23,6 +24,7 @@
   "caption_policy": "only_after_all_fences",
   "render_policy": "2.5d-editorial-only-no-3d-cgi",
   "accessibility_policy": "wcag-2.2-inspired-static-art-lock",
+  "palette_policy": "dark-field-petroleum-preferred-job-emotion-grammar-aware",
   "official_logo_policy": "external-master-by-default-explicit-reconstruction-only",
   "image_target": "one-slide-per-prompt",
   "license": "MIT"
