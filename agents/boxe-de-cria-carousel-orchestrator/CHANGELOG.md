@@ -1,5 +1,17 @@
 # Changelog — BOXE DE CRIA Carousel Orchestrator
 
+## 3.4.0-portable.1 — 2026-09-16
+
+### Cross-Study Intelligence & Unbounded Search
+- Added `CROSS_STUDY_INTELLIGENCE.md`.
+- Forbade self-imposed page/result caps. Search continues in batches until saturation or a documented tool limit.
+- Added Evidence Inventory, Finding Atomizer and Cross-Study Linkage (constellation).
+- Added Bridge Narrative that stitches independent findings before the headline.
+- Added Easy Explanation Compiler: 3s / 30s / 3min in Brazilian Portuguese.
+- Added Completeness Ledger (`self_imposed_page_cap_used` is a P0 failure).
+- Added schemas `cross-study-link.schema.json` and `search-completeness.schema.json`.
+- Hook Forge remains after Editorial Claim Lock. 56-block prompt contract unchanged.
+
 ## 3.3.0-portable.1 — 2026-09-16
 
 ### Evidence Fusion & Forensic Synthesis
@@ -49,7 +61,7 @@
 ### Retention
 - Every slide defines `PAYOFF_NOW`, `OPEN_LOOP`, `NEXT_SLIDE_DESIRE`, `ATTENTION_RESET` and `SWIPE_HANDOFF`.
 - Empty cliffhangers are rejected.
-- Saveability is treated as recurring utility rather than CTA decoration.
+- Saveability is treated as recurring utility rather than recurring CTA decoration.
 
 ### Design
 - Added Design Style Resolver.
