@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ringuemkt-rgb/.agents/agents/boxe-de-cria-carousel-orchestrator/schemas/competing-hypothesis.schema.json",
+  "title": "BDC Competing Hypothesis Ledger",
+  "type": "object",
+  "required": ["question_id", "hypotheses"],
+  "properties": {
+    "question_id": {"type": "string"},
+    "date_cut": {"type": "string"},
+    "hypotheses": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["hypothesis_id", "claim", "status"],
+        "properties": {
+          "hypothesis_id": {"type": "string"},
+          "claim": {"type": "string"},
+          "mechanism": {"type": "string"},
+          "predicted_observations": {"type": "array", "items": {"type": "string"}},
+          "weakening_observations": {"type": "array", "items": {"type": "string"}},
+          "falsifying_observations": {"type": "array", "items": {"type": "string"}},
+          "main_confounders": {"type": "array", "items": {"type": "string"}},
+          "competing_hypotheses": {"type": "array", "items": {"type": "string"}},
+          "status": {
+            "type": "string",
+            "enum": ["OPEN", "FAVORED", "WEAKENED", "REFUTED", "UNRESOLVED"]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
