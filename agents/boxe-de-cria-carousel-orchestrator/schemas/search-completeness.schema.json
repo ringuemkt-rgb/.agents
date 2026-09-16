@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BDC Search Completeness Ledger",
+  "type": "object",
+  "required": ["question", "saturation_status", "self_imposed_page_cap_used"],
+  "properties": {
+    "question": {"type": "string"},
+    "date_cut": {"type": ["string", "null"]},
+    "saturation_status": {"enum": ["SATURATED", "PARTIAL", "TOOL_LIMIT", "INSUFFICIENT_HOST"]},
+    "pages_traversed": {"type": ["string", "integer", "null"]},
+    "batches": {"type": ["array", "integer", "null"]},
+    "self_imposed_page_cap_used": {"type": "boolean"},
+    "languages_covered": {"type": ["array", "string", "null"]},
+    "sources_queried": {"type": ["array", "null"]},
+    "contradiction_pass_done": {"type": ["boolean", "null"]},
+    "registry_pass_done": {"type": ["boolean", "null"]},
+    "n_hits_screened": {"type": ["integer", "null"]},
+    "n_study_families": {"type": ["integer", "null"]},
+    "cross_study_links_n": {"type": ["integer", "null"]},
+    "unresolved_queries": {"type": ["array", "string", "null"]},
+    "what_was_not_opened": {"type": ["string", "null"]},
+    "honesty_note": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}

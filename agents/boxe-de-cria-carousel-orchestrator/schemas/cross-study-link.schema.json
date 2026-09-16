@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BDC Cross-Study Link",
+  "type": "object",
+  "required": ["link_id", "from_finding", "to_finding", "relation", "plain_pt"],
+  "properties": {
+    "link_id": {"type": "string"},
+    "from_finding": {"type": "string"},
+    "to_finding": {"type": "string"},
+    "relation": {
+      "enum": ["REPLICATES", "EXTENDS", "MECHANISTICALLY_EXPLAINS", "CONVERGES_INDIRECTLY", "CONTRADICTS_DIRECTLY", "CONTRADICTS_APPARENTLY", "MODERATES", "CONFOUNDS", "SUPERSEDES", "HARMS_OFFSETS_BENEFIT", "APPLIES_CLOSER", "DOES_NOT_TRANSFER"]
+    },
+    "shared_construct": {"type": ["string", "null"]},
+    "independence": {"enum": ["INDEPENDENT", "SAME_TEAM", "SAME_COHORT", "UNCLEAR"]},
+    "why_the_link_is_valid": {"type": ["string", "null"]},
+    "why_it_could_be_spurious": {"type": ["string", "null"]},
+    "weight": {"enum": ["HIGH", "MODERATE", "LOW"]},
+    "plain_pt": {"type": "string"}
+  },
+  "additionalProperties": true
+}
