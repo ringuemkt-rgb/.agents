@@ -1,26 +1,64 @@
-# PROMPT ASSEMBLY — estrutura fixa de cada fence Gemini
+# PROMPT ASSEMBLY — v4.2 compatibility note
 
-Um slide = um fence. Copiar um. Gerar. Só depois o próximo.
+The old 12-group assembly has been superseded by `PROMPT_PROTOCOL_FIXED.md`.
+
+Current rule:
+
+> **One slide = one autonomous fence = 22 blocks.**
+
+Do not use this file to shorten the prompt or collapse required locks.
+
+## Current assembly order
 
 ```text
-[01 TASK LOCK]
-CRIAR UMA ARTE ESTÁTICA ÚNICA PARA INSTAGRAM,
-FORMATO VERTICAL 4:5, RESOLUÇÃO EXATA 2160×2700 PX,
-sRGB, MOBILE-FIRST, ULTRA NÍTIDA, PREMIUM E EXTREMAMENTE LEGÍVEL.
-ONE slide. Not a grid. Ignore chat history.
-
-[02 SLIDE ID] Slide N/8 | TEMA A × TEMA B
-[03 EXACT TEXT LOCK] headline + sub + cards + chip (verbatim PT-BR)
-[04 STYLE LOCK] colar STYLE_LOCK_EDITORIAL_BOXE.md secção 2 INTEIRA
-[05 PALETTE MODE] EDITORIAL_DEFAULT | RING_LIGHT | LAB | ALERT | TERREIRO | NIGHT + HEX
-[06 SUBJECT] herói, Criago lock, cards ≤3, ícones função
-[07 ATMOSPHERE] key + rim + grelha + profundidade Z0–Z5
-[08 TECHNICAL] 4:5, safe 7%, grid 12 col, baseline 24, chrome top+rails
-[09 DATA-VIZ] se número: unidade n pop IC fonte; ortográfico
-[10 CLAIM BOUNDARY] tese ⊆ Editorial Claim Lock; mecanismo ≠ desfecho
-[11 NEGATIVE] photoreal CGI extra-fingers watermark other-brand same-as-previous
-[12 QA SELF] anatomia 5 dedos, texto do Exact Text Lock, HEX visíveis
+01 TASK / OUTPUT LOCK
+02 PROJECT IDENTITY
+03 EVIDENCE / CLAIM LOCK
+04 CONTENT JOB / AUDIENCE
+05 NARRATIVE / RETENTION
+06 EXACT TEXT LOCK
+07 COLOR SYSTEM
+08 TYPOGRAPHY
+09 FRAME LOCK
+10 BACKGROUND L0–L9
+11 DEPTH Z0–Z5
+12 HERO / COMPOSITION
+13 BIOMECHANICS and/or INFOGRAPHIC
+14 VISUAL CLAIM MAP
+15 CAMERA
+16 LIGHTING
+17 MATERIALITY
+18 MESTRE CRIAGO FULL LOCK
+19 OFFICIAL BRAND ASSET
+20 NEGATIVE PROMPT
+21 PRE-RENDER QA
+22 POST-RENDER QA
 ```
 
-Os 56 blocos do SYSTEM_PROMPT mapeiam para estes 12 grupos. Não encurtar o Character Lock do Criago.
-Não importar prompt de awesome-nano-banana. Não usar --ar Midjourney no Gemini.
+## Upstream inputs
+
+Before assembly, the compiler receives only the compressed editorial outputs of the investigative system:
+
+```text
+BEST CURRENT EXPLANATION
+APPROVED THESIS
+CERTAINTY
+DIRECTNESS
+APPLICABILITY
+CRITICAL CAVEAT
+SAFE 3-SECOND EXPLANATION
+```
+
+Do not send ACH matrix, raw DAG, GRADE worksheet, study-family ledger or search inventory to the image model unless the slide is explicitly about that method.
+
+## Mandatory locks
+
+- `RENDER_2_5D_LOCK.md` — no 3D/CGI/game-engine.
+- `ACCESSIBILITY_CONTRAST.md` — body ≥4.5:1, headline target ≥7:1, graphics ≥3:1.
+- `PALETTE_CANON.md` + `PALETTE_DECISION_ENGINE.md` — dark-field/petroleum-aware palette selection.
+- `OFFICIAL_LOGO_LOCK.md` — external master asset by default.
+- full Criago lock even when OFF.
+
+## Legacy mapping
+
+Any previous 56-field or 12-group structure is only a completeness memory for upstream reasoning. It does not define current user-visible prompt output.
