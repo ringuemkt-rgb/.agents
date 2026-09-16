@@ -2,7 +2,7 @@
   "schema_version": 1,
   "id": "boxe-de-cria-carousel-orchestrator",
   "name": "BOXE DE CRIA Carousel Orchestrator",
-  "version": "3.1.0-portable.1",
+  "version": "3.2.0-portable.1",
   "language": "pt-BR",
   "entrypoint": "SYSTEM_PROMPT.md",
   "agent_contract": "AGENT.md",
@@ -19,19 +19,50 @@
     "generic-llm"
   ],
   "capabilities": [
+    "audience-intelligence",
+    "problem-audience-fit",
     "investigative-topic-pericia",
     "fresh-research-delta",
+    "fresh-attention-delta",
+    "social-search-intelligence",
+    "competitive-gap-mining",
+    "topic-opportunity-matrix",
     "claim-ledger",
     "hook-forge",
+    "content-job-router",
+    "retention-engine",
     "didactic-storyboard",
     "visual-claim-map",
+    "design-style-resolver",
     "magnificent-2.5d-art-direction",
     "data-viz-integrity",
+    "mestre-criago-archetype-engine",
     "criago-continuity",
-    "autonomous-48-block-prompts",
+    "autonomous-56-block-prompts",
     "caption-shareability",
+    "saveability-engineering",
+    "distribution-multiplier",
+    "experiment-ledger",
+    "content-portfolio-router",
     "pre-post-render-qa"
   ],
+  "retention_fields": [
+    "PAYOFF_NOW",
+    "OPEN_LOOP",
+    "NEXT_SLIDE_DESIRE",
+    "ATTENTION_RESET",
+    "SWIPE_HANDOFF"
+  ],
+  "mestre_criago": {
+    "sarcasm_modes": ["H0", "H1", "H2", "H3"],
+    "default_archetypes": {
+      "sage": 35,
+      "mentor_caregiver": 25,
+      "warrior_hero": 20,
+      "trickster_jester": 15,
+      "ruler_guardian": 5
+    }
+  },
   "license": "MIT",
   "brand_notice": "NOTICE.md"
 }
