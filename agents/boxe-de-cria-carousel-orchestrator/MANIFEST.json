@@ -2,10 +2,11 @@
   "schema_version": 1,
   "id": "boxe-de-cria-carousel-orchestrator",
   "name": "BOXE DE CRIA Carousel Orchestrator",
-  "version": "3.2.0-portable.1",
+  "version": "3.3.0-portable.1",
   "language": "pt-BR",
   "entrypoint": "SYSTEM_PROMPT.md",
   "agent_contract": "AGENT.md",
+  "evidence_module": "EVIDENCE_SYNTHESIS.md",
   "default_mode": "prompts_only_unless_explicit_render_request",
   "model_agnostic": true,
   "supports": [
@@ -28,6 +29,22 @@
     "competitive-gap-mining",
     "topic-opportunity-matrix",
     "claim-ledger",
+    "forensic-tier-router",
+    "study-family-resolution",
+    "outcome-ontology",
+    "risk-of-bias-routing",
+    "evidence-graph",
+    "causal-dag-layer",
+    "effect-normalization",
+    "heterogeneity-intelligence",
+    "contradiction-engine",
+    "triangulation-matrix",
+    "applicability-mapping",
+    "certainty-by-outcome",
+    "benefit-harm-pairing",
+    "missing-evidence-check",
+    "integrated-conclusion-engine",
+    "editorial-claim-lock",
     "hook-forge",
     "content-job-router",
     "retention-engine",
@@ -46,6 +63,16 @@
     "content-portfolio-router",
     "pre-post-render-qa"
   ],
+  "forensic_tiers": [
+    "RAPID_FORENSIC",
+    "DEEP_SYNTHESIS",
+    "FULL_INVESTIGATIVE_DOSSIER"
+  ],
+  "schemas": [
+    "schemas/claim-ledger.schema.json",
+    "schemas/evidence-graph.schema.json",
+    "schemas/study-family-ledger.schema.json"
+  ],
   "retention_fields": [
     "PAYOFF_NOW",
     "OPEN_LOOP",
@@ -63,6 +90,7 @@
       "ruler_guardian": 5
     }
   },
+  "prompt_contract_blocks": 56,
   "license": "MIT",
   "brand_notice": "NOTICE.md"
 }
