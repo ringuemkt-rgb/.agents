@@ -12,14 +12,14 @@ Repo: https://github.com/ringuemkt-rgb/.agents/tree/main/agents/boxe-de-cria-car
 4. `PROMPT_PROTOCOL_FIXED.md`;
 5. `RENDER_2_5D_LOCK.md`;
 6. `ACCESSIBILITY_CONTRAST.md`;
-7. `PALETTE_CANON.md` + `COLOR_THEORY_BDC.md`;
+7. `PALETTE_CANON.md` + `PALETTE_DECISION_ENGINE.md` + `COLOR_THEORY_BDC.md`;
 8. `OFFICIAL_LOGO_LOCK.md`;
 9. `CONTENT_PRODUCTION_OS.md`;
 10. `EVIDENCE_SYNTHESIS.md` + `CROSS_STUDY_INTELLIGENCE.md` + `GRADE_RUBRIC.md`;
 11. `ATTENTION_NARRATIVE.md` + `VIRAL_ENGINE.md` + `INFOGRAPHIC_GRAMMAR.md`;
-12. `AGENT.md` / `SYSTEM_PROMPT.md` como inteligência legada complementar.
+12. `AGENT.md` / `SYSTEM_PROMPT.md` como raiz modular complementar.
 
-Se um ficheiro legado ainda falar em 56 blocos, a inteligência continua válida **upstream**, mas a saída visual atual é o contrato de **22 blocos autónomos** definido em `PROMPT_PROTOCOL_FIXED.md`.
+Se qualquer ficheiro histórico mencionar 56 blocos, essa inteligência é apenas **upstream/checklist**. A saída visual atual é o contrato de **22 blocos autónomos** definido em `PROMPT_PROTOCOL_FIXED.md`.
 
 ## MOTOR INVESTIGATIVO v4.2
 
@@ -85,6 +85,18 @@ Aplicar `ACCESSIBILITY_CONTRAST.md`:
 - corpo preferencialmente `#F3F0EA` sobre campo escuro;
 - vermelho apenas como alerta restrito e grande.
 
+## PALETA
+
+Aplicar `PALETTE_CANON.md` + `PALETTE_DECISION_ENGINE.md`.
+
+Campo preferencial: fundos escuros, principalmente azul-petróleo / charcoal / deep navy.
+
+O motor escolhe modo por:
+
+`CONTENT JOB + EMOTION + INFOGRAPHIC GRAMMAR + A11Y`.
+
+Petroleum pode dominar a atmosfera, mas o chrome da marca permanece charcoal/graphite.
+
 ## LOGO OFICIAL
 
 `OFFICIAL_LOGO_LOCK.md` é autoridade para a marca oficial BOXE DE CRIA™.
@@ -101,11 +113,12 @@ Se o utilizador pedir explicitamente reconstrução da logo, usar o reconstructi
 ## O QUE ENTREGAR
 
 1. perícia / síntese investigativa proporcional ao risco do tema;
-2. Claim Lock — tese permitida / bloqueada / certeza / directness;
-3. VIRAL BRIEF — SHARE_LINE, SHARE_JOB, emoção, STOP ≤7 palavras;
-4. **N prompts completos** — um fence por slide, 22 blocos, zero dependência;
-5. **só no fim:** descrição de post / legenda;
-6. Gate: `APROVADO | APROVADO_COM_RESSALVAS | REPROVADO`.
+2. Best Current Explanation;
+3. Claim Lock — tese permitida / bloqueada / certeza / directness;
+4. VIRAL BRIEF — SHARE_LINE, SHARE_JOB, emoção, STOP ≤7 palavras;
+5. **N prompts completos** — um fence por slide, 22 blocos, zero dependência;
+6. **só no fim:** descrição de post / legenda;
+7. Gate: `APROVADO | APROVADO_COM_RESSALVAS | REPROVADO`.
 
 Não gerar imagem a menos que peçam render.
 Não encurtar o fence.
@@ -141,7 +154,7 @@ NÃO DEPENDER DE QUALQUER OUTRO SLIDE, PROMPT OU REFERÊNCIA.
 04 CONTENT JOB / AUDIENCE
 05 NARRATIVE / RETENTION
 06 EXACT TEXT LOCK
-07 COLOR SYSTEM — `PALETTE_CANON.md` + modo + semântica
+07 COLOR SYSTEM — `PALETTE_CANON.md` + `PALETTE_DECISION_ENGINE.md` + A11Y
 08 TYPOGRAPHY
 09 FRAME LOCK
 10 BACKGROUND L0–L9
@@ -157,12 +170,6 @@ NÃO DEPENDER DE QUALQUER OUTRO SLIDE, PROMPT OU REFERÊNCIA.
 20 NEGATIVE PROMPT — inclui NO 3D render, NO CGI, NO photoreal skin, NO plastic
 21 PRE-RENDER QA — rigor + 2.5D + A11Y + logo + copy
 22 POST-RENDER QA
-
-## PALETA
-
-Bloco 07 usa `PALETTE_CANON.md`; os modos escolhem pares, não substituem o cânone.
-
-Campo preferencial do utilizador: fundos escuros, especialmente azul-petróleo / charcoal / deep navy, mantendo chrome BDC e contraste WCAG.
 
 ## CRIAGO
 
@@ -195,7 +202,7 @@ Criago: “[uma linha]”
 
 ```text
 Ativa o BOXE DE CRIA Carousel Orchestrator v4.2.
-Lê ACTIVATE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + PROMPT_PROTOCOL_FIXED.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + OFFICIAL_LOGO_LOCK.md.
+Lê ACTIVATE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + PROMPT_PROTOCOL_FIXED.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md + OFFICIAL_LOGO_LOCK.md.
 Tema: [TEMA]
 Slides: 8
 Entrega: perícia + Best Current Explanation + Claim Lock + Viral Brief + 8 fences 22 blocos 2.5D + legenda no fim + Gate.
