@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BDC Evidence Graph",
+  "type": "object",
+  "required": ["question", "date_cut", "nodes", "edges", "conclusion"],
+  "properties": {
+    "question": {"type": "string"},
+    "date_cut": {"type": "string"},
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "label"],
+        "properties": {
+          "id": {"type": "string"},
+          "type": {
+            "enum": [
+              "QUESTION", "CLAIM", "STUDY_FAMILY", "PUBLICATION", "POPULATION",
+              "INTERVENTION", "EXPOSURE", "OUTCOME", "MECHANISM", "MODERATOR",
+              "CONFOUNDER", "SOURCE", "GUIDELINE", "REVIEW", "HARM", "UNCERTAINTY"
+            ]
+          },
+          "label": {"type": "string"},
+          "metadata": {"type": "object"}
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from", "to", "relation"],
+        "properties": {
+          "from": {"type": "string"},
+          "to": {"type": "string"},
+          "relation": {
+            "enum": [
+              "SUPPORTS", "CONTRADICTS", "PARTIALLY_SUPPORTS", "INDIRECTLY_SUPPORTS",
+              "DOES_NOT_ADDRESS", "SAME_COHORT", "SUPERSEDES", "REANALYZES",
+              "MEDIATES", "MODERATES", "CONFOUNDS", "MEASURES", "REPORTS",
+              "DUPLICATES", "EXTENDS_FOLLOWUP", "LOWERS_CERTAINTY", "INCREASES_PLAUSIBILITY"
+            ]
+          },
+          "notes": {"type": "string"}
+        }
+      }
+    },
+    "conclusion": {
+      "type": "object",
+      "properties": {
+        "known": {"type": "array", "items": {"type": "string"}},
+        "likely": {"type": "array", "items": {"type": "string"}},
+        "plausible": {"type": "array", "items": {"type": "string"}},
+        "unknown": {"type": "array", "items": {"type": "string"}},
+        "contradicted": {"type": "array", "items": {"type": "string"}},
+        "what_would_change": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  },
+  "additionalProperties": true
+}
