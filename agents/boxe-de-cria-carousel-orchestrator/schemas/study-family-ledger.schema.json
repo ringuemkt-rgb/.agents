@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BDC Study Family Ledger",
+  "type": "object",
+  "required": ["study_family_id", "publications", "population", "outcomes"],
+  "properties": {
+    "study_family_id": {"type": "string"},
+    "publications": {"type": "array", "items": {"type": "string"}},
+    "trial_registration": {"type": ["string", "null"]},
+    "cohort_name": {"type": ["string", "null"]},
+    "recruitment_dates": {"type": ["string", "null"]},
+    "population": {"type": "string"},
+    "sample_n": {"type": ["integer", "null"]},
+    "overlap_probability": {"enum": ["NONE", "LOW", "MODERATE", "HIGH", "CONFIRMED"]},
+    "design": {"type": "string"},
+    "risk_of_bias": {"type": "object"},
+    "outcomes": {"type": "array", "items": {"type": "object"}},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": true
+}
