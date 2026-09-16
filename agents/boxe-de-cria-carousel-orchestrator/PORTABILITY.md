@@ -1,87 +1,111 @@
-# Portability Guide — Use in Any AI
+# Portability Guide — BOXE DE CRIA v4.2
 
-The system is vendor-neutral. The only hard requirement is that the target model can receive a long instruction block or repository context. Web/research access is strongly recommended for current, scientific or contested topics.
+The system is vendor-neutral. The target AI should be able to read repository context or receive long instruction blocks. Web/research access is strongly recommended for current, scientific or contested topics.
+
+## Minimum load order
+
+1. `ACTIVATE.md`
+2. `INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md`
+3. `EVIDENCE_SYNTHESIS.md`
+4. `CROSS_STUDY_INTELLIGENCE.md`
+5. `GRADE_RUBRIC.md`
+6. `PROMPT_PROTOCOL_FIXED.md`
+7. `RENDER_2_5D_LOCK.md`
+8. `ACCESSIBILITY_CONTRAST.md`
+9. `PALETTE_CANON.md`
+10. `PALETTE_DECISION_ENGINE.md`
+11. `OFFICIAL_LOGO_LOCK.md`
+12. `CONTENT_PRODUCTION_OS.md`
+13. `INFOGRAPHIC_GRAMMAR.md`
+14. `VIRAL_ENGINE.md` + `ATTENTION_NARRATIVE.md`
+
+`AGENT.md` and `SYSTEM_PROMPT.md` are modular roots. `MANIFEST.json` provides machine-readable metadata.
+
+## Compact priority when context is constrained
+
+If the host cannot load everything, prioritize:
+
+1. `ACTIVATE.md`
+2. `INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md`
+3. `PROMPT_PROTOCOL_FIXED.md`
+4. `EVIDENCE_SYNTHESIS.md`
+5. `RENDER_2_5D_LOCK.md`
+6. `ACCESSIBILITY_CONTRAST.md`
+7. `PALETTE_CANON.md` + `PALETTE_DECISION_ENGINE.md`
+8. `OFFICIAL_LOGO_LOCK.md`
+
+Never shorten by removing:
+
+- rival hypotheses before a complex causal conclusion;
+- Study Family resolution;
+- negative/contradictory evidence pass;
+- Falsification Gate for TIER 3;
+- Best Current Explanation before Hook Forge;
+- 22-block full slide autonomy;
+- 2.5D render lock;
+- contrast/accessibility gate;
+- logo handling rule.
 
 ## Generic LLM
 
-Load, in order:
+Load the minimum order above, then send the topic.
 
-1. `SYSTEM_PROMPT.md` as system/custom instructions.
-2. `AGENT.md` as execution contract.
-3. `EVIDENCE_SYNTHESIS.md` for scientific/clinical/biomechanical/epidemiological or controversial themes.
-4. `MANIFEST.json` if the platform supports machine-readable agent metadata.
-5. JSON schemas when structured evidence output is useful.
+For current/scientific claims, use web/research tools if available. If the host cannot search, disclose the limit and do not pretend current verification.
 
-Then send the theme normally.
+Default remains: prompts first; images only on explicit render request.
 
 ## ChatGPT
 
-- Projects/Work: add `SYSTEM_PROMPT.md`, `AGENT.md`, `EVIDENCE_SYNTHESIS.md` and the `schemas/` directory as project knowledge/instructions.
-- Custom GPT: use `SYSTEM_PROMPT.md` as the main instruction set and upload the supporting files as knowledge.
-- Normal chat: paste `SYSTEM_PROMPT.md`; for deep science questions also attach/paste `EVIDENCE_SYNTHESIS.md`.
-- For current/scientific topics, use web/research tools when available.
-- Preserve the default: prompts first; images only on explicit render request.
+For a persistent workspace/project, add the minimum load-order files as project knowledge/instructions.
+
+For a normal chat, `ACTIVATE.md` plus the investigative and prompt protocol files are the fastest wake path.
+
+Recommended wake command:
+
+```text
+Ativa o BOXE DE CRIA Carousel Orchestrator v4.2.
+Lê ACTIVATE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + PROMPT_PROTOCOL_FIXED.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md + OFFICIAL_LOGO_LOCK.md.
+Tema: [TEMA]
+Slides: 8
+Entrega: perícia + Best Current Explanation + Claim Lock + Viral Brief + 8 fences 22 blocos 2.5D + legenda + Gate.
+Não gerar imagem. Nada 3D.
+```
 
 ## Claude / Claude Code
 
-- Claude Projects: place `SYSTEM_PROMPT.md` in Project Instructions and add `AGENT.md`, `EVIDENCE_SYNTHESIS.md` and schemas as project knowledge.
-- Claude Code: read repository `AGENTS.md`, then this directory's `AGENT.md`, `SYSTEM_PROMPT.md` and evidence module before scientific carousel work.
-- Do not let concise mode drop evidence, data-viz, overlap, applicability, brand or safety gates.
+Read repository `AGENTS.md`, then this directory's `ACTIVATE.md` and the minimum load-order files.
 
-## Gemini
+Do not let concise mode remove rival hypotheses, falsification, data-viz integrity, full prompt autonomy or brand locks.
 
-- Put `SYSTEM_PROMPT.md` into Gem/custom instructions.
-- Attach `AGENT.md`, `EVIDENCE_SYNTHESIS.md` and schemas when supported.
-- Require every slide prompt to remain autonomous even if the model wants to abbreviate repeated design instructions.
+## Gemini / Imagen
 
-## Grok / DeepSeek / Mistral / Copilot / other assistants
+Use `GEMINI_PRODUCTION.md` after the investigation/editorial stage.
+
+One fence → one slide generation.
+
+Never rely on “same style as previous”.
+
+## Other assistants
 
 Use the Generic LLM procedure.
 
-If context is constrained, prioritize:
+Any model with access to the repository should treat `ACTIVATE.md` as the current execution authority and `MANIFEST.json` as the current version map.
 
-1. `AGENT.md`;
-2. `EVIDENCE_SYNTHESIS.md` for evidence-heavy topics;
-3. pipeline, evidence, hook, retention, design, data-viz and prompt-contract sections of `SYSTEM_PROMPT.md`;
-4. full Criago Character Lock;
-5. clinical/safety rules.
+## Structured evidence schemas
 
-Never shorten by removing:
-- Editorial Claim Lock before Hook Forge;
-- direct vs indirect evidence;
-- duplicate/overlap resolution when relevant;
-- heterogeneity/contradiction/applicability gates;
-- data-viz integrity;
-- full slide autonomy requirement.
+Use when the platform supports JSON/tool workflows:
 
-## Structured evidence workflows
+- `schemas/claim-ledger.schema.json`
+- `schemas/study-family-ledger.schema.json`
+- `schemas/finding-atom.schema.json`
+- `schemas/evidence-graph.schema.json`
+- `schemas/cross-study-link.schema.json`
+- `schemas/search-completeness.schema.json`
+- `schemas/competing-hypothesis.schema.json`
+- `schemas/ach-matrix.schema.json`
+- `schemas/investigative-conclusion.schema.json`
 
-When the AI/platform supports JSON or tools, use:
-
-- `schemas/claim-ledger.schema.json` — atomic claims and evidence state;
-- `schemas/study-family-ledger.schema.json` — cohort/publication identity and overlap;
-- `schemas/evidence-graph.schema.json` — support, contradiction, indirectness, mechanism and uncertainty graph.
-
-## Starter command — complete carousel
-
-```text
-Tema: [TEMA]
-Modo: carrossel completo.
-Idioma: português brasileiro.
-
-Defina a audiência e o problema.
-Escolha o nível de perícia necessário.
-Pesquise evidência atual se houver ferramentas.
-Resolva publicações duplicadas/coortes sobrepostas antes de contar estudos.
-Separe outcomes diferentes.
-Procure evidência contraditória, heterogeneidade e limitações de aplicabilidade.
-Construa a conclusão integrada antes de selecionar o hook.
-Depois gere hooks concorrentes, roteiro didático, retenção slide a slide e Visual Claim Map.
-Entregue prompts ultra detalhados, slide por slide, totalmente autônomos e seguindo integralmente o estilo de design solicitado.
-Finalize com legenda pronta para copiar e colar, emojis semânticos, 3–5 hashtags, fontes e Guardião.
-```
-
-## Starter command — full forensic dossier
+## Full forensic starter
 
 ```text
 Tema: [TEMA]
@@ -89,19 +113,39 @@ Modo: FULL INVESTIGATIVE DOSSIER.
 
 Antes de produzir conteúdo:
 1. decomponha a pergunta;
-2. faça Source Map;
-3. resolva Study Families e amostras sobrepostas;
-4. construa Outcome Ontology;
-5. avalie risco de viés por desenho;
-6. construa Evidence Graph;
-7. investigue causalidade/mecanismo quando aplicável;
-8. normalize efeitos sem conversões falsas;
-9. explique heterogeneidade e contradições;
-10. faça triangulação;
-11. avalie aplicabilidade e certeza por outcome;
-12. pareie benefícios/danos;
-13. procure evidência ausente;
-14. conclua em: sabemos / provavelmente / plausível / não sabemos / contradito / o que mudaria a conclusão.
+2. gere hipóteses rivais;
+3. busque até saturação ou TOOL_LIMIT documentado;
+4. construa inventário e finding atoms;
+5. resolva Study Families e amostras sobrepostas;
+6. separe Source Reliability de Information Credibility;
+7. construa Outcome Ontology e Exposure Decomposition;
+8. avalie risco de viés por desenho;
+9. normalize efeitos;
+10. avalie replicação independente / researcher network;
+11. faça ACH;
+12. construa Evidence Graph e DAG quando causal;
+13. gere explicações alternativas e testes contrafactuais;
+14. analise moderadores, dose e tempo;
+15. triangule métodos;
+16. explique contradições;
+17. procure nulls, harms e missing evidence;
+18. faça sensitivity analysis;
+19. avalie aplicabilidade e certeza por outcome;
+20. pareie benefit–harm–burden;
+21. rode Investigator Bias Guard;
+22. declare o Falsification Gate;
+23. compile Best Current Explanation e Evidence Gap Map.
 
-Só depois libere claims editoriais e hooks.
+Só depois libere Claim Lock, hooks e Viral Brief.
+```
+
+## Visual starter
+
+```text
+Output = prompts, not images.
+Each slide = one autonomous 22-block fence.
+Dark petroleum/charcoal/deep-navy fields preferred.
+2.5D editorial semi-vector only. No 3D/CGI/game engine.
+WCAG contrast lock.
+Official logo = owner-supplied master asset by default.
 ```
