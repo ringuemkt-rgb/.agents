@@ -2,7 +2,7 @@
 
 Repositório central de agentes, skills, workflows e integrações para os projetos do Mestre Satoshi.
 
-Este é o **único repositório oficial de agentes**. Ele organiza o trabalho de planejamento, desenvolvimento, arte, sprites, lore, QA e release sem duplicar o código dos produtos.
+Este é o **único repositório oficial de agentes**. Ele organiza o trabalho de planejamento, desenvolvimento, arte, sprites, lore, QA, conteúdo editorial e release sem duplicar o código dos produtos.
 
 ## O que ele faz
 
@@ -11,7 +11,8 @@ Este é o **único repositório oficial de agentes**. Ele organiza o trabalho de
 - instala ferramentas externas em `.vendor/` a partir de um catálogo controlado;
 - mantém agentes especializados em arquivos claros e versionados;
 - impede que um agente altere canon, segurança ou arquitetura sem passar pelos guardiões adequados;
-- fornece CI para validar o hub antes de qualquer alteração.
+- fornece CI para validar o hub antes de qualquer alteração;
+- disponibiliza agentes portáteis que podem ser carregados em diferentes IAs por arquivos Markdown/JSON.
 
 ## Início rápido
 
@@ -23,6 +24,7 @@ python -m pip install -e .
 cria-agents validate
 cria-agents list
 cria-agents plan build-game
+cria-agents plan build-bdc-carousel
 cria-agents tools sync
 ```
 
@@ -54,6 +56,15 @@ cria-agents tools sync
 | Art & Sprite Director | coordena conceitos, sprites, mapas e handoff para engine |
 | QA & Release Guardian | valida testes, builds, APK e critérios de conclusão |
 | Security & Privacy Guardian | revisa segredos, dados pessoais e riscos operacionais |
+| BOXE DE CRIA Carousel Orchestrator | transforma temas em carrosséis evidence-first, didáticos, 2.5D e prompts autônomos portáteis entre IAs |
+
+## BOXE DE CRIA Carousel Orchestrator
+
+O pacote portátil vive em:
+
+`agents/boxe-de-cria-carousel-orchestrator/`
+
+Use `SYSTEM_PROMPT.md` como instrução principal em ChatGPT, Claude, Gemini ou qualquer LLM que aceite instruções personalizadas. O arquivo `PORTABILITY.md` descreve os modos de uso por plataforma.
 
 ## Princípio central
 
