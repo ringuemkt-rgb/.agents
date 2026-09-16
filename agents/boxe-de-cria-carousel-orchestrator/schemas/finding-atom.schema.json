@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BDC Finding Atom",
+  "type": "object",
+  "required": ["finding_id", "publication_id", "population", "outcome_id", "what_it_measured", "what_it_did_not_measure"],
+  "properties": {
+    "finding_id": {"type": "string"},
+    "study_family_id": {"type": ["string", "null"]},
+    "publication_id": {"type": "string"},
+    "design": {"type": ["string", "null"]},
+    "population": {"type": "string"},
+    "n": {"type": ["integer", "null"]},
+    "exposure_or_intervention": {"type": ["string", "null"]},
+    "comparator": {"type": ["string", "null"]},
+    "outcome_id": {"type": "string"},
+    "instrument": {"type": ["string", "null"]},
+    "timepoint": {"type": ["string", "null"]},
+    "effect": {"type": ["string", "number", "null"]},
+    "ci": {"type": ["string", "null"]},
+    "direction": {"enum": ["BENEFIT", "HARM", "NULL", "MIXED", "UNCLEAR"]},
+    "mechanism_level": {"enum": [1, 2, 3, null]},
+    "directness": {"enum": ["DIRECT", "CLOSE", "PARTIALLY_INDIRECT", "VERY_INDIRECT"]},
+    "quote": {"type": ["string", "null"]},
+    "what_it_measured": {"type": "string"},
+    "what_it_did_not_measure": {"type": "string"},
+    "author_spin": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}
