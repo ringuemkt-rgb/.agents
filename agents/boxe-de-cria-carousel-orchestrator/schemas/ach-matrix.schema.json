@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ringuemkt-rgb/.agents/agents/boxe-de-cria-carousel-orchestrator/schemas/ach-matrix.schema.json",
+  "title": "BDC Analysis of Competing Hypotheses Matrix",
+  "type": "object",
+  "required": ["question_id", "hypothesis_ids", "evidence_rows"],
+  "properties": {
+    "question_id": {"type": "string"},
+    "hypothesis_ids": {"type": "array", "minItems": 2, "items": {"type": "string"}},
+    "evidence_rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["finding_id", "diagnosticity", "consistency"],
+        "properties": {
+          "finding_id": {"type": "string"},
+          "study_family_id": {"type": "string"},
+          "diagnosticity": {"type": "string", "enum": ["HIGH", "MODERATE", "LOW", "UNKNOWN"]},
+          "independence": {"type": "string", "enum": ["INDEPENDENT", "SAME_TEAM", "SAME_COHORT", "RELATED_TEAM", "UNCLEAR"]},
+          "consistency": {
+            "type": "object",
+            "additionalProperties": {"type": "string", "enum": ["++", "+", "0", "-", "--", "?"]}
+          },
+          "notes": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "preferred_model": {"type": "string"},
+    "reasoning_summary": {"type": "string"}
+  },
+  "additionalProperties": false
+}
