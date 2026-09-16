@@ -1,21 +1,83 @@
-# PALETTE MODES — Arte Editorial Boxe
+# PALETTE MODES — BOXE DE CRIA v4.2
 
-Campo e chrome NUNCA mudam. Só o par de acentos + luz.
+This file lists the named modes. Selection logic lives in `PALETTE_DECISION_ENGINE.md`; exact tokens live in `PALETTE_CANON.md`.
 
-FIXED FIELD: #0B0B0D #121317 #23252B #F3F0EA #C4A574
-ALERT: #C62828 (5–8% da área, nunca fundo)
+Field/chrome never changes identity:
 
-| MODE | Primary | Secondary | Quando |
+- CHARCOAL `#0B0B0D`
+- GRAPHITE `#121317`
+- TECHNICAL GRAY `#23252B`
+- WARM WHITE `#F3F0EA`
+- GLOVE TAN `#C4A574`
+
+Petroleum (`P900–P500`) is the preferred scientific atmosphere, not a replacement for BDC chrome.
+
+## Modes
+
+| MODE | Primary | Secondary | Typical use |
 |---|---|---|---|
-| EDITORIAL_DEFAULT | #D4A017 ouro | #3EC6C9 ciano | tese lugar × método |
-| RING_LIGHT | #E8B84A / #D4A017 | ciano só no chip | hook, CTA, identidade |
-| LAB | #3EC6C9 | ouro só no wordmark | evidência, número, GRADE |
-| ALERT | #C62828 / #7A1818 | ouro nos trilhos | mito, dano, spin |
-| TERREIRO | #B85C38 + #D4A017 | mata #2D5016 1 prop | Bahia, público, lugar |
-| NIGHT | campo #07080C + #1E3A5F | ouro #C9971C baixo | volume, recuperação |
+| EDITORIAL_DEFAULT | GOLD `#D4A017` | CYAN SIGNAL `#3EC6C9` | balanced explanation / mechanism |
+| RING_LIGHT | GOLD RING `#E8B84A` | cyan only in one technical chip | hook / identity / close |
+| LAB | CYAN SIGNAL `#3EC6C9` | gold only for brand/key identity | evidence / number / GRADE / data-viz |
+| ALERT | BDC RED `#C62828` ≤8% | GOLD `#D4A017` | myth / risk / blocked claim |
+| TERREIRO | TERRA `#B85C38` | GOLD `#D4A017` | Bahia / place / community |
+| NIGHT | NIGHT BLUE `#1E3A5F` | low gold | recovery / sleep / volume |
 
-Mapa de carrossel 8: 1 RING ou DEFAULT · 2 ALERT/DEFAULT · 3–4 LAB · 5 TERREIRO · 6 ALERT · 7 DEFAULT · 8 RING.
+Optional field tokens:
 
-Máx. 2 acentos por slide. Sem #808080. Sem fundo claro. Sem paleta ALE/LEM/NTM.
+- P900 `#020A0E`
+- P850 `#04131A`
+- P800 `#06191F`
+- NIGHT FIELD `#07080C`
 
-No fence: `PALETTE MODE: LAB` + HEX explícitos.
+## Mode router
+
+Do not choose by taste alone.
+
+Use:
+
+```text
+CONTENT JOB
++ EMOTION
++ INFOGRAPHIC GRAMMAR
++ CLAIM ROLE
++ ACCESSIBILITY
+→ PALETTE MODE
+```
+
+See `PALETTE_DECISION_ENGINE.md`.
+
+## Accent law
+
+- max 2 active accent families per slide;
+- red ≤8% and semantically justified;
+- bronze is metal/evidence support, not primary headline;
+- no neon RGB;
+- no third accent for decoration;
+- flags on canonical Criago are allowed to use their real colors.
+
+## A11Y
+
+Inherit `ACCESSIBILITY_CONTRAST.md`:
+
+```text
+body ≥4.5:1
+headline target ≥7:1
+graphics ≥3:1
+no hue-only distinction
+```
+
+## Typical 8-slide modulation
+
+Not mandatory, but useful default:
+
+1. RING_LIGHT / DEFAULT
+2. ALERT / DEFAULT
+3. LAB
+4. LAB
+5. DEFAULT / TERREIRO
+6. ALERT / DEFAULT
+7. DEFAULT
+8. RING_LIGHT
+
+The arc may change if the content job or visual grammar demands it.
