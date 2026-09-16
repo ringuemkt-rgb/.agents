@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ringuemkt-rgb/.agents/agents/boxe-de-cria-carousel-orchestrator/schemas/investigative-conclusion.schema.json",
+  "title": "BDC Investigative Conclusion",
+  "type": "object",
+  "required": ["question_id", "best_current_explanation", "certainty_by_outcome", "falsification_gate", "editorial_claim_lock"],
+  "properties": {
+    "question_id": {"type": "string"},
+    "best_current_explanation": {"type": "string"},
+    "why_it_survived": {"type": "array", "items": {"type": "string"}},
+    "main_competitors": {"type": "array", "items": {"type": "string"}},
+    "why_competitors_weakened": {"type": "array", "items": {"type": "string"}},
+    "certainty_by_outcome": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["outcome_id", "certainty"],
+        "properties": {
+          "outcome_id": {"type": "string"},
+          "certainty": {"type": "string", "enum": ["HIGH", "MODERATE", "LOW", "VERY_LOW", "INSUFFICIENT"]},
+          "directness": {"type": "string", "enum": ["DIRECT", "CLOSE", "PARTIALLY_INDIRECT", "VERY_INDIRECT"]},
+          "notes": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "sensitivity_status": {"type": "string", "enum": ["ROBUST", "ATTENUATED", "UNSTABLE", "DISAPPEARS", "CANNOT_TEST"]},
+    "residual_uncertainty": {"type": "array", "items": {"type": "string"}},
+    "critical_caveat": {"type": "string"},
+    "falsification_gate": {
+      "type": "object",
+      "required": ["critical_predictions", "what_would_weaken_or_falsify", "next_decisive_test"],
+      "properties": {
+        "critical_predictions": {"type": "array", "items": {"type": "string"}},
+        "strongest_disconfirming_evidence": {"type": "array", "items": {"type": "string"}},
+        "what_would_weaken_or_falsify": {"type": "array", "items": {"type": "string"}},
+        "next_decisive_test": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "editorial_claim_lock": {
+      "type": "object",
+      "required": ["allowed", "blocked"],
+      "properties": {
+        "allowed": {"type": "array", "items": {"type": "string"}},
+        "blocked": {"type": "array", "items": {"type": "string"}},
+        "three_second_explanation": {"type": "string"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
