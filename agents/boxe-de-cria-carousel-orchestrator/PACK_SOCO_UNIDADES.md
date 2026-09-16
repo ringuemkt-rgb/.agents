@@ -1,88 +1,66 @@
-# PACK — Soco não se mede em kg
+# PACK — Soco: newton no chip, kgf na boca
 
-Correção pública do post @boxedecria_ que punha 800 kg / 500 kg / martelo 250 kg.
+Audiência BR lê quilo. Casa grava newton. Os dois no mesmo slide.
 
-## Claim Lock
+Conversão: 1 kgf ≈ 9,8 N. kgf = quilo-força (“como se o alvo sentisse X kg por um instante”). NÃO é massa do punho.
 
-PERMITIDO:
-- Força de impacto de soco, em laboratório, reporta-se em **newtons (N)**.
-- Revisões encontram gamas largas (~500 N a ~5000 N) conforme nível, tipo de golpe e **aparelho** (Smith et al. 2000 elite rear straight ~4800 N; revisões 2020–25 sintetizam 544–5000 N).
-- Energia cinética é ½mv² (joule). Velocidade do punho importa mais do que “parecer pesado”.
-- Não há padrão ouro único de dinamometria de soco.
+## Tabela de tradução (gama dos papers, não o 800 kg antigo)
 
-PROIBIDO:
-- 800 kg profissional / 500 kg amador / mulher 600 kg.
-- Martelo 250 kg vs soco 800 kg como prova.
-- “Ciência comprovou o soco mais forte do mundo”.
-- Traduzir N → kg e vender como massa do golpe.
+| N (laboratorio) | kgf (boca) |
+|---|---|
+| ~500 N | ~50 kgf |
+| ~1000 N | ~100 kgf |
+| ~2000 N | ~200 kgf |
+| ~3500 N | ~360 kgf |
+| ~4800 N (Smith 2000, elite, n pequeno) | ~490 kgf |
+| ~5000 N teto das revisões | ~510 kgf |
 
-CERTEZA: MODERATE no facto “unidade é N e a gama é larga”. LOW em qualquer número único “o soco do cria”.
+800 kg do post velho ≈ 7800 N — **acima** da gama publicada. Não traduzir o erro.
 
-## Viral Brief
+## Exact Text Lock (corrigido para a boca)
 
-```yaml
-share_line: "Soco não se mede em quilo. Mede-se em newton."
-share_job: mythbust
-emotion: RAIVA_UTIL
-stop_test_7_words: "Soco não se mede em kg"
-category_denial:
-  feed_is: "número gigante em quilo"
-  we_are: "unidade certa + aparelho"
-stepps: {S: 1, T: 1, E: 1, P: 1, P2: 1, S2: 1}
-case_lens: dove_gap
-gesture: "nesta semana no saco: 3 rounds só a ouvir o encaixe, não o barulho"
-series_thread: "o aparelho muda o número"
-```
+1. SOCO NÃO PESA 800 KG.
+Sub: Quilo de feira é massa. Aqui a gente traduz força: kgf.
+Cards: MASSA kg | FORÇA kgf | NO CHIP N
 
-## Exact Text Lock — 8 slides
+2. O POST ANTIGO INFLUOU O NÚMERO.
+Sub: 800 kg daria uns 7800 N. Os papers andam ~500 a 5000 N.
+Cards: ERRO ~800 kg | GAMA ~50–510 kgf | UNIDADE kgf
 
-1. SOCO NÃO SE MEDE EM KG.
-Sub: Quilo é massa. Soco é força e energia.
-Chip: Correção de casa
-Cards: MASSA kg | FORÇA N | ENERGIA J
+3. KGF = O EMPURRÃO NUM INSTANTE.
+Sub: ~10 N ≈ 1 kgf. Energia continua em joule (½mv²).
+Cards: 10 N ≈ 1 kgf | VELOCIDADE m/s | NÃO é peso da luva
 
-2. O POST ANTIGO ERROU A UNIDADE.
-Sub: 800 kg de soco mistura peso de feira com impacto de laboratório.
-Cards: ERRO kg | CERTO N | LIMITE aparelho
+4. TRADUÇÃO HONESTA DA GAMA.
+Sub: De ~50 kgf (golpe leve/junior no alvo) até ~490 kgf num elite de laboratório.
+Cards: ~50 kgf | ~200 kgf | ~490 kgf elite lab
+Chip: Smith 2000 ~4800 N · n pequeno · aparelho muda
 
-3. NEWTON É A CONTA DO EMPURRÃO.
-Sub: Força = o que o alvo sente no instante. Energia = ½mv².
-Cards: FORÇA N | VELOCIDADE m/s | MASSA que entra no golpe
+5. ISSO NÃO É O TEU SACO.
+Sub: kgf ajuda a imaginar. Não é nocaute nem balança.
+Cards: ALVO de lab | NÃO ringue | NÃO KO
 
-4. OS PAPERS NÃO DÃO UM NÚMERO SÓ.
-Sub: Gama publicada ~500 N a ~5000 N. Elite em alvo instrumentado chegou ~4800 N (Smith 2000, n pequeno).
-Cards: JUNIOR ~500+ N | AMADOR milhares N | ELITE até ~5 kN
-Chip: instrumento muda a cifra
-
-5. O QUE ESSE NÚMERO NÃO MEDE.
-Sub: Não é nocaute. Não é luta. Não é o teu saco da academia sem célula.
-Cards: ALVO de lab | NÃO é ringue | NÃO é KO
-
-6. POR ISSO O BARULHO ENGANA.
-Sub: Luva mole + saco alto grita. Encaixe + velocidade pesa.
+6. BARULHO NÃO É KGF.
+Sub: Saco alto grita. Encaixe + velocidade pesam na conta.
 Cards: BARULHO | ENCAIXE | VELOCIDADE
 
-7. PROTOCOLO 3 ROUNDS.
-Sub: Saco. Ouvir o encaixe. Parar o empurrão. Não caçar número.
-Cards: R1 jab encaixe | R2 cruzado curto | R3 30 s ouvir / 30 s parar
+7. 3 ROUNDS SEM CAÇAR NÚMERO.
+Sub: Ouvir o encaixe. Parar o empurrão.
+Cards: R1 jab | R2 cruzado curto | R3 ouvir / parar
 
-8. MANDA PRO GRUPO.
-Sub: Soco não se mede em quilo. Mede-se em newton.
-Criago H1: “Quilo é saco de arroz, cria. Soco é conta.”
-CTA: Save o 7. Manda ao professor.
+8. MANDA ASSIM.
+Sub: No máximo ~500 kgf no lab. Não 800 kg de feira.
+Criago H1: “Pode falar quilo-força, cria. Não mistura com saco de arroz.”
 
-Palette: 1–2 ALERT · 3–5 LAB · 6 TERREIRO · 7 LAB · 8 RING
+## Legenda
 
-## Legenda pronta
+Soco não pesa 800 kg.
 
-Soco não se mede em kg.
+Quilo de feira é massa. Força a gente traduz pra quilo-força (kgf): uns 10 newtons ≈ 1 kgf.
+Nos papers o impacto anda mais ou menos de 50 a 510 kgf (~500 N a ~5000 N). Elite em alvo de laboratório chegou perto de 490 kgf (4800 N). O 800 kg do post antigo passava da conta.
 
-Quilo é massa. Impacto, no laboratório, vai em newton. A gama nos papers é larga (~500 N a ~5000 N) porque o aparelho muda. Um alvo de elite chegou perto de 4800 N — n pequeno, não é o teu saco.
+Criago: “Pode falar quilo-força, cria. Não mistura com saco de arroz.”
 
-A casa corrige o post que misturou kg com porrada.
-
-Criago: “Quilo é saco de arroz, cria. Soco é conta.”
-
-Save o protocolo do slide 7. Manda no grupo da academia.
+Save o slide 7. Manda no grupo.
 
 #BoxeDeCria #Fisioboxe #Criago #Biomecanica #BaixoSul
