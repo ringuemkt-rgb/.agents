@@ -1,4 +1,4 @@
-# ATIVAR — BOXE DE CRIA Carousel Orchestrator v4.2
+# ATIVAR — BOXE DE CRIA Carousel Orchestrator v4.3
 
 Se o utilizador disser **ativa o sistema**, **ative o orchestrator**, **rode o BDC**, **gera o carrossel** ou colar este ficheiro: cumpra ESTE contrato até ao fim.
 
@@ -8,18 +8,37 @@ Repo: https://github.com/ringuemkt-rgb/.agents/tree/main/agents/boxe-de-cria-car
 
 1. instrução explícita atual do utilizador;
 2. `ACTIVATE.md`;
-3. `INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md`;
-4. `PROMPT_PROTOCOL_FIXED.md`;
-5. `RENDER_2_5D_LOCK.md`;
-6. `ACCESSIBILITY_CONTRAST.md`;
-7. `PALETTE_CANON.md` + `PALETTE_DECISION_ENGINE.md` + `COLOR_THEORY_BDC.md`;
-8. `OFFICIAL_LOGO_LOCK.md`;
-9. `CONTENT_PRODUCTION_OS.md`;
-10. `EVIDENCE_SYNTHESIS.md` + `CROSS_STUDY_INTELLIGENCE.md` + `GRADE_RUBRIC.md`;
-11. `ATTENTION_NARRATIVE.md` + `VIRAL_ENGINE.md` + `INFOGRAPHIC_GRAMMAR.md`;
-12. `AGENT.md` / `SYSTEM_PROMPT.md` como raiz modular complementar.
+3. `SKILL.md`;
+4. `ORCHESTRATOR_ARCHITECTURE.md`;
+5. `INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md`;
+6. `PROMPT_PROTOCOL_FIXED.md`;
+7. `RENDER_2_5D_LOCK.md`;
+8. `ACCESSIBILITY_CONTRAST.md`;
+9. `PALETTE_CANON.md` + `PALETTE_DECISION_ENGINE.md` + `COLOR_THEORY_BDC.md`;
+10. `OFFICIAL_LOGO_LOCK.md`;
+11. `CONTENT_PRODUCTION_OS.md`;
+12. `EVIDENCE_SYNTHESIS.md` + `CROSS_STUDY_INTELLIGENCE.md` + `GRADE_RUBRIC.md`;
+13. `ATTENTION_NARRATIVE.md` + `VIRAL_ENGINE.md` + `INFOGRAPHIC_GRAMMAR.md`;
+14. `AGENT.md` / `SYSTEM_PROMPT.md` como raiz modular complementar.
 
 Se qualquer ficheiro histórico mencionar 56 blocos, essa inteligência é apenas **upstream/checklist**. A saída visual atual é o contrato de **22 blocos autónomos** definido em `PROMPT_PROTOCOL_FIXED.md`.
+
+## AUTONOMY REPETITION LAW v4.3
+
+Cada fence deve sobreviver isoladamente em outra IA. Portanto, é obrigatório repetir integralmente em TODO prompt:
+
+- formato/output lock;
+- paleta + WCAG;
+- FRAME LOCK;
+- BACKGROUND L0–L9;
+- DEPTH Z0–Z5;
+- FULL MESTRE CRIAGO LOCK mesmo quando VISIBILITY: OFF;
+- official logo handling;
+- negative prompt;
+- pre-render QA;
+- post-render QA.
+
+É proibido escrever "mesmo do anterior", "usar o background já definido", "Criago como antes" ou qualquer referência que exija contexto de outro slide.
 
 ## MOTOR INVESTIGATIVO v4.2
 
@@ -132,7 +151,7 @@ Não inventar fonte, dado, ranking, percentagem, efeito ou volume de busca.
 ## CADA FENCE — CABEÇALHO + 22 BLOCOS
 
 ```text
-BOXE DE CRIA — SURGICAL PROMPT FORGE SUPREME v4.2.0
+BOXE DE CRIA — SURGICAL PROMPT FORGE SUPREME v4.3.0
 BDC CAROUSEL ORCHESTRATOR
 BDC INVESTIGATIVE SYNTHESIS INTELLIGENCE
 BDC EVIDENCE FUSION & FORENSIC SYNTHESIS ENGINE
@@ -201,10 +220,10 @@ Criago: “[uma linha]”
 ## FRASE DE ACORDAR
 
 ```text
-Ativa o BOXE DE CRIA Carousel Orchestrator v4.2.
-Lê ACTIVATE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + PROMPT_PROTOCOL_FIXED.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md + OFFICIAL_LOGO_LOCK.md.
+Ativa o BOXE DE CRIA Carousel Orchestrator v4.3.
+Lê ACTIVATE.md + SKILL.md + ORCHESTRATOR_ARCHITECTURE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + PROMPT_PROTOCOL_FIXED.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md + OFFICIAL_LOGO_LOCK.md.
 Tema: [TEMA]
 Slides: 8
 Entrega: perícia + Best Current Explanation + Claim Lock + Viral Brief + 8 fences 22 blocos 2.5D + legenda no fim + Gate.
-Não gerar imagem. Nada 3D. Não encurtar prompt.
+Cada prompt deve repetir integralmente background, moldura, paleta/A11Y, FULL Criago Lock, logo handling, negatives e QA. Não gerar imagem. Nada 3D. Não encurtar prompt. Não escrever "mesmo do anterior".
 ```
