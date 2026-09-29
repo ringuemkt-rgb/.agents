@@ -105,6 +105,19 @@
         "string",
         "null"
       ]
+    },
+    "coverage_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "unique_surface_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
     }
   }
 }
