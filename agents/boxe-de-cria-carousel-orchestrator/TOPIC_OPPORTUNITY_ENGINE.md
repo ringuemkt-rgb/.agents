@@ -49,6 +49,20 @@ Avaliar separadamente 0–3:
 
 ---
 
+## 2.1 Coverage and independence modifiers
+
+Before prioritization, note:
+
+- UNIQUE SURFACE COUNT — independent surfaces matter more than repeated copies;
+- COVERAGE STATUS — MISSING / COVERED_WEAK / COVERED_STALE / COVERED_STRONG;
+- GEOGRAPHIC VALUE — a local question can be strategically important without high absolute volume;
+- OWNED SIGNAL — D4 can outweigh generic trend noise for BDC;
+- QUERY FAMILY — prioritize clusters, not duplicate phrasings.
+
+These are modifiers, not hidden multipliers.
+
+---
+
 ## 3. Non-compensatory gates
 
 Um tema NÃO sobe só porque tem demanda.
@@ -125,6 +139,8 @@ evidence_gate:
 brand_moat:
 competitor_gap:
 visual_teachability:
+coverage_status:
+unique_surface_count:
 series_potential:
 recommended_format:
 hook_family_candidates:
