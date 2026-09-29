@@ -1,88 +1,156 @@
-# Viral Engine — o que faltava para o prompt ser mais forte no feed
+# BDC VIRAL ENGINE v2.0
 
-Viral não se garante. Este módulo sobe probabilidade de **parar o dedo / salvar / mandar no grupo da academia** sem mentir evidência.
+Viralidade não é garantível. O sistema otimiza stop, compreensão, salvamento e compartilhamento sem romper Claim Lock.
 
-Hierarquia: Claim Lock > STYLE LOCK > este motor > humor.
+Hierarquia:
+Claim Lock > A11Y/Perception > Brand > Viral Engine > Humor.
 
-## 1. Física da plataforma (Instagram carrossel 4:5)
+## 1. Social object
 
-- Slide 1 tem ~1,5–3 s. Se a tese não cabe em 7 palavras, morreu.
-- Grelha do perfil corta o topo e a base: headline no terço médio-alto, não na safe só de arte.
-- Som off. Texto é o áudio.
-- Métrica que importa para este brand: **salvamentos + compartilhar no directo**, não só like.
-- Slide 1 ≠ capa de Reels. Se fores recortar 1:1 depois, testa o centro.
+Todo carrossel deve ter um motivo de envio:
 
-No fence 1:
-`STOP TEST: 7 words readable at grid thumbnail`
+UTILITY — “usa isso no treino”.
+IDENTITY — “isso é a nossa escola”.
+STATUS — “olha a nuance que faltou”.
+MYTHBUST — “isso aqui corrige o mito”.
+PLACE — “isso explica nossa realidade”.
 
-## 2. Objecto social (porque é que alguém manda)
+Obrigatório:
+```text
+SHARE_LINE:
+SHARE_JOB:
+SAVE_REASON:
+```
 
-Um carrossel viral neste nicho é quase sempre UM destes:
+## 2. Hook tournament
 
-| Objecto | Frase que o viewer encaminha |
-|---|---|
-| Utilidade | “toma o protocolo” |
-| Identidade | “isso é a gente” |
-| Status de quem sabe | “vê, não é o que o influencer disse” |
-| Correção de mito | “te falei que isso frita o ombro” |
-| Pertencer ao lugar | “Bahia não é laboratório” |
+Gerar 16–24 opções.
 
-Obrigatório no dossiê, antes dos fences:
-`SHARE_LINE: "[frase de 8–14 palavras que cabe no WhatsApp]"`
-`SHARE_JOB: utility | identity | status | mythbust | place`
+Eliminar:
+- overclaim;
+- >Claim Lock;
+- clickbait vazio;
+- medo clínico;
+- “segredo”;
+- “ninguém te conta”;
+- número sem fonte.
 
-Sem SHARE_LINE o prompt é bonito e mudo.
+Selecionar 3 finalistas por:
+- clarity;
+- curiosity;
+- specificity;
+- proofability;
+- share potential.
 
-## 3. Emoção única
+Escolha final deve manter PROOFABILITY alta.
 
-Um carrossel, uma temperatura:
-ORGULHO | RAIVA_ÚTIL (mito) | CURIOSIDADE | CALMA_DE_MESTRE | URGENCIA_DE_CORPO
+## 3. STOP lock
 
-Misturar raiva + fofo + aula no mesmo 8-pack dilui.
-Criago H-level casa com a temperatura: H0 calma/dano · H1 orgulho · H2 mito · H3 raro.
+Meta operacional:
+- headline rápida de entender;
+- idealmente ≤7 palavras fortes;
+- uma ideia;
+- contraste alto;
+- funciona em thumbnail.
 
-## 4. Voz (o sistema ainda estava visual demais)
+Não tratar “2 segundos” como fato universal de comportamento; é meta editorial.
 
-Léxico BDC — preferir: cria, ringue, saco, guarda, volume, recuperação, amador, calor, chão, professor.
-Banir no Exact Text Lock: otimizar, performar, mindset, jornada, hack, secreto, comprovado pela ciência, game changer, unlock.
+## 4. Share/save design
 
-Ritmo de headline: sujeito + verbo + corte. Não gerúndio corporativo.
-Certo: “A Bahia não virou Cuba.”
-Errado: “Descubra como otimizar sua performance com método científico.”
+Share cresce quando o post serve como:
+- explicação curta;
+- correção;
+- identidade;
+- checklist;
+- mapa mental.
 
-## 5. Distinctiveness (por que este post não é mais um de boxe)
+Save cresce quando:
+- há protocolo;
+- sequência;
+- comparação;
+- referência;
+- técnica reutilizável.
 
-Antes do hook, uma linha:
-`CATEGORY DENIAL: o feed já está cheio de [X]; este post recusa [X] e oferece [Y].`
+CTA deve combinar com conteúdo. Não pedir “salva” em slide sem utilidade futura.
 
-X típico: fisiculturista, cardápio de hotel, número sem unidade, pose onlyfans, “disciplina” vazia.
-Y típico: limite do estudo + chão da Bahia + Criago.
+## 5. Distinctiveness
 
-## 6. Dual gate (viral vs rigor)
+Antes do hook:
+```text
+CATEGORY DENIAL:
+FEED CLICHÉ:
+BDC ALTERNATIVE:
+```
 
-| Gate | Reprova se |
-|---|---|
-| RIGOR | tese fora do Claim Lock; número órfão; mecanismo vendido como luta |
-| STOP | slide 1 ilegível na grelha; 7+ palavras fracas; sem SHARE_LINE |
-| VOZ | palavra banida; tom de curso americano |
-| SOMBRA | humilha o amador; xenofobia; medo de morte |
+A diferenciação deve vir de:
+- evidence;
+- Bahia/realidade local quando pertinente;
+- linguagem de luta;
+- visual 2.5D;
+- Criago;
+- honestidade sobre limite.
 
-Pode ser APROVADO rigor e FRACO stop — aí reescreve só o Exact Text Lock do slide 1. Não mexer na evidência.
+Não copiar concorrente com nova paleta.
 
-## 7. Sequência entre posts (não só 8 slides)
+## 6. Emotion
 
-Viral de marca é série: mito → mecanismo → protocolo → lugar.
-Cada carrossel fecha um arco e deixa 1 fio para o próximo post (não para o slide 2 só).
-`SERIES_THREAD: [fio de 6 palavras]`
+Escolher uma dominante:
+CURIOSIDADE | CALMA_DE_MESTRE | ORGULHO | RAIVA_ÚTIL | URGENCIA_DE_CORPO.
 
-## 8. Bloco extra obrigatório em TODO fence 1
+Em saúde/TEA:
+preferir CALMA_DE_MESTRE/CURIOSIDADE.
+Sem medo como alavanca.
+
+## 7. Caption distribution
+
+Legenda:
+- STOP;
+- 2–6 linhas;
+- uma frase Criago;
+- 1 CTA útil;
+- 3–5 hashtags totais.
+
+Não encher de hashtag.
+
+## 8. Series logic
+
+Um dossiê pode gerar cluster:
+mito → mecanismo → estudo → aplicação → erro → protocolo → história.
+
+Fechar cada post; abrir apenas um fio legítimo para o próximo.
+
+## 9. Experiment hook
+
+Quando métricas estiverem disponíveis:
+```text
+TESTABLE VARIABLE:
+HYPOTHESIS:
+PRIMARY METRIC:
+CONFOUNDER NOTES:
+```
+
+Nunca chamar observação de causalidade.
+
+## 10. Dual/quad gate
+
+RIGOR — claim correto?
+STOP — capa clara?
+UTILITY — vale salvar/enviar?
+VOICE — parece BDC?
+
+Se rigor passar e STOP falhar, reescrever hook/capa sem mexer na evidência.
+
+## 11. Fence 1 insertion
 
 ```text
 VIRAL LOCK
-STOP TEST: [7 words]
-SHARE_LINE: "..."
-SHARE_JOB: identity|utility|mythbust|status|place
-EMOTION: ORGULHO|... 
-CATEGORY DENIAL: feed=X / nós=Y
-SERIES_THREAD: ...
+HOOK FAMILY:
+STOP:
+SHARE_LINE:
+SHARE_JOB:
+SAVE_REASON:
+EMOTION:
+CATEGORY DENIAL:
+SERIES THREAD:
+A/B HYPOTHESIS OPTIONAL:
 ```
