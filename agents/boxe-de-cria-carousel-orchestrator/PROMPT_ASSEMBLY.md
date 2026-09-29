@@ -1,4 +1,4 @@
-# PROMPT ASSEMBLY — v4.2 compatibility note
+# PROMPT ASSEMBLY — v5.1 compatibility note
 
 The old 12-group assembly has been superseded by `PROMPT_PROTOCOL_FIXED.md`.
 
@@ -14,24 +14,24 @@ Do not use this file to shorten the prompt or collapse required locks.
 01 TASK / OUTPUT LOCK
 02 PROJECT IDENTITY
 03 EVIDENCE / CLAIM LOCK
-04 CONTENT JOB / AUDIENCE
-05 NARRATIVE / RETENTION
+04 CONTENT JOB / AUDIENCE / PERSONA
+05 NARRATIVE / RETENTION / NEURODESIGN
 06 EXACT TEXT LOCK
-07 COLOR SYSTEM
-08 TYPOGRAPHY
+07 COLOR SYSTEM / A11Y / PERCEPTION
+08 TYPOGRAPHY / LEGIBILITY
 09 FRAME LOCK
 10 BACKGROUND L0–L9
 11 DEPTH Z0–Z5
 12 HERO / COMPOSITION
 13 BIOMECHANICS and/or INFOGRAPHIC
-14 VISUAL CLAIM MAP
+14 VISUAL CLAIM MAP / TRACEABILITY
 15 CAMERA
 16 LIGHTING
 17 MATERIALITY
 18 MESTRE CRIAGO FULL LOCK
 19 OFFICIAL BRAND ASSET
 20 NEGATIVE PROMPT
-21 PRE-RENDER QA
+21 PRE-RENDER QA / COMPILER
 22 POST-RENDER QA
 ```
 
@@ -40,6 +40,8 @@ Do not use this file to shorten the prompt or collapse required locks.
 Before assembly, the compiler receives only the compressed editorial outputs of the investigative system:
 
 ```text
+AUDIENCE / DEMAND HANDOFF
+TOPIC OPPORTUNITY
 BEST CURRENT EXPLANATION
 APPROVED THESIS
 CERTAINTY
@@ -58,6 +60,7 @@ Do not send ACH matrix, raw DAG, GRADE worksheet, study-family ledger or search 
 - `PALETTE_CANON.md` + `PALETTE_DECISION_ENGINE.md` — dark-field/petroleum-aware palette selection.
 - `OFFICIAL_LOGO_LOCK.md` — external master asset by default.
 - full Criago lock even when OFF.
+- `GEMINI_PRODUCTION.md` — target adapter when Gemini Image is used; never shortens the 22-block fence.
 
 ## Legacy mapping
 
