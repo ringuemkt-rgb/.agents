@@ -1,17 +1,22 @@
 # Runbook — investigative evidence-first carousel → image model
 
-System version: **4.2.0-portable.1**
+System version: **5.1.0-portable.1**
 
-## 1. Intake
+## 1. Audience / Demand Intake
 
-1. Audience + problem.
-2. Question decomposition.
-3. Choose PICO / PECO / mechanism / diagnostic / prognostic frame.
-4. Select Tier 1 / 2 / 3.
+1. Capture raw user query / comment / search signal.
+2. Identify persona, intent, declared pain, functional problem, desire and JTBD.
+3. Classify demand D0–D4 and freshness F0–F3 when data exist.
+4. Map competitor gap and BDC expertise moat.
+5. Route via Topic Opportunity P0–P3 / HOLD.
+6. Build Content Graph when the topic is expandable.
+7. Question decomposition.
+8. Choose PICO / PECO / mechanism / diagnostic / prognostic frame.
+9. Select Tier 1 / 2 / 3.
 
 ## 2. Investigation
 
-5. Generate rival hypotheses before deep reading.
+10. Generate rival hypotheses before deep reading.
 6. Search without self-imposed result cap until saturation or documented `TOOL_LIMIT`.
 7. Build Evidence Inventory + finding atoms.
 8. Resolve study families / overlapping cohorts.
@@ -59,11 +64,11 @@ System version: **4.2.0-portable.1**
 
 ## 5. Render / publication
 
-44. If user explicitly asks render: generate one slide at a time.
-45. Post-render QA.
-46. Caption PT-BR only after final fence.
-47. Final Gate: `APROVADO | APROVADO_COM_RESSALVAS | REPROVADO`.
-48. When real analytics exist, log account-relative learning without inventing causality.
+49. If target = Gemini Image: apply GEMINI_PRODUCTION.md, explicit 4:5 when available, one slide per generation.
+50. Generate slide 01 → post-render QA → repair → slide 02…N.
+51. Caption PT-BR only after final fence.
+52. Final Gate: `APROVADO | APROVADO_COM_RESSALVAS | REPROVADO`.
+53. When real analytics exist, log account-relative learning without inventing causality.
 
 ## Forbidden
 
