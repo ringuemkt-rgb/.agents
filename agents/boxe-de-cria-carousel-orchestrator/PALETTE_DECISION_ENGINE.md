@@ -1,222 +1,159 @@
-# BDC PALETTE DECISION ENGINE — DARK FIELD v1.0
+# BDC PALETTE DECISION ENGINE — DARK FIELD v2.0
 
-Purpose: choose a coherent dark palette for each slide based on **content job, evidence role, emotion, infographic grammar and accessibility**, while preserving BOXE DE CRIA identity.
+Purpose: choose a coherent dark palette by content job, evidence role, emotion, infographic grammar, accessibility and perceptual hierarchy.
 
-This engine does not invent new brand colors. It selects and combines tokens from `PALETTE_CANON.md`.
+This engine selects tokens from PALETTE_CANON.md. It does not invent "brain colors".
 
-## 1. Base doctrine
+## 1. Doctrine
 
-The user preference is dark visual fields, especially **azul-petróleo**, charcoal and deep navy.
+Preference:
+azul-petróleo + charcoal + deep navy.
 
-BDC identity must still read immediately:
-
-- charcoal/graphite = structural chrome / house;
+Identity:
+- charcoal/graphite = house/chrome;
 - warm white = truth/readability;
-- gold = identity / ownership / hero emphasis;
-- cyan = method / science / information;
-- bronze = evidence metal / hairline, not primary headline;
-- red = stop / risk / blocked claim, never decoration;
-- petroleum = atmosphere / scientific depth;
-- terra = place / Bahia;
-- night blue = recovery / volume / nocturnal mood.
+- gold = identity/ownership;
+- cyan = method/evidence;
+- bronze = metal/hairline;
+- red = alert/blocked claim;
+- petroleum = scientific depth;
+- terra = place/Bahia.
 
-## 2. Field architecture
+Color semantics are BDC conventions, not universal psychological laws.
 
-Default dark field stack:
+## 2. Field stack
 
 ```text
 L0 ATMOSPHERE: P900 #020A0E or P850 #04131A
 L1 VIGNETTE: CHARCOAL #0B0B0D
 L2 STRUCTURE: GRAPHITE #121317
-L3 CARDS: TECHNICAL GRAY #23252B with dark transparency equivalent
+L3 CARDS: TECHNICAL GRAY #23252B
 L4 TEXT: WARM WHITE #F3F0EA
-L5 ACCENT 1: selected by mode
-L6 ACCENT 2: selected by mode
+L5 ACCENT 1
+L6 ACCENT 2
 ```
 
-Petroleum is allowed to dominate the atmosphere, but the frame/chrome should retain BDC charcoal/graphite so the carousel does not look like a generic science app.
+## 3. Modes
 
-## 3. Mode selection by editorial job
+EDITORIAL_DEFAULT
+- P900/P850 + charcoal;
+- gold + cyan;
+- calm authority.
 
-### EDITORIAL_DEFAULT
-Use when: explanation, mechanism, balanced authority.
+LAB
+- P900→P800;
+- cyan primary;
+- gold only identity;
+- measurement/evidence.
 
-- field: P900/P850 + charcoal chrome;
-- accent 1: GOLD #D4A017;
-- accent 2: CYAN SIGNAL #3EC6C9;
-- mood: calm authority.
+RING_LIGHT
+- charcoal + dark petroleum;
+- gold ring primary;
+- one cyan chip;
+- cover/identity.
 
-### LAB
-Use when: evidence, measurement, study, uncertainty, data-viz.
+ALERT
+- charcoal/P900;
+- red ≤8%;
+- gold rail;
+- warning/correction.
 
-- field: P900 → P800 petroleum;
-- accent 1: CYAN SIGNAL #3EC6C9;
-- accent 2: GOLD only for wordmark/key identity;
-- bronze: evidence chip/hairline only;
-- mood: precision.
+TERREIRO
+- charcoal/P900;
+- terra + gold;
+- place/community.
 
-### RING_LIGHT
-Use when: cover, identity, final synthesis, hero quote.
+NIGHT
+- #07080C + #1E3A5F;
+- restrained gold/cyan;
+- recovery/quiet.
 
-- field: charcoal + very dark petroleum depth;
-- accent 1: GOLD RING #E8B84A;
-- accent 2: cyan only in one technical chip;
-- mood: pride / authority.
+## 4. Perceptual selection rule
 
-### ALERT
-Use when: myth, risk, blocked claim, correction.
+Choose palette by:
+`CONTENT JOB + GRAMMAR + HIERARCHY + CONTRAST + BRAND`.
 
-- field: charcoal / P900;
-- accent 1: BDC RED #C62828, ≤8% of area;
-- accent 2: GOLD #D4A017 for brand rail;
-- warm white carries most copy;
-- mood: controlled warning, never panic.
+Do NOT choose by:
+- “red sells”;
+- “blue creates trust”;
+- “green calms the brain”.
 
-### TERREIRO
-Use when: Bahia, place, community, local application.
+Color psychology is context-dependent; contrast and learned brand semantics have priority.
 
-- field: charcoal + P900;
-- accent 1: TERRA #B85C38;
-- accent 2: GOLD #D4A017;
-- optional MATA #2D5016 on one prop only;
-- mood: rooted / local.
+## 5. Accent budget
 
-### NIGHT
-Use when: recovery, sleep, training volume, quiet reflection.
-
-- field: NIGHT FIELD #07080C + NIGHT BLUE #1E3A5F;
-- accent 1: low GOLD #C9971C/#D4A017 family according to canon;
-- accent 2: restrained cyan chip;
-- mood: quiet technical.
-
-## 4. Mode selection by infographic grammar
-
-| Grammar | Preferred mode | Reason |
-|---|---|---|
-| CINE_COVER | RING_LIGHT / DEFAULT | stop + identity |
-| HUB | LAB / DEFAULT | mechanism / nodes |
-| SPLIT | LAB vs ALERT or cyan vs gold | comparison |
-| PATH | DEFAULT / TERREIRO | temporal ribbon / journey without cliché |
-| FLAT_CHART | LAB | data integrity |
-| STACK_STEPS | DEFAULT | protocol/saveability |
-| CLIPBOARD | LAB / DEFAULT | evidence/system |
-| ISO_FLOW | DEFAULT / LAB | process, but always 2.5D not engine |
-
-Never choose palette only because it “looks cool”. The palette must reinforce the claim role.
-
-## 5. Emotion × color map
-
-This is brand semantics, not universal color psychology.
-
-```text
-CALMA_DE_MESTRE → petroleum + warm white + cyan
-CURIOSIDADE → petroleum + cyan + one gold keyword
-ORGULHO → charcoal + gold + warm white
-RAIVA_UTIL → charcoal + restrained red + warm white
-URGENCIA_DE_CORPO → charcoal/petroleum + amber + red micro-alert
-PERTENCIMENTO/BAHIA → charcoal + terra + gold
-```
-
-## 6. Accent budget
-
-Default visual area:
-
-- dark neutrals/environment: 80–88%;
+- neutral/environment: 80–88%;
 - accent 1: 8–12%;
 - accent 2: 4–6%;
-- red: ≤8%, only when semantically justified.
+- red: ≤8%.
 
-No third accent unless it is a real flag color inside the canonical Criago patch/flag.
+No third accent unless real flag color in canonical asset.
 
-## 7. Headline color logic
+## 6. Headline
 
-Primary headline defaults:
+Default:
+- #F3F0EA;
+- one keyword gold or cyan;
+- red only one large alert word;
+- bronze not AAA headline.
 
-- WARM WHITE #F3F0EA;
-- one keyword may be GOLD #D4A017 or CYAN SIGNAL #3EC6C9;
-- never bronze as the main AAA headline;
-- red only for one large warning word;
-- max two colored lines/keywords total.
+## 7. Data-viz
 
-## 8. Data-viz palette
+Use multiple channels:
+- hue + label;
+- hue + shape;
+- hue + dash;
+- position.
 
-Quantitative graphics remain flat/orthographic.
+Never hue-only.
 
-Use:
+No 3D bars, perspective magnitude or decorative gradients.
 
-- primary series: cyan + shape/label;
-- comparator: warm white / gold + different shape/line style;
-- risk/blocked threshold: red with symbol/label;
-- uncertainty: line/hatch/opacity + textual cue, never color alone.
+## 8. Accessibility
 
-Never use 3D bars, gradients as magnitude, perspective or hue-only legends.
-
-## 9. Accessibility gate
-
-Inherit `ACCESSIBILITY_CONTRAST.md`.
-
-Required:
+Inherit ACCESSIBILITY_CONTRAST.md.
 
 ```text
 body ≥4.5:1
 headline target ≥7:1
 meaningful graphics ≥3:1
-no hue-only distinction
 ```
 
-Known safe/high-performing dark-field pairings:
+## 9. Sunlight/mobile robustness
 
-- warm white on charcoal;
-- cyan on charcoal;
-- gold on charcoal.
+Prefer luminance contrast strong enough to survive:
+- phone brightness variation;
+- outdoor viewing;
+- compressed screenshots.
 
-Known caution/fail-prone:
+If a distinction disappears in grayscale, add label/shape.
 
-- bronze as AAA headline;
-- red body text;
-- gold on tan/terra;
-- white on gold plate;
-- cyan on lighter petroleum without verification.
-
-## 10. Viral-design principle
-
-Color does not create virality. It improves:
-
-- stop power;
-- recognition;
-- readability;
-- semantic memory;
-- screenshot/share legibility.
-
-The palette may amplify a strong idea, but it must never replace Claim Lock, SHARE_LINE or useful information.
-
-## 11. Fence insertion
-
-Every block 07 should contain:
+## 10. Fence insertion
 
 ```text
 PALETTE DECISION:
-CONTENT JOB: [job]
-EMOTION: [emotion]
-GRAMMAR: [grammar]
-MODE: [mode]
-FIELD: [HEX]
-ACCENT 1: [HEX + semantic role]
-ACCENT 2: [HEX + semantic role]
-ACCENT BUDGET: [area rules]
-A11Y: body ≥4.5:1 | headline target ≥7:1 | graphics ≥3:1
-NO hue-only legend. NO third accent. NO neon RGB.
+CONTENT JOB:
+EMOTION:
+GRAMMAR:
+MODE:
+FIELD:
+ACCENT 1:
+ACCENT 2:
+COLOR SEMANTICS:
+ACCENT BUDGET:
+A11Y:
+GRAYSCALE/COLOR-BLIND BACKUP:
+NO universal-color psychology.
 ```
 
-## 12. QA fail
+## 11. Fail
 
 Reject if:
-
-- the slide looks like another brand because petroleum replaced all BDC chrome;
-- 3+ accent families compete;
-- cyan glow becomes neon sci-fi;
-- gold is used on tan/terra without adequate contrast;
-- red is decorative rather than semantic;
-- a chart depends only on color;
-- headline readability degrades for mood;
-- palette contradicts content role (e.g. ALERT red on a calm neutral evidence slide without risk claim).
+- petroleum erases BDC chrome;
+- 3+ accents compete;
+- cyan becomes sci-fi neon;
+- red decorative;
+- gold on tan/terra without verified contrast;
+- chart depends only on hue;
+- color claim is presented as neuroscience;
+- headline readability is sacrificed for mood.
