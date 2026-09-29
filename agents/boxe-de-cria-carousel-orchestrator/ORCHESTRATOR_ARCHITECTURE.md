@@ -1,8 +1,8 @@
-# BOXE DE CRIA Carousel Orchestrator — Architecture v4.3
+# BOXE DE CRIA Carousel Orchestrator — Architecture v5.0
 
 ## Objetivo
 
-Este documento organiza o sistema em camadas para impedir conflito entre módulos, duplicação de autoridade e regressões de protocolo.
+Organizar o sistema em camadas com autoridade única, investigação adversarial, neurodesign baseado em evidência, compilação visual e aprendizado com métricas reais.
 
 ## Single Source of Truth
 
@@ -13,30 +13,35 @@ ACTIVATE.md
    ↓
 SKILL.md
    ↓
-AGENT.md / SYSTEM_PROMPT.md
-   ↓
 INVESTIGATIVE LAYER
    ↓
-EDITORIAL LAYER
+RED TEAM / CLAIM LOCK
+   ↓
+EDITORIAL + PERCEPTION LAYER
    ↓
 VISUAL COMPILER
    ↓
-QA / GATE
+PROMPT COMPILER / PRE-RENDER QA
+   ↓
+RENDER
+   ↓
+POST-RENDER MULTIMODAL QA
+   ↓
+PUBLISH
+   ↓
+METRICS / EXPERIMENT / LEARNING
 ```
 
 ## Camada A — Controle
 
 ### ACTIVATE.md
-Contrato de ativação e precedência.
+Contrato de ativação, precedência e autonomia.
 
 ### SKILL.md
-Comportamento portátil da skill e leis operacionais.
+Comportamento portátil, leis operacionais e output contract.
 
-### AGENT.md
-Missão, responsabilidades, inferência, segurança editorial e limites do agente.
-
-### SYSTEM_PROMPT.md
-Raiz model-agnostic para implementação em outras IAs.
+### AGENT.md / SYSTEM_PROMPT.md
+Raiz complementar model-agnostic.
 
 ## Camada B — Investigação
 
@@ -44,30 +49,36 @@ Raiz model-agnostic para implementação em outras IAs.
 Hipóteses rivais, ACH, causalidade, falsificação, sensibilidade e Best Current Explanation.
 
 ### EVIDENCE_SYNTHESIS.md
-Inventário, famílias de estudo, risco de viés, heterogeneidade, aplicabilidade e certainty.
+Inventário, famílias, risco de viés, heterogeneidade, aplicabilidade.
 
 ### CROSS_STUDY_INTELLIGENCE.md
-Finding atoms, saturação, ligação entre estudos e independência de replicação.
+Finding atoms, saturação, independência e ligação entre estudos.
 
 ### GRADE_RUBRIC.md
 Certeza por outcome.
 
-Saída desta camada:
-`BEST CURRENT EXPLANATION + CLAIM LOCK`.
-
-## Camada C — Estratégia editorial
-
-### CONTENT_PRODUCTION_OS.md
-Pipeline completo de produção.
-
-### ATTENTION_NARRATIVE.md
-Payoff, open loop, next-slide desire e handoff.
-
-### VIRAL_ENGINE.md
-Hook, share line, save reason e distribuição sem romper Claim Lock.
+### RED_TEAM_EVALUATION_ENGINE.md
+Tenta reprovar tese, visual e narrativa; provenance ledger; originality guard.
 
 Saída:
-`VIRAL BRIEF + DIDACTIC ARC`.
+`BEST CURRENT EXPLANATION + CLAIM LOCK`.
+
+## Camada C — Estratégia editorial e psicológica
+
+### VIRAL_ENGINE.md
+Hook tournament, share/save logic e distribuição sem romper Claim Lock.
+
+### ATTENTION_NARRATIVE.md
+Arco, payoff, open loop, handoff e archetypes.
+
+### NEUROMARKETING_PERCEPTION_ENGINE.md
+Percepção, Gestalt, processamento fluente, legibilidade, tipografia, cor contextual e ética.
+
+Princípio:
+"neuromarketing" não é neuro-magia. Toda regra deve ser E1/E2/E3/E4 ou X.
+
+Saída:
+`VIRAL BRIEF + DIDACTIC ARC + PERCEPTION PLAN`.
 
 ## Camada D — Compilador visual
 
@@ -78,22 +89,22 @@ Contrato final dos 22 blocos.
 Molde operacional.
 
 ### INFOGRAPHIC_GRAMMAR.md
-Escolha de gráfico/diagrama/estrutura didática.
+Escolha de diagrama/estrutura.
 
 ### PALETTE_CANON.md
 Tokens oficiais.
 
 ### PALETTE_DECISION_ENGINE.md
-Seleção de modo por conteúdo, emoção e gramática.
+Seleção de modo por conteúdo, emoção, gramática, A11Y e hierarquia perceptiva.
 
 ### COLOR_THEORY_BDC.md
-Semântica e coerência cromática.
+Semântica cromática da marca.
 
 ### ACCESSIBILITY_CONTRAST.md
 WCAG 2.2.
 
 ### RENDER_2_5D_LOCK.md
-Lei visual 2.5D.
+Somente 2.5D editorial.
 
 ### OFFICIAL_LOGO_LOCK.md
 Logo oficial como asset externo.
@@ -101,105 +112,142 @@ Logo oficial como asset externo.
 Saída:
 `N FENCES AUTÔNOMOS`.
 
-## Camada E — Brand character
+## Camada E — Prompt Compiler
 
-Mestre Criago é compilado dentro do bloco 18 de CADA fence.
+### PROMPT_COMPILER_QA.md
 
-A descrição canônica nunca depende de outro slide.
+Executa:
+- structural lint;
+- contradiction lint;
+- Claim→Visual traceability;
+- density linter;
+- thumbnail simulation;
+- sunlight/low-contrast;
+- color-blind robustness;
+- pre-render QA.
 
-O personagem pode estar `VISIBILITY: OFF`, mas o FULL LOCK continua presente para evitar identity drift em modelos que processam prompts isoladamente.
+Depois do render:
+- text check;
+- anatomy;
+- brand;
+- data;
+- A11Y;
+- 2.5D;
+- auto-repair.
+
+## Camada F — Brand character
+
+Criago compila no bloco 18 de TODO fence.
+
+FULL LOCK sempre, mesmo VISIBILITY: OFF.
+
+## Camada G — Learning Loop
+
+### EDITORIAL_LEARNING_ENGINE.md
+
+Registra:
+- metrics;
+- feature tags;
+- creative fingerprint;
+- hook family;
+- visual grammar;
+- CTA;
+- observed pattern;
+- next test.
+
+Regra:
+correlação não vira causalidade. Um post não cria regra.
 
 ## Autonomy Repetition Law
 
-Para cada slide, os seguintes componentes nunca podem ser abreviados por referência:
-
+Nunca abreviar por referência:
 ```text
 FORMAT
+CLAIM
 PALETTE
 A11Y
+NEURODESIGN
+TYPOGRAPHY
 FRAME
 BACKGROUND
 DEPTH
 CRIAGO
 LOGO
 NEGATIVE
+COMPILER
 QA
 ```
 
-A repetição deliberada garante portabilidade ChatGPT ↔ Gemini ↔ Claude ↔ Grok ↔ DeepSeek ↔ modelos locais.
-
-## Visual architecture
+## Visual architecture v5
 
 ### Frame
-BDC chrome = charcoal/graphite matte.
+BDC chrome = charcoal/graphite matte, hairline bronze/gold controlado, L-corners ciano discretos.
 
 ### Environment
-Preferência por campo escuro:
-- petroleum;
-- deep navy;
-- charcoal.
+petroleum/deep navy/charcoal.
 
-### Accent policy
-No máximo 2 famílias principais por slide.
+### Accent
+máximo 2 famílias principais.
 
 ### Depth
-Apenas 2.5D:
-- overlap;
-- occlusion;
-- contact shadow;
-- selective blur;
-- shallow perspective.
+2.5D por overlap, occlusion, contact shadow, selective blur e shallow perspective.
+
+### Typography
+- headline: condensed display, poucas palavras;
+- corpo: sans legível, não condensada;
+- sem ALL CAPS em parágrafo;
+- source essencial ≥28 px export quando possível.
+
+### Perceptual hierarchy
+1. Hook/claim.
+2. Hero visual.
+3. Evidence/diagram.
+4. Source/caveat.
+5. Brand chrome.
 
 ### No-go
-- 3D;
-- CGI;
-- game engine;
-- glossy plastic;
-- photoreal skin/fur;
-- generic sci-fi HUD.
+3D, CGI, plastic, generic sci-fi HUD, tiny text, pseudo-neuroscience.
 
-## Cover architecture
+## Cover architecture v5
 
 ```text
-BRAND / CATEGORY
+PILL / CATEGORY
       ↓
-HOOK ≤ 1 ideia central
+HOOK — 1 tese
       ↓
-HERO VISUAL QUE PROVA O HOOK
+HERO QUE DEMONSTRA
       ↓
 OPEN LOOP
       ↓
-SWIPE CUE DISCRETO
+DISCRETE SWIPE CUE
 ```
 
-A capa não deve parecer infográfico cheio. Ela vende a pergunta/tese; os slides seguintes entregam a prova.
+Capa:
+- zero parágrafo;
+- 1 primary focal;
+- 22–35% negative space quando possível;
+- 1 keyword em acento;
+- hook selecionado por tournament;
+- thumbnail gate obrigatório.
 
 ## QA stack
 
-### Evidence QA
-Claim ≤ evidence.
+Evidence QA
+→ Red Team
+→ Editorial QA
+→ Perception QA
+→ Didactic QA
+→ Visual QA
+→ Accessibility QA
+→ Brand QA
+→ Prompt Compiler
+→ Post-render QA
+→ Final Gate.
 
-### Editorial QA
-Hook ≤ Claim Lock.
+## Final Gate
 
-### Didactic QA
-Elemento visual deve ensinar algo.
-
-### Visual QA
-2.5D + hierarchy + negative space + frame.
-
-### Accessibility QA
-WCAG 2.2.
-
-### Brand QA
-Logo e Criago canônicos.
-
-### Safety QA
-Sem humor contra vulneráveis; sem promessas clínicas indevidas.
-
-### Final Gate
 `APROVADO | APROVADO_COM_RESSALVAS | REPROVADO`.
 
 ## Versão
 
-`4.3.0-portable.1`
+`5.0.0-portable.1`
