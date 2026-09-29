@@ -212,7 +212,10 @@
         "topic-radar",
         "gemini-image-prompt-adaptation",
         "gemini-exact-text-priority",
-        "gemini-post-render-qa"
+        "gemini-post-render-qa",
+        "audience-radar-mode",
+        "topic-audit-mode",
+        "render-pack-mode"
       ],
       "requires": [
         "repository-guardian"
