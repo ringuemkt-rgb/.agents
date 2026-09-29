@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BDC Audience Demand Intelligence",
+  "type": "object",
+  "required": [
+    "persona",
+    "raw_queries",
+    "primary_intent",
+    "declared_pain",
+    "functional_problem",
+    "demand_level",
+    "freshness",
+    "candidate_question"
+  ],
+  "properties": {
+    "persona": {
+      "type": "string"
+    },
+    "raw_queries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "primary_intent": {
+      "type": "string"
+    },
+    "secondary_intent": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "declared_pain": {
+      "type": "string"
+    },
+    "functional_problem": {
+      "type": "string"
+    },
+    "desire": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "jtbd": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lexicon": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "demand_level": {
+      "enum": [
+        "D0",
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ]
+    },
+    "freshness": {
+      "enum": [
+        "F0",
+        "F1",
+        "F2",
+        "F3"
+      ]
+    },
+    "competitor_gap": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "bdc_moat": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "candidate_question": {
+      "type": "string"
+    },
+    "why_now": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
