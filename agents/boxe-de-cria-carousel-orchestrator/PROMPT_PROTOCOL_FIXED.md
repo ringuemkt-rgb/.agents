@@ -1,35 +1,40 @@
-# PROTOCOLO FIXO — Surgical Prompt Forge v4.3
+# PROTOCOLO FIXO — Surgical Prompt Forge v5.0
 
-A partir de v4.2, TODO carrossel BDC gera prompts nesta estrutura.
-Não encurtar. Não dizer “mesmo do anterior”. Não gerar legenda no meio.
-Ordem: perícia → Best Current Explanation → Claim Lock → Viral Brief → N fences completos → só depois a DESCRIÇÃO DE POST → Gate.
+TODO carrossel BDC gera prompts nesta estrutura.
 
-A inteligência investigativa fica upstream em `INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md`; o prompt visual recebe apenas a tese aprovada, certeza, directness, aplicabilidade, caveat e explicação segura necessária para desenhar corretamente.
+Não encurtar.
+Não dizer “mesmo do anterior”.
+Não gerar legenda no meio.
 
-## AUTONOMY REPETITION LAW — obrigatório
+Ordem:
+`perícia → Best Current Explanation → Red Team → Claim Lock → Viral Brief → N fences completos → legenda → Gate`.
+
+A investigação fica upstream. O prompt recebe apenas a tese aprovada, certeza, directness, aplicabilidade, caveat e explicação segura necessária para desenhar corretamente.
+
+## AUTONOMY REPETITION LAW
 
 Cada fence é um pacote independente para copiar/colar em qualquer IA.
 
-Nunca usar referências como:
-- "mesmo background do anterior";
-- "moldura igual";
-- "repetir o Criago";
-- "usar a paleta já definida";
-- "seguir o slide anterior".
+Repetir integralmente em TODO slide:
+`COLOR/A11Y + NEURODESIGN + TYPOGRAPHY + FRAME + BACKGROUND + DEPTH + FULL CRIAGO LOCK + LOGO + NEGATIVE + COMPILER + QA`.
 
-Os blocos 07, 09, 10, 11, 18, 19, 20, 21 e 22 devem conter informação suficiente por si mesmos. Em especial, repetir integralmente em TODO slide:
+Nunca usar:
+- mesmo background;
+- moldura igual;
+- repetir Criago;
+- paleta já definida;
+- seguir slide anterior.
 
-`COLOR/A11Y + FRAME + BACKGROUND + DEPTH + FULL CRIAGO LOCK + LOGO + NEGATIVE + QA`.
-
-A redundância intencional é requisito de portabilidade.
-
-## Cabeçalho em cada fence
+## Cabeçalho obrigatório
 
 ```text
-BOXE DE CRIA — SURGICAL PROMPT FORGE SUPREME v4.3.0
+BOXE DE CRIA — SURGICAL PROMPT FORGE SUPREME v5.0.0
 BDC CAROUSEL ORCHESTRATOR
 BDC INVESTIGATIVE SYNTHESIS INTELLIGENCE
 BDC EVIDENCE FUSION & FORENSIC SYNTHESIS ENGINE
+BDC RED TEAM & EVALUATION ENGINE
+BDC NEUROMARKETING & PERCEPTION ENGINE
+BDC PROMPT COMPILER & QA
 BDC DIDACTIC COMBAT
 BDC MAGNIFICENT SCIENCE 2.5D
 BDC RETENTION ENGINE
@@ -42,117 +47,269 @@ PROMPT INTEGRALMENTE AUTÔNOMO.
 NÃO DEPENDER DE QUALQUER OUTRO SLIDE, PROMPT OU REFERÊNCIA.
 ```
 
-## Os 22 blocos — obrigatórios, nesta ordem
+## Os 22 blocos
 
-01 TASK / OUTPUT LOCK — 4:5 · 2160×2700 work · export 1080×1350 · sRGB · safe 7/7/6/7 · grid 12 · gutter ~32 · spacing ×8 · baseline 24 · neg space 22–28% · UMA arte · RENDER 2.5D ONLY · sem mockup/mosaico/3D plástico/HUD gamer/cyberpunk.
+### 01 TASK / OUTPUT LOCK
+- UMA arte;
+- 4:5;
+- work 2160×2700;
+- export 1080×1350;
+- sRGB;
+- safe 7/7/6/7;
+- grid 12;
+- gutter ~32;
+- spacing ×8;
+- baseline 24;
+- negative space target 22–28%, capa até 35%;
+- RENDER LOCK 2.5D GRAPHIC EDITORIAL ONLY;
+- sem mockup, mosaico, 3D, CGI, game-engine, cyberpunk.
 
-02 PROJECT IDENTITY — marca, submarca, série, tema, posicionamento, tonalidade.
+### 02 PROJECT IDENTITY
+Marca, submarca, série, tema, tom e função editorial.
 
-03 EVIDENCE / CLAIM LOCK — tese permitida, Best Current Explanation comprimida quando material, frases proibidas, evidence status, directness, certainty por outcome, aplicabilidade e critical caveat.
+### 03 EVIDENCE / CLAIM LOCK
+Incluir:
+- allowed claim;
+- blocked claim;
+- Best Current Explanation comprimida;
+- certainty;
+- directness;
+- população/aplicabilidade;
+- critical caveat;
+- source lock quando material.
 
-04 CONTENT JOB / AUDIENCE — authority/utility/identity · quem · problema · share reason · save reason.
+### 04 CONTENT JOB / AUDIENCE / PERSONA
+Definir:
+- job: authority | utility | identity | mythbust | place;
+- persona primária;
+- problema;
+- share reason;
+- save reason;
+- knowledge level;
+- linguagem do Brasil e nomenclatura correta da modalidade.
 
-05 NARRATIVE / RETENTION — ROLE · PAYOFF_NOW · OPEN_LOOP · NEXT_SLIDE_DESIRE · ATTENTION_RESET · SWIPE_HANDOFF.
+### 05 NARRATIVE / RETENTION / NEURODESIGN
+Incluir:
+- ROLE;
+- PAYOFF_NOW;
+- OPEN_LOOP;
+- NEXT_SLIDE_DESIRE;
+- ATTENTION_RESET;
+- SWIPE_HANDOFF;
+- ONE PRIMARY FOCAL;
+- Gestalt grouping;
+- processing fluency;
+- one isolated keyword/number;
+- no pseudo-neuroscience;
+- no fear exploitation.
 
-06 EXACT TEXT LOCK — pill, chip, counter, headline, sub, micros, evidence chip, memory bar, rails, footer, source — verbatim.
+### 06 EXACT TEXT LOCK
+Verbatim:
+- pill;
+- counter;
+- headline;
+- sub;
+- micros;
+- evidence chip;
+- memory bar;
+- rails;
+- footer;
+- source;
+- CTA/swap cue.
 
-07 COLOR SYSTEM — colar `PALETTE_CANON.md` + modo + semântica + A11Y. Campo escuro prioritário; azul-petróleo permitido como ambiente, não substitui o DNA charcoal do chrome.
+Capa:
+- 1 tese;
+- zero body paragraph;
+- headline ideal ≤7 palavras fortes quando possível.
 
-08 TYPOGRAPHY — Anton/Archivo Black headline · Inter/Montserrat corpo · tamanhos px · body/footer com contraste verificado.
+### 07 COLOR SYSTEM / A11Y / PERCEPTION
+Aplicar PALETTE_CANON + DECISION_ENGINE + ACCESSIBILITY + NEUROMARKETING_PERCEPTION_ENGINE.
 
-09 FRAME LOCK — metal preto + couro + bronze hairline + cyan L-corners + top bar + rails + counter + memory + source.
-
-10 BACKGROUND L0–L9 — atmosphere → vignette → grain → microgrid → sport → blueprint → mechanism → evidence ghosts → hero atm → UI.
-
-11 DEPTH Z0–Z5 — profundidade por layering/overlap/occlusion/contact shadow/shallow perspective; nunca malha 3D.
-
-12 HERO / COMPOSITION — ilustração editorial semi-vector 2.5D; não modelo 3D.
-
-13 BIOMECHANICS e/ou INFOGRAPHIC — o que o slide pedir; quantitativo flat/orthographic; figuras podem ser 2.5D.
-
-14 VISUAL CLAIM MAP e/ou CAMERA — se 13 já foi biomecânica, 14 pode assumir camera, mas não omitir camera.
-
-15 CAMERA — se ainda não foi definida; 55–70mm quando humano, ou câmera adequada à gramática visual.
-
-16 LIGHTING — key ~4100K · fill · rim cyan restrained · sem neon bloom / engine fog.
-
-17 MATERIALITY — couro/canvas/metal matte · cel 2–3 níveis · grain 1.5–2% · nada glossy/3D shader.
-
-18 MESTRE CRIAGO — FULL CHARACTER LOCK sempre, mesmo VISIBILITY OFF.
-
-19 OFFICIAL BRAND ASSET — obedecer `OFFICIAL_LOGO_LOCK.md`; usar o asset oficial externo em produção normal; reconstrução só por pedido explícito.
-
-20 NEGATIVE PROMPT — inclui NO 3D render, NO CGI, NO photoreal skin/fur, NO plastic, NO game engine, NO fake data, NO logo substitute.
-
-21 PRE-RENDER QA — evidência, claim, copy, anatomia, 2.5D, WCAG contrast, logo, unidades, ausência de overclaim.
-
-22 POST-RENDER QA — rejeitar se falhar rigor, legibilidade, A11Y, 2.5D, marca, anatomia, texto ou integridade de dados.
-
-Se o slide precisar de DATA-VIZ: entra como `13b` com unidade SI + população + N + instrumento/aparelho + incerteza + o que não mediu. Força em N; kgf apenas tradução oral tecnicamente apropriada; nunca “kg de soco”.
-
-## COLOR SYSTEM CANÔNICO
-
-Bloco 07 deve usar `PALETTE_CANON.md`. Resumo:
-
+Obrigatório:
 ```text
+CONTENT JOB:
+EMOTION:
+GRAMMAR:
+MODE:
 FIELD:
-CHARCOAL #0B0B0D
-GRAPHITE #121317
-TECHNICAL GRAY #23252B
-WARM WHITE #F3F0EA
-GLOVE TAN #C4A574
-
-SCIENCE ENVIRONMENT:
-P900 #020A0E
-P850 #04131A
-P800 #06191F
-P700 #0A232A
-P600 #103843
-P500 #174957
-
-ACCENTS:
-GOLD #D4A017
-GOLD RING #E8B84A
-BRONZE #C08F3C
-CYAN SIGNAL #3EC6C9
-CYAN HIGH #49C8D1
-CYAN GLOW #66E1E5
-AMBER #E0A259
-ORANGE #E56F3A
-BDC RED #C62828
-ACCENT RED #E53935
-WARNING DEEP #7A1818
-TERRA #B85C38
-MATA #2D5016
-NIGHT BLUE #1E3A5F
-NIGHT FIELD #07080C
+ACCENT 1:
+ACCENT 2:
+ACCENT BUDGET:
+COLOR SEMANTICS:
+A11Y: body ≥4.5:1 | headline target ≥7:1 | graphics ≥3:1
+NO hue-only distinction.
+NO universal-color claims.
+NO third accent without explicit semantic need.
 ```
 
-Máx. 2 acentos principais por slide. Vermelho ≤8% e sem corpo longo.
+### 08 TYPOGRAPHY / LEGIBILITY
+Headline:
+- Anton/Archivo Black/equivalente;
+- condensed somente para poucas palavras;
+- 72–132 px export conforme linhas.
 
-## ACCESSIBILITY LOCK
+Sub:
+- 42–58 px export.
 
-Aplicar `ACCESSIBILITY_CONTRAST.md` em todo fence:
+Card:
+- 36–48 px.
 
+Body:
+- Inter/Montserrat/equivalente;
+- 32–40 px;
+- non-condensed;
+- regular/semibold;
+- open counters;
+- line-height confortável;
+- sem ALL CAPS em parágrafo.
+
+Source/footer essencial:
+- 28–32 px export quando possível.
+
+No máximo 2 famílias tipográficas.
+
+### 09 FRAME LOCK — BDC MODERN DARK CHROME
+Repetir em todo fence:
+
+- moldura interna premium em charcoal/graphite matte;
+- filete superior e inferior muito fino em gold/bronze canônico;
+- 4 L-corners ciano discretos, não neon;
+- pill superior esquerdo BOXE DE CRIA • FISIOBOXE;
+- counter superior direito SLIDE NN/NN;
+- rail esquerdo vertical BOXE DE CRIA • CONTEÚDO ORIGINAL;
+- rail direito vertical [SÉRIE/CATEGORIA];
+- source chip inferior quando necessário;
+- rodapé interno BOXE DE CRIA • Bahia;
+- @boxedecria_;
+- assinatura “Ser forte é ser gentil.”;
+- logo oficial reservado/asset externo;
+- chrome nunca competir com conteúdo;
+- nenhuma estética de cockpit/HUD gamer.
+
+### 10 BACKGROUND L0–L9 — repetir integralmente
+L0 ATMOSPHERE: petroleum/deep navy/charcoal escolhido pelo mode.
+L1 VIGNETTE: escurecimento suave de borda.
+L2 MATERIAL: textura matte de lona/couro/papel esportivo.
+L3 MICROGRID: grid técnico 4–7% opacity.
+L4 SPORT GHOST: ringue/tatame/corda/saco/academia desfocado conforme tema.
+L5 BLUEPRINT: linhas técnicas funcionais, não decorativas.
+L6 MECHANISM: vetores/arcos/eixos apenas se explicam o claim.
+L7 EVIDENCE GHOSTS: tabela/eixo/documento fantasma apenas se relacionado.
+L8 HERO ATMOSPHERE: halo controlado para separar o herói.
+L9 UI/FRAME INTEGRATION: cards, labels, connectors e source chip.
+
+Grain 1.5–2%.
+Sem fundo poluído.
+Sem informação aleatória.
+Sem neon sci-fi.
+
+### 11 DEPTH Z0–Z5
+Z0 dark field.
+Z1 ghost sport/material.
+Z2 technical grid/blueprint.
+Z3 hero 2.5D.
+Z4 explanatory overlays/cards.
+Z5 frame/type/brand.
+
+Profundidade somente por:
+- layering;
+- overlap;
+- occlusion;
+- contact shadow;
+- selective blur;
+- shallow perspective.
+
+NO mesh 3D.
+
+### 12 HERO / COMPOSITION
+Ilustração editorial semi-vector 2.5D.
+Objeto-herói deve demonstrar o claim.
+Figura humana genérica, não identificável, salvo uso autorizado de imagem real em fluxo separado.
+Anatomia plausível.
+Modalidade reconhecível.
+
+### 13 BIOMECHANICS / INFOGRAPHIC
+Escolher gramática que explique:
+- vector;
+- split;
+- path;
+- hub;
+- stack;
+- sequence;
+- anatomy;
+- flat chart;
+- timeline;
+- map.
+
+Quantitativo = flat/orthographic.
+Nada 3D.
+
+### 13b DATA-VIZ, se houver
+Obrigatório:
+- população;
+- N;
+- unidade SI;
+- instrumento;
+- comparação;
+- incerteza quando disponível;
+- o que não mediu;
+- source.
+
+### 14 VISUAL CLAIM MAP / TRACEABILITY
+Incluir explicitamente:
 ```text
-A11Y: body text ≥4.5:1 | headline target ≥7:1 | meaningful graphics ≥3:1
-FAIL: gold-on-tan/terra without verified contrast | red body | gray #808080 | hue-only legend
+CLAIM → VISUAL ELEMENT → LABEL → SOURCE/CAVEAT
 ```
+Todo elemento deve ensinar algo.
+Seta não pode insinuar causalidade inexistente.
+Heatmap/anatomia não podem parecer medição se forem modelo didático.
 
-Não informar A vs B apenas por cor.
+### 15 CAMERA
+Humano: 55–70mm equivalent por padrão.
+Comparação: mesmo ângulo/distância quando a justiça visual exigir.
+Diagrama: orthographic/top/front conforme função.
 
-## CRIAGO — mínimo que o bloco 18 repete
+### 16 LIGHTING
+- key ~4100K;
+- fill controlado;
+- rim cyan restrito;
+- warm/gold edge opcional;
+- sem bloom de engine;
+- sem volumetric game fog.
 
-Ratel adulto `Mellivora capensis`. Corpo compacto e baixo, tórax largo, pescoço curto, ombros fortes, pernas curtas, patas fortes e garras discretas. Manto claro contínuo cabeça→dorso; parte inferior preto/carvão. Cabeça larga, orelhas minúsculas, focinho curto, nariz matte, olhos pequenos inteligentes. Aviador clássico fumê/âmbar, armação fina, ponte dupla. Jaqueta motorcycle matte preta com costuras, zíper, rebites e desgaste; patch frontal BOXE DE CRIA. Manga dir Brasil correta com ORDEM E PROGRESSO e 27 estrelas. Manga esq Bahia correta. Costas ALELUIADO + laço autismo + BOXE DE CRIA. Sem puzzle. 2.5D cel 2–3 níveis, matte, contact shadow, grain. Nunca ursinho/Funko/Disney/CGI.
+### 17 MATERIALITY
+- matte;
+- couro/lona/metal/papel;
+- cel shading 2–3 níveis;
+- grain 1.5–2%;
+- sem plastic shader;
+- sem ray tracing;
+- sem photoreal skin/fur.
 
-Mindset + H-level + VISIBILITY + função + pose + objeto + linha exata neste slide.
+### 18 MESTRE CRIAGO FULL LOCK
+Repetir integralmente em TODO fence:
 
-Tema TEA/neuro/clínico/criança: Trickster 0, H0, sem piada com condição/pessoa.
+Criago é ratel adulto `Mellivora capensis`, masculino, antropomórfico, compacto, baixo, forte, atlético, tórax largo, pescoço curto, pernas relativamente curtas, patas fortes e garras naturais discretas. Cabeça larga, focinho curto, nariz preto matte, orelhas minúsculas arredondadas, olhos pequenos inteligentes. Manto claro contínuo da cabeça ao dorso; parte inferior preto/carvão. Nunca urso, gambá, guaxinim, cão, lobo, humano fantasiado, Funko, Disney ou mascote infantil.
 
-## OFFICIAL LOGO
+Aviador clássico com lentes fumê/âmbar, armação fina dourada/metal, ponte dupla. Jaqueta motorcycle preta matte com poros ilustrados, costuras, zíper, rebites e desgaste discreto. Patch frontal BOXE DE CRIA. Manga direita: bandeira do Brasil correta com ORDEM E PROGRESSO e 27 estrelas quando detalhe permitir. Manga esquerda: bandeira da Bahia correta. Costas: ALELUIADO + laço de conscientização do autismo + BOXE DE CRIA. Nunca puzzle piece.
 
-Bloco 19:
+Render: 2.5D editorial semi-vector, cel 2–3 níveis, matte, contact shadow, grain. Nunca CGI/3D.
 
+Mindset:
+Sage + Hero + Everyman; Trickster controlado.
+Sarcasmo ataca mito, vaidade e técnica ruim, nunca vulnerável.
+
+Definir neste slide:
+VISIBILITY: ON/OFF
+H-LEVEL: H0–H3
+FUNÇÃO:
+POSE:
+OBJETO:
+LINHA EXATA:
+
+TEA/neuro/clínico/criança/lesão/safety: H0.
+
+### 19 OFFICIAL BRAND ASSET
 ```text
 Use the owner-supplied BOXE DE CRIA official logo asset in finalization.
 Preserve animal symbol, wordmark, DE module, gold bars, crown, proportions and source colors.
@@ -160,7 +317,81 @@ Do not redesign or restyle.
 If the actual asset is unavailable, reserve logo space instead of inventing a substitute unless the user explicitly requests reconstruction under OFFICIAL_LOGO_LOCK.md.
 ```
 
-## Depois dos N fences — DESCRIÇÃO DE POST
+### 20 NEGATIVE PROMPT
+Obrigatório:
+NO 3D render.
+NO CGI.
+NO Unreal/Blender/Octane.
+NO photoreal skin/fur.
+NO plastic shader.
+NO game-engine.
+NO cyberpunk HUD.
+NO random science UI.
+NO famous fighter unless explicitly authorized/reference workflow.
+NO malformed anatomy.
+NO extra fingers.
+NO fake source.
+NO fake data.
+NO fake percentage.
+NO fake ranking.
+NO logo substitute.
+NO Criago drift.
+NO red body paragraph.
+NO hue-only chart.
+NO tiny text.
+NO pseudoscientific neuromarketing.
+NO “dopamine hack”.
+NO copying third-party visual identity.
+
+### 21 PRE-RENDER QA / COMPILER
+Obrigatório:
+```text
+STRUCTURAL LINT: PASS
+CONTRADICTION LINT: PASS
+CLAIM→VISUAL TRACE: PASS
+DENSITY: PASS
+THUMBNAIL: PASS
+SUNLIGHT/LOW-CONTRAST: PASS
+COLOR-BLIND: PASS
+A11Y: PASS
+2.5D: PASS
+BRAND: PASS
+COPY: PASS
+DATA: PASS
+```
+
+### 22 POST-RENDER QA
+Rejeitar se:
+- texto não corresponde ao lock;
+- erro pt-BR;
+- dado mudou;
+- anatomia falhou;
+- 3D/CGI apareceu;
+- contraste falhou;
+- Criago/logo sofreram drift;
+- diagrama sugere claim errado;
+- hero cobre headline;
+- layout ficou denso;
+- source ilegível quando material.
+
+Aplicar auto-repair até 2 iterações; depois REPROVADO se P0/P1 persistir.
+
+## Color canon
+
+Usar os tokens do PALETTE_CANON.md.
+Máx. 2 acentos.
+Red ≤8%.
+Warm white é texto-base.
+
+## Neuromarketing lock
+
+Color meaning = contextual / brand semantic.
+No universal color psychology.
+No brain activation claims.
+No dopamine storytelling.
+Use hierarchy, contrast, grouping, fluency, legibility and testing.
+
+## Depois dos N fences — LEGENDA
 
 ```text
 [STOP ≤7 palavras]
@@ -169,9 +400,12 @@ If the actual asset is unavailable, reserve logo space instead of inventing a su
 
 Criago: “[uma linha]”
 
-[1 CTA útil: save slide X / manda ao professor / ação concreta]
+[1 CTA útil]
 
 #BoxeDeCria #FisioBoxe #Criago [+até 2 do tema]
 ```
 
-Sem 12 hashtags. Sem “biohack”. Sem “boxe trata autismo”. Sem promessa de viralidade.
+Sem 12 hashtags.
+Sem “biohack”.
+Sem promessa de viralidade.
+Sem overclaim clínico.
