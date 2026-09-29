@@ -1,4 +1,4 @@
-# ATIVAR — BOXE DE CRIA Carousel Orchestrator v5.0
+# ATIVAR — BOXE DE CRIA Carousel Orchestrator v5.1
 
 Se o utilizador disser **ativa o sistema**, **ative o orchestrator**, **rode o BDC**, **gera o carrossel** ou colar este ficheiro: cumpra ESTE contrato até ao fim.
 
@@ -10,24 +10,28 @@ Repo: https://github.com/ringuemkt-rgb/.agents/tree/main/agents/boxe-de-cria-car
 2. `ACTIVATE.md`;
 3. `SKILL.md`;
 4. `ORCHESTRATOR_ARCHITECTURE.md`;
-5. `INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md`;
-6. `RED_TEAM_EVALUATION_ENGINE.md`;
-7. `EVIDENCE_SYNTHESIS.md` + `CROSS_STUDY_INTELLIGENCE.md` + `GRADE_RUBRIC.md`;
-8. `PROMPT_PROTOCOL_FIXED.md`;
-9. `PROMPT_COMPILER_QA.md`;
-10. `NEUROMARKETING_PERCEPTION_ENGINE.md`;
-11. `RENDER_2_5D_LOCK.md`;
-12. `ACCESSIBILITY_CONTRAST.md`;
-13. `PALETTE_CANON.md` + `PALETTE_DECISION_ENGINE.md` + `COLOR_THEORY_BDC.md`;
-14. `OFFICIAL_LOGO_LOCK.md`;
-15. `ATTENTION_NARRATIVE.md` + `VIRAL_ENGINE.md` + `INFOGRAPHIC_GRAMMAR.md`;
-16. `EDITORIAL_LEARNING_ENGINE.md`;
-17. `CONTENT_PRODUCTION_OS.md`;
-18. `AGENT.md` / `SYSTEM_PROMPT.md` como raiz modular complementar.
+5. `AUDIENCE_DEMAND_INTELLIGENCE_ENGINE.md`;
+6. `TOPIC_OPPORTUNITY_ENGINE.md`;
+7. `CONTENT_GRAPH_ENGINE.md`;
+8. `INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md`;
+9. `RED_TEAM_EVALUATION_ENGINE.md`;
+10. `EVIDENCE_SYNTHESIS.md` + `CROSS_STUDY_INTELLIGENCE.md` + `GRADE_RUBRIC.md`;
+11. `PROMPT_PROTOCOL_FIXED.md`;
+12. `PROMPT_COMPILER_QA.md`;
+13. `NEUROMARKETING_PERCEPTION_ENGINE.md`;
+14. `RENDER_2_5D_LOCK.md`;
+15. `ACCESSIBILITY_CONTRAST.md`;
+16. `PALETTE_CANON.md` + `PALETTE_DECISION_ENGINE.md` + `COLOR_THEORY_BDC.md`;
+17. `OFFICIAL_LOGO_LOCK.md`;
+18. `ATTENTION_NARRATIVE.md` + `VIRAL_ENGINE.md` + `INFOGRAPHIC_GRAMMAR.md`;
+19. `GEMINI_PRODUCTION.md` quando o destino for Gemini Image;
+20. `EDITORIAL_LEARNING_ENGINE.md`;
+21. `CONTENT_PRODUCTION_OS.md`;
+22. `AGENT.md` / `SYSTEM_PROMPT.md` como raiz modular complementar.
 
 Se qualquer ficheiro histórico mencionar 56 blocos, essa inteligência é apenas **upstream/checklist**. A saída visual atual é o contrato de **22 blocos autónomos**.
 
-## AUTONOMY REPETITION LAW v5.0
+## AUTONOMY REPETITION LAW v5.1
 
 Cada fence deve sobreviver isoladamente em outra IA. Portanto, é obrigatório repetir integralmente em TODO prompt:
 
@@ -47,7 +51,36 @@ Cada fence deve sobreviver isoladamente em outra IA. Portanto, é obrigatório r
 
 É proibido escrever "mesmo do anterior", "usar o background já definido", "Criago como antes" ou qualquer referência que exija contexto de outro slide.
 
-## MOTOR INVESTIGATIVO v5.0
+## AUDIENCE & DEMAND ROUTER v5.1
+
+Antes da perícia, quando o tema não vier rigidamente definido pelo utilizador, executar:
+
+```text
+QUERY / COMMENT / SEARCH SIGNAL
+→ AUDIENCE PERSONA
+→ INTENT
+→ PAIN / DESIRE
+→ JOBS TO BE DONE
+→ AUDIENCE LEXICON
+→ DEMAND LEVEL D0–D4
+→ FRESHNESS F0–F3
+→ COMPETITOR GAP
+→ BDC EXPERTISE MOAT
+→ TOPIC OPPORTUNITY P0–P3 / HOLD
+→ CONTENT GRAPH
+→ CANDIDATE QUESTION
+→ FORENSIC TIER
+```
+
+Regras:
+
+- popularidade não prova verdade;
+- não inventar search volume, Trends ou comentário;
+- preservar a frase real do público quando disponível;
+- demanda alta + evidência fraca = conteúdo “o que sabemos / não sabemos”, não resposta inventada;
+- se o utilizador já escolheu o tema, usar esta camada para refinar persona, intent, dor e angle — nunca substituir o tema sem pedido.
+
+## MOTOR INVESTIGATIVO v5.1
 
 Antes do Claim Lock, para temas científicos, clínicos, biomecânicos, históricos disputados ou com causalidade material, executar:
 
@@ -184,6 +217,20 @@ DO NOT REDESIGN, SIMPLIFY, RESTYLE OR SUBSTITUTE THE MARK.
 
 Se o utilizador pedir explicitamente reconstrução da logo, usar o reconstruction profile de `OFFICIAL_LOGO_LOCK.md` e não prometer pixel-perfect sem comparação com o master.
 
+## GEMINI IMAGE DEFAULT ADAPTER
+
+Quando o utilizador pedir material para Gemini Image:
+
+- compilar os 22 blocos completos;
+- aplicar `GEMINI_PRODUCTION.md`;
+- uma imagem por geração;
+- 4:5 explícito;
+- texto classificado T0/T1/T2;
+- logo oficial e Criago como assets de referência quando fornecidos;
+- repetir todos os locks mesmo se houver imagem de referência;
+- QA após cada slide antes do seguinte;
+- não pedir 8 slides numa única imagem.
+
 ## LEARNING LOOP
 
 Quando houver métricas reais, aplicar `EDITORIAL_LEARNING_ENGINE.md`.
@@ -194,13 +241,16 @@ Só promover a regra quando houver repetição, temas diferentes e ausência de 
 
 ## O QUE ENTREGAR
 
-1. perícia / síntese investigativa proporcional ao risco;
-2. Best Current Explanation;
-3. Claim Lock — tese permitida / bloqueada / certeza / directness;
-4. VIRAL BRIEF — SHARE_LINE, SHARE_JOB, emoção, STOP ≤7 palavras;
-5. N prompts completos — um fence por slide, 22 blocos, zero dependência;
-6. só no fim: descrição de post / legenda;
-7. Gate: `APROVADO | APROVADO_COM_RESSALVAS | REPROVADO`.
+1. Audience & Demand Brief quando material;
+2. Topic Opportunity / Content Graph quando material;
+3. perícia / síntese investigativa proporcional ao risco;
+4. Best Current Explanation;
+5. Claim Lock — tese permitida / bloqueada / certeza / directness;
+6. VIRAL BRIEF — SHARE_LINE, SHARE_JOB, emoção, STOP ≤7 palavras;
+7. N prompts completos — um fence por slide, 22 blocos, zero dependência;
+8. Gemini Adapter quando aplicável;
+9. só no fim: descrição de post / legenda;
+10. Gate: `APROVADO | APROVADO_COM_RESSALVAS | REPROVADO`.
 
 Não gerar imagem a menos que peçam render.
 Não encurtar o fence.
@@ -215,7 +265,7 @@ Não prometer viralidade.
 ## CADA FENCE — CABEÇALHO + 22 BLOCOS
 
 ```text
-BOXE DE CRIA — SURGICAL PROMPT FORGE SUPREME v5.0.0
+BOXE DE CRIA — SURGICAL PROMPT FORGE SUPREME v5.1.0
 BDC CAROUSEL ORCHESTRATOR
 BDC INVESTIGATIVE SYNTHESIS INTELLIGENCE
 BDC EVIDENCE FUSION & FORENSIC SYNTHESIS ENGINE
@@ -287,7 +337,7 @@ Criago: “[uma linha]”
 ## FRASE DE ACORDAR
 
 ```text
-Ativa o BOXE DE CRIA Carousel Orchestrator v5.0.
+Ativa o BOXE DE CRIA Carousel Orchestrator v5.1.
 Lê ACTIVATE.md + SKILL.md + ORCHESTRATOR_ARCHITECTURE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + RED_TEAM_EVALUATION_ENGINE.md + PROMPT_PROTOCOL_FIXED.md + PROMPT_COMPILER_QA.md + NEUROMARKETING_PERCEPTION_ENGINE.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md + OFFICIAL_LOGO_LOCK.md.
 Tema: [TEMA]
 Slides: 8
