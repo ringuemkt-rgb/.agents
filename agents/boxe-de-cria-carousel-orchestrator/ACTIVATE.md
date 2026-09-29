@@ -260,7 +260,7 @@ Não prometer viralidade.
 
 ## ORDEM DE ENTREGA
 
-`perícia → Best Current Explanation → Claim Lock → Viral Brief → fences 01..N → legenda → Gate`.
+`Audience/Demand → Topic Opportunity → Content Graph → perícia → Best Current Explanation → Claim Lock → Viral Brief → fences 01..N → Gemini QA quando aplicável → legenda → Gate`.
 
 ## CADA FENCE — CABEÇALHO + 22 BLOCOS
 
@@ -338,9 +338,9 @@ Criago: “[uma linha]”
 
 ```text
 Ativa o BOXE DE CRIA Carousel Orchestrator v5.1.
-Lê ACTIVATE.md + SKILL.md + ORCHESTRATOR_ARCHITECTURE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + RED_TEAM_EVALUATION_ENGINE.md + PROMPT_PROTOCOL_FIXED.md + PROMPT_COMPILER_QA.md + NEUROMARKETING_PERCEPTION_ENGINE.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md + OFFICIAL_LOGO_LOCK.md.
+Lê ACTIVATE.md + SKILL.md + ORCHESTRATOR_ARCHITECTURE.md + AUDIENCE_DEMAND_INTELLIGENCE_ENGINE.md + TOPIC_OPPORTUNITY_ENGINE.md + CONTENT_GRAPH_ENGINE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + RED_TEAM_EVALUATION_ENGINE.md + PROMPT_PROTOCOL_FIXED.md + PROMPT_COMPILER_QA.md + NEUROMARKETING_PERCEPTION_ENGINE.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md + OFFICIAL_LOGO_LOCK.md.
 Tema: [TEMA]
 Slides: 8
-Entrega: perícia + Best Current Explanation + Claim Lock + Viral Brief + 8 fences 22 blocos 2.5D + legenda no fim + Gate.
+Entrega: Audience/Demand Brief quando material + Topic Opportunity/Content Graph quando material + perícia + Best Current Explanation + Claim Lock + Viral Brief + 8 fences 22 blocos 2.5D + Gemini Adapter/QA quando aplicável + legenda no fim + Gate.
 Cada prompt deve repetir integralmente background, moldura, paleta/A11Y, neurodesign, typography/legibility, FULL Criago Lock, logo handling, negatives, compiler e QA. Não gerar imagem. Nada 3D. Não encurtar prompt. Não escrever "mesmo do anterior".
 ```
