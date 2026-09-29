@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BDC Content Graph",
+  "type": "object",
+  "required": [
+    "root_question",
+    "nodes",
+    "edges"
+  ],
+  "properties": {
+    "root_question": {
+      "type": "string"
+    },
+    "cluster": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "label"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "from",
+          "to",
+          "type"
+        ],
+        "properties": {
+          "from": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "existing_posts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_nodes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "high_opportunity_nodes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_refresh_nodes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recommended_series": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "repurpose_targets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
