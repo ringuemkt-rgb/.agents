@@ -1,129 +1,109 @@
 # BOXE DE CRIA — Carousel Orchestrator
 
-Sistema portátil para qualquer IA: investigação → melhor explicação atual → Claim Lock → **prompts de 22 blocos autónomos** → legenda → Gate.
+Sistema portátil para qualquer IA:
+**investigação → Red Team → Claim Lock → neurodesign/perception → prompts autônomos → compiler/QA → publicação → learning loop**.
 
-**Versão do sistema: 4.3.0-portable.1**
+**Versão do sistema: 5.0.0-portable.1**
 
-A saída visual continua sendo um fence autônomo de 22 blocos por slide. A inteligência antiga de 56 campos foi preservada apenas como checklist upstream/legado quando útil; ela não define mais o formato final de entrega.
+A saída visual continua sendo **um fence autônomo de 22 blocos por slide**.
 
 ## Acordar a IA
 
-1. Ler [`ACTIVATE.md`](./ACTIVATE.md).
-2. Ler [`SKILL.md`](./SKILL.md) + [`ORCHESTRATOR_ARCHITECTURE.md`](./ORCHESTRATOR_ARCHITECTURE.md).
-3. Para temas científicos/causais, ler [`INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md`](./INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md).
-4. Ler [`PROMPT_PROTOCOL_FIXED.md`](./PROMPT_PROTOCOL_FIXED.md) + [`PROMPT_TEMPLATE.md`](./PROMPT_TEMPLATE.md).
-5. Aplicar os locks visuais e de marca.
-
-Frase curta:
-
 ```text
-Ativa o BOXE DE CRIA Carousel Orchestrator v4.3.
-Lê ACTIVATE.md + SKILL.md + ORCHESTRATOR_ARCHITECTURE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + PROMPT_PROTOCOL_FIXED.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + OFFICIAL_LOGO_LOCK.md.
+Ativa o BOXE DE CRIA Carousel Orchestrator v5.0.
+Lê ACTIVATE.md + SKILL.md + ORCHESTRATOR_ARCHITECTURE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + RED_TEAM_EVALUATION_ENGINE.md + PROMPT_PROTOCOL_FIXED.md + PROMPT_COMPILER_QA.md + NEUROMARKETING_PERCEPTION_ENGINE.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md + OFFICIAL_LOGO_LOCK.md.
 Tema: [TEMA]
 Slides: 8
 Entrega: perícia + Best Current Explanation + Claim Lock + Viral Brief + 8 fences de 22 blocos autônomos + legenda + Gate.
-Cada prompt repete integralmente background, moldura, paleta/A11Y, FULL Criago Lock, logo handling, negatives e QA. Não gerar imagem. Não encurtar prompt. Nada 3D. Não escrever "mesmo do anterior".
+Cada prompt repete integralmente background, moldura, paleta/A11Y, neurodesign, typography, FULL Criago Lock, logo handling, negatives, compiler e QA.
+Não gerar imagem. Não encurtar. Nada 3D. Não escrever "mesmo do anterior".
 ```
 
-## O que o v4.3 adiciona
+## O que o v5.0 adiciona
 
-- `SKILL.md` como contrato portátil da capacidade;
-- `ORCHESTRATOR_ARCHITECTURE.md` como mapa de autoridade e módulos;
-- **Autonomy Repetition Law**: cada prompt repete integralmente frame, background, depth, paleta/A11Y, Criago, logo, negatives e QA;
-- FULL Criago Lock obrigatório mesmo quando `VISIBILITY: OFF`;
-- proibição explícita de atalhos como “mesmo do anterior”;
-- sincronização do agente, system prompt, template e workflow para `4.3.0-portable.1`;
-- arquitetura de capa reforçada: hook defensável + objeto-herói que prova visualmente a tese + open loop real.
+### Evidence-based neuromarketing / perception
+`NEUROMARKETING_PERCEPTION_ENGINE.md`
+- hierarquia visual;
+- Gestalt;
+- processing fluency;
+- saliência;
+- tipografia;
+- cor contextual;
+- ethical persuasion;
+- anti-pseudoscience lock.
 
-## O que o v4.2 adiciona
+### Prompt Compiler
+`PROMPT_COMPILER_QA.md`
+- structural lint;
+- contradiction lint;
+- Claim→Visual traceability;
+- density linter;
+- thumbnail simulation;
+- sunlight/low-contrast;
+- color-blind robustness;
+- post-render multimodal QA;
+- auto-repair.
 
-O novo `INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md` acrescenta:
+### Red Team
+`RED_TEAM_EVALUATION_ENGINE.md`
+- adversarial review;
+- source provenance;
+- originality guard;
+- falsification;
+- evaluation card.
 
-- hipóteses rivais antes da conclusão;
-- Analysis of Competing Hypotheses (ACH);
-- atomização de evidência;
-- Study Family Resolver 2.0;
-- confiabilidade da fonte separada da credibilidade da informação;
-- decomposição de outcome, exposição e mecanismo;
-- replication-independence;
-- researcher-network mapping;
-- causal DAGs;
-- alternative explanations;
-- counterfactual tests;
-- moderators, dose-response e temporal causality;
-- cross-method triangulation;
-- contradiction resolver 2.0;
-- negative-evidence e missing-evidence passes;
-- sensitivity analysis;
-- applicability;
-- benefit–harm–burden;
-- Bayesian-style updating sem probabilidades inventadas;
-- Investigator Bias Guard;
-- Falsification Gate;
-- Best Current Explanation Compiler;
-- Evidence Gap Map.
+### Editorial Learning
+`EDITORIAL_LEARNING_ENGINE.md`
+- metrics registry;
+- normalization;
+- creative memory;
+- feature tagging;
+- A/B doctrine;
+- content graph;
+- repurposing;
+- learning ledger.
 
-Princípio:
+### Hook Tournament
+16–24 hooks → filtro por Claim Lock → 3 finalistas → seleção por clareza, curiosidade, especificidade, proofability e share potential.
 
-> Não procurar evidência para defender uma frase. Construir modelos rivais, tentar destruir todos e deixar a conclusão emergir do que sobreviver melhor.
-
-## Ficheiros que a IA deve carregar
+## Core files
 
 | Ordem | Ficheiro | Função |
 |---|---|---|
-| 0 | `ACTIVATE.md` | autoridade + contrato de execução |
-| 0.1 | `SKILL.md` | contrato portátil da skill e leis operacionais |
-| 0.2 | `ORCHESTRATOR_ARCHITECTURE.md` | topologia, precedência e fronteiras entre módulos |
-| 1 | `INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md` | rival hypotheses, causal reasoning, ACH, falsificação |
-| 2 | `EVIDENCE_SYNTHESIS.md` | protocolo forense de evidência |
-| 3 | `CROSS_STUDY_INTELLIGENCE.md` | saturation, finding atoms, study linkage |
-| 4 | `GRADE_RUBRIC.md` | certeza por outcome |
-| 5 | `PROMPT_PROTOCOL_FIXED.md` | contrato visual de 22 blocos |
-| 6 | `PROMPT_TEMPLATE.md` | molde do fence |
-| 7 | `RENDER_2_5D_LOCK.md` | nada 3D / CGI |
-| 8 | `ACCESSIBILITY_CONTRAST.md` | WCAG 2.2 / contraste / hue-only fail |
-| 9 | `PALETTE_CANON.md` + `COLOR_THEORY_BDC.md` | paleta e semântica de cor |
-| 10 | `OFFICIAL_LOGO_LOCK.md` | logo oficial / reconstrução explícita |
-| 11 | `CONTENT_PRODUCTION_OS.md` | pipeline editorial e distribuição |
-| 12 | `ATTENTION_NARRATIVE.md` + `VIRAL_ENGINE.md` | retenção / shareability sem romper Claim Lock |
-| 13 | `INFOGRAPHIC_GRAMMAR.md` | gramática visual 2.5D |
-| 14 | `CORRECTIONS_APPLIED.md` | unidades e voz |
-| 15 | `AGENT.md` / `SYSTEM_PROMPT.md` | inteligência legada complementar |
+| 0 | ACTIVATE.md | autoridade |
+| 1 | SKILL.md | skill portátil |
+| 2 | ORCHESTRATOR_ARCHITECTURE.md | arquitetura |
+| 3 | INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md | perícia |
+| 4 | RED_TEAM_EVALUATION_ENGINE.md | adversarial QA |
+| 5 | PROMPT_PROTOCOL_FIXED.md | contrato 22 blocos |
+| 6 | PROMPT_COMPILER_QA.md | compiler/QA |
+| 7 | NEUROMARKETING_PERCEPTION_ENGINE.md | percepção/legibilidade |
+| 8 | RENDER_2_5D_LOCK.md | 2.5D only |
+| 9 | ACCESSIBILITY_CONTRAST.md | WCAG 2.2 |
+| 10 | PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md | cor |
+| 11 | OFFICIAL_LOGO_LOCK.md | logo |
+| 12 | ATTENTION_NARRATIVE.md + VIRAL_ENGINE.md | narrativa/growth |
+| 13 | EDITORIAL_LEARNING_ENGINE.md | feedback loop |
+| 14 | INFOGRAPHIC_GRAMMAR.md | gramática visual |
 
-## Entrega obrigatória
+## Laws
 
-- investigação proporcional ao risco;
-- Best Current Explanation antes do hook;
-- Claim Lock antes do Viral Brief;
-- um code fence por slide;
-- 22 secções por fence;
-- cada fence integralmente autônomo;
-- legenda PT-BR somente após o último slide;
-- Gate `APROVADO | APROVADO_COM_RESSALVAS | REPROVADO`.
-
-## Visual
-
-- 4:5;
-- work 2160×2700;
-- export 1080×1350;
-- sRGB;
-- 2.5D editorial semi-vector somente;
-- fundos escuros como charcoal / azul-petróleo / deep navy;
-- WCAG contrast lock;
-- quantitativo flat/orthographic;
-- Criago lock inteiro mesmo quando OFF;
-- logo oficial como asset externo por padrão.
-
-## Schemas investigativos
-
-Além dos ledgers anteriores:
-
-- `schemas/competing-hypothesis.schema.json`;
-- `schemas/ach-matrix.schema.json`;
-- `schemas/investigative-conclusion.schema.json`.
+- evidence before hook;
+- rival hypothesis before conclusion;
+- prompt autonomy;
+- 2.5D only;
+- dark petroleum/charcoal field;
+- WCAG;
+- body text non-condensed;
+- no universal color psychology;
+- no dopamine/cortex pseudo-neuromarketing;
+- full Criago lock every fence;
+- official logo external asset;
+- caption last;
+- no virality promise.
 
 ## Repo
 
 https://github.com/ringuemkt-rgb/.agents/tree/main/agents/boxe-de-cria-carousel-orchestrator
 
-MIT no código/prompt. Marca BOXE DE CRIA™ / FISIOBOXE — ver `NOTICE.md`.
+MIT no código/prompt. Marca BOXE DE CRIA™ / FISIOBOXE — ver NOTICE.md.
