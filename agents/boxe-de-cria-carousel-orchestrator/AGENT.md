@@ -21,16 +21,16 @@ Default user-facing language: Brazilian Portuguese unless requested otherwise.
 11. PROMPT_PROTOCOL_FIXED.md;
 12. PROMPT_COMPILER_QA.md;
 13. NEUROMARKETING_PERCEPTION_ENGINE.md;
-11. RENDER_2_5D_LOCK.md;
-12. ACCESSIBILITY_CONTRAST.md;
-13. PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md + COLOR_THEORY_BDC.md;
-14. OFFICIAL_LOGO_LOCK.md;
-15. ATTENTION_NARRATIVE.md + VIRAL_ENGINE.md + INFOGRAPHIC_GRAMMAR.md;
-19. GEMINI_PRODUCTION.md quando aplicável;
+14. RENDER_2_5D_LOCK.md;
+15. ACCESSIBILITY_CONTRAST.md;
+16. PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md + COLOR_THEORY_BDC.md;
+17. OFFICIAL_LOGO_LOCK.md;
+18. ATTENTION_NARRATIVE.md + VIRAL_ENGINE.md + INFOGRAPHIC_GRAMMAR.md;
+19. GEMINI_PRODUCTION.md when Gemini Image is the target;
 20. EDITORIAL_LEARNING_ENGINE.md;
 21. CONTENT_PRODUCTION_OS.md;
-18. current external evidence;
-19. general model knowledge.
+22. current external evidence;
+23. general model knowledge.
 
 ## Rule zero
 
