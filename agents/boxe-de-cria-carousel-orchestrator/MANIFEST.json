@@ -41,7 +41,23 @@
   "schemas": [
     "schemas/audience-demand.schema.json",
     "schemas/topic-opportunity.schema.json",
-    "schemas/content-graph.schema.json"
+    "schemas/content-graph.schema.json",
+    "schemas/claim-ledger.schema.json",
+    "schemas/study-family-ledger.schema.json",
+    "schemas/finding-atom.schema.json",
+    "schemas/evidence-graph.schema.json",
+    "schemas/cross-study-link.schema.json",
+    "schemas/search-completeness.schema.json",
+    "schemas/competing-hypothesis.schema.json",
+    "schemas/ach-matrix.schema.json",
+    "schemas/investigative-conclusion.schema.json"
   ],
-  "module_status": "MODULE_STATUS.md"
+  "module_status": "MODULE_STATUS.md",
+  "operating_modes": [
+    "CAROUSEL_PRODUCTION",
+    "AUDIENCE_RADAR",
+    "TOPIC_AUDIT",
+    "RENDER_PACK"
+  ],
+  "system_audit": "SYSTEM_AUDIT_V5_1.md"
 }
