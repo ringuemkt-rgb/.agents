@@ -92,6 +92,43 @@
         "string",
         "null"
       ]
+    },
+    "query_family": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "unique_surface_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "awareness_stage": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "geography": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "coverage_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "signal_quality_notes": {
+      "type": [
+        "string",
+        "null"
+      ]
     }
   }
 }
