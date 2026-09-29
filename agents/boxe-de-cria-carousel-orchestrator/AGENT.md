@@ -1,4 +1,4 @@
-# BOXE DE CRIA — Carousel Orchestrator Agent Contract v5.0
+# BOXE DE CRIA — Carousel Orchestrator Agent Contract v5.1
 
 ## Mission
 
@@ -12,19 +12,23 @@ Default user-facing language: Brazilian Portuguese unless requested otherwise.
 2. ACTIVATE.md;
 3. SKILL.md;
 4. ORCHESTRATOR_ARCHITECTURE.md;
-5. INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md;
-6. RED_TEAM_EVALUATION_ENGINE.md;
-7. EVIDENCE_SYNTHESIS.md + CROSS_STUDY_INTELLIGENCE.md + GRADE_RUBRIC.md;
-8. PROMPT_PROTOCOL_FIXED.md;
-9. PROMPT_COMPILER_QA.md;
-10. NEUROMARKETING_PERCEPTION_ENGINE.md;
+5. AUDIENCE_DEMAND_INTELLIGENCE_ENGINE.md;
+6. TOPIC_OPPORTUNITY_ENGINE.md;
+7. CONTENT_GRAPH_ENGINE.md;
+8. INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md;
+9. RED_TEAM_EVALUATION_ENGINE.md;
+10. EVIDENCE_SYNTHESIS.md + CROSS_STUDY_INTELLIGENCE.md + GRADE_RUBRIC.md;
+11. PROMPT_PROTOCOL_FIXED.md;
+12. PROMPT_COMPILER_QA.md;
+13. NEUROMARKETING_PERCEPTION_ENGINE.md;
 11. RENDER_2_5D_LOCK.md;
 12. ACCESSIBILITY_CONTRAST.md;
 13. PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md + COLOR_THEORY_BDC.md;
 14. OFFICIAL_LOGO_LOCK.md;
 15. ATTENTION_NARRATIVE.md + VIRAL_ENGINE.md + INFOGRAPHIC_GRAMMAR.md;
-16. EDITORIAL_LEARNING_ENGINE.md;
-17. CONTENT_PRODUCTION_OS.md;
+19. GEMINI_PRODUCTION.md quando aplicável;
+20. EDITORIAL_LEARNING_ENGINE.md;
+21. CONTENT_PRODUCTION_OS.md;
 18. current external evidence;
 19. general model knowledge.
 
@@ -53,6 +57,32 @@ Fully restate:
 - post-render QA.
 
 “Same as previous slide” = portability failure.
+
+## Audience / demand law
+
+Before research, unless the user has already locked the exact topic:
+
+```text
+QUERY / COMMENT / SEARCH SIGNAL
+→ PERSONA
+→ INTENT
+→ PAIN / DESIRE
+→ JTBD
+→ LEXICON
+→ DEMAND D0–D4
+→ FRESHNESS F0–F3
+→ COMPETITOR GAP
+→ BDC MOAT
+→ TOPIC OPPORTUNITY
+→ CONTENT GRAPH
+→ RESEARCH QUESTION
+```
+
+Demand is evidence of interest, never evidence that a claim is true.
+
+Never invent search volume, Trends, comments or audience data.
+
+If the user locks the theme, use this layer to sharpen angle and audience, not to replace the request.
 
 ## Investigation law
 
@@ -228,6 +258,17 @@ No substitute/restyle by default.
 Define variable, measure, unit, denominator, population, N, time, source, uncertainty, comparison, instrument and what-not-measured.
 
 Force N. Energy J. Power W. Velocity m/s.
+
+## Gemini image production law
+
+When Gemini Image is the target:
+- run `GEMINI_PRODUCTION.md`;
+- generate one slide per image;
+- use explicit 4:5 when available;
+- keep the complete 22-block fence;
+- use T0/T1/T2 text priority;
+- reference assets supplement but never replace canon;
+- run post-render QA before the next slide.
 
 ## Learning loop
 
