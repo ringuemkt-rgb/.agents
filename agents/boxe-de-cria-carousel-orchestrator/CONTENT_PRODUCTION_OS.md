@@ -1,22 +1,27 @@
-# BOXE DE CRIA — Content Production OS v4.2
+# BOXE DE CRIA — Content Production OS v5.0
 
-Sistema único de produção: **tema → investigação → Best Current Explanation → Claim Lock → Viral Brief → 22-block fences → QA → publicação → aprendizagem**.
+Sistema único:
+**tema → investigação → Red Team → Best Current Explanation → Claim Lock → Viral Brief → Perception Plan → 22-block fences → Prompt Compiler → QA → publicação → aprendizagem**.
 
-Viral aqui = envio no directo / grupo de academia / save útil, não promessa de views.
-Rigor nunca se vende por hop.
+Viral = probabilidade de stop/share/save útil. Nunca promessa.
 
-## Ordem de leitura da IA
+## Ordem de leitura
 
-1. `ACTIVATE.md`
-2. `INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md`
-3. `EVIDENCE_SYNTHESIS.md` + `CROSS_STUDY_INTELLIGENCE.md` + `GRADE_RUBRIC.md`
-4. `PALETTE_CANON.md` + `COLOR_THEORY_BDC.md` + `ACCESSIBILITY_CONTRAST.md`
-5. `RENDER_2_5D_LOCK.md` + `OFFICIAL_LOGO_LOCK.md`
-6. `ATTENTION_NARRATIVE.md` + `VIRAL_ENGINE.md`
-7. `INFOGRAPHIC_GRAMMAR.md`
-8. `PROMPT_PROTOCOL_FIXED.md` + `PROMPT_TEMPLATE.md`
-9. `GEMINI_PRODUCTION.md` quando o destino for Gemini/Imagen
-10. `AGENT.md` / `SYSTEM_PROMPT.md` apenas como inteligência complementar legada
+1. ACTIVATE.md
+2. SKILL.md
+3. ORCHESTRATOR_ARCHITECTURE.md
+4. INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md
+5. RED_TEAM_EVALUATION_ENGINE.md
+6. EVIDENCE_SYNTHESIS.md + CROSS_STUDY_INTELLIGENCE.md + GRADE_RUBRIC.md
+7. NEUROMARKETING_PERCEPTION_ENGINE.md
+8. PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md + COLOR_THEORY_BDC.md + ACCESSIBILITY_CONTRAST.md
+9. RENDER_2_5D_LOCK.md + OFFICIAL_LOGO_LOCK.md
+10. ATTENTION_NARRATIVE.md + VIRAL_ENGINE.md + INFOGRAPHIC_GRAMMAR.md
+11. PROMPT_PROTOCOL_FIXED.md + PROMPT_TEMPLATE.md
+12. PROMPT_COMPILER_QA.md
+13. EDITORIAL_LEARNING_ENGINE.md
+14. GEMINI_PRODUCTION.md quando aplicável
+15. AGENT.md / SYSTEM_PROMPT.md
 
 ## Pipeline obrigatório
 
@@ -24,83 +29,59 @@ Rigor nunca se vende por hop.
 TEMA
 → QUESTION DECOMPOSITION
 → AUDIENCE + PROBLEM FIT
-→ PICOT/PECO/MECANISMO conforme pergunta
 → TIER ROUTER
 → RIVAL HYPOTHESES
-→ UNBOUNDED SEARCH UNTIL SATURATION / TOOL LIMIT
+→ SEARCH UNTIL SATURATION / TOOL LIMIT
 → EVIDENCE INVENTORY
 → FINDING ATOMS
 → STUDY FAMILIES
 → SOURCE RELIABILITY × INFORMATION CREDIBILITY
-→ OUTCOME ONTOLOGY
-→ EXPOSURE DECOMPOSITION
+→ OUTCOME / EXPOSURE DECOMPOSITION
 → RISK OF BIAS
 → EFFECT NORMALIZATION
 → REPLICATION INDEPENDENCE
-→ RESEARCHER NETWORK quando material
-→ ACH MATRIX
-→ EVIDENCE GRAPH
-→ CAUSAL DAG quando material
-→ ALTERNATIVE EXPLANATIONS
-→ COUNTERFACTUAL TESTS
+→ ACH / EVIDENCE GRAPH / DAG
+→ ALTERNATIVES / COUNTERFACTUALS
 → MODERATOR / DOSE / TIME
-→ CROSS-METHOD TRIANGULATION
-→ CONTRADICTION RESOLVER
-→ NEGATIVE EVIDENCE
-→ MISSING EVIDENCE
-→ SENSITIVITY ANALYSIS
+→ TRIANGULATION
+→ CONTRADICTIONS
+→ NEGATIVE / MISSING EVIDENCE
+→ SENSITIVITY
 → APPLICABILITY
 → BENEFIT–HARM–BURDEN
-→ BAYESIAN-STYLE UPDATE
-→ INVESTIGATOR BIAS GUARD
-→ FALSIFICATION GATE
+→ FALSIFICATION
+→ RED TEAM
 → BEST CURRENT EXPLANATION
-→ EVIDENCE GAP MAP
-→ EDITORIAL CLAIM LOCK
+→ CLAIM LOCK
+→ PERSONA
+→ HOOK TOURNAMENT
 → VIRAL BRIEF
-→ ARCO 6/8/10
-→ N FENCES AUTÓNOMOS DE 22 BLOCOS
-→ DUAL/FINAL GATE
-→ RENDER UM POR VEZ se solicitado
-→ POST-RENDER QA
-→ PUBLICAR + MEDIR HOPS
+→ DIDACTIC ARC
+→ PERCEPTION PLAN
+→ VISUAL CLAIM MAP
+→ INFOGRAPHIC GRAMMAR
+→ PALETTE / TYPE
+→ N FENCES AUTÔNOMOS DE 22 BLOCOS
+→ PROMPT COMPILER
+→ PRE-RENDER QA
+→ RENDER se solicitado
+→ POST-RENDER QA / REPAIR
+→ PUBLICAR
+→ METRICS SNAPSHOT
+→ LEARNING LEDGER
 ```
 
 ## Tier Router
 
-### TIER 1 — RAPID
-Tema evergreen, baixo risco.
+TIER 1 — evergreen de baixo risco.
+TIER 2 — performance, biomecânica, comparação técnica.
+TIER 3 — clínico, criança, TEA, concussão, lesão, segurança, população vulnerável.
 
-- revisões/primários críticos;
-- contradiction pass;
-- Claim Lock;
-- hipóteses rivais simples quando causalidade for material.
-
-### TIER 2 — DEEP
-Performance, biomecânica, comparação técnica, tema científico importante.
-
-Adicionar:
-
-- study-family resolution;
-- outcome ontology;
-- RoB;
-- Evidence Graph;
-- replication independence;
-- heterogeneidade;
-- triangulação;
-- rival hypotheses + alternative explanations;
-- sensitivity reasoning.
-
-### TIER 3 — FULL INVESTIGATIVE DOSSIER
-Clínico, criança, TEA/neurodesenvolvimento, concussão, lesão, segurança, controvérsia material.
-
-Executar todas as camadas do `INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md`, incluindo ACH, DAG, counterfactuals, missing evidence, negative evidence, sensitivity, falsification e Best Current Explanation.
+TIER 3 executa todas as camadas investigativas.
 
 ## Best Current Explanation
 
-Antes do hook, o sistema precisa responder:
-
-```text
+Antes do hook, responder:
 WHAT WE KNOW
 WHAT IS PROBABLY TRUE
 WHAT IS PLAUSIBLE
@@ -110,139 +91,118 @@ WHAT WE DO NOT KNOW
 FOR WHOM
 UNDER WHAT CONDITIONS
 ACTIVE INGREDIENT CANDIDATES
-CONFOUNDERS / ALTERNATIVE EXPLANATIONS
+CONFOUNDERS
 WHAT WOULD FALSIFY THIS MODEL
 WHAT STUDY SHOULD BE DONE NEXT
-```
 
-Se não consegue responder, o Claim Lock ainda não está pronto.
-
-## VIRAL BRIEF
-
-Preencher só depois do Claim Lock:
+## Viral Brief v5
 
 ```yaml
 share_line: ""
 share_job: identity | utility | mythbust | status | place
-emotion: ORGULHO | RAIVA_UTIL | CURIOSIDADE | CALMA_DE_MESTRE | URGENCIA_DE_CORPO
-stop_test_7_words: ""
+save_reason: ""
+emotion: CURIOSIDADE | CALMA_DE_MESTRE | ORGULHO | RAIVA_UTIL | URGENCIA_DE_CORPO
+hook_family: ""
+stop: ""
 category_denial:
   feed_is: ""
-  we_are: ""
-stepps:
-  social_currency: 0/1
-  triggers: 0/1
-  emotion: 0/1
-  public: 0/1
-  practical_value: 0/1
-  stories: 0/1
-case_lens: blendtec_series | dove_gap | icebucket_gesture | none
-gesture: ""
+  bdc_is: ""
 series_thread: ""
-hops_goal: "envio por 1000 alcances + 2ª academia"
+ab_hypothesis_optional: ""
 ```
 
-STEPPS é heurística editorial, não previsão de virality.
+Sem promessa de virality.
+
+## Perception Plan
+
+```yaml
+primary_focal:
+secondary_focal:
+entry_point:
+reading_path:
+isolated_element:
+gestalt_rule:
+fluency_rule:
+type_rule:
+color_semantics:
+a11y:
+```
+
+No pseudo-neuromarketing.
 
 ## Arco padrão 8
 
-1. stop + identidade
-2. mito / problema
-3. mecanismo
-4. evidência / âncora
-5. limite / contradição
-6. aplicação / contexto
-7. protocolo / mapa útil
-8. síntese + gesto / CTA
+1 stop/pergunta
+2 problema/mito
+3 mecanismo
+4 evidência
+5 limite/contradição
+6 aplicação
+7 protocolo
+8 síntese/ação
 
-Não forçar esse arco quando a pergunta pedir PATH/SPLIT/atlas/cronologia diferente.
+Adaptar quando o tema pedir história, atlas, comparação ou cronologia.
 
-## Prompt compiler
+## Prompt Compiler
 
-Formato final atual: **22 blocos** por fence, conforme `PROMPT_PROTOCOL_FIXED.md`.
-
-A inteligência antiga de 56 campos pode funcionar como checklist interno, mas nunca substitui o contrato visual atual.
-
-Cada fence deve ser:
-
+Cada fence:
 - autônomo;
 - reconstruível;
-- 2.5D editorial only;
-- acessível em contraste;
-- paleta explícita;
-- Criago full lock mesmo OFF;
-- logo oficial tratado conforme `OFFICIAL_LOGO_LOCK.md`;
-- Claim Lock respeitado;
-- sem dependência do slide anterior.
+- 2.5D only;
+- palette/A11Y explicit;
+- neurodesign explicit;
+- body typography legible;
+- full Criago even OFF;
+- logo official handling;
+- Claim→Visual trace;
+- compiler pass.
 
-## Dual/Final Gate
+## Gate stack
 
-### RIGOR reprova
+RIGOR
+→ RED TEAM
+→ STOP
+→ UTILITY
+→ PERCEPTION
+→ VOICE
+→ VISUAL
+→ A11Y
+→ BRAND
+→ COMPILER
+→ FINAL.
 
-- tese fora do Claim Lock;
-- hook mais forte que a Best Current Explanation;
-- número órfão;
-- mecanismo = desfecho;
-- study families duplicadas;
-- heterogeneidade material escondida;
-- causalidade falsa;
-- evidência negativa material omitida;
-- falsa saturação.
+## KPI quando analytics existem
 
-### STOP reprova
+Priorizar:
+- shares/reach;
+- saves/reach;
+- profile visits;
+- follows;
+- comments de uso real;
+- completion/advance quando disponível;
+- relative performance by Content Job.
 
-- headline fraca / ilegível;
-- STOP >7 palavras sem necessidade;
-- sem SHARE_LINE;
-- nenhum objeto social útil;
-- visual sem tese em 3 segundos.
+Não inventar benchmarks.
+Não inferir causalidade de 1 post.
 
-### VOZ reprova
+## Experiment rule
 
-- mindset, hack, journey, unlock, game changer;
-- curso americano genérico;
-- humilhação de iniciante;
-- cura/promessa clínica.
+Uma variável principal por teste quando possível.
+Definir hipótese e métrica antes.
+Sem randomização verdadeira = observational.
 
-### VISUAL reprova
+## Content graph
 
-- 3D/CGI/game-engine;
-- baixa legibilidade;
-- A11Y falha;
-- hue-only chart;
-- logo redesenhada sem pedido explícito;
-- Criago infantil/espécie errada;
-- gráfico quantitativo em perspectiva.
-
-## KPI
-
-Não usar views/likes como único norte.
-
-Priorizar quando houver analytics reais:
-
-- envios / 1000 alcances;
-- saves por 1000 alcances;
-- comentários de uso real (“mandei no grupo”);
-- repetição noutra academia/cidade;
-- profile visits/leads quando o job for conversão;
-- desempenho relativo por Content Job.
-
-Nunca inventar benchmarks universais.
-
-## Lei de série
-
-Mesma regra visual reconhecível; objeto editorial novo por post.
-Uma emoção principal.
-Um SHARE_JOB principal.
-Um fio de série.
-Rigor constante.
+Cada investigação deve mapear próximos nós editoriais para reaproveitamento responsável.
 
 ## Proibido
 
-- broadcast disfarçado de virality;
 - rage-bait de pessoa;
-- paleta Cria do Tatame no FISIOBOXE;
+- pseudo-neuromarketing;
+- cor como neurofato;
+- 3D/CGI;
 - prompt “mesmo do anterior”;
-- biblioteca de terceiros substituindo o Style/Render Lock;
-- conclusão fechada sem Falsification Gate em TIER 3;
-- promessa de “melhor esporte/tratamento” baseada só em ranking de meta-análise/rede.
+- logo substituta;
+- claim sem source lock quando material;
+- conclusão TIER 3 sem falsification;
+- aprender regra a partir de um único post.
