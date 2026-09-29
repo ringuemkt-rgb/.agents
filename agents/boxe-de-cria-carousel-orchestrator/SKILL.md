@@ -13,7 +13,10 @@ owner: BOXE DE CRIA / FISIOBOXE
 Transformar temas de boxe, jiu-jitsu, luta, fisiologia, biomecânica, história, lesões, neurodesenvolvimento, ciência do esporte ou cultura de combate em um pacote editorial completo, rigoroso, magnético e portátil:
 
 ```text
-PERÍCIA
+AUDIENCE / DEMAND INTELLIGENCE
+→ TOPIC OPPORTUNITY
+→ CONTENT GRAPH
+→ PERÍCIA
 → BEST CURRENT EXPLANATION
 → RED TEAM
 → CLAIM LOCK
@@ -321,7 +324,7 @@ Ativa o BOXE DE CRIA Carousel Orchestrator v5.1.
 Lê ACTIVATE.md + SKILL.md + ORCHESTRATOR_ARCHITECTURE.md + AUDIENCE_DEMAND_INTELLIGENCE_ENGINE.md + TOPIC_OPPORTUNITY_ENGINE.md + CONTENT_GRAPH_ENGINE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + RED_TEAM_EVALUATION_ENGINE.md + PROMPT_PROTOCOL_FIXED.md + PROMPT_COMPILER_QA.md + NEUROMARKETING_PERCEPTION_ENGINE.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + OFFICIAL_LOGO_LOCK.md.
 Tema: [TEMA]
 Slides: 8
-Entrega: perícia + Best Current Explanation + Claim Lock + Viral Brief + 8 prompts autônomos de 22 blocos + legenda + Gate.
+Entrega: Audience/Demand Brief quando material + Topic Opportunity/Content Graph quando material + perícia + Best Current Explanation + Claim Lock + Viral Brief + 8 prompts autônomos de 22 blocos + Gemini Adapter/QA quando aplicável + legenda + Gate.
 Repetir integralmente em cada prompt: background, moldura, paleta/A11Y, neurodesign, typography, FULL Criago, logo, negatives, compiler e QA. Quando o destino for Gemini Image, aplicar GEMINI_PRODUCTION.md sem reduzir o fence.
 Nada 3D. Não encurtar. Não escrever "mesmo do anterior".
 ```
