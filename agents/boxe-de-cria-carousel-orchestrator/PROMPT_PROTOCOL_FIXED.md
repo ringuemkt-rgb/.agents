@@ -1,4 +1,4 @@
-# PROTOCOLO FIXO — Surgical Prompt Forge v5.0
+# PROTOCOLO FIXO — Surgical Prompt Forge v5.1
 
 TODO carrossel BDC gera prompts nesta estrutura.
 
@@ -28,7 +28,7 @@ Nunca usar:
 ## Cabeçalho obrigatório
 
 ```text
-BOXE DE CRIA — SURGICAL PROMPT FORGE SUPREME v5.0.0
+BOXE DE CRIA — SURGICAL PROMPT FORGE SUPREME v5.1.0
 BDC CAROUSEL ORCHESTRATOR
 BDC INVESTIGATIVE SYNTHESIS INTELLIGENCE
 BDC EVIDENCE FUSION & FORENSIC SYNTHESIS ENGINE
@@ -50,6 +50,7 @@ NÃO DEPENDER DE QUALQUER OUTRO SLIDE, PROMPT OU REFERÊNCIA.
 ## Os 22 blocos
 
 ### 01 TASK / OUTPUT LOCK
+- TARGET IMAGE MODEL: Gemini Image quando o utilizador pedir Gemini; caso contrário, model-agnostic;
 - UMA arte;
 - 4:5;
 - work 2160×2700;
@@ -62,6 +63,7 @@ NÃO DEPENDER DE QUALQUER OUTRO SLIDE, PROMPT OU REFERÊNCIA.
 - baseline 24;
 - negative space target 22–28%, capa até 35%;
 - RENDER LOCK 2.5D GRAPHIC EDITORIAL ONLY;
+- quando TARGET=Gemini Image, inserir GEMINI IMAGE TASK LOCK de `GEMINI_PRODUCTION.md` e solicitar 4:5 explicitamente onde suportado;
 - sem mockup, mosaico, 3D, CGI, game-engine, cyberpunk.
 
 ### 02 PROJECT IDENTITY
@@ -79,6 +81,7 @@ Incluir:
 - source lock quando material.
 
 ### 04 CONTENT JOB / AUDIENCE / PERSONA
+Herdar, quando disponível, `AUDIENCE_DEMAND_INTELLIGENCE_ENGINE.md` e `TOPIC_OPPORTUNITY_ENGINE.md`.
 Definir:
 - job: authority | utility | identity | mythbust | place;
 - persona primária;
@@ -86,6 +89,11 @@ Definir:
 - share reason;
 - save reason;
 - knowledge level;
+- search intent;
+- declared pain;
+- functional problem;
+- JTBD;
+- demand level/freshness quando material;
 - linguagem do Brasil e nomenclatura correta da modalidade.
 
 ### 05 NARRATIVE / RETENTION / NEURODESIGN
@@ -104,7 +112,9 @@ Incluir:
 - no fear exploitation.
 
 ### 06 EXACT TEXT LOCK
-Verbatim:
+Verbatim.
+Quando TARGET=Gemini Image, classificar copy em T0/T1/T2 conforme `GEMINI_PRODUCTION.md` e incluir `TEXT RENDER POLICY: do not paraphrase / translate / add copy`.
+Campos:
 - pill;
 - counter;
 - headline;
@@ -344,6 +354,7 @@ NO “dopamine hack”.
 NO copying third-party visual identity.
 
 ### 21 PRE-RENDER QA / COMPILER
+Se TARGET=Gemini Image, adicionar GEMINI ZONE CHECK + T0/T1/T2 TEXT CHECK + ONE-SLIDE CHECK.
 Obrigatório:
 ```text
 STRUCTURAL LINT: PASS
@@ -361,6 +372,7 @@ DATA: PASS
 ```
 
 ### 22 POST-RENDER QA
+Quando TARGET=Gemini Image, executar `GEMINI_PRODUCTION.md` Post-render Gemini QA antes de avançar para o próximo slide.
 Rejeitar se:
 - texto não corresponde ao lock;
 - erro pt-BR;
@@ -375,6 +387,29 @@ Rejeitar se:
 - source ilegível quando material.
 
 Aplicar auto-repair até 2 iterações; depois REPROVADO se P0/P1 persistir.
+
+## Demand-to-prompt handoff
+
+A inteligência de audiência NÃO aumenta o tamanho do fence com dashboards.
+
+Só entram no prompt:
+- persona;
+- intent;
+- dor funcional relevante;
+- linguagem do público;
+- share/save reason;
+- angle escolhido.
+
+Raw queries, volumes, competitor notes e opportunity rubric permanecem upstream.
+
+## Gemini adapter rule
+
+Quando o destino for Gemini Image:
+- não reduzir nenhum dos 22 blocos;
+- adicionar instruções Gemini dentro dos blocos existentes;
+- gerar uma imagem por vez;
+- referências visuais não substituem canon;
+- corrigir texto/anatomia/marca antes do slide seguinte.
 
 ## Color canon
 
