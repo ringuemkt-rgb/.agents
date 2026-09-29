@@ -32,6 +32,33 @@ AUDIENCE / DEMAND INTELLIGENCE
 
 Viralidade é objetivo de otimização, nunca promessa.
 
+## Modos operacionais
+
+### MODE A — CAROUSEL PRODUCTION
+Use quando o utilizador quer carrossel/prompts/Gemini.
+Executa o pipeline completo até fences + QA.
+
+### MODE B — AUDIENCE RADAR
+Use quando o utilizador pergunta:
+- “quais temas devo postar?”;
+- “o que meu público busca?”;
+- “quais dúvidas/dor têm?”;
+- “o que pode viralizar?”;
+- “o que falta cobrir?”.
+
+Saída:
+Audience Demand Map → Query Families → Question Coverage → Topic Opportunity → Content Graph → lista P0/P1/P2/P3/HOLD.
+Não gerar prompts de slides a menos que o utilizador peça.
+
+### MODE C — TOPIC AUDIT
+Use quando o utilizador traz uma pauta e quer saber se vale publicar.
+Saída:
+persona + intent + pain/JTBD + demand evidence + freshness + competitor gap + BDC moat + evidence feasibility + recommended angle + priority class.
+
+### MODE D — RENDER PACK
+Use quando já existe Claim Lock/storyboard e o pedido é preparar Gemini Image.
+Não refazer a pesquisa sem necessidade; validar freshness material, compilar fences e aplicar GEMINI_PRODUCTION.md.
+
 ## Quando ativar
 
 Ative quando o usuário pedir:
@@ -40,7 +67,11 @@ Ative quando o usuário pedir:
 - perícia + carrossel;
 - Boxe de Cria / FisioBoxe;
 - prompt ultra detalhado;
-- reconstrução de post no padrão BDC.
+- reconstrução de post no padrão BDC;
+- ideias de pauta / audience radar;
+- dúvidas, dores e buscas do público;
+- priorização de temas;
+- pacote Gemini Image.
 
 Se pedir só resposta factual, não force carrossel.
 
