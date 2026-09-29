@@ -1,5 +1,29 @@
 # Changelog — BOXE DE CRIA Carousel Orchestrator
 
+## 4.3.0-portable.1 — 2026-09-29
+
+### Portable skill + architecture
+- Added `SKILL.md` as the portable, model-agnostic capability contract.
+- Added `ORCHESTRATOR_ARCHITECTURE.md` as the single-source-of-truth architecture map.
+- Bound `ACTIVATE.md`, `AGENT.md` and `SYSTEM_PROMPT.md` to the new skill contract.
+
+### Autonomy Repetition Law
+- Every 22-block fence must now fully restate COLOR/A11Y, FRAME, BACKGROUND L0–L9, DEPTH Z0–Z5, FULL CRIAGO LOCK, official logo handling, negatives and QA.
+- Shorthand such as “same as previous slide” is a P0 portability failure.
+- FULL Criago Lock remains present even when `VISIBILITY: OFF`.
+
+### Visual production
+- Preserved hard 2.5D-only law.
+- Preserved dark petroleum/charcoal/deep-navy preference with BDC charcoal/graphite chrome.
+- Preserved WCAG 2.2 accessibility gates.
+- Reinforced cover architecture: defensible hook, one central idea, visual proof, real open loop and controlled negative space.
+
+### Repository synchronization
+- Updated prompt template/protocol to v4.3.
+- Updated agent/workflow registry to `4.3.0-portable.1`.
+
+---
+
 ## 4.2.0-portable.1 — 2026-09-16
 
 ### Investigative Synthesis Intelligence

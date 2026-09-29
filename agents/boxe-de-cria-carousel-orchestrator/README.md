@@ -2,27 +2,38 @@
 
 Sistema portátil para qualquer IA: investigação → melhor explicação atual → Claim Lock → **prompts de 22 blocos autónomos** → legenda → Gate.
 
-**Versão do sistema: 4.2.0-portable.1**
+**Versão do sistema: 4.3.0-portable.1**
 
 A saída visual continua sendo um fence autônomo de 22 blocos por slide. A inteligência antiga de 56 campos foi preservada apenas como checklist upstream/legado quando útil; ela não define mais o formato final de entrega.
 
 ## Acordar a IA
 
 1. Ler [`ACTIVATE.md`](./ACTIVATE.md).
-2. Para temas científicos/causais, ler [`INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md`](./INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md).
-3. Ler [`PROMPT_PROTOCOL_FIXED.md`](./PROMPT_PROTOCOL_FIXED.md) + [`PROMPT_TEMPLATE.md`](./PROMPT_TEMPLATE.md).
-4. Aplicar os locks visuais e de marca.
+2. Ler [`SKILL.md`](./SKILL.md) + [`ORCHESTRATOR_ARCHITECTURE.md`](./ORCHESTRATOR_ARCHITECTURE.md).
+3. Para temas científicos/causais, ler [`INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md`](./INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md).
+4. Ler [`PROMPT_PROTOCOL_FIXED.md`](./PROMPT_PROTOCOL_FIXED.md) + [`PROMPT_TEMPLATE.md`](./PROMPT_TEMPLATE.md).
+5. Aplicar os locks visuais e de marca.
 
 Frase curta:
 
 ```text
-Ativa o BOXE DE CRIA Carousel Orchestrator v4.2.
-Lê ACTIVATE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + PROMPT_PROTOCOL_FIXED.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + OFFICIAL_LOGO_LOCK.md.
+Ativa o BOXE DE CRIA Carousel Orchestrator v4.3.
+Lê ACTIVATE.md + SKILL.md + ORCHESTRATOR_ARCHITECTURE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + PROMPT_PROTOCOL_FIXED.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + OFFICIAL_LOGO_LOCK.md.
 Tema: [TEMA]
 Slides: 8
 Entrega: perícia + Best Current Explanation + Claim Lock + Viral Brief + 8 fences de 22 blocos autônomos + legenda + Gate.
-Não gerar imagem. Não encurtar prompt. Nada 3D.
+Cada prompt repete integralmente background, moldura, paleta/A11Y, FULL Criago Lock, logo handling, negatives e QA. Não gerar imagem. Não encurtar prompt. Nada 3D. Não escrever "mesmo do anterior".
 ```
+
+## O que o v4.3 adiciona
+
+- `SKILL.md` como contrato portátil da capacidade;
+- `ORCHESTRATOR_ARCHITECTURE.md` como mapa de autoridade e módulos;
+- **Autonomy Repetition Law**: cada prompt repete integralmente frame, background, depth, paleta/A11Y, Criago, logo, negatives e QA;
+- FULL Criago Lock obrigatório mesmo quando `VISIBILITY: OFF`;
+- proibição explícita de atalhos como “mesmo do anterior”;
+- sincronização do agente, system prompt, template e workflow para `4.3.0-portable.1`;
+- arquitetura de capa reforçada: hook defensável + objeto-herói que prova visualmente a tese + open loop real.
 
 ## O que o v4.2 adiciona
 
@@ -61,6 +72,8 @@ Princípio:
 | Ordem | Ficheiro | Função |
 |---|---|---|
 | 0 | `ACTIVATE.md` | autoridade + contrato de execução |
+| 0.1 | `SKILL.md` | contrato portátil da skill e leis operacionais |
+| 0.2 | `ORCHESTRATOR_ARCHITECTURE.md` | topologia, precedência e fronteiras entre módulos |
 | 1 | `INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md` | rival hypotheses, causal reasoning, ACH, falsificação |
 | 2 | `EVIDENCE_SYNTHESIS.md` | protocolo forense de evidência |
 | 3 | `CROSS_STUDY_INTELLIGENCE.md` | saturation, finding atoms, study linkage |

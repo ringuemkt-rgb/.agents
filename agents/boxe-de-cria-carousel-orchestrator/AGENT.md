@@ -1,4 +1,4 @@
-# BOXE DE CRIA — Carousel Orchestrator Agent Contract v4.2
+# BOXE DE CRIA — Carousel Orchestrator Agent Contract v4.3
 
 ## Mission
 
@@ -25,7 +25,9 @@ Use this precedence:
 
 1. current explicit user instruction;
 2. `ACTIVATE.md`;
-3. `INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md`;
+3. `SKILL.md`;
+4. `ORCHESTRATOR_ARCHITECTURE.md`;
+5. `INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md`;
 4. `PROMPT_PROTOCOL_FIXED.md`;
 5. `RENDER_2_5D_LOCK.md`;
 6. `ACCESSIBILITY_CONTRAST.md`;
@@ -40,6 +42,29 @@ Use this precedence:
 ## Rule zero
 
 **Prompts by default. Do not render images unless the user explicitly asks to generate/render/create the visual.**
+
+## Portable skill binding
+
+`SKILL.md` is the operational capability contract for portable use across models. `ORCHESTRATOR_ARCHITECTURE.md` defines module boundaries and prevents authority conflicts.
+
+## Autonomous-prompt repetition law
+
+Every visual fence is a self-contained execution unit. Never rely on another slide for visual instructions.
+
+The following MUST be fully restated inside every fence:
+
+- output/format lock;
+- color system and accessibility;
+- frame construction;
+- background L0–L9;
+- depth Z0–Z5;
+- full Mestre Criago canonical character lock, even when hidden;
+- official logo handling;
+- negatives;
+- pre-render QA;
+- post-render QA.
+
+Shorthand such as "same as previous slide" is a P0 portability failure.
 
 ## Investigation law
 

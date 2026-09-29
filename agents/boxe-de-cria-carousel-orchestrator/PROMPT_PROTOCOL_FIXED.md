@@ -1,4 +1,4 @@
-# PROTOCOLO FIXO — Surgical Prompt Forge v4.2
+# PROTOCOLO FIXO — Surgical Prompt Forge v4.3
 
 A partir de v4.2, TODO carrossel BDC gera prompts nesta estrutura.
 Não encurtar. Não dizer “mesmo do anterior”. Não gerar legenda no meio.
@@ -6,10 +6,27 @@ Ordem: perícia → Best Current Explanation → Claim Lock → Viral Brief → 
 
 A inteligência investigativa fica upstream em `INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md`; o prompt visual recebe apenas a tese aprovada, certeza, directness, aplicabilidade, caveat e explicação segura necessária para desenhar corretamente.
 
+## AUTONOMY REPETITION LAW — obrigatório
+
+Cada fence é um pacote independente para copiar/colar em qualquer IA.
+
+Nunca usar referências como:
+- "mesmo background do anterior";
+- "moldura igual";
+- "repetir o Criago";
+- "usar a paleta já definida";
+- "seguir o slide anterior".
+
+Os blocos 07, 09, 10, 11, 18, 19, 20, 21 e 22 devem conter informação suficiente por si mesmos. Em especial, repetir integralmente em TODO slide:
+
+`COLOR/A11Y + FRAME + BACKGROUND + DEPTH + FULL CRIAGO LOCK + LOGO + NEGATIVE + QA`.
+
+A redundância intencional é requisito de portabilidade.
+
 ## Cabeçalho em cada fence
 
 ```text
-BOXE DE CRIA — SURGICAL PROMPT FORGE SUPREME v4.2.0
+BOXE DE CRIA — SURGICAL PROMPT FORGE SUPREME v4.3.0
 BDC CAROUSEL ORCHESTRATOR
 BDC INVESTIGATIVE SYNTHESIS INTELLIGENCE
 BDC EVIDENCE FUSION & FORENSIC SYNTHESIS ENGINE
