@@ -1,89 +1,134 @@
-# Runbook — investigative evidence-first carousel → image model
+# Runbook — Audience/Demand → Evidence → Gemini Carousel
 
 System version: **5.1.0-portable.1**
 
-## 1. Audience / Demand Intake
+## Stage 1 — Audience / Demand Intake
 
-1. Capture raw user query / comment / search signal.
-2. Identify persona, intent, declared pain, functional problem, desire and JTBD.
-3. Classify demand D0–D4 and freshness F0–F3 when data exist.
-4. Map competitor gap and BDC expertise moat.
-5. Route via Topic Opportunity P0–P3 / HOLD.
-6. Build Content Graph when the topic is expandable.
-7. Question decomposition.
-8. Choose PICO / PECO / mechanism / diagnostic / prognostic frame.
-9. Select Tier 1 / 2 / 3.
+1. Capture user-defined topic OR real raw query/comment/search signal.
+2. Preserve raw audience wording.
+3. Identify persona.
+4. Classify primary/secondary intent.
+5. Map declared pain.
+6. Map functional problem.
+7. Map desire.
+8. Write JTBD.
+9. Classify demand D0–D4 when evidence exists.
+10. Classify freshness F0–F3.
+11. Map competitor gap.
+12. Map BDC expertise moat.
+13. Route via Topic Opportunity P0–P3 / HOLD.
+14. Build Content Graph when expandable.
 
-## 2. Investigation
+If the user explicitly locks the theme, do not replace it; use this stage only to sharpen angle/audience.
 
-10. Generate rival hypotheses before deep reading.
-6. Search without self-imposed result cap until saturation or documented `TOOL_LIMIT`.
-7. Build Evidence Inventory + finding atoms.
-8. Resolve study families / overlapping cohorts.
-9. Separate source reliability from information credibility.
-10. Build Outcome Ontology.
-11. Decompose exposure/intervention into active ingredients.
-12. Route risk of bias by design.
-13. Normalize effects and units.
-14. Assess replication independence and researcher-network concentration.
-15. Build ACH matrix.
-16. Build Evidence Graph.
-17. Build causal DAG when causality matters.
-18. Generate alternative explanations.
-19. Run counterfactual tests.
-20. Analyze moderators, dose and temporal ordering.
-21. Triangulate across methods.
-22. Resolve contradictions explicitly.
-23. Search negative evidence / harms / failed replications.
-24. Search missing/unpublished/selectively reported evidence.
-25. Run sensitivity ladder.
-26. Assess applicability.
-27. Pair benefit × harm × burden.
-28. Perform qualitative Bayesian-style confidence update.
-29. Run Investigator Bias Guard.
-30. Run Falsification Gate.
-31. Compile Best Current Explanation + Evidence Gap Map.
+## Stage 2 — Investigation
 
-## 3. Editorial lock
+15. Decompose the research question.
+16. Choose PICO / PECO / mechanism / diagnostic / prognostic frame.
+17. Select Tier 1 / 2 / 3.
+18. Generate rival hypotheses.
+19. Search until saturation or documented TOOL_LIMIT.
+20. Build Evidence Inventory + finding atoms.
+21. Resolve study families / overlapping cohorts.
+22. Separate source reliability from information credibility.
+23. Build Outcome Ontology.
+24. Decompose exposure/intervention.
+25. Route risk of bias.
+26. Normalize effects and units.
+27. Assess replication independence.
+28. Map researcher network when material.
+29. Build ACH matrix when material.
+30. Build Evidence Graph.
+31. Build causal DAG when causality matters.
+32. Generate alternative explanations.
+33. Run counterfactual tests.
+34. Analyze moderators / dose / time.
+35. Triangulate methods.
+36. Resolve contradictions.
+37. Search negative evidence / harms / failed replications.
+38. Search missing/selectively reported evidence.
+39. Run sensitivity ladder.
+40. Assess applicability.
+41. Pair benefit × harm × burden.
+42. Run Investigator Bias Guard.
+43. Run Falsification Gate.
+44. Run Red Team.
+45. Compile Best Current Explanation + Evidence Gap Map.
 
-32. Editorial Claim Lock.
-33. Hook Forge ≥12 internally.
-34. Viral Brief only after Claim Lock.
-35. Choose 6 / 8 / 10 slide arc.
-36. Build Retention Map + Visual Claim Map.
+## Stage 3 — Editorial
 
-## 4. Visual compiler
+46. Editorial Claim Lock.
+47. Build audience-language bridge.
+48. Run Hook Tournament 16–24 candidates.
+49. Select 3 finalists by clarity, curiosity, specificity, proofability and share utility.
+50. Build Viral Brief.
+51. Choose slide count / arc.
+52. Build Retention Map.
+53. Build Perception Plan.
+54. Build Visual Claim Map.
+55. Choose infographic grammar.
 
-37. Choose infographic grammar per slide.
-38. Choose palette with `PALETTE_DECISION_ENGINE.md` + `PALETTE_CANON.md`.
-39. Verify `ACCESSIBILITY_CONTRAST.md`.
-40. Apply `RENDER_2_5D_LOCK.md`.
-41. Apply `OFFICIAL_LOGO_LOCK.md`.
-42. Compile **22-block autonomous fences** via `PROMPT_PROTOCOL_FIXED.md`.
-43. Pre-render QA.
+## Stage 4 — Visual Compiler
 
-## 5. Render / publication
+56. Choose palette through PALETTE_DECISION_ENGINE.
+57. Verify WCAG / color-blind backup.
+58. Set typography / legibility.
+59. Apply RENDER_2_5D_LOCK.
+60. Apply OFFICIAL_LOGO_LOCK.
+61. Compile one **22-block autonomous fence per slide**.
+62. Run structural lint.
+63. Run contradiction lint.
+64. Run Claim→Visual trace.
+65. Run density / thumbnail / sunlight checks.
+66. Pre-render Gate.
 
-49. If target = Gemini Image: apply GEMINI_PRODUCTION.md, explicit 4:5 when available, one slide per generation.
-50. Generate slide 01 → post-render QA → repair → slide 02…N.
-51. Caption PT-BR only after final fence.
-52. Final Gate: `APROVADO | APROVADO_COM_RESSALVAS | REPROVADO`.
-53. When real analytics exist, log account-relative learning without inventing causality.
+## Stage 5 — Gemini Image
+
+67. Apply GEMINI_PRODUCTION.md.
+68. Set target: ONE image, 4:5.
+69. Classify copy T0 / T1 / T2.
+70. Define zones A–F.
+71. Supply official logo/Criago references when available.
+72. Generate Slide 01.
+73. Post-render QA.
+74. Repair if P0/P1.
+75. Generate Slide 02 only after Slide 01 passes.
+76. Repeat through Slide N.
+
+Never generate the entire carousel as a single contact sheet.
+
+## Stage 6 — Publication
+
+77. Finalize exact T2 text/logo outside generative render when needed.
+78. Export 1080×1350 sRGB from master.
+79. Caption PT-BR after the last fence.
+80. Final Gate:
+`APROVADO | APROVADO_COM_RESSALVAS | REPROVADO`.
+
+## Stage 7 — Learning
+
+81. Capture real analytics if available.
+82. Normalize by format/context.
+83. Tag hook, visual grammar, palette, Criago, CTA, topic.
+84. Record observed pattern.
+85. Form next hypothesis.
+86. A/B test one main variable where possible.
+87. Update Content Graph / Learning Ledger.
 
 ## Forbidden
 
-- invent source/data;
-- arbitrary search/page cap;
+- invent search volume / Trends / comments;
+- use popularity as factual evidence;
 - hook before Claim Lock;
-- publication count treated as independent replication;
-- mechanism promoted to clinical outcome;
+- duplicate cohorts as independent evidence;
+- mechanism as clinical outcome;
 - ignore material null/harm evidence;
-- hide heterogeneity;
-- causal story without confounder check;
-- no Falsification Gate in TIER 3;
+- TIER 3 without falsification;
 - prompt dependent on previous slide;
-- 56-block output overriding current 22-block protocol;
-- send forensic YAML/ACH/DAG internals to the image model unless the slide teaches them;
-- 3D/CGI/game-engine visual;
-- inaccessible contrast or hue-only chart;
-- redraw official logo by default.
+- 3D / CGI / game engine;
+- inaccessible contrast;
+- hue-only chart;
+- unofficial logo substitute;
+- whole-carousel Gemini contact sheet;
+- pseudo-neuromarketing;
+- infer causal rule from one post.
