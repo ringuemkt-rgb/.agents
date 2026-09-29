@@ -118,8 +118,8 @@
     {
       "id": "boxe-de-cria-carousel-orchestrator",
       "name": "BOXE DE CRIA Carousel Orchestrator",
-      "version": "4.3.0-portable.1",
-      "role": "Turns combat-sports topics into adversarially investigated, evidence-synthesized, audience-aware, retention-engineered and fully autonomous 22-block carousel prompt packages with repeated visual/brand locks for BOXE DE CRIA/FISIOBOXE.",
+      "version": "5.1.0-portable.1",
+      "role": "Turns real audience questions, pains and demand signals into prioritized combat-sports topics, adversarial evidence syntheses and fully autonomous 22-block Gemini-ready carousel prompt packages for BOXE DE CRIA/FISIOBOXE.",
       "instructions": "agents/boxe-de-cria-carousel-orchestrator/ACTIVATE.md",
       "investigative_engine": "agents/boxe-de-cria-carousel-orchestrator/INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md",
       "evidence_protocol": "agents/boxe-de-cria-carousel-orchestrator/EVIDENCE_SYNTHESIS.md",
@@ -196,7 +196,26 @@
         "full-background-lock-every-slide",
         "full-frame-lock-every-slide",
         "full-criago-lock-every-slide",
-        "cross-model-prompt-portability"
+        "cross-model-prompt-portability",
+        "query-mining",
+        "comment-mining",
+        "search-intent-classification",
+        "pain-desire-ontology",
+        "jobs-to-be-done",
+        "audience-lexicon",
+        "demand-level-classification",
+        "freshness-routing",
+        "competitor-gap-mining",
+        "bdc-expertise-moat",
+        "topic-opportunity-routing",
+        "content-graph",
+        "topic-radar",
+        "gemini-image-prompt-adaptation",
+        "gemini-exact-text-priority",
+        "gemini-post-render-qa",
+        "audience-radar-mode",
+        "topic-audit-mode",
+        "render-pack-mode"
       ],
       "requires": [
         "repository-guardian"
@@ -220,11 +239,21 @@
         "target-vulnerable-person-with-humor",
         "render-images-without-explicit-request",
         "refer-to-previous-slide-for-style",
-        "abbreviate-background-frame-or-criago-lock"
+        "abbreviate-background-frame-or-criago-lock",
+        "invent-search-volume",
+        "invent-google-trends-signal",
+        "invent-audience-comments",
+        "infer-truth-from-popularity",
+        "replace-user-locked-topic-with-demand-topic",
+        "generate-whole-carousel-as-single-image"
       ],
       "skill": "agents/boxe-de-cria-carousel-orchestrator/SKILL.md",
       "architecture": "agents/boxe-de-cria-carousel-orchestrator/ORCHESTRATOR_ARCHITECTURE.md",
-      "system_prompt": "agents/boxe-de-cria-carousel-orchestrator/SYSTEM_PROMPT.md"
+      "system_prompt": "agents/boxe-de-cria-carousel-orchestrator/SYSTEM_PROMPT.md",
+      "audience_demand_engine": "agents/boxe-de-cria-carousel-orchestrator/AUDIENCE_DEMAND_INTELLIGENCE_ENGINE.md",
+      "topic_opportunity_engine": "agents/boxe-de-cria-carousel-orchestrator/TOPIC_OPPORTUNITY_ENGINE.md",
+      "content_graph_engine": "agents/boxe-de-cria-carousel-orchestrator/CONTENT_GRAPH_ENGINE.md",
+      "gemini_image_adapter": "agents/boxe-de-cria-carousel-orchestrator/GEMINI_PRODUCTION.md"
     }
   ]
 }

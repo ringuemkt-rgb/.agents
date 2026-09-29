@@ -1,7 +1,7 @@
-# BOXE DE CRIA — Content Production OS v5.0
+# BOXE DE CRIA — Content Production OS v5.1
 
 Sistema único:
-**tema → investigação → Red Team → Best Current Explanation → Claim Lock → Viral Brief → Perception Plan → 22-block fences → Prompt Compiler → QA → publicação → aprendizagem**.
+**tema/demanda → Audience Intelligence → Topic Opportunity → Content Graph → investigação → Red Team → Best Current Explanation → Claim Lock → Viral Brief → Perception Plan → 22-block fences → Prompt Compiler → QA → publicação → aprendizagem**.
 
 Viral = probabilidade de stop/share/save útil. Nunca promessa.
 
@@ -10,23 +10,36 @@ Viral = probabilidade de stop/share/save útil. Nunca promessa.
 1. ACTIVATE.md
 2. SKILL.md
 3. ORCHESTRATOR_ARCHITECTURE.md
-4. INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md
-5. RED_TEAM_EVALUATION_ENGINE.md
-6. EVIDENCE_SYNTHESIS.md + CROSS_STUDY_INTELLIGENCE.md + GRADE_RUBRIC.md
-7. NEUROMARKETING_PERCEPTION_ENGINE.md
-8. PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md + COLOR_THEORY_BDC.md + ACCESSIBILITY_CONTRAST.md
-9. RENDER_2_5D_LOCK.md + OFFICIAL_LOGO_LOCK.md
-10. ATTENTION_NARRATIVE.md + VIRAL_ENGINE.md + INFOGRAPHIC_GRAMMAR.md
-11. PROMPT_PROTOCOL_FIXED.md + PROMPT_TEMPLATE.md
-12. PROMPT_COMPILER_QA.md
-13. EDITORIAL_LEARNING_ENGINE.md
-14. GEMINI_PRODUCTION.md quando aplicável
-15. AGENT.md / SYSTEM_PROMPT.md
+4. AUDIENCE_DEMAND_INTELLIGENCE_ENGINE.md
+5. TOPIC_OPPORTUNITY_ENGINE.md
+6. CONTENT_GRAPH_ENGINE.md
+7. INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md
+8. RED_TEAM_EVALUATION_ENGINE.md
+9. EVIDENCE_SYNTHESIS.md + CROSS_STUDY_INTELLIGENCE.md + GRADE_RUBRIC.md
+10. NEUROMARKETING_PERCEPTION_ENGINE.md
+11. PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md + COLOR_THEORY_BDC.md + ACCESSIBILITY_CONTRAST.md
+12. RENDER_2_5D_LOCK.md + OFFICIAL_LOGO_LOCK.md
+13. ATTENTION_NARRATIVE.md + VIRAL_ENGINE.md + INFOGRAPHIC_GRAMMAR.md
+14. PROMPT_PROTOCOL_FIXED.md + PROMPT_TEMPLATE.md
+15. PROMPT_COMPILER_QA.md
+16. GEMINI_PRODUCTION.md quando aplicável
+17. EDITORIAL_LEARNING_ENGINE.md
+18. AGENT.md / SYSTEM_PROMPT.md
 
 ## Pipeline obrigatório
 
 ```text
-TEMA
+TEMA / QUERY / COMMENT / DEMAND SIGNAL
+→ AUDIENCE PERSONA
+→ SEARCH INTENT
+→ PAIN / DESIRE
+→ JOBS TO BE DONE
+→ DEMAND LEVEL
+→ FRESHNESS
+→ COMPETITOR GAP
+→ BDC EXPERTISE MOAT
+→ TOPIC OPPORTUNITY
+→ CONTENT GRAPH
 → QUESTION DECOMPOSITION
 → AUDIENCE + PROBLEM FIT
 → TIER ROUTER
@@ -64,12 +77,31 @@ TEMA
 → N FENCES AUTÔNOMOS DE 22 BLOCOS
 → PROMPT COMPILER
 → PRE-RENDER QA
-→ RENDER se solicitado
+→ GEMINI ADAPTER se aplicável
+→ RENDER UM SLIDE POR VEZ se solicitado
 → POST-RENDER QA / REPAIR
 → PUBLICAR
 → METRICS SNAPSHOT
 → LEARNING LEDGER
 ```
+
+## Audience & Demand Gate
+
+Quando o tema vier aberto:
+- minerar queries/comentários/sinais reais;
+- classificar persona e intent;
+- mapear pain/desire/JTBD;
+- classificar D0–D4 e F0–F3;
+- identificar competitor gap;
+- avaliar BDC moat;
+- passar pelo Topic Opportunity Engine;
+- expandir via Content Graph.
+
+Quando o tema vier fechado pelo utilizador:
+- preservar o tema;
+- usar esta camada apenas para encontrar o melhor ângulo, persona e linguagem.
+
+Demanda nunca substitui Evidence.
 
 ## Tier Router
 
@@ -156,6 +188,20 @@ Cada fence:
 - logo official handling;
 - Claim→Visual trace;
 - compiler pass.
+
+## Gemini Production Gate
+
+Quando destino = Gemini Image:
+
+- 1 imagem por slide;
+- `aspect_ratio 4:5` explícito quando a interface permitir;
+- T0/T1/T2 text priority;
+- 6 zonas de layout;
+- reference asset policy;
+- full autonomous fence preservado;
+- QA após cada geração;
+- corrigir P0/P1 antes do próximo slide;
+- caption fica fora da imagem.
 
 ## Gate stack
 

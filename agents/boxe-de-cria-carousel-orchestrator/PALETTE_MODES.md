@@ -1,4 +1,6 @@
-# PALETTE MODES — BOXE DE CRIA v4.2
+# PALETTE MODES — BOXE DE CRIA v5.1
+
+Color semantics are brand conventions, not universal neuroscience.
 
 This file lists the named modes. Selection logic lives in `PALETTE_DECISION_ENGINE.md`; exact tokens live in `PALETTE_CANON.md`.
 

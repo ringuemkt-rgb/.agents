@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BDC Topic Opportunity Card",
+  "type": "object",
+  "required": [
+    "topic_id",
+    "question",
+    "priority_class",
+    "evidence_gate",
+    "recommended_format"
+  ],
+  "properties": {
+    "topic_id": {
+      "type": "string"
+    },
+    "question": {
+      "type": "string"
+    },
+    "persona": {
+      "type": "string"
+    },
+    "intent": {
+      "type": "string"
+    },
+    "demand_level": {
+      "enum": [
+        "D0",
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ]
+    },
+    "freshness_class": {
+      "enum": [
+        "F0",
+        "F1",
+        "F2",
+        "F3"
+      ]
+    },
+    "priority_class": {
+      "enum": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "HOLD"
+      ]
+    },
+    "pain": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "jtbd": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_gate": {
+      "type": "string"
+    },
+    "brand_moat": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "competitor_gap": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "visual_teachability": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3
+    },
+    "series_potential": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3
+    },
+    "recommended_format": {
+      "type": "string"
+    },
+    "hook_family_candidates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "why_now": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "hold_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "coverage_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "unique_surface_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    }
+  }
+}

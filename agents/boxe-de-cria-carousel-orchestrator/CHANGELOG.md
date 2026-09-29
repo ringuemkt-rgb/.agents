@@ -1,5 +1,32 @@
 # Changelog — BOXE DE CRIA Carousel Orchestrator
 
+## 5.1.0-portable.1 — 2026-09-29
+
+### Audience & Demand Intelligence
+- Added `AUDIENCE_DEMAND_INTELLIGENCE_ENGINE.md`.
+- Added persona-by-problem mapping, query/comment mining, search intent, Pain & Desire Ontology, JTBD, Audience Lexicon, demand D0–D4 and freshness F0–F3.
+- Added explicit rule: popularity is demand evidence, not factual evidence.
+
+### Topic Opportunity + Content Graph
+- Added `TOPIC_OPPORTUNITY_ENGINE.md` with P0–P3/HOLD routing and Topic Radar H0–H3.
+- Added `CONTENT_GRAPH_ENGINE.md` for query → pain → mechanism → evidence → myth → application → series.
+- Added JSON schemas for audience demand, topic opportunity and content graph.
+
+### Gemini Image production
+- Upgraded `GEMINI_PRODUCTION.md` to v5.1.
+- Explicit 4:5 target when supported.
+- One-slide-per-generation.
+- T0/T1/T2 exact-text priority.
+- Reference-asset strategy for official logo and Criago.
+- Layout-zone guidance.
+- Gemini-specific post-render QA and repair loop.
+- System never compresses autonomous 22-block fences for Gemini.
+
+### System integration
+- Updated ACTIVATE, SKILL, Architecture, Agent, System Prompt, Content OS, README, Prompt Protocol, Prompt Template, Manifest, Instagram Strategy and agent/workflow registries.
+
+---
+
 ## 4.3.0-portable.1 — 2026-09-29
 
 ### Portable skill + architecture

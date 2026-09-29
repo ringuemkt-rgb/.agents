@@ -1,4 +1,4 @@
-# ATIVAR — BOXE DE CRIA Carousel Orchestrator v5.0
+# ATIVAR — BOXE DE CRIA Carousel Orchestrator v5.1
 
 Se o utilizador disser **ativa o sistema**, **ative o orchestrator**, **rode o BDC**, **gera o carrossel** ou colar este ficheiro: cumpra ESTE contrato até ao fim.
 
@@ -10,24 +10,29 @@ Repo: https://github.com/ringuemkt-rgb/.agents/tree/main/agents/boxe-de-cria-car
 2. `ACTIVATE.md`;
 3. `SKILL.md`;
 4. `ORCHESTRATOR_ARCHITECTURE.md`;
-5. `INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md`;
-6. `RED_TEAM_EVALUATION_ENGINE.md`;
-7. `EVIDENCE_SYNTHESIS.md` + `CROSS_STUDY_INTELLIGENCE.md` + `GRADE_RUBRIC.md`;
-8. `PROMPT_PROTOCOL_FIXED.md`;
-9. `PROMPT_COMPILER_QA.md`;
-10. `NEUROMARKETING_PERCEPTION_ENGINE.md`;
-11. `RENDER_2_5D_LOCK.md`;
-12. `ACCESSIBILITY_CONTRAST.md`;
-13. `PALETTE_CANON.md` + `PALETTE_DECISION_ENGINE.md` + `COLOR_THEORY_BDC.md`;
-14. `OFFICIAL_LOGO_LOCK.md`;
-15. `ATTENTION_NARRATIVE.md` + `VIRAL_ENGINE.md` + `INFOGRAPHIC_GRAMMAR.md`;
-16. `EDITORIAL_LEARNING_ENGINE.md`;
-17. `CONTENT_PRODUCTION_OS.md`;
-18. `AGENT.md` / `SYSTEM_PROMPT.md` como raiz modular complementar.
+5. `MODULE_STATUS.md`;
+6. `AUDIENCE_DEMAND_INTELLIGENCE_ENGINE.md`;
+7. `TOPIC_OPPORTUNITY_ENGINE.md`;
+8. `CONTENT_GRAPH_ENGINE.md`;
+9. `INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md`;
+10. `RED_TEAM_EVALUATION_ENGINE.md`;
+11. `EVIDENCE_SYNTHESIS.md` + `CROSS_STUDY_INTELLIGENCE.md` + `GRADE_RUBRIC.md`;
+12. `PROMPT_PROTOCOL_FIXED.md`;
+13. `PROMPT_COMPILER_QA.md`;
+14. `NEUROMARKETING_PERCEPTION_ENGINE.md`;
+15. `RENDER_2_5D_LOCK.md`;
+16. `ACCESSIBILITY_CONTRAST.md`;
+17. `PALETTE_CANON.md` + `PALETTE_DECISION_ENGINE.md` + `COLOR_THEORY_BDC.md`;
+18. `OFFICIAL_LOGO_LOCK.md`;
+19. `ATTENTION_NARRATIVE.md` + `VIRAL_ENGINE.md` + `INFOGRAPHIC_GRAMMAR.md`;
+20. `GEMINI_PRODUCTION.md` quando o destino for Gemini Image;
+21. `EDITORIAL_LEARNING_ENGINE.md`;
+22. `CONTENT_PRODUCTION_OS.md`;
+23. `AGENT.md` / `SYSTEM_PROMPT.md` como raiz modular complementar.
 
 Se qualquer ficheiro histórico mencionar 56 blocos, essa inteligência é apenas **upstream/checklist**. A saída visual atual é o contrato de **22 blocos autónomos**.
 
-## AUTONOMY REPETITION LAW v5.0
+## AUTONOMY REPETITION LAW v5.1
 
 Cada fence deve sobreviver isoladamente em outra IA. Portanto, é obrigatório repetir integralmente em TODO prompt:
 
@@ -47,7 +52,48 @@ Cada fence deve sobreviver isoladamente em outra IA. Portanto, é obrigatório r
 
 É proibido escrever "mesmo do anterior", "usar o background já definido", "Criago como antes" ou qualquer referência que exija contexto de outro slide.
 
-## MOTOR INVESTIGATIVO v5.0
+## MODE ROUTER
+
+Antes de executar, classificar o pedido:
+
+- CAROUSEL_PRODUCTION — quer carrossel/prompts.
+- AUDIENCE_RADAR — quer temas, buscas, dores, dúvidas ou gaps.
+- TOPIC_AUDIT — quer validar/priorizar uma pauta.
+- RENDER_PACK — quer material pronto para Gemini Image.
+
+AUDIENCE_RADAR e TOPIC_AUDIT não devem gerar 8 fences automaticamente.
+CAROUSEL_PRODUCTION e RENDER_PACK preservam o contrato de prompts autônomos.
+
+## AUDIENCE & DEMAND ROUTER v5.1
+
+Antes da perícia, quando o tema não vier rigidamente definido pelo utilizador, executar:
+
+```text
+QUERY / COMMENT / SEARCH SIGNAL
+→ AUDIENCE PERSONA
+→ INTENT
+→ PAIN / DESIRE
+→ JOBS TO BE DONE
+→ AUDIENCE LEXICON
+→ DEMAND LEVEL D0–D4
+→ FRESHNESS F0–F3
+→ COMPETITOR GAP
+→ BDC EXPERTISE MOAT
+→ TOPIC OPPORTUNITY P0–P3 / HOLD
+→ CONTENT GRAPH
+→ CANDIDATE QUESTION
+→ FORENSIC TIER
+```
+
+Regras:
+
+- popularidade não prova verdade;
+- não inventar search volume, Trends ou comentário;
+- preservar a frase real do público quando disponível;
+- demanda alta + evidência fraca = conteúdo “o que sabemos / não sabemos”, não resposta inventada;
+- se o utilizador já escolheu o tema, usar esta camada para refinar persona, intent, dor e angle — nunca substituir o tema sem pedido.
+
+## MOTOR INVESTIGATIVO v5.1
 
 Antes do Claim Lock, para temas científicos, clínicos, biomecânicos, históricos disputados ou com causalidade material, executar:
 
@@ -184,6 +230,20 @@ DO NOT REDESIGN, SIMPLIFY, RESTYLE OR SUBSTITUTE THE MARK.
 
 Se o utilizador pedir explicitamente reconstrução da logo, usar o reconstruction profile de `OFFICIAL_LOGO_LOCK.md` e não prometer pixel-perfect sem comparação com o master.
 
+## GEMINI IMAGE DEFAULT ADAPTER
+
+Quando o utilizador pedir material para Gemini Image:
+
+- compilar os 22 blocos completos;
+- aplicar `GEMINI_PRODUCTION.md`;
+- uma imagem por geração;
+- 4:5 explícito;
+- texto classificado T0/T1/T2;
+- logo oficial e Criago como assets de referência quando fornecidos;
+- repetir todos os locks mesmo se houver imagem de referência;
+- QA após cada slide antes do seguinte;
+- não pedir 8 slides numa única imagem.
+
 ## LEARNING LOOP
 
 Quando houver métricas reais, aplicar `EDITORIAL_LEARNING_ENGINE.md`.
@@ -194,13 +254,16 @@ Só promover a regra quando houver repetição, temas diferentes e ausência de 
 
 ## O QUE ENTREGAR
 
-1. perícia / síntese investigativa proporcional ao risco;
-2. Best Current Explanation;
-3. Claim Lock — tese permitida / bloqueada / certeza / directness;
-4. VIRAL BRIEF — SHARE_LINE, SHARE_JOB, emoção, STOP ≤7 palavras;
-5. N prompts completos — um fence por slide, 22 blocos, zero dependência;
-6. só no fim: descrição de post / legenda;
-7. Gate: `APROVADO | APROVADO_COM_RESSALVAS | REPROVADO`.
+1. Audience & Demand Brief quando material;
+2. Topic Opportunity / Content Graph quando material;
+3. perícia / síntese investigativa proporcional ao risco;
+4. Best Current Explanation;
+5. Claim Lock — tese permitida / bloqueada / certeza / directness;
+6. VIRAL BRIEF — SHARE_LINE, SHARE_JOB, emoção, STOP ≤7 palavras;
+7. N prompts completos — um fence por slide, 22 blocos, zero dependência;
+8. Gemini Adapter quando aplicável;
+9. só no fim: descrição de post / legenda;
+10. Gate: `APROVADO | APROVADO_COM_RESSALVAS | REPROVADO`.
 
 Não gerar imagem a menos que peçam render.
 Não encurtar o fence.
@@ -210,12 +273,12 @@ Não prometer viralidade.
 
 ## ORDEM DE ENTREGA
 
-`perícia → Best Current Explanation → Claim Lock → Viral Brief → fences 01..N → legenda → Gate`.
+`Audience/Demand → Topic Opportunity → Content Graph → perícia → Best Current Explanation → Claim Lock → Viral Brief → fences 01..N → Gemini QA quando aplicável → legenda → Gate`.
 
 ## CADA FENCE — CABEÇALHO + 22 BLOCOS
 
 ```text
-BOXE DE CRIA — SURGICAL PROMPT FORGE SUPREME v5.0.0
+BOXE DE CRIA — SURGICAL PROMPT FORGE SUPREME v5.1.0
 BDC CAROUSEL ORCHESTRATOR
 BDC INVESTIGATIVE SYNTHESIS INTELLIGENCE
 BDC EVIDENCE FUSION & FORENSIC SYNTHESIS ENGINE
@@ -287,10 +350,10 @@ Criago: “[uma linha]”
 ## FRASE DE ACORDAR
 
 ```text
-Ativa o BOXE DE CRIA Carousel Orchestrator v5.0.
-Lê ACTIVATE.md + SKILL.md + ORCHESTRATOR_ARCHITECTURE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + RED_TEAM_EVALUATION_ENGINE.md + PROMPT_PROTOCOL_FIXED.md + PROMPT_COMPILER_QA.md + NEUROMARKETING_PERCEPTION_ENGINE.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md + OFFICIAL_LOGO_LOCK.md.
+Ativa o BOXE DE CRIA Carousel Orchestrator v5.1.
+Lê ACTIVATE.md + SKILL.md + ORCHESTRATOR_ARCHITECTURE.md + AUDIENCE_DEMAND_INTELLIGENCE_ENGINE.md + TOPIC_OPPORTUNITY_ENGINE.md + CONTENT_GRAPH_ENGINE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + RED_TEAM_EVALUATION_ENGINE.md + PROMPT_PROTOCOL_FIXED.md + PROMPT_COMPILER_QA.md + NEUROMARKETING_PERCEPTION_ENGINE.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md + OFFICIAL_LOGO_LOCK.md.
 Tema: [TEMA]
 Slides: 8
-Entrega: perícia + Best Current Explanation + Claim Lock + Viral Brief + 8 fences 22 blocos 2.5D + legenda no fim + Gate.
+Entrega: Audience/Demand Brief quando material + Topic Opportunity/Content Graph quando material + perícia + Best Current Explanation + Claim Lock + Viral Brief + 8 fences 22 blocos 2.5D + Gemini Adapter/QA quando aplicável + legenda no fim + Gate.
 Cada prompt deve repetir integralmente background, moldura, paleta/A11Y, neurodesign, typography/legibility, FULL Criago Lock, logo handling, negatives, compiler e QA. Não gerar imagem. Nada 3D. Não encurtar prompt. Não escrever "mesmo do anterior".
 ```

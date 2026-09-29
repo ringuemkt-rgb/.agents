@@ -1,19 +1,22 @@
 ---
 name: boxe-de-cria-carousel-orchestrator
-version: 5.0.0-portable.1
+version: 5.1.0-portable.1
 language: pt-BR
 type: portable-agent-skill
 owner: BOXE DE CRIA / FISIOBOXE
 ---
 
-# SKILL — BOXE DE CRIA Carousel Orchestrator v5.0
+# SKILL — BOXE DE CRIA Carousel Orchestrator v5.1
 
 ## Finalidade
 
 Transformar temas de boxe, jiu-jitsu, luta, fisiologia, biomecânica, história, lesões, neurodesenvolvimento, ciência do esporte ou cultura de combate em um pacote editorial completo, rigoroso, magnético e portátil:
 
 ```text
-PERÍCIA
+AUDIENCE / DEMAND INTELLIGENCE
+→ TOPIC OPPORTUNITY
+→ CONTENT GRAPH
+→ PERÍCIA
 → BEST CURRENT EXPLANATION
 → RED TEAM
 → CLAIM LOCK
@@ -29,6 +32,33 @@ PERÍCIA
 
 Viralidade é objetivo de otimização, nunca promessa.
 
+## Modos operacionais
+
+### MODE A — CAROUSEL PRODUCTION
+Use quando o utilizador quer carrossel/prompts/Gemini.
+Executa o pipeline completo até fences + QA.
+
+### MODE B — AUDIENCE RADAR
+Use quando o utilizador pergunta:
+- “quais temas devo postar?”;
+- “o que meu público busca?”;
+- “quais dúvidas/dor têm?”;
+- “o que pode viralizar?”;
+- “o que falta cobrir?”.
+
+Saída:
+Audience Demand Map → Query Families → Question Coverage → Topic Opportunity → Content Graph → lista P0/P1/P2/P3/HOLD.
+Não gerar prompts de slides a menos que o utilizador peça.
+
+### MODE C — TOPIC AUDIT
+Use quando o utilizador traz uma pauta e quer saber se vale publicar.
+Saída:
+persona + intent + pain/JTBD + demand evidence + freshness + competitor gap + BDC moat + evidence feasibility + recommended angle + priority class.
+
+### MODE D — RENDER PACK
+Use quando já existe Claim Lock/storyboard e o pedido é preparar Gemini Image.
+Não refazer a pesquisa sem necessidade; validar freshness material, compilar fences e aplicar GEMINI_PRODUCTION.md.
+
 ## Quando ativar
 
 Ative quando o usuário pedir:
@@ -37,7 +67,11 @@ Ative quando o usuário pedir:
 - perícia + carrossel;
 - Boxe de Cria / FisioBoxe;
 - prompt ultra detalhado;
-- reconstrução de post no padrão BDC.
+- reconstrução de post no padrão BDC;
+- ideias de pauta / audience radar;
+- dúvidas, dores e buscas do público;
+- priorização de temas;
+- pacote Gemini Image.
 
 Se pedir só resposta factual, não force carrossel.
 
@@ -46,28 +80,54 @@ Se pedir só resposta factual, não force carrossel.
 1. ACTIVATE.md
 2. SKILL.md
 3. ORCHESTRATOR_ARCHITECTURE.md
-4. INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md
-5. RED_TEAM_EVALUATION_ENGINE.md
-6. EVIDENCE_SYNTHESIS.md
-7. CROSS_STUDY_INTELLIGENCE.md
-8. GRADE_RUBRIC.md
-9. PROMPT_PROTOCOL_FIXED.md
-10. PROMPT_COMPILER_QA.md
-11. NEUROMARKETING_PERCEPTION_ENGINE.md
-12. PROMPT_TEMPLATE.md
-13. RENDER_2_5D_LOCK.md
-14. ACCESSIBILITY_CONTRAST.md
-15. PALETTE_CANON.md
-16. PALETTE_DECISION_ENGINE.md
-17. COLOR_THEORY_BDC.md
-18. OFFICIAL_LOGO_LOCK.md
-19. ATTENTION_NARRATIVE.md
-20. VIRAL_ENGINE.md
-21. INFOGRAPHIC_GRAMMAR.md
-22. EDITORIAL_LEARNING_ENGINE.md
-23. CONTENT_PRODUCTION_OS.md
+4. MODULE_STATUS.md
+5. AUDIENCE_DEMAND_INTELLIGENCE_ENGINE.md
+6. TOPIC_OPPORTUNITY_ENGINE.md
+7. CONTENT_GRAPH_ENGINE.md
+8. INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md
+9. RED_TEAM_EVALUATION_ENGINE.md
+10. EVIDENCE_SYNTHESIS.md
+11. CROSS_STUDY_INTELLIGENCE.md
+12. GRADE_RUBRIC.md
+13. PROMPT_PROTOCOL_FIXED.md
+14. PROMPT_COMPILER_QA.md
+15. NEUROMARKETING_PERCEPTION_ENGINE.md
+16. PROMPT_TEMPLATE.md
+17. RENDER_2_5D_LOCK.md
+18. ACCESSIBILITY_CONTRAST.md
+19. PALETTE_CANON.md
+20. PALETTE_DECISION_ENGINE.md
+21. COLOR_THEORY_BDC.md
+22. OFFICIAL_LOGO_LOCK.md
+23. ATTENTION_NARRATIVE.md
+24. VIRAL_ENGINE.md
+25. INFOGRAPHIC_GRAMMAR.md
+26. GEMINI_PRODUCTION.md
+27. EDITORIAL_LEARNING_ENGINE.md
+28. CONTENT_PRODUCTION_OS.md
 
 ## Leis operacionais
+
+### 0. Demand before topic expansion
+
+Quando o utilizador não trouxer uma pauta rígida, primeiro mapear:
+
+- persona;
+- queries reais;
+- intent;
+- dor;
+- desejo;
+- JTBD;
+- demand level;
+- freshness;
+- competitor gap;
+- BDC expertise moat;
+- opportunity class;
+- content graph.
+
+Nunca inventar volume de busca.
+
+Quando o utilizador já trouxer o tema, esta camada refina o ângulo e a audiência — não substitui a pauta.
 
 ### 1. Evidence before hook
 O título nasce depois do Claim Lock.
@@ -186,21 +246,36 @@ Métricas reais podem atualizar heurísticas, mas:
 - correlação não vira regra;
 - regras novas começam como hypothesis.
 
-### 15. Caption last
+### 15. Gemini Image adapter
+
+Quando o destino for Gemini Image:
+
+- um slide por geração;
+- aspect ratio 4:5 explícito quando disponível;
+- fence completo continua obrigatório;
+- T0/T1/T2 text priority;
+- reference assets não substituem descrição canônica;
+- executar post-render QA após cada imagem;
+- corrigir antes de gerar o próximo slide.
+
+### 16. Caption last
 Legenda só depois do último fence.
 
 ## Contrato de saída
 
 ```text
-1. PERÍCIA
-2. BEST CURRENT EXPLANATION
-3. CLAIM LOCK
-4. VIRAL BRIEF
-5. SLIDE 01/N — 22 blocos
+1. AUDIENCE & DEMAND BRIEF quando material
+2. TOPIC OPPORTUNITY / CONTENT GRAPH quando material
+3. PERÍCIA
+4. BEST CURRENT EXPLANATION
+5. CLAIM LOCK
+6. VIRAL BRIEF
+7. SLIDE 01/N — 22 blocos
 ...
 N. SLIDE N/N — 22 blocos
-N+1. LEGENDA
-N+2. GATE
+N+1. GEMINI ADAPTER/QA quando aplicável
+N+2. LEGENDA
+N+3. GATE
 ```
 
 ## Contrato dos 22 blocos
@@ -277,11 +352,11 @@ P0/P1:
 ## Frase portátil
 
 ```text
-Ativa o BOXE DE CRIA Carousel Orchestrator v5.0.
-Lê ACTIVATE.md + SKILL.md + ORCHESTRATOR_ARCHITECTURE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + RED_TEAM_EVALUATION_ENGINE.md + PROMPT_PROTOCOL_FIXED.md + PROMPT_COMPILER_QA.md + NEUROMARKETING_PERCEPTION_ENGINE.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + OFFICIAL_LOGO_LOCK.md.
+Ativa o BOXE DE CRIA Carousel Orchestrator v5.1.
+Lê ACTIVATE.md + SKILL.md + ORCHESTRATOR_ARCHITECTURE.md + AUDIENCE_DEMAND_INTELLIGENCE_ENGINE.md + TOPIC_OPPORTUNITY_ENGINE.md + CONTENT_GRAPH_ENGINE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + RED_TEAM_EVALUATION_ENGINE.md + PROMPT_PROTOCOL_FIXED.md + PROMPT_COMPILER_QA.md + NEUROMARKETING_PERCEPTION_ENGINE.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + OFFICIAL_LOGO_LOCK.md.
 Tema: [TEMA]
 Slides: 8
-Entrega: perícia + Best Current Explanation + Claim Lock + Viral Brief + 8 prompts autônomos de 22 blocos + legenda + Gate.
-Repetir integralmente em cada prompt: background, moldura, paleta/A11Y, neurodesign, typography, FULL Criago, logo, negatives, compiler e QA.
+Entrega: Audience/Demand Brief quando material + Topic Opportunity/Content Graph quando material + perícia + Best Current Explanation + Claim Lock + Viral Brief + 8 prompts autônomos de 22 blocos + Gemini Adapter/QA quando aplicável + legenda + Gate.
+Repetir integralmente em cada prompt: background, moldura, paleta/A11Y, neurodesign, typography, FULL Criago, logo, negatives, compiler e QA. Quando o destino for Gemini Image, aplicar GEMINI_PRODUCTION.md sem reduzir o fence.
 Nada 3D. Não encurtar. Não escrever "mesmo do anterior".
 ```

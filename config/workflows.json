@@ -269,14 +269,14 @@
     },
     {
       "id": "build-bdc-carousel",
-      "description": "Turn a BOXE DE CRIA/FISIOBOXE topic into an adversarially investigated, evidence-synthesized, retention-engineered and fully autonomous 2.5D carousel prompt package, with repeated frame/background/Criago/brand locks in every slide, caption and QA.",
+      "description": "Turn an audience question, pain, demand signal or user-defined topic into a prioritized, adversarially investigated, evidence-synthesized, perceptually optimized and Gemini-ready autonomous 2.5D carousel package.",
       "steps": [
         {
           "id": "repository-check",
           "agent": "repository-guardian",
           "deliverables": [
             "instruction source confirmed",
-            "portable agent version confirmed as 4.3.0-portable.1",
+            "portable agent version confirmed as 5.1.0-portable.1",
             "investigative engine confirmed",
             "22-block prompt protocol confirmed",
             "2.5D render lock confirmed",
@@ -284,7 +284,13 @@
             "official logo lock confirmed",
             "portable SKILL.md contract confirmed",
             "orchestrator architecture map confirmed",
-            "autonomy repetition law confirmed"
+            "autonomy repetition law confirmed",
+            "audience demand engine confirmed",
+            "topic opportunity engine confirmed",
+            "content graph engine confirmed",
+            "Gemini production adapter confirmed",
+            "prompt compiler confirmed",
+            "neuromarketing perception engine confirmed"
           ]
         },
         {
@@ -331,7 +337,60 @@
             "guardian decision",
             "full frame and background lock repeated per slide",
             "full Criago canonical lock repeated per slide including visibility off",
-            "no cross-slide shorthand dependencies"
+            "no cross-slide shorthand dependencies",
+            "audience persona and raw-query language when material",
+            "search intent classification",
+            "pain desire and jobs-to-be-done map",
+            "demand level D0-D4 and freshness F0-F3 when material",
+            "competitor gap and BDC expertise moat",
+            "topic opportunity class and why-now rationale",
+            "content graph and next-node map",
+            "Gemini Image adapter when targeted",
+            "T0 T1 T2 exact-text priority for Gemini",
+            "one-slide-per-generation Gemini plan",
+            "Gemini post-render QA before next slide"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "build-bdc-audience-radar",
+      "description": "Map real audience questions, pains, intent, demand signals, content gaps and BDC topic opportunities without generating carousel prompts unless explicitly requested.",
+      "steps": [
+        {
+          "id": "repository-check",
+          "agent": "repository-guardian",
+          "deliverables": [
+            "v5.1 module authority confirmed",
+            "audience demand engine confirmed",
+            "topic opportunity engine confirmed",
+            "content graph engine confirmed"
+          ]
+        },
+        {
+          "id": "audience-radar",
+          "agent": "boxe-de-cria-carousel-orchestrator",
+          "needs": [
+            "repository-check"
+          ],
+          "deliverables": [
+            "persona map",
+            "raw query families when source data exists",
+            "search intent map",
+            "pain and desire ontology",
+            "jobs-to-be-done map",
+            "audience lexicon",
+            "demand level D0-D4 without invented volume",
+            "freshness F0-F3",
+            "independent surface count when known",
+            "competitor gaps",
+            "BDC expertise moat",
+            "question coverage matrix",
+            "topic opportunity P0-P3-HOLD",
+            "content graph",
+            "prioritized topic radar",
+            "why-now rationale",
+            "evidence feasibility flags"
           ]
         }
       ]

@@ -1,8 +1,19 @@
-# BOXE DE CRIA Carousel Orchestrator — Architecture v5.0
+# BOXE DE CRIA Carousel Orchestrator — Architecture v5.1
 
 ## Objetivo
 
 Organizar o sistema em camadas com autoridade única, investigação adversarial, neurodesign baseado em evidência, compilação visual e aprendizado com métricas reais.
+
+## Operating modes
+
+```text
+CAROUSEL_PRODUCTION → full end-to-end package
+AUDIENCE_RADAR → audience/demand/opportunity only
+TOPIC_AUDIT → one-topic demand/evidence feasibility review
+RENDER_PACK → prompt/Gemini production from an existing validated brief
+```
+
+Mode selection changes how far the pipeline runs; it never changes evidence, brand, 2.5D, accessibility or prompt-autonomy laws.
 
 ## Single Source of Truth
 
@@ -12,6 +23,10 @@ USER REQUEST
 ACTIVATE.md
    ↓
 SKILL.md
+   ↓
+AUDIENCE / DEMAND LAYER
+   ↓
+TOPIC OPPORTUNITY / CONTENT GRAPH
    ↓
 INVESTIGATIVE LAYER
    ↓
@@ -43,7 +58,7 @@ Comportamento portátil, leis operacionais e output contract.
 ### AGENT.md / SYSTEM_PROMPT.md
 Raiz complementar model-agnostic.
 
-## Camada B — Investigação
+## Camada C — Investigação
 
 ### INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md
 Hipóteses rivais, ACH, causalidade, falsificação, sensibilidade e Best Current Explanation.
@@ -63,7 +78,7 @@ Tenta reprovar tese, visual e narrativa; provenance ledger; originality guard.
 Saída:
 `BEST CURRENT EXPLANATION + CLAIM LOCK`.
 
-## Camada C — Estratégia editorial e psicológica
+## Camada D — Estratégia editorial e psicológica
 
 ### VIRAL_ENGINE.md
 Hook tournament, share/save logic e distribuição sem romper Claim Lock.
@@ -80,7 +95,7 @@ Princípio:
 Saída:
 `VIRAL BRIEF + DIDACTIC ARC + PERCEPTION PLAN`.
 
-## Camada D — Compilador visual
+## Camada E — Compilador visual
 
 ### PROMPT_PROTOCOL_FIXED.md
 Contrato final dos 22 blocos.
@@ -112,7 +127,7 @@ Logo oficial como asset externo.
 Saída:
 `N FENCES AUTÔNOMOS`.
 
-## Camada E — Prompt Compiler
+## Camada F — Prompt Compiler
 
 ### PROMPT_COMPILER_QA.md
 
@@ -135,13 +150,13 @@ Depois do render:
 - 2.5D;
 - auto-repair.
 
-## Camada F — Brand character
+## Camada G — Brand character
 
 Criago compila no bloco 18 de TODO fence.
 
 FULL LOCK sempre, mesmo VISIBILITY: OFF.
 
-## Camada G — Learning Loop
+## Camada H — Learning Loop
 
 ### EDITORIAL_LEARNING_ENGINE.md
 
@@ -157,6 +172,23 @@ Registra:
 
 Regra:
 correlação não vira causalidade. Um post não cria regra.
+
+
+## Camada I — Gemini Image Adapter
+
+### GEMINI_PRODUCTION.md
+Compila o fence para Gemini Image sem remover nenhuma informação canônica.
+
+Responsabilidades:
+- one-slide-per-generation;
+- 4:5 explícito;
+- text priority T0/T1/T2;
+- reference asset handling;
+- layout zones;
+- Gemini-specific negative block;
+- post-render QA;
+- sequential consistency por canon, não por memória do chat.
+
 
 ## Autonomy Repetition Law
 
@@ -250,4 +282,4 @@ Evidence QA
 
 ## Versão
 
-`5.0.0-portable.1`
+`5.1.0-portable.1`
