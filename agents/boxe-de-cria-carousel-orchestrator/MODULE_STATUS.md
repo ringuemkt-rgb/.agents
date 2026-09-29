@@ -87,6 +87,7 @@ These can add context but never alter the 22-block contract or authority order:
 - PROMPT_ASSEMBLY.md — old assembly note; current output is always 22 blocks from PROMPT_PROTOCOL_FIXED.md.
 - LOGO_OFFICIAL_BDC.md — reconstruction reference only; OFFICIAL_LOGO_LOCK.md is authority.
 - AUDIT_3_6.md — historical audit.
+- SYSTEM_AUDIT_V5_1.md — current architecture/audit record; informative, not execution authority.
 - old version notes in CHANGELOG.md.
 
 Legacy 56-field intelligence is upstream/checklist memory only.
