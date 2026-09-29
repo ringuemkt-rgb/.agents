@@ -73,7 +73,8 @@ Não gerar imagem. Não encurtar. Nada 3D. Não escrever "mesmo do anterior".
 | 0 | ACTIVATE.md | autoridade |
 | 1 | SKILL.md | skill portátil |
 | 2 | ORCHESTRATOR_ARCHITECTURE.md | arquitetura |
-| 3 | AUDIENCE_DEMAND_INTELLIGENCE_ENGINE.md | público, queries, dores, intent e demanda |
+| 3 | MODULE_STATUS.md | autoridade, suporte e legado |
+| 4 | AUDIENCE_DEMAND_INTELLIGENCE_ENGINE.md | público, queries, dores, intent e demanda |
 | 4 | TOPIC_OPPORTUNITY_ENGINE.md | priorização de pauta |
 | 5 | CONTENT_GRAPH_ENGINE.md | clusters, séries e gaps |
 | 6 | INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md | perícia |
