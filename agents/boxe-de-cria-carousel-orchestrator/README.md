@@ -1,25 +1,25 @@
 # BOXE DE CRIA — Carousel Orchestrator
 
 Sistema portátil para qualquer IA:
-**investigação → Red Team → Claim Lock → neurodesign/perception → prompts autônomos → compiler/QA → publicação → learning loop**.
+**Audience/Demand → Topic Opportunity → Content Graph → investigação → Red Team → Claim Lock → neurodesign/perception → prompts autônomos → compiler/QA → publicação → learning loop**.
 
-**Versão do sistema: 5.0.0-portable.1**
+**Versão do sistema: 5.1.0-portable.1**
 
 A saída visual continua sendo **um fence autônomo de 22 blocos por slide**.
 
 ## Acordar a IA
 
 ```text
-Ativa o BOXE DE CRIA Carousel Orchestrator v5.0.
-Lê ACTIVATE.md + SKILL.md + ORCHESTRATOR_ARCHITECTURE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + RED_TEAM_EVALUATION_ENGINE.md + PROMPT_PROTOCOL_FIXED.md + PROMPT_COMPILER_QA.md + NEUROMARKETING_PERCEPTION_ENGINE.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md + OFFICIAL_LOGO_LOCK.md.
+Ativa o BOXE DE CRIA Carousel Orchestrator v5.1.
+Lê ACTIVATE.md + SKILL.md + ORCHESTRATOR_ARCHITECTURE.md + AUDIENCE_DEMAND_INTELLIGENCE_ENGINE.md + TOPIC_OPPORTUNITY_ENGINE.md + CONTENT_GRAPH_ENGINE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + RED_TEAM_EVALUATION_ENGINE.md + PROMPT_PROTOCOL_FIXED.md + PROMPT_COMPILER_QA.md + NEUROMARKETING_PERCEPTION_ENGINE.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md + OFFICIAL_LOGO_LOCK.md.
 Tema: [TEMA]
 Slides: 8
 Entrega: perícia + Best Current Explanation + Claim Lock + Viral Brief + 8 fences de 22 blocos autônomos + legenda + Gate.
-Cada prompt repete integralmente background, moldura, paleta/A11Y, neurodesign, typography, FULL Criago Lock, logo handling, negatives, compiler e QA.
+Cada prompt repete integralmente background, moldura, paleta/A11Y, neurodesign, typography, FULL Criago Lock, logo handling, negatives, compiler e QA. Quando o destino for Gemini Image, aplicar GEMINI_PRODUCTION.md sem reduzir o fence.
 Não gerar imagem. Não encurtar. Nada 3D. Não escrever "mesmo do anterior".
 ```
 
-## O que o v5.0 adiciona
+## O que o v5.1 adiciona
 
 ### Evidence-based neuromarketing / perception
 `NEUROMARKETING_PERCEPTION_ENGINE.md`
@@ -73,18 +73,22 @@ Não gerar imagem. Não encurtar. Nada 3D. Não escrever "mesmo do anterior".
 | 0 | ACTIVATE.md | autoridade |
 | 1 | SKILL.md | skill portátil |
 | 2 | ORCHESTRATOR_ARCHITECTURE.md | arquitetura |
-| 3 | INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md | perícia |
-| 4 | RED_TEAM_EVALUATION_ENGINE.md | adversarial QA |
-| 5 | PROMPT_PROTOCOL_FIXED.md | contrato 22 blocos |
-| 6 | PROMPT_COMPILER_QA.md | compiler/QA |
-| 7 | NEUROMARKETING_PERCEPTION_ENGINE.md | percepção/legibilidade |
-| 8 | RENDER_2_5D_LOCK.md | 2.5D only |
-| 9 | ACCESSIBILITY_CONTRAST.md | WCAG 2.2 |
-| 10 | PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md | cor |
-| 11 | OFFICIAL_LOGO_LOCK.md | logo |
-| 12 | ATTENTION_NARRATIVE.md + VIRAL_ENGINE.md | narrativa/growth |
-| 13 | EDITORIAL_LEARNING_ENGINE.md | feedback loop |
-| 14 | INFOGRAPHIC_GRAMMAR.md | gramática visual |
+| 3 | AUDIENCE_DEMAND_INTELLIGENCE_ENGINE.md | público, queries, dores, intent e demanda |
+| 4 | TOPIC_OPPORTUNITY_ENGINE.md | priorização de pauta |
+| 5 | CONTENT_GRAPH_ENGINE.md | clusters, séries e gaps |
+| 6 | INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md | perícia |
+| 7 | RED_TEAM_EVALUATION_ENGINE.md | adversarial QA |
+| 8 | PROMPT_PROTOCOL_FIXED.md | contrato 22 blocos |
+| 9 | PROMPT_COMPILER_QA.md | compiler/QA |
+| 10 | NEUROMARKETING_PERCEPTION_ENGINE.md | percepção/legibilidade |
+| 11 | RENDER_2_5D_LOCK.md | 2.5D only |
+| 12 | ACCESSIBILITY_CONTRAST.md | WCAG 2.2 |
+| 13 | PALETTE_CANON.md + PALETTE_DECISION_ENGINE.md | cor |
+| 14 | OFFICIAL_LOGO_LOCK.md | logo |
+| 15 | ATTENTION_NARRATIVE.md + VIRAL_ENGINE.md | narrativa/growth |
+| 16 | GEMINI_PRODUCTION.md | adapter de geração Gemini Image |
+| 17 | EDITORIAL_LEARNING_ENGINE.md | feedback loop |
+| 18 | INFOGRAPHIC_GRAMMAR.md | gramática visual |
 
 ## Laws
 
