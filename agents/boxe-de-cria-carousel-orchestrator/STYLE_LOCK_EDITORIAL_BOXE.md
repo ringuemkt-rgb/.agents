@@ -1,4 +1,4 @@
-# STYLE LOCK FIXO — Arte Editorial BOXE DE CRIA v4.2
+# STYLE LOCK FIXO — Arte Editorial BOXE DE CRIA v5.1
 
 This file defines the recurring **visual house**. It does not override `PALETTE_CANON.md`, `PALETTE_DECISION_ENGINE.md`, `ACCESSIBILITY_CONTRAST.md`, `RENDER_2_5D_LOCK.md` or `OFFICIAL_LOGO_LOCK.md`.
 
@@ -104,8 +104,11 @@ Headline:
 
 Body:
 
-- Inter / Montserrat Medium/Semibold;
-- short lines;
+- Inter / Montserrat or equivalent high-legibility sans;
+- non-condensed;
+- 32–40 px at 1080×1350 for essential body when feasible;
+- short lines with comfortable line-height;
+- no ALL CAPS paragraph;
 - no microtext soup.
 
 ## 6. Accessibility
@@ -209,3 +212,8 @@ NO copied influencer layout
 NO multiple slides in one image
 NO unofficial BOXE DE CRIA logo substitute
 ```
+
+
+## 15. Gemini adapter
+
+When Gemini Image is target, use `GEMINI_PRODUCTION.md`: one slide per generation, explicit 4:5 when available, T0/T1/T2 text priority, canonical layout zones and post-render QA. This style file never replaces the autonomous 22-block prompt.
