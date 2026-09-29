@@ -1,4 +1,4 @@
-# Estratégia Instagram — @boxedecria_ (OS v4)
+# Estratégia Instagram — @boxedecria_ (OS v5.1)
 
 Fonte: perfil público Boxe de Cria - Fightwear.
 Bio indexada: Boxe • Ciência • Desenvolvimento Humano.
@@ -36,6 +36,50 @@ Sábio + Herói + Everyman. Não Mago. Não Soberano.
 Categoria recusada: influencer de “disciplina” vazia, número sem unidade, cardápio de hotel.
 Vitória: envio no grupo da academia + save do protocolo.
 
+## Demand-first editorial board
+
+Antes de preencher calendário, rodar:
+
+```text
+OWNED COMMENTS / SEARCH / DMs AUTORIZADAS
++ GOOGLE/YOUTUBE/SOCIAL QUERIES
++ EVENT/TREND SIGNALS
+→ AUDIENCE PERSONA
+→ INTENT
+→ PAIN / JTBD
+→ D0–D4 DEMAND
+→ F0–F3 FRESHNESS
+→ COMPETITOR GAP
+→ BDC MOAT
+→ P0–P3 / HOLD
+→ CONTENT GRAPH
+```
+
+Regras:
+- pauta fixa de 90 dias é backlog, não dogma;
+- P0/P1 podem furar fila se Claim Lock e evidência permitirem;
+- uma dúvida repetida do próprio público vale mais que “trend” genérica;
+- nunca inventar volume;
+- comentários são sinal de problema, não evidência científica;
+- temas fortes entram em cluster/série, não morrem em um post.
+
+### Demand buckets prioritários
+
+**INICIANTE**
+começar, equipamento, medo, primeira aula, gás, base, defesa.
+
+**PRATICANTE**
+timing, jab, distância, potência, sparring, tensão, fadiga, recuperação.
+
+**TREINADOR**
+didática, correção, segurança, progressão, criança/TEA.
+
+**FISIO/SAÚDE**
+mão, punho, ombro, cervical, carga, retorno.
+
+**TEA/PAIS**
+ambiente, sensorial, previsibilidade, segurança, comunicação, adesão.
+
 ## 5 linhas de conteúdo (mix 10 posts)
 
 1. MITO — 3/10 — raiva útil — ALERT — SHARE_JOB mythbust
@@ -68,16 +112,30 @@ Uma quote Criago (H1, não parágrafo).
 CTA único: SAVE o 7 | MANDA ao professor | COMENTA uma palavra útil.
 Hashtags: 5, não 15. Sem “biohack”.
 
-## 90 dias — primeira fila de temas (Claim Lock obrigatório)
+## 90 dias — backlog inicial, sujeito ao Topic Opportunity Engine
 
-1. Pressão / clinch (já tesou — refazer COM átomo, sem física de bar)
-2. Jab: o que o paper mediu vs o que o ringue pede
-3. Volume no calor da Bahia
-4. Popó: número de recorde COM contexto, sem moralina
-5. Criago / ratel / autismo — identidade sem “cria ou desculpa” que humilha
-6. Mapa UF — Trends COM a frase “interesse ≠ praticantes” no slide 1
-7. Soco NÃO se mede em kg — pack que corrige o post antigo
-8. Protocolo 7 dias no saco (gesto Ice Bucket ético)
+A lista abaixo é seed. Toda semana deve ser reordenada por:
+`Demand + Pain + Evidence + BDC Moat + Timing + Content Gap`.
+
+1. Pressão / clinch — pergunta funcional.
+2. Jab — medir vs bater.
+3. “Por que meu gás acaba?” — cluster de fadiga.
+4. Volume no calor da Bahia.
+5. “Por que fico duro no sparring?” — tensão/ansiedade/técnica.
+6. Boxe e TEA — o que sabemos / limites / ambiente.
+7. Luvas e proteção — dúvidas de compra/segurança.
+8. “Soco não se mede em kg” — literacy científica.
+9. Estilos/escolas — soviético, cubano, mexicano, brasileiro.
+10. História Luta Livre / SAMBO / vale-tudo.
+11. Mão/punho/ombro — FISIOBOXE.
+12. “Lutador experiente vê antes?” — percepção/antecipação.
+
+### Regra de expansão
+
+Cada tema P1 deve gerar Content Graph antes da produção.
+
+Exemplo:
+`gás → pacing → tensão → respiração → cardio → ansiedade → recuperação → corrida longa mito`.
 
 ## KPI 90 dias
 
