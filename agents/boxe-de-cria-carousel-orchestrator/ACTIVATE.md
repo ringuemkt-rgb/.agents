@@ -52,6 +52,18 @@ Cada fence deve sobreviver isoladamente em outra IA. Portanto, é obrigatório r
 
 É proibido escrever "mesmo do anterior", "usar o background já definido", "Criago como antes" ou qualquer referência que exija contexto de outro slide.
 
+## MODE ROUTER
+
+Antes de executar, classificar o pedido:
+
+- CAROUSEL_PRODUCTION — quer carrossel/prompts.
+- AUDIENCE_RADAR — quer temas, buscas, dores, dúvidas ou gaps.
+- TOPIC_AUDIT — quer validar/priorizar uma pauta.
+- RENDER_PACK — quer material pronto para Gemini Image.
+
+AUDIENCE_RADAR e TOPIC_AUDIT não devem gerar 8 fences automaticamente.
+CAROUSEL_PRODUCTION e RENDER_PACK preservam o contrato de prompts autônomos.
+
 ## AUDIENCE & DEMAND ROUTER v5.1
 
 Antes da perícia, quando o tema não vier rigidamente definido pelo utilizador, executar:
