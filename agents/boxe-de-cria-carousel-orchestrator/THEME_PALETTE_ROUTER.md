@@ -1,4 +1,4 @@
-# Router tema → paleta
+# Router tema → paleta v5.1
 
 Uma marca. Seis climas. O tema escolhe a **sequência de modos**, não uma paleta nova.
 HEX só PALETTE_CANON.md. Viral = STOP + SHARE no nicho cria, não “cor que o algoritmo ama”.
@@ -58,16 +58,16 @@ Só 1/10 dos posts. `1 RING · resto DEFAULT` · ouro no objeto, ciano se houver
 1. Classificar o tema numa letra A–H.
 2. Copiar a rota de 8.
 3. Se o slide 2 não for mito, não forçar ALERT.
-4. Sempre 1 e 8 RING — Public + fecho ouro (peak-end).
+4. Preferir 1 e 8 RING por consistência da série; mudar se Evidence/Perception/Content Job exigir.
 5. Nunca 8 slides ALERT. Nunca 8 slides NIGHT.
 6. SPLIT usa dois climas *no mesmo frame*; não conta como 7.º modo.
 
 ## O que sobe hop (não é magia)
 
-- Mito: ALERT no 2 aumenta activação (Berger) *se* o 4 LAB entregar a conta.
-- Identidade: TERREIRO no 5–6 dá trigger de lugar.
-- Save: LAB no 7.
-- Reconhecimento no print: RING no 1 e 8 + ciano nalgum chip.
+- Mito: ALERT no 2 pode reforçar visualmente a correção quando o slide 4 entrega a explicação.
+- Identidade: TERREIRO pode reforçar associação de lugar/território dentro da semântica BDC.
+- Save: LAB no 7 é uma heurística de organização, não garantia de salvamento.
+- Reconhecimento: RING no 1 e 8 é uma convenção de série, testável via analytics.
 
 Paleta nova “porque o tema é água / fogo / chakras” = REPROVA.
 
