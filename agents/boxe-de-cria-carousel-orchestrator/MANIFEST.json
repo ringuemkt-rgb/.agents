@@ -42,5 +42,6 @@
     "schemas/audience-demand.schema.json",
     "schemas/topic-opportunity.schema.json",
     "schemas/content-graph.schema.json"
-  ]
+  ],
+  "module_status": "MODULE_STATUS.md"
 }
