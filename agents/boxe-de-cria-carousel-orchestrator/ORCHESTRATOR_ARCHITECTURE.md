@@ -4,6 +4,17 @@
 
 Organizar o sistema em camadas com autoridade única, investigação adversarial, neurodesign baseado em evidência, compilação visual e aprendizado com métricas reais.
 
+## Operating modes
+
+```text
+CAROUSEL_PRODUCTION → full end-to-end package
+AUDIENCE_RADAR → audience/demand/opportunity only
+TOPIC_AUDIT → one-topic demand/evidence feasibility review
+RENDER_PACK → prompt/Gemini production from an existing validated brief
+```
+
+Mode selection changes how far the pipeline runs; it never changes evidence, brand, 2.5D, accessibility or prompt-autonomy laws.
+
 ## Single Source of Truth
 
 ```text
