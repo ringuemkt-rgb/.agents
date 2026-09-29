@@ -57,6 +57,13 @@ Não escrever "mesmo do anterior".
 
 ---
 
+## Modos operacionais
+
+- **CAROUSEL_PRODUCTION** — pauta → investigação → 22 fences → Gemini/QA.
+- **AUDIENCE_RADAR** — dúvidas, dores, query families, gaps e temas P0–P3/HOLD; não cria carrossel automaticamente.
+- **TOPIC_AUDIT** — valida se uma pauta vale ser produzida, para quem e com qual ângulo.
+- **RENDER_PACK** — recebe material já validado e compila o pacote Gemini Image preservando o fence completo.
+
 ## O que o v5.1 adiciona
 
 ### 1. Audience & Demand Intelligence
@@ -177,6 +184,7 @@ O sistema tenta reprovar a tese antes de publicar e aprende com métricas reais 
 | 1 | SKILL.md | skill portátil |
 | 2 | ORCHESTRATOR_ARCHITECTURE.md | arquitetura |
 | 3 | MODULE_STATUS.md | autoridade / suporte / legado |
+| 3.1 | SYSTEM_AUDIT_V5_1.md | auditoria da arquitetura v5.1 |
 | 4 | AUDIENCE_DEMAND_INTELLIGENCE_ENGINE.md | queries, dores, intent, demanda |
 | 5 | TOPIC_OPPORTUNITY_ENGINE.md | priorização |
 | 6 | CONTENT_GRAPH_ENGINE.md | clusters e séries |
