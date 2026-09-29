@@ -199,6 +199,100 @@ jtbd: sustentar combinações sem quebrar técnica
 
 ---
 
+## 4.1 Query Family Resolver
+
+Antes de contar recorrência, agrupar variantes semanticamente equivalentes.
+
+Exemplo:
+
+```text
+"meu gás acaba"
+"canso rápido no boxe"
+"fico sem ar no sparring"
+"não aguento 3 rounds"
+```
+
+podem pertencer ao cluster:
+
+`FADIGA / PACING / RESPIRAÇÃO`
+
+Mas não fundir prematuramente perguntas com soluções diferentes.
+
+Guardar:
+- canonical_question;
+- variants;
+- surface_count;
+- unique_surface_count;
+- first_seen;
+- last_seen;
+- geography quando explícita;
+- persona distribution;
+- intent distribution.
+
+### Duplicate-demand rule
+
+Não contar:
+- mesma pergunta copiada por bots;
+- reposts automáticos;
+- um único vídeo viral replicado como “múltiplas fontes”;
+- resultados de busca que apenas citam a mesma origem.
+
+Demanda independente é mais informativa que repetição algorítmica.
+
+---
+
+## 4.2 Signal Quality
+
+Cada sinal recebe qualidade descritiva:
+
+- SOURCE OWNED / PLATFORM / OPEN WEB / FORUM / COMPETITOR;
+- timestamp;
+- sample bias;
+- whether count is known;
+- whether audience identity is known;
+- whether signal is independent.
+
+Nunca converter um comentário popular em “mercado inteiro”.
+
+---
+
+## 4.3 Geography Layer
+
+Quando relevante, separar:
+
+- BRASIL;
+- NORDESTE;
+- BAHIA;
+- BAIXO SUL;
+- município;
+- global/lusófono.
+
+Não localizar artificialmente todo tema.
+
+Uma query local pode ter alto valor estratégico mesmo com baixo volume absoluto.
+
+---
+
+## 4.4 Awareness / Decision Stage
+
+Classificar quando útil:
+
+- UNAWARE;
+- PROBLEM_AWARE;
+- SOLUTION_AWARE;
+- OPTION_AWARE;
+- DECISION_READY;
+- POST_PURCHASE / PRACTITIONER.
+
+Isso muda:
+- profundidade;
+- CTA;
+- vocabulário;
+- necessidade de comparação;
+- necessidade de prova.
+
+---
+
 ## 5. Search Intent Classifier
 
 Classificar uma intenção principal e, quando útil, uma secundária:
@@ -400,6 +494,26 @@ F2/F3 exigem busca atual no momento da produção.
 
 ---
 
+## 13.1 Question Coverage Matrix
+
+Cruzar clusters de pergunta com cobertura BDC:
+
+| Cluster | Demand | BDC content | Evidence freshness | Gap |
+|---|---|---|---|---|
+| gás | D? | strong/weak/none | current/stale | yes/no |
+| sparring | D? | ... | ... | ... |
+
+Status:
+- COVERED_STRONG;
+- COVERED_STALE;
+- COVERED_WEAK;
+- MISSING;
+- HIGH_OPPORTUNITY.
+
+Usar para dominar um território por cobertura de dúvidas, não por quantidade de posts.
+
+---
+
 ## 14. Audience-Demand Output
 
 Antes da perícia, produzir internamente:
@@ -421,6 +535,12 @@ competitor_gap:
 bdc_moat:
 candidate_question:
 why_now:
+query_family:
+unique_surface_count:
+awareness_stage:
+geography:
+coverage_status:
+signal_quality_notes:
 ```
 
 ---
