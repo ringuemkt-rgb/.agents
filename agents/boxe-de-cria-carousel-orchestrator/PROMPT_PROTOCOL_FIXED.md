@@ -7,7 +7,7 @@ Não dizer “mesmo do anterior”.
 Não gerar legenda no meio.
 
 Ordem:
-`perícia → Best Current Explanation → Red Team → Claim Lock → Viral Brief → N fences completos → legenda → Gate`.
+`Audience/Demand → Topic Opportunity → Content Graph → perícia → Best Current Explanation → Red Team → Claim Lock → Viral Brief → N fences completos → Gemini QA quando aplicável → legenda → Gate`.
 
 A investigação fica upstream. O prompt recebe apenas a tese aprovada, certeza, directness, aplicabilidade, caveat e explicação segura necessária para desenhar corretamente.
 
