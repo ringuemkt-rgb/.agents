@@ -1,9 +1,9 @@
-# TEMPLATE VAZIO — BOXE DE CRIA v5.0
+# TEMPLATE VAZIO — BOXE DE CRIA v5.1
 
 Copiar **um fence por slide**. Cada fence deve ser integralmente autônomo.
 
 ```text
-BOXE DE CRIA — SURGICAL PROMPT FORGE SUPREME v5.0.0
+BOXE DE CRIA — SURGICAL PROMPT FORGE SUPREME v5.1.0
 BDC CAROUSEL ORCHESTRATOR
 BDC INVESTIGATIVE SYNTHESIS INTELLIGENCE
 BDC EVIDENCE FUSION & FORENSIC SYNTHESIS ENGINE
@@ -23,8 +23,10 @@ NÃO DEPENDER DE QUALQUER OUTRO SLIDE, PROMPT OU REFERÊNCIA.
 REPETIR INTEGRALMENTE NESTE FENCE: COLOR/A11Y + NEURODESIGN + TYPOGRAPHY + FRAME + BACKGROUND L0–L9 + DEPTH Z0–Z5 + FULL CRIAGO LOCK + LOGO + NEGATIVES + COMPILER + QA.
 
 01 TASK / OUTPUT LOCK
+TARGET IMAGE MODEL: [GEMINI IMAGE | MODEL-AGNOSTIC]
 4:5 · 2160×2700 work · export 1080×1350 · sRGB · mobile-first · safe 7/7/6/7 · grid 12 · gutter ~32 · spacing ×8 · baseline 24 · negative space 22–28% · UMA arte.
 RENDER LOCK: 2.5D GRAPHIC EDITORIAL ONLY.
+IF TARGET=GEMINI IMAGE: insert GEMINI IMAGE TASK LOCK; ONE image only; explicit 4:5 when supported.
 NO 3D / CGI / Blender / Unreal / plastic / game-engine.
 
 02 PROJECT IDENTITY
@@ -48,6 +50,12 @@ SOURCE LOCK:
 
 04 CONTENT JOB / AUDIENCE / PERSONA
 JOB:
+RAW QUERY / AUDIENCE LANGUAGE:
+SEARCH INTENT:
+DECLARED PAIN:
+FUNCTIONAL PROBLEM:
+JTBD:
+DEMAND LEVEL / FRESHNESS:
 PERSONA:
 AWARENESS:
 PROBLEMA:
@@ -72,6 +80,10 @@ ISOLATED ELEMENT:
 NO PSEUDO-NEUROMARKETING.
 
 06 EXACT TEXT LOCK
+TARGET=Gemini: classify T0/T1/T2 and do not paraphrase/translate/add copy.
+T0 MUST-EXACT:
+T1 SECONDARY-EXACT:
+T2 FINALIZATION-ELIGIBLE:
 TOP PILL:
 CATEGORY:
 COUNTER:
@@ -233,6 +245,10 @@ NO pseudoscientific neuromarketing.
 NO dopamine/cortex claims.
 
 21 PRE-RENDER QA / COMPILER
+TARGET MODEL CHECK: PASS
+ONE-SLIDE CHECK: PASS
+GEMINI ZONE CHECK: PASS when applicable
+T0/T1/T2 TEXT CHECK: PASS when applicable
 STRUCTURAL LINT: PASS
 CONTRADICTION LINT: PASS
 CLAIM→VISUAL TRACE: PASS
@@ -247,6 +263,7 @@ COPY: PASS
 DATA: PASS
 
 22 POST-RENDER QA
+For Gemini: run text exactness + one-slide + character + brand + data + 2.5D checks before next slide.
 Reject if text lock changes, pt-BR errors, data changes, anatomy fails, 3D/CGI appears, contrast fails, Criago/logo drift, diagram overclaims, hero covers headline, density excessive or source is unusable.
 Repair up to 2 iterations; persistent P0/P1 = REPROVADO.
 ```
