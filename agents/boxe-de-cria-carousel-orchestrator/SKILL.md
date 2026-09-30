@@ -32,6 +32,14 @@ AUDIENCE / DEMAND INTELLIGENCE
 
 Viralidade é objetivo de otimização, nunca promessa.
 
+## Reference Forensics Auto Rule
+
+Quando houver referência visual anexada e o pedido envolver carrossel/prompt/adaptação:
+
+`REFERENCE MAP → FACT CHECK → SOURCE MAP → CLAIM/LIMITATION MAP → ORIGINALITY GUARD → CLAIM LOCK → STORYBOARD → 22-BLOCK FENCES → GEMINI QA`.
+
+A análise é automática. Não pedir ao utilizador para solicitar perícia separadamente.
+
 ## Modos operacionais
 
 ### MODE A — CAROUSEL PRODUCTION
