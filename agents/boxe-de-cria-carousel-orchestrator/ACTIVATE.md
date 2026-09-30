@@ -52,6 +52,23 @@ Cada fence deve sobreviver isoladamente em outra IA. Portanto, é obrigatório r
 
 É proibido escrever "mesmo do anterior", "usar o background já definido", "Criago como antes" ou qualquer referência que exija contexto de outro slide.
 
+## REFERENCE FORENSICS — AUTO MODE
+
+Sempre que o utilizador enviar uma ou mais referências visuais, screenshots, carrosséis, páginas de artigo ou imagens de posts e pedir análise, reconstrução, adaptação ou prompts:
+
+1. mapear cada imagem individualmente;
+2. extrair arquitetura narrativa, claims, números, fontes, CTA, hierarquia e função visual;
+3. separar conteúdo factual da referência de estética/layout;
+4. verificar externamente claims científicos, DOI, N, desenho, outcomes, comparadores e limitações quando material;
+5. criar SOURCE / CLAIM / LIMITATION MAP;
+6. criar ORIGINALITY GUARD — aprender função, nunca copiar identidade;
+7. criar CLAIM LOCK corrigido;
+8. somente depois gerar os prompts completos;
+9. manter cada prompt integralmente autônomo nos 22 blocos;
+10. quando TARGET=Gemini Image, aplicar GEMINI_PRODUCTION.md automaticamente.
+
+Não esperar o utilizador pedir “faça a perícia” em uma segunda mensagem: a perícia é automática quando referências forem fornecidas.
+
 ## MODE ROUTER
 
 Antes de executar, classificar o pedido:
