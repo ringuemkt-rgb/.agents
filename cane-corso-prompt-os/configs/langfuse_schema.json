@@ -1,0 +1,44 @@
+{
+  "schema_name": "cane_corso_prompt_os_langfuse_trace",
+  "version": "1.0.0",
+  "description": "Campos recomendados para registrar execucoes, prompts, saidas e performance real do Cane Corso Prompt OS.",
+  "trace_fields": {
+    "project": "Cane Corso do Cangaco",
+    "system_version": "v4.0",
+    "content_type": "carousel|reels|stories|caption|visual_prompt|ad",
+    "theme": "string",
+    "target_audience": "string",
+    "pain_point": "string",
+    "wrong_belief": "string",
+    "central_thesis": "string",
+    "evidence_level": "strong|moderate|weak|editorial",
+    "hook_variant": "A|B|C",
+    "selected_hook": "string",
+    "cta_keyword": "string",
+    "ipv_estimate": "number",
+    "prompt_version": "string",
+    "model_used": "string",
+    "visual_generator": "gemini|chatgpt|midjourney|comfyui|flux|other",
+    "has_text_embedded": "boolean",
+    "has_textless_version": "boolean",
+    "qa_score": "number",
+    "risk_flags": ["aggression", "medical_claim", "color_hype", "low_evidence", "text_overload"],
+    "instagram_metrics": {
+      "published_at": "date-time",
+      "reach": "number",
+      "likes": "number",
+      "comments": "number",
+      "saves": "number",
+      "shares": "number",
+      "profile_visits": "number",
+      "follows": "number",
+      "direct_messages": "number",
+      "notes": "string"
+    },
+    "post_mortem": {
+      "diagnosis": "string",
+      "next_action": "part_2|reels|stories|new_hook|discard|offer|checklist",
+      "lessons": ["string"]
+    }
+  }
+}
