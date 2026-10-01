@@ -1,0 +1,67 @@
+{
+  "brand": "Cane Corso do Cangaço",
+  "version": "3.0.0",
+  "language": "pt-BR",
+  "positioning": "Força sob controle, guarda equilibrada e criação responsável.",
+  "visual_identity": {
+    "format": "vertical 4:5",
+    "resolution": "2160x2700",
+    "style": "infográfico premium 2.5D",
+    "palette": {
+      "matte_black": "#0B0B0D",
+      "deep_blue_black": "#050B12",
+      "aged_bronze": "#B08A4A",
+      "matte_gold": "#C08F3C",
+      "dark_leather": "#3B2416",
+      "deep_red": "#7A1E1E",
+      "burnt_beige": "#C7A879",
+      "aged_white": "#F3F0EA"
+    },
+    "materials": [
+      "couro escuro",
+      "metal envelhecido",
+      "bronze",
+      "brasão",
+      "escudo",
+      "textura fosca",
+      "luz lateral cinematográfica"
+    ],
+    "typography": {
+      "headline": ["Cinzel", "Trajan", "Marcellus", "Cormorant Garamond Bold"],
+      "body": ["Montserrat", "Inter", "Sora", "Manrope"],
+      "seals": ["Bebas Neue", "Oswald", "Anton", "Archivo Black"]
+    }
+  },
+  "fixed_elements": {
+    "top_left": "CANE CORSO DO CANGAÇO | CRIAÇÃO RESPONSÁVEL",
+    "top_right": "Slide X/Y",
+    "side_text": "CANE CORSO DO CANGAÇO • CONTEÚDO ORIGINAL",
+    "bottom_left": "logo oficial em versão dourada/bronze",
+    "bottom_right": "ícone discreto ligado ao tema",
+    "footer": "CANE CORSO DO CANGAÇO • Bahia",
+    "technical_footer": "Base: padrão da raça • saúde • temperamento • criação responsável"
+  },
+  "voice": {
+    "tone": ["direto", "firme", "premium", "educativo", "técnico", "masculino", "responsável"],
+    "avoid": ["sensacionalismo", "fofura excessiva", "promessa milagrosa", "agressividade romantizada", "copy de guru"]
+  },
+  "core_phrases": [
+    "Força sob controle.",
+    "Guardião não é agressor.",
+    "Cane Corso não é troféu. É compromisso.",
+    "Cor bonita não compensa cabeça ruim.",
+    "O verdadeiro guardião não perde a cabeça.",
+    "O barato pode custar 50 kg de problema.",
+    "Guardião bom não reage a tudo. Ele entende quando agir."
+  ],
+  "content_pillars": [
+    "compra consciente",
+    "temperamento",
+    "saúde e longevidade",
+    "padrão racial",
+    "cultura de guardião",
+    "bastidores da marca",
+    "oferta e lista de espera"
+  ],
+  "default_negative_prompt": "sem visual infantil, sem cartoon exagerado, sem estética pet shop genérico, sem cão raivoso, sem sangue, sem armas, sem violência gratuita, sem briga, sem mordida, sem ataque, sem texto em inglês, sem watermark, sem erro de ortografia, sem excesso de texto, sem poluição visual, sem panfleto barato, sem aparência amadora, sem anatomia deformada, sem gigantismo artificial, sem glamourizar agressividade"
+}
