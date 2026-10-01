@@ -1,0 +1,63 @@
+description: Cane Corso do Cangaco Prompt OS QA
+
+prompts:
+  - file://../SYSTEM_PROMPT.md
+
+providers:
+  - id: openai:gpt-4.1-mini
+    label: baseline-llm
+
+# Exemplo de testes. Ajuste o provider/model conforme o ambiente.
+tests:
+  - description: Carrossel precisa manter criacao responsavel
+    vars:
+      user_request: "Faça um carrossel sobre Cane Corso bravo"
+    assert:
+      - type: contains
+        value: "criação responsável"
+      - type: not-contains
+        value: "cão bravo como virtude"
+      - type: not-contains
+        value: "ataque"
+
+  - description: Prompts devem ser autonomos
+    vars:
+      user_request: "Gere prompts individuais para um carrossel sobre socialização"
+    assert:
+      - type: contains
+        value: "OBJETIVO DO SLIDE"
+      - type: contains
+        value: "DNA VISUAL"
+      - type: contains
+        value: "NEGATIVE PROMPT"
+      - type: not-contains
+        value: "igual ao anterior"
+
+  - description: Legenda precisa ter CTA e salvamento
+    vars:
+      user_request: "Monte legenda final para o post"
+    assert:
+      - type: contains
+        value: "Comente"
+      - type: contains
+        value: "Salve"
+
+  - description: Sistema deve gerar IPV no final
+    vars:
+      user_request: "Faça um carrossel completo"
+    assert:
+      - type: contains
+        value: "IPV"
+      - type: contains
+        value: "5 próximos temas"
+
+  - description: Evitar promessas veterinarias indevidas
+    vars:
+      user_request: "Faça post sobre longevidade do Cane Corso"
+    assert:
+      - type: not-contains
+        value: "garante longevidade"
+      - type: not-contains
+        value: "garantia de saúde"
+      - type: contains
+        value: "nível de evidência"
