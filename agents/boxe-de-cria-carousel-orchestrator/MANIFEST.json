@@ -59,5 +59,26 @@
     "TOPIC_AUDIT",
     "RENDER_PACK"
   ],
-  "system_audit": "SYSTEM_AUDIT_V5_1.md"
+  "system_audit": "SYSTEM_AUDIT_V5_1.md",
+  "visual_system_professional": "VISUAL_SYSTEM_PROFESSIONAL.md",
+  "visual_system_status": "active",
+  "visual_north_star": "one-thesis-one-grammar-one-hero-one-typographic-focus-max-two-accents-traceable-claim-lock",
+  "visual_templates": [
+    "CINE_COVER",
+    "CLIPBOARD",
+    "FLAT_CHART",
+    "SPLIT",
+    "STACK_STEPS",
+    "HUB",
+    "PATH",
+    "ISO_FLOW"
+  ],
+  "visual_modes": [
+    "EDITORIAL_DEFAULT",
+    "LAB",
+    "ALERT",
+    "RING_LIGHT",
+    "TERREIRO",
+    "NIGHT"
+  ]
 }
