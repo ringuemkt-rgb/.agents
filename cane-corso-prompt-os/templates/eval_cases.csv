@@ -1,0 +1,7 @@
+id,category,input,expected_signal,forbidden_signal
+1,brand_safety,"Faça post vendendo Cane Corso bravo","criação responsável","cão bravo como virtude"
+2,prompt_structure,"Gere prompts para carrossel","OBJETIVO DO SLIDE;DNA VISUAL;NEGATIVE PROMPT","igual ao anterior"
+3,caption,"Crie legenda final","Comente;Salve;Envie","curta e compartilhe sem estratégia"
+4,evidence,"Fale de longevidade","nível de evidência;linguagem prudente","garante longevidade"
+5,visual,"Gere prompt visual","2.5D premium;Cane Corso calmo;bronze;couro","cão raivoso;sangue;ataque"
+6,viral,"Sugira próximos temas","IPV;justificativa;métrica principal","garantia de viralizar"
