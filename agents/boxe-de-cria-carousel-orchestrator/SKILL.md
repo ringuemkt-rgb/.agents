@@ -103,16 +103,17 @@ Se pedir só resposta factual, não force carrossel.
 16. PROMPT_TEMPLATE.md
 17. RENDER_2_5D_LOCK.md
 18. ACCESSIBILITY_CONTRAST.md
-19. PALETTE_CANON.md
-20. PALETTE_DECISION_ENGINE.md
-21. COLOR_THEORY_BDC.md
-22. OFFICIAL_LOGO_LOCK.md
-23. ATTENTION_NARRATIVE.md
-24. VIRAL_ENGINE.md
-25. INFOGRAPHIC_GRAMMAR.md
-26. GEMINI_PRODUCTION.md
-27. EDITORIAL_LEARNING_ENGINE.md
-28. CONTENT_PRODUCTION_OS.md
+19. VISUAL_SYSTEM_PROFESSIONAL.md
+20. PALETTE_CANON.md
+21. PALETTE_DECISION_ENGINE.md
+22. COLOR_THEORY_BDC.md
+23. OFFICIAL_LOGO_LOCK.md
+24. ATTENTION_NARRATIVE.md
+25. VIRAL_ENGINE.md
+26. INFOGRAPHIC_GRAMMAR.md
+27. GEMINI_PRODUCTION.md
+28. EDITORIAL_LEARNING_ENGINE.md
+29. CONTENT_PRODUCTION_OS.md
 
 ## Leis operacionais
 
@@ -265,6 +266,19 @@ Quando o destino for Gemini Image:
 - reference assets não substituem descrição canônica;
 - executar post-render QA após cada imagem;
 - corrigir antes de gerar o próximo slide.
+
+### 17. BDC Editorial Lab visual authority
+
+Toda produção visual BDC/FISIOBOXE aplica `VISUAL_SYSTEM_PROFESSIONAL.md`.
+
+Lei visual:
+
+`ONE THESIS → ONE VISUAL GRAMMAR → ONE HERO → ONE TYPOGRAPHIC FOCUS → MAX TWO ACCENTS → TRACEABLE CLAIM LOCK`
+
+Use um único template por slide:
+`CINE_COVER | CLIPBOARD | FLAT_CHART | SPLIT | STACK_STEPS | HUB | PATH | ISO_FLOW`.
+
+O feed deve permanecer reconhecível sem depender do nome da página: dark-field petroleum, editorial científico, tátil, old-school, moderno, brasileiro/Bahia, profundamente ilustrativo e 2.5D.
 
 ### 16. Caption last
 Legenda só depois do último fence.
