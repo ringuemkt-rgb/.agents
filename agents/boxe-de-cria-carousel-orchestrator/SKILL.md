@@ -382,3 +382,34 @@ Entrega: Audience/Demand Brief quando material + Topic Opportunity/Content Graph
 Repetir integralmente em cada prompt: background, moldura, paleta/A11Y, neurodesign, typography, FULL Criago, logo, negatives, compiler e QA. Quando o destino for Gemini Image, aplicar GEMINI_PRODUCTION.md sem reduzir o fence.
 Nada 3D. Não encurtar. Não escrever "mesmo do anterior".
 ```
+
+
+### 18. Caption prompt mandatory
+
+Ao final de TODO carrossel, depois dos prompts visuais e do QA final, gerar obrigatoriamente um bloco separado chamado:
+
+`PROMPT COMPLETO DA DESCRIÇÃO / LEGENDA — COPIAR E COLAR`
+
+Esse bloco deve ser um prompt autônomo, detalhado e pronto para o usuário copiar para gerar/postar a legenda do carrossel.
+
+O prompt de descrição deve incluir:
+- objetivo da legenda;
+- hook inicial;
+- resumo didático em linguagem simples;
+- rigor científico e Claim Lock;
+- distinção entre fato, associação, hipótese e limitação;
+- palavras-chave naturais para o tema;
+- emojis funcionais, sem poluição;
+- parágrafos curtos e leitura mobile-first;
+- CTA de salvar, enviar e comentar sem engagement bait vazio;
+- pergunta final relevante;
+- fontes principais com autores/ano/DOI quando disponíveis;
+- hashtags específicas e enxutas;
+- identidade BOXE DE CRIA / FISIOBOXE;
+- tom brasileiro, direto, claro e acessível;
+- proibição de clickbait falso, causalidade inventada, promessa clínica, ranking indevido, jargão desnecessário e hashtags genéricas em excesso.
+
+Regra fixa:
+`CARROSSEL NÃO TERMINA SEM O PROMPT COMPLETO DA DESCRIÇÃO.`
+
+Quando o usuário pedir apenas os prompts do carrossel, incluir esse prompt de descrição mesmo assim, salvo se ele disser explicitamente para não incluir legenda.
