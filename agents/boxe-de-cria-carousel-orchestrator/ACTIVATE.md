@@ -22,13 +22,15 @@ Repo: https://github.com/ringuemkt-rgb/.agents/tree/main/agents/boxe-de-cria-car
 14. `NEUROMARKETING_PERCEPTION_ENGINE.md`;
 15. `RENDER_2_5D_LOCK.md`;
 16. `ACCESSIBILITY_CONTRAST.md`;
-17. `PALETTE_CANON.md` + `PALETTE_DECISION_ENGINE.md` + `COLOR_THEORY_BDC.md`;
-18. `OFFICIAL_LOGO_LOCK.md`;
-19. `ATTENTION_NARRATIVE.md` + `VIRAL_ENGINE.md` + `INFOGRAPHIC_GRAMMAR.md`;
-20. `GEMINI_PRODUCTION.md` quando o destino for Gemini Image;
-21. `EDITORIAL_LEARNING_ENGINE.md`;
-22. `CONTENT_PRODUCTION_OS.md`;
-23. `AGENT.md` / `SYSTEM_PROMPT.md` como raiz modular complementar.
+17. `VISUAL_SYSTEM_PROFESSIONAL.md` — autoridade visual ativa para BDC Editorial Lab, frame, grid, templates, background L0–L9, Criago, modos e Gemini;
+
+18. `PALETTE_CANON.md` + `PALETTE_DECISION_ENGINE.md` + `COLOR_THEORY_BDC.md`;
+19. `OFFICIAL_LOGO_LOCK.md`;
+20. `ATTENTION_NARRATIVE.md` + `VIRAL_ENGINE.md` + `INFOGRAPHIC_GRAMMAR.md`;
+21. `GEMINI_PRODUCTION.md` quando o destino for Gemini Image;
+22. `EDITORIAL_LEARNING_ENGINE.md`;
+23. `CONTENT_PRODUCTION_OS.md`;
+24. `AGENT.md` / `SYSTEM_PROMPT.md` como raiz modular complementar.
 
 Se qualquer ficheiro histórico mencionar 56 blocos, essa inteligência é apenas **upstream/checklist**. A saída visual atual é o contrato de **22 blocos autónomos**.
 
@@ -204,6 +206,31 @@ TEXT OCR-VISUAL CHECK
 → 2.5D
 → AUTO-REPAIR LOOP
 ```
+
+## BDC EDITORIAL LAB — VISUAL SYSTEM ACTIVE
+
+Aplicar `VISUAL_SYSTEM_PROFESSIONAL.md` em toda produção visual BOXE DE CRIA / FISIOBOXE.
+
+North Star:
+
+> BOXE DE CRIA não deve parecer uma página genérica “sobre ciência”. Deve parecer uma publicação de boxe que sabe fazer ciência.
+
+Regra estrutural:
+
+`ONE THESIS → ONE VISUAL GRAMMAR → ONE HERO → ONE TYPOGRAPHIC FOCUS → MAX TWO ACCENTS → TRACEABLE CLAIM LOCK`
+
+Obrigatório:
+- modes visuais `EDITORIAL_DEFAULT | LAB | ALERT | RING_LIGHT | TERREIRO | NIGHT`;
+- grid 12 colunas, spacing ×8, safe area e negative space canônicos;
+- frame BDC discreto e constante;
+- background L0–L9 explícito em todo fence;
+- depth Z0–Z5;
+- no máximo duas famílias tipográficas;
+- um único template/gramática por slide: `CINE_COVER | CLIPBOARD | FLAT_CHART | SPLIT | STACK_STEPS | HUB | PATH | ISO_FLOW`;
+- origem cultural Bahia/Brasil real, nunca decorativa/turística;
+- Criago tratado como IP consistente, com presence level H0/H1/H2/CTA;
+- produção Gemini slide-a-slide com QA antes do próximo;
+- originalidade funcional: aprender mecanismo da referência, nunca copiar sua identidade.
 
 ## RENDER — LEI VISUAL
 
