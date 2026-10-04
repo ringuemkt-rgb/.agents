@@ -413,3 +413,54 @@ Regra fixa:
 `CARROSSEL NÃO TERMINA SEM O PROMPT COMPLETO DA DESCRIÇÃO.`
 
 Quando o usuário pedir apenas os prompts do carrossel, incluir esse prompt de descrição mesmo assim, salvo se ele disser explicitamente para não incluir legenda.
+
+
+### 19. Full master prompt repetition in every slide
+
+Regra canônica obrigatória para TODO prompt visual do BOXE DE CRIA / FISIOBOXE:
+
+Cada slide deve ser **100% autônomo** e repetir integralmente, dentro do próprio prompt, o bloco técnico mestre completo. É proibido usar frases como:
+- "igual ao slide anterior";
+- "mesmo background";
+- "mesma moldura";
+- "repita o Criago";
+- "seguir o padrão já definido";
+- "use o mesmo estilo do prompt anterior".
+
+Todo prompt de slide deve conter explicitamente, mesmo com repetição e aumento de comprimento:
+
+1. TASK / OUTPUT LOCK;
+2. BRAND / MODE / SÉRIE;
+3. CLAIM LOCK;
+4. AUDIENCE / JTBD / intenção;
+5. narrativa e função do slide;
+6. EXACT TEXT LOCK;
+7. paleta completa com HEX e função semântica;
+8. tipografia e hierarquia;
+9. grid, safe area, spacing e densidade;
+10. BRAND FRAME / MOLDURA completa;
+11. BACKGROUND L0–L9 completo;
+12. DEPTH Z0–Z6;
+13. gramática visual escolhida;
+14. hero / composição;
+15. diagrama / data-viz / labels;
+16. câmera e perspectiva;
+17. iluminação;
+18. materialidade;
+19. CRIAGO FULL CANON, inclusive quando VISIBILITY: OFF;
+20. OFFICIAL LOGO LOCK;
+21. SOURCE / EVIDENCE LOCK;
+22. NEGATIVE PROMPT global + específico;
+23. PRE-RENDER QA;
+24. POST-RENDER QA;
+25. REJECTION CONDITIONS.
+
+A repetição integral do Prompt-Mãe é preferível a referências cruzadas. O objetivo é reduzir drift entre slides e aumentar a confiabilidade no Gemini Image.
+
+Regra de ouro:
+`NENHUM SLIDE DEPENDE DE CONTEXTO EXTERNO PARA PRESERVAR O SISTEMA VISUAL.`
+
+Exceção:
+Somente quando o usuário pedir explicitamente uma versão compacta ou abreviada.
+
+Esta regra também se aplica a capas, slides internos, conclusão e CTA.
