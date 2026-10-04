@@ -1,12 +1,12 @@
 ---
 name: boxe-de-cria-carousel-orchestrator
-version: 5.1.0-portable.1
+version: 6.1.0-portable.1
 language: pt-BR
 type: portable-agent-skill
 owner: BOXE DE CRIA / FISIOBOXE
 ---
 
-# SKILL — BOXE DE CRIA Carousel Orchestrator v5.1
+# SKILL — BOXE DE CRIA Carousel Orchestrator v6.1
 
 ## Finalidade
 
@@ -22,8 +22,10 @@ AUDIENCE / DEMAND INTELLIGENCE
 → CLAIM LOCK
 → VIRAL BRIEF
 → ARQUITETURA NARRATIVA
+→ VISUAL METAPHOR / EVIDENCE PLAN
+→ VERDICT / MEMORY PLAN
 → NEURODESIGN / PERCEPTION PLAN
-→ N PROMPTS AUTÔNOMOS DE 22 BLOCOS
+→ N PROMPTS AUTÔNOMOS DE 25 BLOCOS
 → PROMPT COMPILER
 → LEGENDA
 → GATE
@@ -292,40 +294,43 @@ Legenda só depois do último fence.
 4. BEST CURRENT EXPLANATION
 5. CLAIM LOCK
 6. VIRAL BRIEF
-7. SLIDE 01/N — 22 blocos
+7. SLIDE 01/N — 25 blocos
 ...
-N. SLIDE N/N — 22 blocos
+N. SLIDE N/N — 25 blocos
 N+1. GEMINI ADAPTER/QA quando aplicável
 N+2. LEGENDA
 N+3. GATE
 ```
 
-## Contrato dos 22 blocos
+## Contrato dos 25 blocos
 
 1. TASK / OUTPUT LOCK
-2. PROJECT IDENTITY
-3. EVIDENCE / CLAIM LOCK
-4. CONTENT JOB / AUDIENCE / PERSONA
-5. NARRATIVE / RETENTION / NEURODESIGN
+2. BRAND / MODE / SÉRIE
+3. CLAIM LOCK
+4. AUDIENCE / JTBD / INTENÇÃO
+5. NARRATIVE / SLIDE JOB / RETENTION
 6. EXACT TEXT LOCK
-7. COLOR SYSTEM / A11Y / PERCEPTION
+7. COLOR SYSTEM / A11Y / SEMANTIC COLOR
 8. TYPOGRAPHY / LEGIBILITY
-9. FRAME LOCK
-10. BACKGROUND L0–L9
-11. DEPTH Z0–Z5
-12. HERO / COMPOSITION
-13. BIOMECHANICS / INFOGRAPHIC
-14. VISUAL CLAIM MAP / TRACEABILITY
-15. CAMERA
-16. LIGHTING
-17. MATERIALITY
-18. MESTRE CRIAGO FULL LOCK
-19. OFFICIAL BRAND ASSET
-20. NEGATIVE PROMPT
-21. PRE-RENDER QA / COMPILER
-22. POST-RENDER QA
+9. GRID / SAFE AREA / SPACING / DENSITY
+10. BRAND FRAME / MOLDURA LOCK
+11. BACKGROUND L0–L9
+12. DEPTH Z0–Z6
+13. VISUAL GRAMMAR / TEMPLATE
+14. HERO / COMPOSITION
+15. DIAGRAM / DATA-VIZ / LABELS / CLAIM→VISUAL TRACE
+16. CAMERA / PERSPECTIVE
+17. LIGHTING
+18. MATERIALITY
+19. MESTRE CRIAGO FULL CANON / ROLE
+20. OFFICIAL LOGO / BRAND ASSET LOCK
+21. SOURCE / EVIDENCE LOCK
+22. NEGATIVE PROMPT GLOBAL + ESPECÍFICO
+23. PRE-RENDER QA / COMPILER
+24. POST-RENDER QA
+25. REJECTION CONDITIONS
 
-Data-viz quantitativa entra como 13b.
+Data-viz quantitativa entra no bloco 15 e deve declarar unidade, denominador, direção, estado da evidência e caveat quando necessário.
 
 ## Cover Protocol v5
 
@@ -374,11 +379,11 @@ P0/P1:
 ## Frase portátil
 
 ```text
-Ativa o BOXE DE CRIA Carousel Orchestrator v5.1.
+Ativa o BOXE DE CRIA Carousel Orchestrator v6.1.
 Lê ACTIVATE.md + SKILL.md + ORCHESTRATOR_ARCHITECTURE.md + AUDIENCE_DEMAND_INTELLIGENCE_ENGINE.md + TOPIC_OPPORTUNITY_ENGINE.md + CONTENT_GRAPH_ENGINE.md + INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md + RED_TEAM_EVALUATION_ENGINE.md + PROMPT_PROTOCOL_FIXED.md + PROMPT_COMPILER_QA.md + NEUROMARKETING_PERCEPTION_ENGINE.md + RENDER_2_5D_LOCK.md + ACCESSIBILITY_CONTRAST.md + PALETTE_CANON.md + OFFICIAL_LOGO_LOCK.md.
 Tema: [TEMA]
 Slides: 8
-Entrega: Audience/Demand Brief quando material + Topic Opportunity/Content Graph quando material + perícia + Best Current Explanation + Claim Lock + Viral Brief + 8 prompts autônomos de 22 blocos + Gemini Adapter/QA quando aplicável + legenda + Gate.
+Entrega: Audience/Demand Brief quando material + Topic Opportunity/Content Graph quando material + perícia + Best Current Explanation + Claim Lock + Viral Brief + 8 prompts autônomos de 25 blocos + Gemini Adapter/QA quando aplicável + legenda + Gate.
 Repetir integralmente em cada prompt: background, moldura, paleta/A11Y, neurodesign, typography, FULL Criago, logo, negatives, compiler e QA. Quando o destino for Gemini Image, aplicar GEMINI_PRODUCTION.md sem reduzir o fence.
 Nada 3D. Não encurtar. Não escrever "mesmo do anterior".
 ```
@@ -464,3 +469,310 @@ Exceção:
 Somente quando o usuário pedir explicitamente uma versão compacta ou abreviada.
 
 Esta regra também se aplica a capas, slides internos, conclusão e CTA.
+
+
+### 20. BDC Editorial Intelligence System v6.1 — Evidence × Metaphor × Memory
+
+Este módulo transforma a evolução visual do BOXE DE CRIA / FISIOBOXE em regra canônica.
+
+#### 20.1 North Star
+
+Todo slide deve possuir:
+
+`UMA IDEIA QUE O PÚBLICO CONSEGUE VER → UMA EVIDÊNCIA QUE CONSEGUE AUDITAR → UMA FRASE QUE CONSEGUE LEMBRAR.`
+
+Pipeline visual obrigatório quando material:
+
+`CLAIM → VISUAL METAPHOR → EVIDENCE → VERDICT → MEMORY`
+
+A metáfora visual deve explicar a tese antes do corpo de texto sempre que isso for possível sem distorcer a evidência.
+
+#### 20.2 VISUAL METAPHOR FIRST
+
+Antes de escrever cards, perguntar:
+
+1. Qual é a oposição, mecanismo, progressão ou causalidade real?
+2. Existe uma metáfora visual concreta que represente isso?
+3. Essa metáfora preserva o Claim Lock?
+4. Ela pode ser compreendida em thumbnail sem legenda?
+
+Exemplos válidos:
+- mito × volume → monumento × arquivo;
+- sensação × medida → corpo percebido × instrumento;
+- força × eficiência → rigidez × cadeia coordenada;
+- cardio × economia → tanque × consumo;
+- tradição × evidência → troféu × laboratório.
+
+Proibido usar metáfora que introduza causalidade, ranking ou superioridade não demonstrada.
+
+#### 20.3 EVIDENCE_SPLIT
+
+Nova gramática oficial para comparação de duas epistemologias, categorias ou estados.
+
+Estrutura preferencial:
+
+```text
+HEADLINE
+↓
+TESE A           │ TESE B
+HERO A           │ HERO B
+3–4 sinais       │ 3–4 sinais
+─────────────────┼────────────────
+VERDICT PLATE
+MEMORY BAR
+SOURCE / DATA STATE
+```
+
+Use em:
+- mito × evidência;
+- tradição × documentação;
+- associação × causalidade;
+- sensação × medida;
+- amador × profissional;
+- passado × presente;
+- força × eficiência.
+
+Regra: nenhum lado pode receber dado não apurado apenas para “equilibrar” visualmente a composição.
+
+#### 20.4 CONCEPT DIVIDER
+
+A divisória deixa de ser decoração e passa a ser operador semântico.
+
+Estados oficiais:
+- `│` comparação;
+- `↯` ruptura;
+- `→` evolução;
+- `↔` reciprocidade.
+
+Deve existir somente quando representa uma relação real no Claim Lock.
+
+#### 20.5 CAROUSEL PROGRESS SPINE
+
+Além do contador `02/08`, slides internos podem usar progressão narrativa:
+
+`● ● ○ ○ ○ ○ ○ ○ + ETAPA 2 DE 8 — A DISTINÇÃO`
+
+Vocabulário recomendado:
+- O PROBLEMA
+- A DISTINÇÃO
+- A EVIDÊNCIA
+- O MECANISMO
+- A CONTRADIÇÃO
+- A APLICAÇÃO
+- O CAVEAT
+- A SÍNTESE
+
+O nome da etapa deve refletir a função narrativa real do slide.
+
+#### 20.6 VERDICT PLATE
+
+Após comparação/evidência, um slide pode usar uma placa de veredito.
+
+Regras:
+- uma frase;
+- preferencialmente 12–22 palavras;
+- nenhuma informação nova;
+- não introduzir número;
+- não transformar hipótese em fato;
+- Bronze como material editorial preferencial;
+- deve sintetizar o Claim Lock, não substituí-lo.
+
+#### 20.7 MEMORY BAR
+
+Todo carrossel deve procurar uma frase de memória forte quando houver espaço editorial.
+
+Regras:
+- 6–14 palavras como alvo;
+- ritmo oral;
+- sem dado novo;
+- sem overclaim;
+- deve sobreviver isoladamente num repost;
+- pode usar Warm White + Gold;
+- nunca depender de jargão interno.
+
+Exemplos de forma:
+- “Potência não mora num músculo. Mora no sistema.”
+- “Documento prova uso. Não prova origem.”
+- “Você não vê o golpe tarde. Você lê o golpe tarde.”
+
+#### 20.8 DATA STATE BADGES
+
+Ausência de dado deve ser explicitamente visualizada em vez de preenchida por inferência.
+
+Estados oficiais:
+- `✓ CONFIRMADO`
+- `≈ ESTIMADO`
+- `△ INDIRETO`
+- `? NÃO APURADO`
+- `! CONFLITANTE`
+
+Regra P0:
+`NOT FOUND ≠ DID NOT HAPPEN`
+
+“Não apurado” nunca pode coexistir com uma conclusão volumétrica afirmativa sobre o mesmo indicador.
+
+#### 20.9 SEMANTIC COLOR LOCK
+
+A mesma cor deve representar a mesma categoria dentro do slide.
+
+Exemplo:
+se Gold = simbólico, todos os sinais simbólicos usam Gold;
+se Red = alerta/ruptura, Red não pode reaparecer como decoração neutra;
+se Cyan = método/evidência, Cyan não deve virar emoção.
+
+Cor nunca é argumento por si só. Sempre combinar com label, forma, posição ou padrão.
+
+#### 20.10 CRIAGO ROLE SYSTEM H0–H4
+
+Criago deixa de ser apenas “presente/ausente” e recebe função narrativa explícita:
+
+- `H0 WITNESS` — observa sem explicar;
+- `H1 MENTOR` — explica um conceito;
+- `H2 SKEPTIC` — desmonta mito/erro;
+- `H3 CURATOR` — organiza evidência/categorias;
+- `H4 CLOSER` — sintetiza/fecha.
+
+Regra:
+Criago só entra visualmente quando sua função melhora compreensão, memória ou transição.
+O FULL CANON continua obrigatório em todo prompt, inclusive VISIBILITY: OFF.
+
+#### 20.11 CULTURAL MATERIALITY
+
+Bahia/Brasil deve entrar por materialidade, território, linguagem, arquivo, textura, objeto, cultura real e memória esportiva — nunca como decoração turística genérica.
+
+Permitido:
+- reboco de academia;
+- lona;
+- couro;
+- papel de arquivo;
+- bandeira correta como asset semântico;
+- objetos e referências documentais reais.
+
+Evitar:
+- colagem turística;
+- excesso de mapa/bandeira sem função;
+- estereótipo regional decorativo.
+
+#### 20.12 NO-DATA VISUALIZATION
+
+Quando o dado esperado não existe ou não foi apurado nesta rodada:
+
+- mostrar estado `? NÃO APURADO`;
+- representar a estrutura da pergunta, não um valor fictício;
+- não preencher gráfico;
+- não inferir vencedor;
+- não usar 0 para “ausente”;
+- não usar barra fantasma que pareça dado real.
+
+#### 20.13 CHROME BUDGET
+
+Frame/chrome visual deve permanecer em aproximadamente ≤5% da atenção.
+
+Preferir:
+- pill;
+- contador;
+- hairline;
+- quatro L-marks;
+- footer.
+
+Rails laterais são opcionais quando aumentarem densidade sem função.
+
+Objetivo:
+o público lembra da IDEIA, não da moldura.
+
+#### 20.14 Editorial 2.5D Balance
+
+Direção de render preferencial:
+
+- ~60% ilustração editorial;
+- ~25% pintura digital;
+- ~15% profundidade 2.5D.
+
+Evitar aparência:
+- 80% CGI + 20% infográfico;
+- Unreal/Octane;
+- specular excessivo;
+- pele hiperreal;
+- metal plástico.
+
+Superfícies:
+matte;
+cel shading 2–3 níveis;
+sombras curtas;
+highlight largo;
+grão editorial.
+
+#### 20.15 DENSITY BUDGET
+
+Evitar empilhar na base simultaneamente:
+Criago + balão + veredito + evidence chip + memory bar + footer.
+
+Ordem preferencial:
+`HERO → COMPARAÇÃO/EVIDÊNCIA → VERDICT → MEMORY → SOURCE MICROLINE`
+
+Se houver excesso, fundir `Evidence Chip` em `Source/Data State`.
+
+#### 20.16 Public Evidence Language
+
+Metadados internos como:
+- contradiction engine;
+- reranker;
+- tier engine;
+- source router;
+
+não devem aparecer no post final salvo quando forem assunto explícito.
+
+Converter para linguagem pública:
+
+```text
+STATUS DA EVIDÊNCIA
+✓ confirmado
+? não apurado
+△ indireto
+```
+
+O público deve ver o estado da evidência, não a infraestrutura interna.
+
+#### 20.17 Ranking Guard
+
+Se um agregado não foi apurado:
+- proibido escrever “SP/RJ pesam mais”, “Bahia ganha”, “X é maior” ou equivalente;
+- usar linguagem de pergunta:
+  “volume exige contagem por UF”;
+  “comparação ainda precisa ser apurada”.
+
+Se a dimensão for simbólica:
+preferir:
+“A Bahia é enorme no imaginário do boxe; em volume, é outra pergunta.”
+
+#### 20.18 New visual gate
+
+Antes de aprovar qualquer slide, responder SIM a:
+
+1. A tese é visível antes de ser lida?
+2. A metáfora preserva o Claim Lock?
+3. A evidência pode ser auditada?
+4. O estado do dado está explícito?
+5. O veredito não extrapola a evidência?
+6. A Memory Bar não introduz fato novo?
+7. A cor mantém semântica constante?
+8. Criago possui papel narrativo explícito?
+9. O chrome não domina?
+10. O slide continua legível em 150 px?
+
+Se qualquer resposta crítica for NÃO → REPROVADO.
+
+### 21. Regra operacional v6.1
+
+Em pedidos futuros, o orquestrador deve preferir:
+
+`EVIDENCE → METAPHOR → VERDICT → MEMORY`
+
+sobre:
+
+`CARD → CARD → CARD → CARD`
+
+sempre que a tese permitir visualização honesta.
+
+A prioridade não é produzir mais interface.
+É produzir mais compreensão.
