@@ -1,0 +1,30 @@
+{
+  "registry_version": "1.0",
+  "policy": "official identity assets are immutable; hashes are mandatory after ingestion",
+  "assets": [
+    {
+      "id": "BDC_LOGO_OFFICIAL",
+      "status": "AWAITING_BINARY_INGEST",
+      "immutable": true,
+      "sha256": null
+    },
+    {
+      "id": "CRIAGO_CANONICAL_FRONT",
+      "status": "AWAITING_BINARY_INGEST",
+      "immutable": true,
+      "sha256": null
+    },
+    {
+      "id": "BRAZIL_FLAG_APPROVED",
+      "status": "REFERENCE_REQUIRED",
+      "immutable": true,
+      "sha256": null
+    },
+    {
+      "id": "BAHIA_FLAG_APPROVED",
+      "status": "REFERENCE_REQUIRED",
+      "immutable": true,
+      "sha256": null
+    }
+  ]
+}
