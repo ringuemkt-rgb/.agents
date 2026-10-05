@@ -1,4 +1,4 @@
-# BOXE DE CRIA — Content Production OS v7.0
+# BOXE DE CRIA — Content Production OS v7.1
 
 Sistema único:
 
@@ -77,3 +77,27 @@ carousel completion/advance if available.
 
 No invented benchmarks.
 No causal conclusions from one post.
+
+
+## Runtime routing v7.1
+
+```text
+THEME
+→ DOMAIN ROUTER
+→ FRESHNESS ROUTER
+→ FORENSIC AI COUNCIL when material
+→ CLAIM LEDGER
+→ OPPORTUNITY SCORE when Audience Radar
+→ VISUAL PROOF
+→ COMPLEXITY + ATTENTION BUDGET
+→ GENERATIVE RISK
+→ 25-BLOCK COMPILER
+→ G1 or G2
+→ VISUAL QA
+→ CAPTION
+→ PROVENANCE
+→ PERFORMANCE LEARNING
+```
+
+Opportunity Score is a prioritization index, not virality probability.
+G2 is the preferred route for exact data, dense text or immutable brand assets.
