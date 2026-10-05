@@ -1,272 +1,217 @@
-# TEMPLATE VAZIO — BOXE DE CRIA v5.1
+# TEMPLATE — BOXE DE CRIA v7.0
 
-Copiar **um fence por slide**. Cada fence deve ser integralmente autônomo.
+Use um fence por slide. O compiler deve EXPANDIR os locks canônicos; o prompt final nunca depende do slide anterior.
 
 ```text
-BOXE DE CRIA — SURGICAL PROMPT FORGE SUPREME v5.1.0
-BDC CAROUSEL ORCHESTRATOR
-BDC INVESTIGATIVE SYNTHESIS INTELLIGENCE
-BDC EVIDENCE FUSION & FORENSIC SYNTHESIS ENGINE
-BDC RED TEAM & EVALUATION ENGINE
-BDC NEUROMARKETING & PERCEPTION ENGINE
-BDC PROMPT COMPILER & QA
-BDC DIDACTIC COMBAT
-BDC MAGNIFICENT SCIENCE 2.5D
-BDC RETENTION ENGINE
-BDC VISUAL CLAIM MAP
-MESTRE CRIAGO MINDSET & ARCHETYPE ENGINE
+BOXE DE CRIA — BDC EDITORIAL INTELLIGENCE SYSTEM v7.0
+EVIDENCE × METAPHOR × MEMORY
 FISIOBOXE • [SÉRIE]
-
 SLIDE [NN]/[NN]
 PROMPT INTEGRALMENTE AUTÔNOMO.
-NÃO DEPENDER DE QUALQUER OUTRO SLIDE, PROMPT OU REFERÊNCIA.
-REPETIR INTEGRALMENTE NESTE FENCE: COLOR/A11Y + NEURODESIGN + TYPOGRAPHY + FRAME + BACKGROUND L0–L9 + DEPTH Z0–Z5 + FULL CRIAGO LOCK + LOGO + NEGATIVES + COMPILER + QA.
 
-01 TASK / OUTPUT LOCK
-TARGET IMAGE MODEL: [GEMINI IMAGE | MODEL-AGNOSTIC]
-4:5 · 2160×2700 work · export 1080×1350 · sRGB · mobile-first · safe 7/7/6/7 · grid 12 · gutter ~32 · spacing ×8 · baseline 24 · negative space 22–28% · UMA arte.
-RENDER LOCK: 2.5D GRAPHIC EDITORIAL ONLY.
-IF TARGET=GEMINI IMAGE: insert GEMINI IMAGE TASK LOCK; ONE image only; explicit 4:5 when supported.
-NO 3D / CGI / Blender / Unreal / plastic / game-engine.
+01 TASK / TARGET / OUTPUT LOCK
+TARGET:
+ONE 4:5 slide.
+Design grid 2160×2700.
+Final crop/export 1080×1350.
+sRGB.
+Safe top/left/right 7%, bottom 6%.
+12-col grid.
+Spacing ×8.
+2.5D editorial only.
 
-02 PROJECT IDENTITY
-MARCA:
-SUBMARCA:
-SÉRIE:
-TEMA:
-POSICIONAMENTO:
-TONALIDADE:
+02 BRAND / MODE / SÉRIE
+BRAND:
+SUBBRAND:
+SERIES:
+MODE:
+TONE:
 
 03 EVIDENCE / CLAIM LOCK
-BEST CURRENT EXPLANATION:
-TESE APROVADA:
-NÃO ESCREVER:
-EVIDENCE STATUS:
-DIRECTNESS:
+CLAIM IDS:
+ALLOWED:
+BLOCKED:
 CERTAINTY:
-APPLICABILITY:
-CRITICAL CAVEAT:
-SOURCE LOCK:
+DIRECTNESS:
+POPULATION:
+CAVEAT:
 
-04 CONTENT JOB / AUDIENCE / PERSONA
-JOB:
-RAW QUERY / AUDIENCE LANGUAGE:
-SEARCH INTENT:
-DECLARED PAIN:
-FUNCTIONAL PROBLEM:
-JTBD:
-DEMAND LEVEL / FRESHNESS:
+04 AUDIENCE / JTBD / INTENT
 PERSONA:
-AWARENESS:
-PROBLEMA:
+INTENT:
+PAIN:
+JTBD:
+LEXICON:
 SHARE REASON:
 SAVE REASON:
-LANGUAGE LEVEL:
 
-05 NARRATIVE / RETENTION / NEURODESIGN
-ROLE:
+05 NARRATIVE / ATTENTION / SHARE-SAVE
+SLIDE JOB:
 PRIMARY FOCAL:
-SECONDARY FOCAL:
-ENTRY POINT:
+ENTRY:
 READING PATH:
-PAYOFF_NOW:
-OPEN_LOOP:
-NEXT_SLIDE_DESIRE:
-ATTENTION_RESET:
-SWIPE_HANDOFF:
-GESTALT:
-FLUENCY:
-ISOLATED ELEMENT:
-NO PSEUDO-NEUROMARKETING.
+PAYOFF NOW:
+OPEN LOOP:
+NEXT DESIRE:
+SWIPE HANDOFF:
+SHARE JOB:
+SAVE JOB:
 
-06 EXACT TEXT LOCK
-TARGET=Gemini: classify T0/T1/T2 and do not paraphrase/translate/add copy.
-T0 MUST-EXACT:
-T1 SECONDARY-EXACT:
-T2 FINALIZATION-ELIGIBLE:
-TOP PILL:
-CATEGORY:
-COUNTER:
-HEADLINE:
-SUBHEAD:
-MICROS:
-CHIP:
-MEMORY:
-RAILS:
-FOOTER:
-SOURCE:
-CTA/SWIPE:
+06 EXACT TEXT / T0-T1-T2
+T0:
+T1:
+T2:
+TEXT POLICY: verbatim; no paraphrase, no translation, no added copy.
 
-07 COLOR SYSTEM / A11Y / PERCEPTION
-CONTENT JOB:
-EMOTION:
-GRAMMAR:
-MODE:
-FIELD:
+07 COLOR / A11Y
+FULL PALETTE:
+SEMANTIC MAP:
 ACCENT 1:
 ACCENT 2:
-COLOR SEMANTICS:
-ACCENT BUDGET:
-GRAYSCALE/COLOR-BLIND BACKUP:
 A11Y: body ≥4.5:1 | headline target ≥7:1 | graphics ≥3:1.
 NO hue-only.
-NO universal color psychology.
 
-08 TYPOGRAPHY / LEGIBILITY
+08 TYPOGRAPHY
 HEADLINE:
-SUB:
-CARD:
 BODY:
 SOURCE:
-LINE HEIGHT:
-WEIGHTS:
-Max 2 families.
+MAX 2 FAMILIES.
 Body non-condensed.
-No all-caps paragraph.
 
-09 FRAME LOCK
-BDC MODERN DARK CHROME:
-charcoal/graphite matte; gold/bronze hairline; cyan L-corners; top-left BOXE DE CRIA • FISIOBOXE pill; top-right slide counter; left/right vertical rails; source chip; BOXE DE CRIA • Bahia; @boxedecria_; “Ser forte é ser gentil.”; official logo reserved.
-No cockpit/gamer HUD.
+09 GRID / SAFE / DENSITY / ZONES
+ZONE A:
+ZONE B:
+ZONE C:
+ZONE D:
+ZONE E:
+ZONE F:
+DENSITY:
+NEGATIVE SPACE:
 
-10 BACKGROUND L0–L9
-L0 atmosphere:
-L1 vignette:
-L2 material:
-L3 microgrid:
-L4 sport ghost:
-L5 blueprint:
-L6 mechanism:
-L7 evidence ghosts:
-L8 hero atmosphere:
-L9 UI/frame integration:
-Grain 1.5–2%. No random decoration.
+10 FRAME / CHROME
+CORE FRAME:
+RAILS:
+LOGO ZONE:
+CHROME BUDGET ≤5%.
 
-11 DEPTH Z0–Z5
+11 BACKGROUND L0–L9
+L0:
+L1:
+L2:
+L3:
+L4:
+L5:
+L6:
+L7:
+L8:
+L9:
+
+12 DEPTH Z0–Z6
 Z0:
 Z1:
 Z2:
 Z3:
 Z4:
 Z5:
-Depth by layering/overlap/occlusion/contact shadow/selective blur/shallow perspective only.
-NO 3D mesh.
+Z6:
 
-12 HERO / COMPOSITION
+13 VISUAL GRAMMAR / METAPHOR
+GRAMMAR:
+VISUAL PROOF:
+CONCEPT DIVIDER:
+WHAT NOT TO DRAW:
+
+14 HERO / COMPOSITION / ANATOMY
 HERO:
 PLACEMENT:
 SCALE:
-POSTURE:
-ANATOMY:
+POSE:
+ANATOMY/TECHNIQUE:
 NEGATIVE SPACE:
-2.5D semi-vector only.
 
-13 BIOMECHANICS / INFOGRAPHIC
-GRAMMAR:
-OBJECTS:
-ARROWS:
-LABELS:
-WHAT NOT TO DRAW:
-DATA INTEGRITY:
-Flat/orthographic if quantitative.
-
-13b DATA-VIZ IF NEEDED
-VARIABLE:
-MEASURE:
-UNIT:
-DENOMINATOR:
-POPULATION:
-N:
-TIME:
-SOURCE:
-UNCERTAINTY:
-COMPARISON:
-INSTRUMENT:
-WHAT IT DID NOT MEASURE:
-
-14 VISUAL CLAIM MAP / TRACEABILITY
+15 DIAGRAM / DATA / CLAIM TRACE
 CLAIM:
-VISUAL ELEMENT:
+VISUAL:
 LABEL:
 SOURCE/CAVEAT:
-No decorative causal arrows.
+DATA FIELDS if quantitative:
+VARIABLE / UNIT / DENOMINATOR / N / POPULATION / TIME / UNCERTAINTY / INSTRUMENT / WHAT-NOT-MEASURED.
 
-15 CAMERA
+16 CAMERA
 LENS:
 ANGLE:
 CROP:
 VIEW:
-Comparison uses same perspective when fairness matters.
 
-16 LIGHTING
-KEY ~4100K:
+17 LIGHT
+KEY:
 FILL:
-RIM CYAN:
-WARM EDGE:
+RIM:
 NO ENGINE BLOOM.
 
-17 MATERIALITY
-Matte leather/canvas/paper/metal/gi/rubber as relevant.
-2–3 cel-shading levels.
-Print grain 1.5–2%.
-NO glossy 3D shader.
+18 MATERIALITY
+MATTE:
+CEL 2–3:
+GRAIN 1.5–2%:
+NO PLASTIC/PHOTOREAL.
 
-18 MESTRE CRIAGO FULL LOCK
-Criago = adult male ratel Mellivora capensis; compact/low/strong/athletic; broad chest; short neck; short legs; strong paws; discreet natural claws; broad head; short snout; matte black nose; tiny rounded ears; intelligent small eyes; continuous pale mantle head→back; lower body black/charcoal; classic smoked/amber aviators with thin metal/gold frame and double bridge; matte black motorcycle jacket with illustrated pores, seams, zipper, discreet studs and wear; front BOXE DE CRIA patch; right sleeve correct Brazil flag; left sleeve correct Bahia flag; back ALELUIADO + autism-awareness ribbon + BOXE DE CRIA; never puzzle piece; never bear/skunk/raccoon/dog/wolf/human costume/Funko/Disney.
-RENDER: premium 2.5D semi-vector, cel 2–3 levels, matte, contact shadow, grain. Never CGI/3D.
-MINDSET: Sage + Hero + Everyman; controlled Trickster.
+19 CRIAGO FULL CANON / CR-ROLE / H-LEVEL
+FULL CANON: adult male Mellivora capensis; compact; broad chest; short neck; strong short legs/paws; charcoal lower coat; continuous pale silver-white mantle head→back; broad head; tiny ears; short muzzle; matte black nose; intelligent adult eyes; classic aviators; matte black motorcycle jacket; Gold BOXE DE CRIA patch; correct Brazil flag right sleeve; correct Bahia flag left sleeve; back ALELUIADO + autism-awareness ribbon WITHOUT puzzle piece + BOXE DE CRIA; premium 2.5D matte; never bear/skunk/raccoon/dog/Funko/Disney.
+CR-ROLE:
 H-LEVEL:
 VISIBILITY:
 FUNCTION:
 POSE:
 OBJECT:
 EXACT LINE:
-Health/TEA/child/injury/safety = H0.
 
-19 OFFICIAL BRAND ASSET
-Use owner-supplied BOXE DE CRIA official logo asset in finalization.
-Do not redesign/restyle.
-If unavailable, reserve space instead of inventing a substitute unless explicit reconstruction is requested.
+20 OFFICIAL ASSETS / REFERENCES
+OFFICIAL LOGO:
+CRIAGO REFERENCE:
+THIRD-PARTY REFERENCE:
+DO NOT COPY:
 
-20 NEGATIVE PROMPT
-NO 3D render.
-NO CGI.
-NO game engine.
-NO photoreal skin/fur.
-NO plastic.
-NO fake data/source/ranking/percentage.
-NO logo substitute.
-NO Criago drift.
-NO unreadable microtext.
-NO third-party identity copy.
-NO red body paragraph.
-NO hue-only chart.
-NO pseudoscientific neuromarketing.
-NO dopamine/cortex claims.
+21 SOURCE / PROVENANCE / DATA STATE
+SOURCE IDS:
+DATA STATE:
+FRESHNESS:
+PUBLIC CAVEAT:
 
-21 PRE-RENDER QA / COMPILER
-TARGET MODEL CHECK: PASS
-ONE-SLIDE CHECK: PASS
-GEMINI ZONE CHECK: PASS when applicable
-T0/T1/T2 TEXT CHECK: PASS when applicable
-STRUCTURAL LINT: PASS
-CONTRADICTION LINT: PASS
-CLAIM→VISUAL TRACE: PASS
-DENSITY: PASS
-THUMBNAIL: PASS
-SUNLIGHT/LOW-CONTRAST: PASS
-COLOR-BLIND: PASS
-A11Y: PASS
-2.5D: PASS
-BRAND: PASS
-COPY: PASS
-DATA: PASS
+22 NEGATIVE
+GLOBAL:
+SLIDE-SPECIFIC:
 
-22 POST-RENDER QA
-For Gemini: run text exactness + one-slide + character + brand + data + 2.5D checks before next slide.
-Reject if text lock changes, pt-BR errors, data changes, anatomy fails, 3D/CGI appears, contrast fails, Criago/logo drift, diagram overclaims, hero covers headline, density excessive or source is unusable.
-Repair up to 2 iterations; persistent P0/P1 = REPROVADO.
+23 PRE-RENDER COMPILER
+STRUCTURE PASS
+VERSION PASS
+CLAIM PASS
+EVIDENCE-STATE PASS
+CONTRADICTION PASS
+CLAIM→VISUAL PASS
+DENSITY PASS
+THUMBNAIL PASS
+A11Y PASS
+COLOR-BLIND PASS
+2.5D PASS
+TEXT_RISK:
+ANATOMY_RISK:
+DATA_RISK:
+BRAND_RISK:
+
+24 POST-RENDER QA / REPAIR
+TEXT:
+ANATOMY:
+BRAND:
+DATA:
+A11Y:
+2.5D:
+CROP:
+REPAIR ROUTE:
+
+25 REJECTION CONDITIONS
+P0:
+P1:
 ```
 
-Força = N. Energia = J. Potência = W. Velocidade = m/s.
-Nunca “kg de soco”.
+Depois do último fence:
+PROMPT COMPLETO DA DESCRIÇÃO / LEGENDA — COPIAR E COLAR.
