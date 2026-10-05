@@ -1,4 +1,4 @@
-# BDC PROMPT COMPILER & QA v2.0
+# BDC PROMPT COMPILER & QA v2.1
 
 ## Missão
 
@@ -193,3 +193,16 @@ P3 polish — may ship with note.
 COMPILED_PASS
 FINALIZATION_REQUIRED
 REPROVADO
+
+
+## Executable implementation
+
+Reference modules:
+- `src/compiler/compile-slide.ts`
+- `src/qa/contract-linter.ts`
+- `src/routers/risk-router.ts`
+- `src/routers/budget-router.ts`
+- `src/qa/visual-qa.ts`
+- `src/qa/visual-regression.ts`
+
+Runtime tests in `tests/*` are regression gates, not a replacement for expert review of claims or rendered images.
