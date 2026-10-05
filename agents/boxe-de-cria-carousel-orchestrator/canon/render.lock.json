@@ -1,0 +1,35 @@
+{
+  "style": "premium editorial semi-vector 2.5D",
+  "balance": {
+    "editorial_illustration": 0.6,
+    "digital_paint": 0.25,
+    "depth_2_5d": 0.15
+  },
+  "cel_shading_levels": [
+    2,
+    3
+  ],
+  "surfaces": "matte",
+  "grain_percent": [
+    1.5,
+    2
+  ],
+  "depth_methods": [
+    "layering",
+    "overlap",
+    "occlusion",
+    "contact shadow",
+    "shallow perspective",
+    "selective blur"
+  ],
+  "forbidden": [
+    "3D mesh",
+    "CGI",
+    "Unreal look",
+    "Octane look",
+    "plastic shader",
+    "photoreal skin",
+    "extruded typography",
+    "neon bloom"
+  ]
+}
