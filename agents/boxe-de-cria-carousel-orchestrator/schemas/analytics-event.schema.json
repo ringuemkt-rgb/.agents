@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BDC Performance Event",
+  "type": "object",
+  "required": [
+    "content_id",
+    "published_at",
+    "reach"
+  ],
+  "properties": {
+    "content_id": {
+      "type": "string"
+    },
+    "published_at": {
+      "type": "string"
+    },
+    "reach": {
+      "type": "number",
+      "minimum": 0
+    },
+    "non_follower_reach": {
+      "type": "number",
+      "minimum": 0
+    },
+    "saves": {
+      "type": "number",
+      "minimum": 0
+    },
+    "shares": {
+      "type": "number",
+      "minimum": 0
+    },
+    "comments": {
+      "type": "number",
+      "minimum": 0
+    },
+    "profile_visits": {
+      "type": "number",
+      "minimum": 0
+    },
+    "follows": {
+      "type": "number",
+      "minimum": 0
+    },
+    "carousel_completion_rate": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "hook_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "grammar": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "topic_cluster": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}
