@@ -1,18 +1,24 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "BDC Slide Compile Spec v7",
+  "title": "BDC Slide Compile Spec v7.1",
   "type": "object",
   "required": [
     "slide_index",
     "slide_count",
+    "slide_job",
     "claim_ids",
     "visual_grammar",
     "visual_proof_class",
+    "visual_proof",
     "data_state",
     "text_tiers",
-    "risk",
+    "audience",
+    "jtbd",
+    "hero",
+    "series",
+    "mode",
     "criago",
-    "sources",
+    "source_ids",
     "rejection_conditions"
   ],
   "properties": {
@@ -24,15 +30,15 @@
       "type": "integer",
       "minimum": 1
     },
+    "slide_job": {
+      "type": "string"
+    },
     "claim_ids": {
       "type": "array",
       "items": {
         "type": "string"
       },
       "uniqueItems": true
-    },
-    "slide_job": {
-      "type": "string"
     },
     "visual_grammar": {
       "type": "string"
@@ -46,6 +52,9 @@
         "CONCEPTUAL",
         "DATA"
       ]
+    },
+    "visual_proof": {
+      "type": "string"
     },
     "data_state": {
       "enum": [
@@ -85,44 +94,20 @@
         }
       }
     },
-    "risk": {
-      "type": "object",
-      "required": [
-        "text",
-        "anatomy",
-        "data",
-        "brand"
-      ],
-      "properties": {
-        "text": {
-          "enum": [
-            "LOW",
-            "MED",
-            "HIGH"
-          ]
-        },
-        "anatomy": {
-          "enum": [
-            "LOW",
-            "MED",
-            "HIGH"
-          ]
-        },
-        "data": {
-          "enum": [
-            "LOW",
-            "MED",
-            "HIGH"
-          ]
-        },
-        "brand": {
-          "enum": [
-            "LOW",
-            "MED",
-            "HIGH"
-          ]
-        }
-      }
+    "audience": {
+      "type": "string"
+    },
+    "jtbd": {
+      "type": "string"
+    },
+    "hero": {
+      "type": "string"
+    },
+    "series": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
     },
     "criago": {
       "type": "object",
@@ -154,10 +139,13 @@
             "ON",
             "OFF"
           ]
+        },
+        "exact_line": {
+          "type": "string"
         }
       }
     },
-    "sources": {
+    "source_ids": {
       "type": "array",
       "items": {
         "type": "string"
