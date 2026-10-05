@@ -1,0 +1,4 @@
+import {describe,it,expect} from "vitest";
+import {opportunityScore} from "../src/audience/opportunity-score.js";
+import {normalizePerformance} from "../src/learning/metrics.js";
+describe("audience/learning",()=>{it("returns score, not virality probability",()=>{const x=opportunityScore({demand:90,pain:90,novelty:70,visuality:85,authority:90,risk:20});expect(x.score).toBeGreaterThan(70);expect(x.note).toMatch(/not probability/i);});it("normalizes descriptive rates",()=>{const x=normalizePerformance({content_id:"x",reach:1000,saves:100,shares:50});expect(x.save_rate).toBe(.1);expect(x.share_rate).toBe(.05);});});
