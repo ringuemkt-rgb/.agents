@@ -26,6 +26,7 @@ Evidence:
 - RED_TEAM_EVALUATION_ENGINE.md
 
 Editorial:
+- CAPTION_COMPILER.md
 - ATTENTION_NARRATIVE.md
 - VIRAL_ENGINE.md
 - NEUROMARKETING_PERCEPTION_ENGINE.md
@@ -88,3 +89,8 @@ Visual doctrine: Evidence × Metaphor × Memory.
 Old 22-block fences may be read as legacy input but must be recompiled to 25 blocks before new output.
 Old H0–H4 role tags must be mapped to CR0–CR4.
 No legacy file may override v7 authority.
+
+
+## v7 structured compile schemas
+- schemas/slide-compile.schema.json
+- schemas/carousel-plan.schema.json
