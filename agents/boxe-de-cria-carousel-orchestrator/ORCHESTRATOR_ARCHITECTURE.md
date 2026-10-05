@@ -1,285 +1,180 @@
-# BOXE DE CRIA Carousel Orchestrator — Architecture v5.1
+# BOXE DE CRIA Carousel Orchestrator — Architecture v7.0
 
 ## Objetivo
 
-Organizar o sistema em camadas com autoridade única, investigação adversarial, neurodesign baseado em evidência, compilação visual e aprendizado com métricas reais.
+Eliminar drift, duplicação conflitante e desperdício de contexto sem perder a exigência do usuário de prompts finais totalmente autônomos.
 
-## Operating modes
+## Princípio estrutural
 
-```text
-CAROUSEL_PRODUCTION → full end-to-end package
-AUDIENCE_RADAR → audience/demand/opportunity only
-TOPIC_AUDIT → one-topic demand/evidence feasibility review
-RENDER_PACK → prompt/Gemini production from an existing validated brief
-```
+SOURCE MODULARITY → COMPILED REDUNDANCY
 
-Mode selection changes how far the pipeline runs; it never changes evidence, brand, 2.5D, accessibility or prompt-autonomy laws.
+A fonte canônica existe uma vez.
+A saída compilada repete tudo o que o gerador precisa.
 
-## Single Source of Truth
+## Camadas
 
-```text
-USER REQUEST
-   ↓
+### A — Control Plane
 ACTIVATE.md
-   ↓
 SKILL.md
-   ↓
-AUDIENCE / DEMAND LAYER
-   ↓
-TOPIC OPPORTUNITY / CONTENT GRAPH
-   ↓
-INVESTIGATIVE LAYER
-   ↓
-RED TEAM / CLAIM LOCK
-   ↓
-EDITORIAL + PERCEPTION LAYER
-   ↓
-VISUAL COMPILER
-   ↓
-PROMPT COMPILER / PRE-RENDER QA
-   ↓
+MODULE_STATUS.md
+MANIFEST.json
+
+### B — Demand Plane
+AUDIENCE_DEMAND_INTELLIGENCE_ENGINE.md
+TOPIC_OPPORTUNITY_ENGINE.md
+CONTENT_GRAPH_ENGINE.md
+
+### C — Evidence Plane
+INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md
+EVIDENCE_SYNTHESIS.md
+CROSS_STUDY_INTELLIGENCE.md
+GRADE_RUBRIC.md
+RED_TEAM_EVALUATION_ENGINE.md
+
+Saída:
+BEST CURRENT EXPLANATION + CLAIM LEDGER + GAP MAP.
+
+### D — Editorial Plane
+ATTENTION_NARRATIVE.md
+VIRAL_ENGINE.md
+NEUROMARKETING_PERCEPTION_ENGINE.md
+
+Saída:
+HOOK + SHARE/SAVE JOB + DIDACTIC ARC + PERCEPTION PLAN.
+
+### E — Visual Plane
+VISUAL_SYSTEM_PROFESSIONAL.md
+INFOGRAPHIC_GRAMMAR.md
+PALETTE_CANON.md
+PALETTE_DECISION_ENGINE.md
+COLOR_THEORY_BDC.md
+ACCESSIBILITY_CONTRAST.md
+RENDER_2_5D_LOCK.md
+OFFICIAL_LOGO_LOCK.md
+
+Saída:
+VISUAL PROOF PLAN.
+
+### F — Compiler Plane
+PROMPT_PROTOCOL_FIXED.md
+PROMPT_TEMPLATE.md
+PROMPT_COMPILER_QA.md
+
+Saída:
+N autonomous 25-block fences.
+
+### G — Model Adapter Plane
+GEMINI_PRODUCTION.md ou outro adapter futuro.
+
+O adapter nunca redefine Evidence, Brand ou A11Y.
+
+### H — Finalization Plane
+Text finalization when generative rendering is unreliable.
+Official asset insertion.
+Export/crop 1080×1350.
+
+### I — Distribution Plane
+Caption compiler.
+SEO semântico.
+CTA útil.
+Originalidade e utilidade acima de “algoritmo hack”.
+
+### J — Learning Plane
+EDITORIAL_LEARNING_ENGINE.md
+
+## Canonical pipeline
+
+```text
+REQUEST
+↓
+MODE ROUTER
+↓
+RISK TIER
+↓
+DEMAND if needed
+↓
+EVIDENCE
+↓
+RED TEAM
+↓
+CLAIM LEDGER
+↓
+HOOK / ARC
+↓
+VISUAL PROOF
+↓
+GRAMMAR
+↓
+25-BLOCK COMPILER
+↓
+MODEL ADAPTER
+↓
+PRE-QA
+↓
 RENDER
-   ↓
-POST-RENDER MULTIMODAL QA
-   ↓
-PUBLISH
-   ↓
-METRICS / EXPERIMENT / LEARNING
+↓
+POST-QA / REPAIR
+↓
+FINALIZATION
+↓
+CAPTION
+↓
+GATE
+↓
+LEARNING
 ```
 
-## Camada A — Controle
+## Claim-to-slide handoff
 
-### ACTIVATE.md
-Contrato de ativação, precedência e autonomia.
+Cada claim material:
+- claim_id;
+- wording;
+- status;
+- certainty;
+- directness;
+- population;
+- caveat;
+- source_ids;
+- expiry/freshness note.
 
-### SKILL.md
-Comportamento portátil, leis operacionais e output contract.
+Cada slide usa apenas claims necessários.
 
-### AGENT.md / SYSTEM_PROMPT.md
-Raiz complementar model-agnostic.
+## Risk routers
 
-## Camada C — Investigação
+### Forensic risk
+T0 visual/creative sem claim factual.
+T1 evergreen.
+T2 performance/biomecânica/comparação.
+T3 saúde/safety/criança/TEA/concussão/lesão/vulnerável.
 
-### INVESTIGATIVE_SYNTHESIS_INTELLIGENCE.md
-Hipóteses rivais, ACH, causalidade, falsificação, sensibilidade e Best Current Explanation.
+### Generative risk
+TEXT_RISK LOW/MED/HIGH.
+ANATOMY_RISK LOW/MED/HIGH.
+DATA_RISK LOW/MED/HIGH.
+BRAND_RISK LOW/MED/HIGH.
 
-### EVIDENCE_SYNTHESIS.md
-Inventário, famílias, risco de viés, heterogeneidade, aplicabilidade.
+HIGH exige simplificação ou finalização externa.
 
-### CROSS_STUDY_INTELLIGENCE.md
-Finding atoms, saturação, independência e ligação entre estudos.
+## Visual architecture
 
-### GRADE_RUBRIC.md
-Certeza por outcome.
+ONE THESIS → ONE GRAMMAR → ONE HERO → ONE VISUAL PROOF → ONE MEMORY LINE.
 
-### RED_TEAM_EVALUATION_ENGINE.md
-Tenta reprovar tese, visual e narrativa; provenance ledger; originality guard.
+Core frame:
+pill + counter + hairline + 4 L-corners + footer.
+Rails são opcionais quando prejudicarem density/chrome budget.
 
-Saída:
-`BEST CURRENT EXPLANATION + CLAIM LOCK`.
+Depth:
+Z0–Z6.
 
-## Camada D — Estratégia editorial e psicológica
+Background:
+L0–L9.
 
-### VIRAL_ENGINE.md
-Hook tournament, share/save logic e distribuição sem romper Claim Lock.
+## No-conflict doctrine
 
-### ATTENTION_NARRATIVE.md
-Arco, payoff, open loop, handoff e archetypes.
-
-### NEUROMARKETING_PERCEPTION_ENGINE.md
-Percepção, Gestalt, processamento fluente, legibilidade, tipografia, cor contextual e ética.
-
-Princípio:
-"neuromarketing" não é neuro-magia. Toda regra deve ser E1/E2/E3/E4 ou X.
-
-Saída:
-`VIRAL BRIEF + DIDACTIC ARC + PERCEPTION PLAN`.
-
-## Camada E — Compilador visual
-
-### PROMPT_PROTOCOL_FIXED.md
-Contrato final dos 22 blocos.
-
-### PROMPT_TEMPLATE.md
-Molde operacional.
-
-### INFOGRAPHIC_GRAMMAR.md
-Escolha de diagrama/estrutura.
-
-### PALETTE_CANON.md
-Tokens oficiais.
-
-### PALETTE_DECISION_ENGINE.md
-Seleção de modo por conteúdo, emoção, gramática, A11Y e hierarquia perceptiva.
-
-### COLOR_THEORY_BDC.md
-Semântica cromática da marca.
-
-### ACCESSIBILITY_CONTRAST.md
-WCAG 2.2.
-
-### RENDER_2_5D_LOCK.md
-Somente 2.5D editorial.
-
-### OFFICIAL_LOGO_LOCK.md
-Logo oficial como asset externo.
-
-Saída:
-`N FENCES AUTÔNOMOS`.
-
-## Camada F — Prompt Compiler
-
-### PROMPT_COMPILER_QA.md
-
-Executa:
-- structural lint;
-- contradiction lint;
-- Claim→Visual traceability;
-- density linter;
-- thumbnail simulation;
-- sunlight/low-contrast;
-- color-blind robustness;
-- pre-render QA.
-
-Depois do render:
-- text check;
-- anatomy;
-- brand;
-- data;
-- A11Y;
-- 2.5D;
-- auto-repair.
-
-## Camada G — Brand character
-
-Criago compila no bloco 18 de TODO fence.
-
-FULL LOCK sempre, mesmo VISIBILITY: OFF.
-
-## Camada H — Learning Loop
-
-### EDITORIAL_LEARNING_ENGINE.md
-
-Registra:
-- metrics;
-- feature tags;
-- creative fingerprint;
-- hook family;
-- visual grammar;
-- CTA;
-- observed pattern;
-- next test.
-
-Regra:
-correlação não vira causalidade. Um post não cria regra.
-
-
-## Camada I — Gemini Image Adapter
-
-### GEMINI_PRODUCTION.md
-Compila o fence para Gemini Image sem remover nenhuma informação canônica.
-
-Responsabilidades:
-- one-slide-per-generation;
-- 4:5 explícito;
-- text priority T0/T1/T2;
-- reference asset handling;
-- layout zones;
-- Gemini-specific negative block;
-- post-render QA;
-- sequential consistency por canon, não por memória do chat.
-
-
-## Autonomy Repetition Law
-
-Nunca abreviar por referência:
-```text
-FORMAT
-CLAIM
-PALETTE
-A11Y
-NEURODESIGN
-TYPOGRAPHY
-FRAME
-BACKGROUND
-DEPTH
-CRIAGO
-LOGO
-NEGATIVE
-COMPILER
-QA
-```
-
-## Visual architecture v5
-
-### Frame
-BDC chrome = charcoal/graphite matte, hairline bronze/gold controlado, L-corners ciano discretos.
-
-### Environment
-petroleum/deep navy/charcoal.
-
-### Accent
-máximo 2 famílias principais.
-
-### Depth
-2.5D por overlap, occlusion, contact shadow, selective blur e shallow perspective.
-
-### Typography
-- headline: condensed display, poucas palavras;
-- corpo: sans legível, não condensada;
-- sem ALL CAPS em parágrafo;
-- source essencial ≥28 px export quando possível.
-
-### Perceptual hierarchy
-1. Hook/claim.
-2. Hero visual.
-3. Evidence/diagram.
-4. Source/caveat.
-5. Brand chrome.
-
-### No-go
-3D, CGI, plastic, generic sci-fi HUD, tiny text, pseudo-neuroscience.
-
-## Cover architecture v5
-
-```text
-PILL / CATEGORY
-      ↓
-HOOK — 1 tese
-      ↓
-HERO QUE DEMONSTRA
-      ↓
-OPEN LOOP
-      ↓
-DISCRETE SWIPE CUE
-```
-
-Capa:
-- zero parágrafo;
-- 1 primary focal;
-- 22–35% negative space quando possível;
-- 1 keyword em acento;
-- hook selecionado por tournament;
-- thumbnail gate obrigatório.
-
-## QA stack
-
-Evidence QA
-→ Red Team
-→ Editorial QA
-→ Perception QA
-→ Didactic QA
-→ Visual QA
-→ Accessibility QA
-→ Brand QA
-→ Prompt Compiler
-→ Post-render QA
-→ Final Gate.
-
-## Final Gate
-
-`APROVADO | APROVADO_COM_RESSALVAS | REPROVADO`.
-
-## Versão
-
-`5.1.0-portable.1`
+- nenhum arquivo ativo pode declarar versão 5.x/6.x como current;
+- contrato visual atual = 25 blocos;
+- depth atual = Z0–Z6;
+- narrative role do Criago = CR0–CR4;
+- humor = H0–H3;
+- caption prompt é obrigatório;
+- Gemini native size e design grid são coisas diferentes.
