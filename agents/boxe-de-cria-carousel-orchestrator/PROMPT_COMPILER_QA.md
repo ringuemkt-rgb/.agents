@@ -1,184 +1,195 @@
-# BDC PROMPT COMPILER & QA v1.0
+# BDC PROMPT COMPILER & QA v2.0
 
 ## Missão
 
-Tratar cada fence como código compilável. O prompt só sai quando passa por lint estrutural, simulação perceptiva, rastreabilidade visual e QA pós-render.
+Tratar prompt e render como artefatos compiláveis.
+Autonomia na saída, modularidade na fonte.
 
-## 1. Compile order
+## Compile order
 
 ```text
-CLAIM LOCK
-→ DIDACTIC JOB
+CLAIM LEDGER
+→ SLIDE JOB
 → EXACT COPY
-→ VISUAL CLAIM MAP
+→ VISUAL PROOF
 → GRAMMAR
 → COLOR/TYPE
-→ FRAME/BACKGROUND
-→ HERO/INFOGRAPHIC
-→ CRIAGO/LOGO
+→ GRID/ZONES
+→ FRAME/BACKGROUND/DEPTH
+→ HERO/DIAGRAM
+→ CRIAGO/ASSETS
+→ SOURCE/DATA STATE
 → NEGATIVES
-→ PRE-RENDER LINT
-→ THUMBNAIL SIMULATION
+→ RISK ROUTER
+→ PRE-LINT
 → RENDER
-→ POST-RENDER INSPECTION
+→ POST-QA
+→ REPAIR/FINALIZATION
 ```
 
-## 2. Structural linter — hard fail
+## Structural linter — hard fail
 
-Todo fence deve conter os 22 blocos, na ordem.
+Todo fence novo precisa dos 25 blocos em ordem.
 
 Falhar se:
-- faltar bloco;
-- existir "mesmo do anterior", "como antes", "seguir slide anterior";
-- faltar formato, A11Y, FRAME, BACKGROUND, DEPTH, FULL CRIAGO, LOGO, NEGATIVE, QA;
-- aparecer 3D/CGI como instrução positiva;
-- existir número sem source/context lock;
-- existir claim acima do Claim Lock;
-- existir logo reconstruída sem pedido;
-- existir terceiro acento sem justificativa;
-- body em fonte condensada;
-- texto essencial abaixo do mínimo definido;
-- data-viz usar cor como único canal.
+- versão não for v7 no cabeçalho ativo;
+- aparecer “same as previous” ou equivalente;
+- faltar Claim Lock, A11Y, Frame, Background L0–L9, Depth Z0–Z6, full Criago, official assets, provenance, negative, QA ou rejection;
+- existir 3D/CGI como instrução positiva;
+- existir claim não presente no ledger;
+- existir número sem contexto/source;
+- existir data state que contradiga o texto;
+- “não apurado” coexistir com ranking/afirmação volumétrica;
+- role H0-H4 antigo não for convertido para CR0-CR4;
+- body crítico depender de fonte condensada ou microtexto.
 
-## 3. Contradiction linter
+## Contradiction linter
 
-Detectar conflitos como:
-- "photoreal" + RENDER LOCK 2.5D;
-- "neon glow" + NO engine bloom;
-- "fundo claro" + dark-field canonical sem motivo;
-- "red body" + A11Y;
-- "Criago OFF" + instrução para pose visível;
-- logo "recriar" + "usar external asset";
-- headline longa + STOP LOCK.
+Detectar:
+photoreal + 2.5D;
+neon bloom + matte editorial;
+Criago OFF + pose visível;
+logo inventado + official asset lock;
+T0/T1 “exact” + instrução de paraphrase;
+headline > density budget;
+causal arrow sem causal claim;
+equal visual weights sugerindo equal quantitative contribution sem evidência.
 
-Em conflito: a autoridade mais alta vence e o fence deve ser reescrito antes de sair.
+## Claim-to-visual table
 
-## 4. Claim-to-visual traceability
+Internamente:
+Claim ID | Claim | Evidence | Visual proof | Label | Caveat | Data state
 
-Antes do render, criar internamente:
+Todo elemento grande deve justificar sua existência.
 
-| Claim | Evidence | Visual element | Label | Caveat |
-|---|---|---|---|---|
+## Visual-proof classes
 
-Regra:
-- todo elemento visual importante deve ensinar algo;
-- todo claim material deve ter representação visual ou texto explícito;
-- seta não pode existir sem direção/mecanismo real;
-- highlight anatômico não pode fingir medição;
-- ícone não substitui dado;
-- diagrama causal deve ser rotulado como mecanismo/hipótese quando não medido diretamente.
-
-## 5. Density linter
-
-Reprovar capa com:
-- >1 tese;
-- >1 parágrafo;
-- >3 microchamadas;
-- herói + 4 cards + gráfico simultaneamente.
-
-Reprovar slide explicativo com:
-- >4 unidades principais;
-- >3 cards equivalentes;
-- 2 gráficos concorrentes;
-- >2 caixas de caveat.
-
-## 6. Thumbnail simulation gate
-
-Simular o export a ~25%:
-- headline ainda legível?
-- primeira leitura em 1–2 elementos?
-- herói ainda reconhecível?
-- palavra em acento ainda é a certa?
-- source não virou ruído?
-- bordas não comem texto?
-- brand chrome aparece sem competir?
-
-Não usar "2 segundos" como métrica científica; usar como meta editorial operacional.
-
-## 7. Sunlight / low-contrast simulation
-
-Inspecionar mentalmente como se:
-- brilho do telemóvel estivesse baixo;
-- ambiente externo;
-- viewer com menor sensibilidade a contraste;
-- captura reenviada por WhatsApp.
-
-Se corpo sumir, reprovar.
-
-## 8. Color-blind robustness
-
-Toda distinção de série deve ter pelo menos 2 canais:
-- cor + label;
-- cor + shape;
-- cor + dash;
-- cor + position.
-
-## 9. Post-render multimodal QA
-
-Depois que a imagem existir, verificar visualmente:
-
-TEXT
-- ortografia pt-BR;
-- texto literal corresponde EXACT TEXT LOCK;
-- números/unidades corretos;
-- nenhum texto hallucinado;
-- fonte não virou ilegível.
-
-ANATOMY
-- mãos/dedos;
-- braços;
-- cervical;
-- articulações;
-- postura plausível;
-- técnica coerente com modalidade.
-
-BRAND
-- logo oficial sem mutação;
-- Criago = ratel adulto;
-- Brasil manga direita correto;
-- Bahia manga esquerda correta;
-- ALELUIADO + laço sem puzzle;
-- 2.5D matte, sem CGI.
-
+DIRECT_PHYSICAL
+DOCUMENTARY
+MECHANISTIC
+COMPARATIVE
+CONCEPTUAL
 DATA
-- gráfico preserva valores;
-- eixo/rótulo/unidade;
-- sem perspectiva enganosa;
-- sem barras 3D;
-- source presente quando necessário.
 
-A11Y
-- contraste;
-- size;
-- hierarchy;
-- não depender apenas de hue.
+Se CONCEPTUAL ou MECHANISTIC não diretamente medido:
+rotular ◇ MODELO DIDÁTICO ou △ INDIRETO.
 
-## 10. Automatic repair loop
+## Density gates
 
-Se P0/P1:
-1. identificar falha;
-2. localizar bloco responsável;
-3. corrigir somente a causa;
-4. recompilar;
-5. reexecutar QA.
+Cover:
+1 thesis;
+1 hero;
+0 paragraph;
+0–1 short sub;
+max 3 micro elements.
 
-Máximo de 2 iterações automáticas antes de marcar REPROVADO e explicar o bloqueio.
+Internal:
+1 thesis;
+2–4 info units;
+max 3 equivalent cards.
 
-## 11. Severity
+Comparison:
+2 sides;
+max 3 primary axes each unless type remains comfortably readable.
 
-P0 — factual/safety/brand/data integrity: bloqueia.
-P1 — legibilidade/A11Y/anatomia/2.5D/autonomia: bloqueia.
-P2 — hierarchy/density/retention: corrigir antes da entrega.
-P3 — polish: pode sair com ressalva.
+Data:
+1 chart;
+1 takeaway;
+1 caveat/source.
 
-## 12. Fence insertion
+## Generative risk router
 
-Bloco 21 deve conter:
-- STRUCTURAL LINT: PASS.
-- CONTRADICTION LINT: PASS.
-- CLAIM→VISUAL TRACE: PASS.
-- DENSITY: PASS.
-- THUMBNAIL: PASS.
-- A11Y: PASS.
+TEXT_RISK HIGH when:
+- critical exact copy is long;
+- many labels;
+- sources/DOI must be legible;
+- mixed symbols/superscripts.
 
-Bloco 22 deve exigir inspeção pós-render e REJECT ON FAIL.
+ANATOMY_RISK HIGH when:
+- 3+ interacting people;
+- complex grappling entanglement;
+- close hands/feet;
+- mirrored poses.
+
+DATA_RISK HIGH when:
+- exact numbers/axes;
+- multiple units;
+- ratios or error bars;
+- small source text.
+
+BRAND_RISK HIGH when:
+- exact logo;
+- flags;
+- Criago close-up;
+- multiple patches.
+
+Routing:
+LOW → all-in-one render allowed.
+MED → simplify + explicit zones.
+HIGH → reserve critical zones or use immutable reference/finalization layer.
+
+## Text reliability
+
+T0/T1 failure:
+repair up to 2 generations.
+Persistent failure:
+do not keep regenerating blindly.
+Preserve layout and route exact typography to finalization.
+
+## Thumbnail gate
+
+At ~150 px:
+- headline readable;
+- hero recognizable;
+- one idea dominates;
+- accent highlights correct concept;
+- chrome tertiary.
+
+## A11Y gate
+
+body ≥4.5:1;
+headline target ≥7:1;
+graphics ≥3:1;
+color + label/shape/position.
+
+## Post-render QA
+
+TEXT:
+literal T0/T1, pt-BR, no hallucinated copy.
+
+ANATOMY:
+hands, limbs, joints, neck, sport technique.
+
+BRAND:
+Criago species/coat/wardrobe/flags;
+logo immutable;
+2.5D.
+
+DATA:
+values, units, denominators, axis, ordering, caveat.
+
+MEANING:
+visual does not overclaim.
+
+## Repair loop
+
+1 identify failing layer;
+2 patch only cause;
+3 recompile affected blocks;
+4 rerender;
+5 inspect again.
+
+Max 2 generative repair attempts before FINALIZATION_ROUTE or REPROVADO.
+
+## Severity
+
+P0 factual/safety/data/source/brand integrity — blocks.
+P1 autonomy/A11Y/anatomy/2.5D/text-critical — blocks.
+P2 density/hierarchy/narrative — fix before deliver.
+P3 polish — may ship with note.
+
+## Compiler output status
+
+COMPILED_PASS
+FINALIZATION_REQUIRED
+REPROVADO
