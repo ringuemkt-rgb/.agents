@@ -1,4 +1,4 @@
-# ATIVAR — BOXE DE CRIA Carousel Orchestrator v7.0
+# ATIVAR — BOXE DE CRIA Carousel Orchestrator v7.1
 
 Este é o contrato de execução.
 
@@ -68,7 +68,7 @@ Quando destino = Gemini Image:
 ## Cabeçalho de fence
 
 ```text
-BOXE DE CRIA — BDC EDITORIAL INTELLIGENCE SYSTEM v7.0
+BOXE DE CRIA — BDC EDITORIAL INTELLIGENCE SYSTEM v7.1
 EVIDENCE × METAPHOR × MEMORY
 FISIOBOXE • [SÉRIE]
 SLIDE NN/NN
@@ -121,3 +121,24 @@ Nunca “kg de soco”.
 ## Gate
 
 APROVADO | APROVADO_COM_RESSALVAS | REPROVADO
+
+
+## Runtime v7.1
+
+Quando o sistema estiver ativo, usar automaticamente:
+
+1. `AI_FORENSIC_INTELLIGENCE_MANAGER.md` em temas científicos, históricos controversos, regras atuais ou segurança;
+2. `Claim Ledger` para claims materiais;
+3. `Freshness Router` para decidir se é necessário revalidar fontes;
+4. `Generative Risk Router` antes do render;
+5. `G1_IN_MODEL` ou `G2_FINALIZATION_SAFE`;
+6. `Opportunity Score` em Audience Radar — nunca porcentagem fingida de viralização;
+7. `build-manifest.json` quando o runtime compilar um pacote;
+8. `Caption Compiler` obrigatório no final.
+
+### AI Council ativo nesta conversa
+
+ChatGPT executa os papéis:
+SOURCE SCOUT → IDENTITY AUDITOR → METHODS AUDITOR → CONTRADICTION HUNTER → MECHANISM AUDITOR → SAFETY REVIEWER quando T3 → VISUAL EVIDENCE AUDITOR → EDITORIAL TRANSLATOR → EVIDENCE GOVERNOR.
+
+O resultado do Governor deve anteceder o Hook Tournament.
