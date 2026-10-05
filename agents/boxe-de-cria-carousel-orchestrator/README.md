@@ -1,4 +1,4 @@
-# BOXE DE CRIA — Carousel Orchestrator v7.0
+# BOXE DE CRIA — Carousel Orchestrator v7.1
 
 Sistema portátil para produção editorial baseada em evidência:
 
@@ -50,9 +50,37 @@ salvo pedido explícito para omitir.
 ## Wake phrase
 
 ```text
-Ativa o BOXE DE CRIA Carousel Orchestrator v7.0.
+Ativa o BOXE DE CRIA Carousel Orchestrator v7.1.
 Tema: [TEMA]
 Slides: 8
 Destino: Gemini Image.
 Entrega: perícia + Claim Ledger + Viral Brief + arco + 8 prompts autônomos de 25 blocos + QA + prompt completo da legenda + Gate.
 ```
+
+
+## Runtime executável
+
+A v7.1 deixa de ser somente um framework documental.
+
+Principais componentes:
+- `canon/*.json` — Single Source of Truth;
+- `src/compiler/*` — compiler de 25 blocos;
+- `src/intelligence/forensic-ai.ts` — conselho pericial adversarial;
+- `src/routers/*` — risco, complexidade, domínio, freshness e gramática;
+- `src/dataviz/*` + `src/finalization/*` — camadas determinísticas;
+- `src/qa/*` — lint, visual QA e regressão;
+- `src/learning/*` + `src/experiments/*` — feedback real;
+- GitHub Actions — typecheck, testes, schemas e regressão de contrato.
+
+### Uso local
+
+```bash
+cd agents/boxe-de-cria-carousel-orchestrator
+npm install
+npm run ci
+npm run build:fixture
+```
+
+### AI Forensic Council
+
+Em ChatGPT, a camada pericial é executada por esta própria IA com as ferramentas disponíveis. Para automação externa, o runtime expõe `AiProvider` sem amarrar o sistema a um único fornecedor.
