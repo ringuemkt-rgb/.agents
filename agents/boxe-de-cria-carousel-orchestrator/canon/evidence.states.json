@@ -1,0 +1,27 @@
+{
+  "CONFIRMED": {
+    "symbol": "✓",
+    "public_label": "CONFIRMADO"
+  },
+  "ESTIMATED": {
+    "symbol": "≈",
+    "public_label": "ESTIMADO"
+  },
+  "INDIRECT": {
+    "symbol": "△",
+    "public_label": "INDIRETO"
+  },
+  "DIDACTIC_MODEL": {
+    "symbol": "◇",
+    "public_label": "MODELO DIDÁTICO"
+  },
+  "NOT_INVESTIGATED": {
+    "symbol": "?",
+    "public_label": "NÃO APURADO"
+  },
+  "CONFLICTING": {
+    "symbol": "!",
+    "public_label": "CONFLITANTE"
+  },
+  "rule": "NOT FOUND ≠ DID NOT HAPPEN"
+}
