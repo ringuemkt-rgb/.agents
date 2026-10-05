@@ -340,9 +340,11 @@ contact shadow;
 never CGI.
 
 Presence levels:
-- H0 — witness: 0–8%;
-- H1 — mentor: 8–12%;
-- H2 — dry humor: 10–14%;
+- CR0 — witness: 0–8%;
+- CR1 — mentor: 8–12%;
+- CR2 — skeptic/dry commentary: 10–14%;
+- CR3 — curator/evidence organizer: 8–14%;
+- CR4 — closer: 18–25%;
 - CTA — 18–25% when conclusion needs it.
 
 Health / clinical / TEA / child / vulnerable topics:
@@ -539,3 +541,8 @@ P0/P1 fail if:
 
 Final gate:
 APROVADO | APROVADO_COM_RESSALVAS | REPROVADO.
+
+
+## v7 role note
+
+Narrative role and humor are separate axes. Use CR0–CR4 for the role Criago plays in the slide, and H0–H3 only for humor intensity. Never reuse H labels as narrative roles.
