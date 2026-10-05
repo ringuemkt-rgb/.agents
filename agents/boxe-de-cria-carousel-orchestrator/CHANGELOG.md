@@ -1,5 +1,36 @@
 # Changelog — BOXE DE CRIA Carousel Orchestrator
 
+## 7.0.0-portable.1 — 2026-10-05
+
+### Governance
+- Synchronized authority files to v7.
+- Standardized 25-block prompt contract and Z0–Z6 depth.
+- Added SYSTEM_AUDIT_V7.md.
+
+### Compiler architecture
+- Introduced source modularity → compiled autonomous output.
+- Added Claim IDs, Data States, Visual Proof classes and freshness gate.
+- Added generative risk router for text, anatomy, data and brand.
+- Added G1 in-model typography and G2 finalization-safe production routes.
+
+### Visual intelligence
+- Canonical Evidence × Metaphor × Memory.
+- Expanded grammar router with EVIDENCE_SPLIT, FREE_BODY, VECTOR_SUM, STABILITY_SPLIT and DOCUMENT_CARD.
+- Added chrome budget and stronger density rules.
+
+### Criago
+- Narrative roles renamed to CR0–CR4.
+- Humor remains H0–H3 to eliminate ambiguity.
+
+### Gemini
+- Separated conceptual 2160×2700 design grid from native model resolution.
+- Preserved explicit 4:5 intent and current 2K/4K capability routing where exposed.
+
+### Caption
+- Prompt completo da descrição/legenda is mandatory after every carousel unless the user opts out.
+
+---
+
 ## 5.1.0-portable.1 — 2026-09-29
 
 ### Audience & Demand Intelligence
