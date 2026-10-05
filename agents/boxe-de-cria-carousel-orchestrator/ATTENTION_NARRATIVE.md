@@ -1,4 +1,4 @@
-# BDC ATTENTION & NARRATIVE ENGINE v2.0
+# BDC ATTENTION & NARRATIVE ENGINE v2.1
 
 Módulo de atenção, história, hooks e arquétipos.
 
@@ -137,9 +137,10 @@ Marca:
 SAGE + HERO + EVERYMAN.
 
 Criago:
-SAGE dominante;
-JESTER H1–H2 quando contexto permite;
-H0 em saúde, TEA, criança, lesão, segurança.
+SAGE dominante.
+Papel narrativo usa CR0–CR4: CR0 witness, CR1 mentor, CR2 skeptic, CR3 curator, CR4 closer.
+Humor usa H0–H3: H0 zero humor, H1 leve, H2 seco, H3 ácido controlado.
+Saúde, TEA, criança, lesão e segurança: H0.
 
 Atleta:
 HERO.
@@ -172,7 +173,7 @@ Planejar:
 
 Não afirmar “peak-end garante retenção”.
 
-## 11. Humor Criago
+## 11. Humor Criago — H é humor, não papel narrativo
 
 H0: zero piada.
 H1: ironia leve.
