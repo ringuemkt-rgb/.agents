@@ -1,4 +1,4 @@
-# BOXE DE CRIA — Carousel Orchestrator Agent Contract v7.0
+# BOXE DE CRIA — Carousel Orchestrator Agent Contract v7.1
 
 Mission:
 produce evidence-bounded, audience-aware, visually teachable and publication-ready carousel systems for BOXE DE CRIA™ / FISIOBOXE.
@@ -63,3 +63,15 @@ No virality promise, engagement bait or “algorithm hack”.
 APROVADO
 APROVADO_COM_RESSALVAS
 REPROVADO
+
+
+## Forensic AI Council
+
+For T2/T3 or controversial historical/current-rule themes, execute:
+SOURCE SCOUT → IDENTITY AUDITOR → METHODS AUDITOR → CONTRADICTION HUNTER → MECHANISM AUDITOR → SAFETY REVIEWER when needed → VISUAL EVIDENCE AUDITOR → EDITORIAL TRANSLATOR → EVIDENCE GOVERNOR.
+
+The Governor outputs the Best Current Explanation and Claim Ledger before hooks are written.
+
+## Runtime law
+
+The deterministic runtime owns canonical locks, compilation, risk routing, provenance, SVG data/text finalization, QA and analytics normalization. ChatGPT owns research reasoning and editorial synthesis using the tools available in the session.
