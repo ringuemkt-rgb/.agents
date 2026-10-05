@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BDC Provenance Manifest",
+  "type": "object",
+  "required": [
+    "build_id",
+    "generated_at",
+    "topic",
+    "claims",
+    "sources",
+    "compiler_version",
+    "content_hash"
+  ],
+  "properties": {
+    "build_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "compiler_version": {
+      "type": "string"
+    },
+    "content_hash": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}
