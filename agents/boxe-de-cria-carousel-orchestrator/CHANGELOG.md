@@ -1,5 +1,36 @@
 # Changelog — BOXE DE CRIA Carousel Orchestrator
 
+## 7.1.0-runtime.1 — 2026-10-05
+
+### Runtime
+- Added executable TypeScript 25-block compiler.
+- Added canonical JSON Single Source of Truth.
+- Added Claim Ledger and provenance SHA-256 build manifests.
+- Added complexity/attention budgets and generative risk routing.
+- Added deterministic SVG chart and typography helpers.
+
+### Forensic intelligence
+- Added adversarial AI Forensic Council with Evidence Governor.
+- Added science/history/news domain routing and freshness policy.
+- Added evidence-state and visual-proof separation.
+
+### QA / CI
+- Added GitHub Actions.
+- Added golden fixture and regression tests.
+- Added contract linter, visual QA contract and visual-regression metadata checks.
+- Added runtime JSON schemas.
+
+### Audience / learning
+- Added Opportunity Score as prioritization index, not virality probability.
+- Added normalized performance metrics and deterministic experiment assignment.
+- Added Reference DNA extraction protocol.
+
+### Production
+- Added G1 in-model and G2 finalization-safe routes.
+- Added immutable asset registry and SHA-256 ingestion helper.
+
+---
+
 ## 7.0.0-portable.1 — 2026-10-05
 
 ### Governance
