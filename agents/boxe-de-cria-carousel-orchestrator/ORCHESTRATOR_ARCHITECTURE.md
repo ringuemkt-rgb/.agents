@@ -1,4 +1,4 @@
-# BOXE DE CRIA Carousel Orchestrator — Architecture v7.0
+# BOXE DE CRIA Carousel Orchestrator — Architecture v7.1
 
 ## Objetivo
 
@@ -178,3 +178,24 @@ L0–L9.
 - humor = H0–H3;
 - caption prompt é obrigatório;
 - Gemini native size e design grid são coisas diferentes.
+
+
+## Runtime execution plane
+
+### Canon plane
+`canon/*.json` holds brand, palette, typography, A11Y, frame, background, render, Criago, evidence states, freshness, assets and caption rules.
+
+### Compiler plane
+`src/compiler/*` compiles canonical locks + slide-specific claims into autonomous 25-block prompts.
+
+### Intelligence plane
+`src/intelligence/forensic-ai.ts` orchestrates adversarial research roles. In interactive ChatGPT use, those roles are executed by the current assistant with available web/file tools; external automation may provide an `AiProvider`.
+
+### Deterministic finalization plane
+Exact charts, critical typography, source IDs and official assets must prefer deterministic SVG/finalization when generative risk is HIGH.
+
+### Learning plane
+Account metrics remain descriptive until sufficiently controlled experimentation justifies stronger inference.
+
+### CI plane
+`.github/workflows/bdc-orchestrator-ci.yml` runs typecheck, tests, example compilation and repository-contract checks.
