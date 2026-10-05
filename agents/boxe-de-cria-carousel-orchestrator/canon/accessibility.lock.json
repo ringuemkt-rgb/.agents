@@ -1,0 +1,14 @@
+{
+  "wcag_reference": "2.2",
+  "contrast": {
+    "body_min": 4.5,
+    "headline_target": 7,
+    "non_text_min": 3
+  },
+  "rules": [
+    "do not encode information by hue alone",
+    "critical copy must remain inside safe area",
+    "thumbnail readability target ~150px",
+    "red on charcoal only for large or non-body elements"
+  ]
+}
