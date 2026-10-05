@@ -1,19 +1,22 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "BDC Carousel Plan v7",
+  "title": "BDC Carousel Plan v7.1",
   "type": "object",
   "required": [
     "topic",
     "mode",
     "slide_count",
     "forensic_tier",
-    "claim_ids",
+    "target_model",
+    "claims",
+    "sources",
     "slides",
     "caption_required"
   ],
   "properties": {
     "topic": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "mode": {
       "enum": [
@@ -39,12 +42,21 @@
         "T3"
       ]
     },
-    "claim_ids": {
+    "target_model": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claims": {
       "type": "array",
       "items": {
-        "type": "string"
-      },
-      "uniqueItems": true
+        "type": "object"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
     },
     "slides": {
       "type": "array",
@@ -55,9 +67,6 @@
     "caption_required": {
       "type": "boolean",
       "const": true
-    },
-    "target_model": {
-      "type": "string"
     },
     "final_gate": {
       "enum": [
