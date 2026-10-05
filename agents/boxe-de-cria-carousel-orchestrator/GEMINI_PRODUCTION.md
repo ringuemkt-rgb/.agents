@@ -1,4 +1,4 @@
-# Gemini Image Production — BDC v7.0
+# Gemini Image Production — BDC v7.1
 
 Use quando o destino final for Gemini Image.
 
@@ -154,3 +154,18 @@ Reject or repair:
 - density failure.
 
 Never move to next slide with unresolved P0/P1.
+
+
+## Deterministic handoff
+
+If `TEXT_RISK`, `DATA_RISK` or `BRAND_RISK` is HIGH:
+- do not keep regenerating exact copy blindly;
+- use `G2_FINALIZATION_SAFE`;
+- reserve clean zones;
+- final typography/data/source/logo should be placed deterministically.
+
+Helpers:
+- `src/dataviz/flat-svg.ts`
+- `src/finalization/svg-text-layer.ts`
+
+The image model owns the illustration layer; it does not own numerical truth.
