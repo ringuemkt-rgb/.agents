@@ -1,0 +1,25 @@
+name: BDC Orchestrator CI
+
+on:
+  push:
+    paths:
+      - "agents/boxe-de-cria-carousel-orchestrator/**"
+      - ".github/workflows/bdc-orchestrator-ci.yml"
+  pull_request:
+    paths:
+      - "agents/boxe-de-cria-carousel-orchestrator/**"
+      - ".github/workflows/bdc-orchestrator-ci.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: agents/boxe-de-cria-carousel-orchestrator
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - run: npm run ci
