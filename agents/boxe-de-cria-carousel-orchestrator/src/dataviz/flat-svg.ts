@@ -1,4 +1,5 @@
-const esc=(s:string)=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]!));
+const XML_ENTITIES:Record<string,string>={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"};
+const esc=(s:string)=>s.replace(/[&<>"]/g,c=>XML_ENTITIES[c]??c);
 export interface BarDatum{label:string;value:number;unit:string;}
 export function flatBarChart(data:BarDatum[],opts={width:900,height:520,padding:80}):string{
   if(!data.length)throw new Error("No data");
