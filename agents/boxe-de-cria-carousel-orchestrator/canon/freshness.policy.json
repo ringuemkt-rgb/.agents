@@ -1,0 +1,31 @@
+{
+  "STATIC": [
+    "basic physics",
+    "established anatomy",
+    "stable historical primary-source facts"
+  ],
+  "MONTHS_12": [
+    "evergreen systematic review when no newer guideline is expected"
+  ],
+  "DAYS_90": [
+    "sport rules",
+    "organization policies",
+    "guidelines with active revision cycles"
+  ],
+  "DAYS_30": [
+    "rankings",
+    "ongoing season stats",
+    "platform capability notes"
+  ],
+  "DAYS_7": [
+    "news",
+    "event status",
+    "fast-moving public claims"
+  ],
+  "LIVE": [
+    "breaking news",
+    "live results",
+    "current availability"
+  ],
+  "rule": "when uncertain, choose the shorter TTL and revalidate"
+}
