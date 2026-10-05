@@ -1,12 +1,12 @@
 ---
 name: boxe-de-cria-carousel-orchestrator
-version: 7.0.0-portable.1
+version: 7.1.0-runtime.1
 language: pt-BR
 type: portable-agent-skill
 owner: BOXE DE CRIA / FISIOBOXE
 ---
 
-# SKILL — BOXE DE CRIA Carousel Orchestrator v7.0
+# SKILL — BOXE DE CRIA Carousel Orchestrator v7.1
 
 ## Missão
 
@@ -298,10 +298,51 @@ P0/P1 bloqueiam:
 ## Frase portátil
 
 ```text
-Ativa o BOXE DE CRIA Carousel Orchestrator v7.0.
+Ativa o BOXE DE CRIA Carousel Orchestrator v7.1.
 Tema: [TEMA]
 Slides: [N, default 8]
 Destino: [Gemini Image | model-agnostic]
 Entrega: perícia proporcional ao risco + Best Current Explanation + Claim Ledger + Viral Brief + arco + N prompts autônomos de 25 blocos + QA + PROMPT COMPLETO DA LEGENDA + Gate.
 Cada prompt deve repetir integralmente todos os locks canônicos compilados. Nenhum slide depende do anterior.
 ```
+
+
+## Runtime profissional v7.1
+
+A v7.1 adiciona uma camada executável ao sistema documental.
+
+### Componentes
+
+- `src/compiler/*` — compiler real de prompts autônomos de 25 blocos;
+- `canon/*.json` — Single Source of Truth para marca, paleta, tipografia, frame, background, Criago, A11Y e render;
+- `src/evidence/claim-ledger.ts` — ledger executável;
+- `src/intelligence/forensic-ai.ts` — AI Forensic Council com papéis adversariais;
+- `src/routers/*` — risco, complexidade, gramática, domínio e freshness;
+- `src/dataviz/flat-svg.ts` — gráficos SVG determinísticos;
+- `src/finalization/svg-text-layer.ts` — tipografia crítica determinística;
+- `src/provenance/build-manifest.ts` — provenance + SHA-256;
+- `src/audience/opportunity-score.ts` — Opportunity Score, nunca “% de viralização”;
+- `src/learning/metrics.ts` — métricas normalizadas da conta;
+- `src/experiments/experiment-engine.ts` — experimentos de hooks/capas;
+- `src/qa/*` — linter, visual QA e regressão;
+- `.github/workflows/bdc-orchestrator-ci.yml` — CI automático.
+
+### Regra operacional
+
+A inteligência editorial continua sendo executada por ChatGPT nesta conversa quando a skill está ativa. O “AI Council” não é uma alegação de um segundo modelo oculto: é uma arquitetura adversarial de papéis executada por mim com as ferramentas disponíveis. O runtime também expõe uma interface `AiProvider` para automação externa futura.
+
+### Compiled redundancy
+
+A fonte permanece modular.
+A saída continua integralmente autônoma.
+
+`CANON ÚNICO → COMPILER → PROMPT COMPLETO POR SLIDE`
+
+### Deterministic finalization
+
+Quando `TEXT_RISK`, `DATA_RISK` ou `BRAND_RISK` for HIGH:
+
+`G2_FINALIZATION_SAFE`
+
+O gerador produz hero/background/diagramas e preserva zonas limpas.
+Texto crítico, dados exatos, DOI, contador e logo devem ser finalizados deterministicamente.
