@@ -51,5 +51,10 @@
     "CAPTION_ONLY",
     "SYSTEM_AUDIT"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "caption_compiler": "CAPTION_COMPILER.md",
+  "schemas": [
+    "schemas/slide-compile.schema.json",
+    "schemas/carousel-plan.schema.json"
+  ]
 }
