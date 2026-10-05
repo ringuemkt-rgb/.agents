@@ -1,0 +1,30 @@
+{
+  "Charcoal": "#0B0B0D",
+  "Graphite": "#121317",
+  "TechnicalGray": "#23252B",
+  "WarmWhite": "#F3F0EA",
+  "PetroleumP900": "#020A0E",
+  "PetroleumP850": "#04131A",
+  "PetroleumP800": "#06191F",
+  "PetroleumP700": "#0A232A",
+  "Gold": "#D4A017",
+  "Bronze": "#C08F3C",
+  "CyanSignal": "#3EC6C9",
+  "CyanHigh": "#49C8D1",
+  "BDCRed": "#C62828",
+  "Terra": "#B85C38",
+  "GloveTan": "#C4A574",
+  "semantic": {
+    "reading": "WarmWhite",
+    "identity_summary": "Gold",
+    "method_evidence": "CyanSignal",
+    "alert_error": "BDCRed",
+    "archive_evidence": "Bronze",
+    "territory": "Terra"
+  },
+  "rules": {
+    "max_main_accents": 2,
+    "red_max_area_ratio": 0.08,
+    "hue_alone_for_meaning": false
+  }
+}
