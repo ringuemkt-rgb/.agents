@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BDC Carousel Plan v7",
+  "type": "object",
+  "required": [
+    "topic",
+    "mode",
+    "slide_count",
+    "forensic_tier",
+    "claim_ids",
+    "slides",
+    "caption_required"
+  ],
+  "properties": {
+    "topic": {
+      "type": "string"
+    },
+    "mode": {
+      "enum": [
+        "CAROUSEL_PRODUCTION",
+        "AUDIENCE_RADAR",
+        "TOPIC_AUDIT",
+        "REFERENCE_FORENSICS",
+        "RENDER_PACK",
+        "CAPTION_ONLY",
+        "SYSTEM_AUDIT"
+      ]
+    },
+    "slide_count": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 20
+    },
+    "forensic_tier": {
+      "enum": [
+        "T0",
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    "claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "slides": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "caption_required": {
+      "type": "boolean",
+      "const": true
+    },
+    "target_model": {
+      "type": "string"
+    },
+    "final_gate": {
+      "enum": [
+        "APROVADO",
+        "APROVADO_COM_RESSALVAS",
+        "REPROVADO"
+      ]
+    }
+  },
+  "additionalProperties": true
+}
