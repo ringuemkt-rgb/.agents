@@ -1,0 +1,23 @@
+{
+  "mandatory_after_carousel": true,
+  "title": "PROMPT COMPLETO DA DESCRIÇÃO / LEGENDA — COPIAR E COLAR",
+  "structure": [
+    "hook",
+    "plain-language explanation",
+    "key model",
+    "caveat",
+    "optional Criago",
+    "useful CTA",
+    "sources when material",
+    "semantic SEO",
+    "3–8 specific hashtags"
+  ],
+  "forbidden": [
+    "guaranteed virality",
+    "algorithm hack claims",
+    "empty engagement bait",
+    "fake scarcity",
+    "source inflation",
+    "keyword stuffing"
+  ]
+}
