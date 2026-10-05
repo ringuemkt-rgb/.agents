@@ -276,9 +276,9 @@
           "agent": "repository-guardian",
           "deliverables": [
             "instruction source confirmed",
-            "portable agent version confirmed as 5.1.0-portable.1",
+            "portable agent version confirmed as 7.0.0-portable.1",
             "investigative engine confirmed",
-            "22-block prompt protocol confirmed",
+            "25-block prompt protocol confirmed",
             "2.5D render lock confirmed",
             "accessibility lock confirmed",
             "official logo lock confirmed",
@@ -331,7 +331,7 @@
             "viral brief and hook winner",
             "slide architecture and retention map",
             "palette decision and accessibility validation",
-            "autonomous 22-block 2.5D prompts",
+            "autonomous 25-block 2.5D prompts",
             "copy-paste caption",
             "sources",
             "guardian decision",
@@ -361,7 +361,7 @@
           "id": "repository-check",
           "agent": "repository-guardian",
           "deliverables": [
-            "v5.1 module authority confirmed",
+            "v7.0 module authority confirmed",
             "audience demand engine confirmed",
             "topic opportunity engine confirmed",
             "content graph engine confirmed"
