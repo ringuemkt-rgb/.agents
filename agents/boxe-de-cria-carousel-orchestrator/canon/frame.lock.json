@@ -1,0 +1,43 @@
+{
+  "outer_shell": "Charcoal",
+  "inner_plane": "Graphite",
+  "hairline": {
+    "color": "Bronze",
+    "width_px_master": [
+      2,
+      4
+    ]
+  },
+  "corners": {
+    "type": "L-mark",
+    "color": "CyanSignal",
+    "size_px_master": 64
+  },
+  "top_left_pill": "BOXE DE CRIA • FISIOBOXE",
+  "top_right_counter": true,
+  "footer": [
+    "BOXE DE CRIA • Bahia",
+    "@boxedecria_"
+  ],
+  "rails": "optional",
+  "logo_zone": "lower-left reserved; exact official asset only",
+  "chrome_attention_max_ratio": 0.05,
+  "safe_area": {
+    "top": 0.07,
+    "left": 0.07,
+    "right": 0.07,
+    "bottom": 0.06
+  },
+  "grid": {
+    "columns": 12,
+    "gutter_export_px": 32,
+    "spacing_unit": 8,
+    "baseline": 24
+  },
+  "forbidden": [
+    "gaming HUD",
+    "rainbow gradient",
+    "redundant double borders",
+    "invented logo"
+  ]
+}
