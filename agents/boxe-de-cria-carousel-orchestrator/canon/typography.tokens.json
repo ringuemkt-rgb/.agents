@@ -1,0 +1,52 @@
+{
+  "display": [
+    "Anton",
+    "Archivo Black Condensed",
+    "Bebas Neue"
+  ],
+  "reading": [
+    "Inter",
+    "Montserrat"
+  ],
+  "max_families": 2,
+  "master_2160x2700_px": {
+    "cover_headline": [
+      192,
+      264
+    ],
+    "internal_headline": [
+      144,
+      192
+    ],
+    "subheadline": [
+      84,
+      108
+    ],
+    "hero_number": [
+      200,
+      360
+    ],
+    "card_title": [
+      72,
+      88
+    ],
+    "body": [
+      68,
+      80
+    ],
+    "labels": [
+      60,
+      72
+    ],
+    "source_footer": [
+      56,
+      64
+    ]
+  },
+  "rules": [
+    "body must not use condensed display face",
+    "critical text horizontal",
+    "no thin text over texture",
+    "no extruded typography"
+  ]
+}
