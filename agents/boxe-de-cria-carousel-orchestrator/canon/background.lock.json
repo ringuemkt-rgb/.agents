@@ -1,0 +1,25 @@
+{
+  "L0": "petroleum P900→P850→P800 field",
+  "L1": "soft peripheral vignette 10–15%",
+  "L2": "matte canvas/editorial paper/worn leather/gym plaster; grain 1.5–2%",
+  "L3": "technical microgrid 3–6%",
+  "L4": "topic-relevant ghost environment",
+  "L5": "topic-relevant blueprint/vectors/timeline",
+  "L6": "flat evidence/mechanism geometry",
+  "L7": "documentary/cultural memory when material",
+  "L8": "controlled focal halo; no neon bloom",
+  "L9": "typography + frame integration",
+  "fixed": [
+    "L0",
+    "L1",
+    "L2",
+    "L3"
+  ],
+  "variable": [
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8"
+  ]
+}
