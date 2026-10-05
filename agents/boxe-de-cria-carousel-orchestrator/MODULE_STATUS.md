@@ -1,4 +1,4 @@
-# BOXE DE CRIA Carousel Orchestrator — Module Status v7.0
+# BOXE DE CRIA Carousel Orchestrator — Module Status v7.1
 
 ## Authority
 
@@ -53,6 +53,18 @@ Adapters:
 Production:
 - CONTENT_PRODUCTION_OS.md
 
+Runtime / QA:
+- RUNTIME.md
+- AI_FORENSIC_INTELLIGENCE_MANAGER.md
+- ANALYTICS_LEARNING_OS.md
+- REFERENCE_FORENSICS_PROTOCOL.md
+- DETERMINISTIC_FINALIZATION.md
+- FRESHNESS_AND_PROVENANCE.md
+- src/compiler/*
+- src/routers/*
+- src/qa/*
+- canon/*.json
+
 Tier C — Support
 - STYLE_LOCK_EDITORIAL_BOXE.md
 - THEME_PALETTE_ROUTER.md
@@ -74,7 +86,7 @@ Tier D — Legacy / archive
 
 ## Current canonical contracts
 
-Version: 7.0.0-portable.1
+Version: 7.1.0-runtime.1
 Prompt contract: 25 blocks.
 Depth: Z0–Z6.
 Background: L0–L9.
@@ -94,3 +106,7 @@ No legacy file may override v7 authority.
 ## v7 structured compile schemas
 - schemas/slide-compile.schema.json
 - schemas/carousel-plan.schema.json
+
+- schemas/claim-ledger.schema.json
+- schemas/provenance.schema.json
+- schemas/analytics-event.schema.json
