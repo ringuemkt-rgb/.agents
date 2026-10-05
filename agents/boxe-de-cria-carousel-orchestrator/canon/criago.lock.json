@@ -1,0 +1,74 @@
+{
+  "species": "Mellivora capensis",
+  "common_name": "ratel / texugo-do-mel",
+  "sex_age": "adult male",
+  "body": [
+    "compact",
+    "low center of mass",
+    "broad chest",
+    "short neck",
+    "relatively short strong legs",
+    "strong paws",
+    "discreet natural claws"
+  ],
+  "coat": {
+    "lower": "charcoal-black",
+    "mantle": "continuous pale silver-white from top of head through full back"
+  },
+  "head": [
+    "broad",
+    "tiny rounded ears",
+    "short muzzle",
+    "matte black nose",
+    "small intelligent adult eyes"
+  ],
+  "eyewear": "classic aviator; thin metallic frame; double bridge; smoke/amber lenses",
+  "jacket": "black matte motorcycle-club leather; seams; zipper; subtle rivets; light wear",
+  "patches": {
+    "front": "Gold BOXE DE CRIA",
+    "right_sleeve": "correct Brazil flag",
+    "left_sleeve": "correct Bahia flag",
+    "back": [
+      "ALELUIADO",
+      "autism-awareness ribbon WITHOUT puzzle-piece symbol",
+      "BOXE DE CRIA"
+    ]
+  },
+  "personality": [
+    "old-school master",
+    "wise",
+    "firm",
+    "protective",
+    "disciplined",
+    "dry humor",
+    "never childish"
+  ],
+  "narrative_roles": {
+    "CR0": "WITNESS",
+    "CR1": "MENTOR",
+    "CR2": "SKEPTIC",
+    "CR3": "CURATOR",
+    "CR4": "CLOSER"
+  },
+  "humor_levels": {
+    "H0": "none",
+    "H1": "light",
+    "H2": "dry",
+    "H3": "controlled acidic"
+  },
+  "never": [
+    "bear",
+    "skunk",
+    "raccoon",
+    "dog",
+    "wolf",
+    "otter",
+    "sloth",
+    "ferret",
+    "rat",
+    "Funko",
+    "Disney",
+    "school mascot"
+  ],
+  "render": "same premium 2.5D matte perspective/light/grain as the scene"
+}
