@@ -1,0 +1,153 @@
+{
+  "topic": "Biomecânica do jab",
+  "mode": "CAROUSEL_PRODUCTION",
+  "slide_count": 2,
+  "forensic_tier": "T2",
+  "target_model": "Gemini Image",
+  "caption_required": true,
+  "claims": [
+    {
+      "id": "C1",
+      "text": "A execução do jab envolve coordenação multissegmentar.",
+      "status": "CONFIRMED",
+      "certainty": "HIGH",
+      "directness": "DIRECT",
+      "population": "boxeadores",
+      "caveat": "Não implica porcentagem fixa por segmento.",
+      "source_ids": [
+        "S1"
+      ],
+      "allowed_visuals": [
+        "chain",
+        "segments"
+      ],
+      "blocked_visuals": [
+        "70%",
+        "fixed percentage"
+      ]
+    },
+    {
+      "id": "C2",
+      "text": "Uma cadeia cinética pode ser usada como modelo didático de transferência.",
+      "status": "DIDACTIC_MODEL",
+      "certainty": "HIGH",
+      "directness": "NOT_APPLICABLE",
+      "population": null,
+      "caveat": "Modelo didático, não medição de contribuição individual.",
+      "source_ids": [
+        "S1"
+      ],
+      "allowed_visuals": [
+        "flow",
+        "chain"
+      ],
+      "blocked_visuals": [
+        "equal contribution"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "citation": "Exemplo de fonte biomecânica validada antes da publicação.",
+      "freshness": "STATIC"
+    }
+  ],
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_count": 2,
+      "slide_job": "STOP-SCROLL",
+      "claim_ids": [
+        "C1"
+      ],
+      "visual_grammar": "CINE_COVER",
+      "visual_proof_class": "MECHANISTIC",
+      "visual_proof": "boxeador em jab com sequência segmentar sutil",
+      "data_state": "CONFIRMED",
+      "text_tiers": {
+        "T0": [
+          "BOXE DE CRIA • FISIOBOXE",
+          "01/02",
+          "O JAB NÃO NASCE SÓ NO BRAÇO."
+        ],
+        "T1": [
+          "O corpo inteiro organiza o golpe."
+        ],
+        "T2": [
+          "Deslize →"
+        ]
+      },
+      "audience": "boxeadores e treinadores",
+      "jtbd": "entender por que o jab é movimento multissegmentar",
+      "share_reason": "corrige um mito técnico",
+      "save_reason": "serve como modelo de treino",
+      "hero": "um boxeador adulto genérico executando jab; pés e tronco visíveis",
+      "diagram": "fluxo discreto pés→tronco→ombro→braço",
+      "series": "BIOMECÂNICA DO SOCO",
+      "mode": "LAB",
+      "criago": {
+        "role": "CR0",
+        "humor": "H0",
+        "visibility": "OFF"
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "rejection_conditions": [
+        "não mostrar porcentagens",
+        "não usar CGI"
+      ],
+      "specific_negatives": [
+        "no glowing muscles"
+      ]
+    },
+    {
+      "slide_index": 2,
+      "slide_count": 2,
+      "slide_job": "SÍNTESE",
+      "claim_ids": [
+        "C1",
+        "C2"
+      ],
+      "visual_grammar": "HUB",
+      "visual_proof_class": "CONCEPTUAL",
+      "visual_proof": "cadeia corporal organizada como modelo didático",
+      "data_state": "DIDACTIC_MODEL",
+      "text_tiers": {
+        "T0": [
+          "BOXE DE CRIA • FISIOBOXE",
+          "02/02",
+          "POTÊNCIA BOA VIAJA."
+        ],
+        "T1": [
+          "PÉS • TRONCO • OMBRO • BRAÇO"
+        ],
+        "T2": [
+          "◇ MODELO DIDÁTICO"
+        ]
+      },
+      "audience": "boxeadores e treinadores",
+      "jtbd": "memorizar a cadeia sem inventar percentuais",
+      "share_reason": "frase memorável",
+      "save_reason": "modelo simples",
+      "hero": "boxeador adulto equilibrado em jab técnico",
+      "diagram": "hub de quatro segmentos sem pesos quantitativos",
+      "series": "BIOMECÂNICA DO SOCO",
+      "mode": "NIGHT→GOLD",
+      "criago": {
+        "role": "CR4",
+        "humor": "H1",
+        "visibility": "ON",
+        "exact_line": "Potência boa viaja."
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "rejection_conditions": [
+        "não implicar contribuições iguais",
+        "não inventar dados"
+      ]
+    }
+  ]
+}
