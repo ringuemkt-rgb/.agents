@@ -1,107 +1,110 @@
-# INFOGRAPHIC GRAMMAR — motor de ilustração 2.5D
+# INFOGRAPHIC GRAMMAR — BDC v3.0
 
-O Orchestrator não “ inventa um desenho”. Escolhe uma **GRAMÁTICA** e preenche com Claim Lock + PALETTE_CANON + RENDER 2.5D.
+Escolha UMA gramática principal por slide.
 
-Referências de estudo (estrutura, não copiar identidade):
-- caminho com estações (timeline evolutivo)
-- split duas temperaturas (HAWT vs VAWT)
-- hub + setas de mecanismo (pôster de magnésio)
-- isométrico 3 cenas numeradas (pack Daguestão / base MMA)
-- objeto-moldura prancheta + triângulo (Abdulmanap)
-- capa cinemática + labels flutuantes (montanha / escola)
+## Router
 
-Proibido: cérebro neon CGI, pele fotoreal, caras de pessoas reais identificáveis, barra de HEX de paleta no topo do slide, URL de terceiro, disclaimer de outra marca.
+CINE_COVER — stop/identity/open loop.
+EVIDENCE_SPLIT — two epistemologies or A×B.
+SPLIT — simple comparison.
+FLAT_CHART — exact quantitative data.
+PATH — chronology/evolution.
+STACK_STEPS — protocol/sequence.
+HUB — multi-factor system.
+ISO_FLOW — stages/locations.
+CLIPBOARD — dossier/study/system.
+FREE_BODY — forces/supports/vectors.
+VECTOR_SUM — interacting forces.
+STABILITY_SPLIT — stable vs unstable mechanics.
+BEFORE_AFTER_PATH — gap/escape/transition.
+DOCUMENT_CARD — archival/documentary proof.
+ANATOMY_MAP — body mechanics, only if highlights are not mistaken for measurement.
 
-## 0. Escolher a gramática (1 por slide)
+## Visual Proof First
 
-| Se a tese é… | Gramática | ROLE típico |
-|---|---|---|
-| ordem no tempo / gerações / série | PATH | 2–4 |
-| A vs B / mito vs medida | SPLIT | 2, 5 |
-| como o corpo faz | HUB | 3 |
-| processo em 3 sítios | ISO_FLOW | 3–6 |
-| sistema de um mestre / 3 raízes | CLIPBOARD | 4 |
-| parar o dedo + identidade | CINE_COVER | 1, 8 |
-| número + unidade | FLAT_CHART | 4 |
-| protocolo | STACK_STEPS | 7 |
+Before cards:
+1. write thesis in one sentence;
+2. identify verb: compare, sequence, explain, measure, document, transfer, stabilize, route;
+3. choose grammar;
+4. choose one non-text hero;
+5. define proof class;
+6. define caveat.
 
-Nunca duas gramáticas no mesmo frame (capa+tabela+cérebro = sopa).
+## EVIDENCE_SPLIT
 
-## 1. PATH — caminho com estações
+Two concepts with semantic color lock.
+Max 3 primary axes each.
+End with Verdict Plate.
+No filling missing data merely for symmetry.
 
-Uma fita (ouro ou ciano) em S ou rampa. 4–6 estações máx. Cada estação = 1 figura 2.5D + 1 card de 3 linhas. Época escrita NA fita, não no céu.
-Não repetir o mesmo hominídeo com nome errado (a ref de evolução duplica erectus/Lucy — isso é QA REPROVA).
-Handoff: a fita sai pelo lado direito a y≈73%.
+## FREE_BODY
 
-Prompt 13: `GRAMMAR PATH. Ribbon [gold/cyan]. Stations N. No duplicate taxon. Cards 3 lines.`
+Use only physically meaningful arrows.
+Declare frame/body being modeled.
+No arbitrary “energy flow” arrows.
+No magnitudes unless sourced.
 
-## 2. SPLIT — duas temperaturas
+## VECTOR_SUM
 
-Eixo vertical ao centro (raio ouro fino, não relâmpago cartoon). Esquerda LAB/ciano. Direita ALERT ou RING.
-Título A vs B no topo. 3 cards empilhados por lado, mesmo ícone-sistema. Tabela 3×3 só no terço baixo se couber sem microtexto.
-Um objeto hero por lado (turbina / guarda / saco).
+Use for pull/push/contact resultant.
+Every force arrow must originate from an actor/contact/support.
+No force from nowhere.
 
-Prompt 13: `GRAMMAR SPLIT. Left LAB cyan. Right [MODE]. 3 cards/side. No lightning clipart.`
+## STABILITY_SPLIT
 
-## 3. HUB — mecanismo
+COM marker and support/contact region may be shown as didactic model.
+Never imply one fixed stance is universally optimal.
 
-Núcleo central = 1 objeto (cérebro SÓ se for diagrama plano 2.5D sem glow sci-fi; preferir torso/guarda/timer).
-2–4 setas inbound + 1 outbound. Números 1.2.3. Painel baixo A/B (problema vs protocolo) opcional.
-Sem fórmula química ilegível. Sem “optimization*”.
+## FLAT_CHART
 
-Prompt 13: `GRAMMAR HUB. Core [object]. 3 arrows. Flat diagram, NO neon organ CGI.`
+Must include:
+unit;
+N/population when material;
+comparison;
+uncertainty when available;
+source;
+what-not-measured.
 
-## 4. ISO_FLOW — três palcos
+No 3D bars.
+No decorative area encoding.
 
-Câmara 3/4 elevada, 2.5D (não engine 3D). Três lajes numeradas 1→2→3. Setas de fluxo. Cards ouro = tese. Cards ciano = o que muda.
-Escala humana coerente. Sem 12 bonecos se 6 chegam.
-Criago no canto, fora da laje.
+## DOCUMENT_CARD
 
-Prompt 12+13: `GRAMMAR ISO_FLOW. Three mats. Number badges 1-2-3. Elevated 3/4 2.5D. No game-engine gym.`
+For history:
+show document type, date, archive/source status and limitation.
+“Document proves use” does not automatically prove origin.
 
-## 5. CLIPBOARD — sistema numa moldura
+## CONCEPT DIVIDER
 
-A prancheta É o frame. Retrato 2.5D fictício ou arquétipo (NÃO celebridade reconhecível salvo pedido explícito + risco jurídico).
-Triângulo ou Y de 3 raízes. 4 cards nos cantos. Escudo/síntese em baixo.
-Fotos-círculo de atletas reais = OFF por defeito.
+│ comparison
+↯ rupture
+→ evolution
+↔ reciprocity
 
-Prompt 12: `GRAMMAR CLIPBOARD. Metal clipboard is the frame. Triangle of 3 roots. No real-person likeness.`
+Only if semantically true.
 
-## 6. CINE_COVER — capa
+## Verdict Plate
 
-Um herói 2.5D 40–47% área. Fundo = um processo (rampa, fila, ringue) desfocado. 4–5 labels. Headline <2 s. Criago H1.
-Não encher de peito nu + 12 clones + 5 labels + montanha + 2 lutas — a ref Daguestão capa está no limite da sopa. Tecto: 1 herói + 1 fundo + 4 labels.
+12–22 words preferred.
+No new evidence.
+No new number.
+Synthesizes the slide.
 
-## 7. FLAT_CHART / STACK_STEPS
+## Memory Bar
 
-Chart: ortográfico, unidade no eixo, N, população, incerteza. Sem 3D bar.
-Steps: 3 cards horizontais ou verticais, número grande, verbo.
+6–14 words preferred.
+No new fact.
+Must survive as a shareable standalone sentence.
 
-## 8. Língua de seta e card
+## Data state badges
 
-- Seta = relação (depois / causa / transfere). Uma cor por tipo.
-- Card = 1 título + ≤3 linhas. Sem parágrafo.
-- Badge número: círculo 1-3 só.
-- Speech Criago: 1 linha, fora do fluxo principal.
+✓ CONFIRMADO
+≈ ESTIMADO
+△ INDIRETO
+◇ MODELO DIDÁTICO
+? NÃO APURADO
+! CONFLITANTE
 
-## 9. Bloco extra no fence (13b)
+## Density
 
-```text
-INFOGRAPHIC GRAMMAR: [PATH|SPLIT|HUB|ISO_FLOW|CLIPBOARD|CINE_COVER|FLAT_CHART|STACK_STEPS]
-STATIONS/CARDS: [n]
-ARROW LANGUAGE: [depois|causa|contrasta|transfere]
-WHAT NOT TO DRAW: [lista]
-DATA INTEGRITY: unit / n / what it does not measure
-RENDER: 2.5D cel — diagrams flat, figures cel, NO organ CGI
-```
-
-## 10. Criatividade (como a IA inventa o gráfico)
-
-1. Escrever a tese numa frase.
-2. Sublinhar o VERBO (compara, ordena, explica, herda, protocola).
-3. Mapear verbo → gramática da tabela §0.
-4. Escolher 1 objeto-herói que NÃO seja texto (saco, guarda, laje, fita, prancheta).
-5. Máx. 5 labels. Se precisar da 6.ª, muda de gramática ou parte o slide.
-6. Teste 3s: o objeto conta a tese sem ler o parágrafo?
-
-Se o teste 3s falha, o gráfico é decoração — REPROVA.
+If the sixth label is necessary, split the slide or choose another grammar.
