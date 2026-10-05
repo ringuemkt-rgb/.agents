@@ -1,4 +1,4 @@
-# BDC VIRAL ENGINE v2.0
+# BDC VIRAL ENGINE v2.1
 
 Viralidade não é garantível. O sistema otimiza stop, compreensão, salvamento e compartilhamento sem romper Claim Lock.
 
@@ -108,7 +108,7 @@ Legenda:
 - 2–6 linhas;
 - uma frase Criago;
 - 1 CTA útil;
-- 3–5 hashtags totais.
+- 3–8 hashtags específicas no máximo; preferir menos quando suficientes.
 
 Não encher de hashtag.
 
@@ -154,3 +154,11 @@ CATEGORY DENIAL:
 SERIES THREAD:
 A/B HYPOTHESIS OPTIONAL:
 ```
+
+
+## 12. v7 distribution lock
+
+- Não prometer que uma estrutura 'agrada o algoritmo'.
+- Otimizar para utilidade, compreensão, originalidade, salvamento e compartilhamento legítimo.
+- SEO semântico deve parecer linguagem humana, não keyword stuffing.
+- CTA nunca deve condicionar entrega de material a comentário vazio.
