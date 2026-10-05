@@ -1,4 +1,4 @@
-# PROTOCOLO FIXO — BDC Surgical Prompt Compiler v7.0
+# PROTOCOLO FIXO — BDC Surgical Prompt Compiler v7.1
 
 Todo prompt visual final é autônomo.
 A fonte é modular; o fence compilado é redundante por design.
@@ -263,3 +263,17 @@ After final slide, always output:
 PROMPT COMPLETO DA DESCRIÇÃO / LEGENDA — COPIAR E COLAR
 
 Unless explicitly omitted by the user.
+
+
+## Runtime compiler binding
+
+The documentary contract is now executable.
+
+- Canonical locks are loaded from `canon/*.json`.
+- Slide-specific content is supplied as a structured `SlidePlan`.
+- `src/compiler/compile-slide.ts` expands the 25 blocks.
+- `src/qa/contract-linter.ts` blocks cross-slide dependency, blocked claims and ranking language over `NOT_INVESTIGATED` data.
+- `src/routers/risk-router.ts` chooses `G1_IN_MODEL` or `G2_FINALIZATION_SAFE`.
+- Exact charts/text may be produced with deterministic SVG helpers.
+
+A manually written prompt is valid only if it satisfies the same contract.
