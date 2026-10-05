@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BDC Slide Compile Spec v7",
+  "type": "object",
+  "required": [
+    "slide_index",
+    "slide_count",
+    "claim_ids",
+    "visual_grammar",
+    "visual_proof_class",
+    "data_state",
+    "text_tiers",
+    "risk",
+    "criago",
+    "sources",
+    "rejection_conditions"
+  ],
+  "properties": {
+    "slide_index": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "slide_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "slide_job": {
+      "type": "string"
+    },
+    "visual_grammar": {
+      "type": "string"
+    },
+    "visual_proof_class": {
+      "enum": [
+        "DIRECT_PHYSICAL",
+        "DOCUMENTARY",
+        "MECHANISTIC",
+        "COMPARATIVE",
+        "CONCEPTUAL",
+        "DATA"
+      ]
+    },
+    "data_state": {
+      "enum": [
+        "CONFIRMED",
+        "ESTIMATED",
+        "INDIRECT",
+        "DIDACTIC_MODEL",
+        "NOT_INVESTIGATED",
+        "CONFLICTING"
+      ]
+    },
+    "text_tiers": {
+      "type": "object",
+      "required": [
+        "T0",
+        "T1",
+        "T2"
+      ],
+      "properties": {
+        "T0": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "T1": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "T2": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "risk": {
+      "type": "object",
+      "required": [
+        "text",
+        "anatomy",
+        "data",
+        "brand"
+      ],
+      "properties": {
+        "text": {
+          "enum": [
+            "LOW",
+            "MED",
+            "HIGH"
+          ]
+        },
+        "anatomy": {
+          "enum": [
+            "LOW",
+            "MED",
+            "HIGH"
+          ]
+        },
+        "data": {
+          "enum": [
+            "LOW",
+            "MED",
+            "HIGH"
+          ]
+        },
+        "brand": {
+          "enum": [
+            "LOW",
+            "MED",
+            "HIGH"
+          ]
+        }
+      }
+    },
+    "criago": {
+      "type": "object",
+      "required": [
+        "role",
+        "humor",
+        "visibility"
+      ],
+      "properties": {
+        "role": {
+          "enum": [
+            "CR0",
+            "CR1",
+            "CR2",
+            "CR3",
+            "CR4"
+          ]
+        },
+        "humor": {
+          "enum": [
+            "H0",
+            "H1",
+            "H2",
+            "H3"
+          ]
+        },
+        "visibility": {
+          "enum": [
+            "ON",
+            "OFF"
+          ]
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rejection_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}
