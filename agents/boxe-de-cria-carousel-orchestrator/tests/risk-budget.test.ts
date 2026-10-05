@@ -1,0 +1,6 @@
+import {describe,it,expect} from "vitest";
+import type {SlidePlan} from "../src/types.js";
+import {generativeRisk,renderRoute} from "../src/routers/risk-router.js";
+import {complexityBudget} from "../src/routers/budget-router.js";
+const slide:SlidePlan={slide_index:1,slide_count:1,slide_job:"DATA",claim_ids:["C1"],visual_grammar:"FLAT_CHART",visual_proof_class:"DATA",visual_proof:"exact chart",data_state:"CONFIRMED",text_tiers:{T0:["31.7%"],T1:["N=120"],T2:["DOI 10.0000/example","error bars ±"]},audience:"x",jtbd:"x",hero:"two fighters with hand interaction",diagram:"chart axis bar error",series:"x",mode:"LAB",criago:{role:"CR3",humor:"H0",visibility:"ON"},source_ids:["S1"],rejection_conditions:["no data mutation"]};
+describe("routers",()=>{it("routes high-risk data slide to finalization-safe",()=>{const r=generativeRisk(slide);expect(r.data).toBe("HIGH");expect(renderRoute(r)).toBe("G2_FINALIZATION_SAFE");});it("computes complexity",()=>expect(complexityBudget(slide).score).toBeGreaterThan(0));});
