@@ -394,6 +394,52 @@
           ]
         }
       ]
+    },
+    {
+      "id": "run-academic-mission",
+      "description": "Run a long-horizon academic mission from call audit through admission, scholarship, relocation and lab integration with evidence and integrity gates.",
+      "steps": [
+        {
+          "id": "repository-check",
+          "agent": "repository-guardian",
+          "deliverables": [
+            "canonical agent package confirmed",
+            "public/private boundary confirmed"
+          ]
+        },
+        {
+          "id": "mission-control",
+          "agent": "academic-mission-orchestrator",
+          "needs": [
+            "repository-check"
+          ],
+          "deliverables": [
+            "mission state",
+            "call matrix",
+            "evidence ledger",
+            "document audit",
+            "barema model",
+            "research proposal audit",
+            "academic integrity decision",
+            "scholarship state",
+            "financial transition plan",
+            "relocation state",
+            "next highest-leverage action"
+          ]
+        },
+        {
+          "id": "privacy-gate",
+          "agent": "security-privacy-guardian",
+          "needs": [
+            "mission-control"
+          ],
+          "deliverables": [
+            "PII review",
+            "secret review",
+            "public/private publication decision"
+          ]
+        }
+      ]
     }
   ]
 }

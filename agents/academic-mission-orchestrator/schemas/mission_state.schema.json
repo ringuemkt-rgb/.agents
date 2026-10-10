@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Academic Mission State",
+  "type": "object",
+  "required": ["mission_id", "current_gate", "gates", "risks", "next_action"],
+  "properties": {
+    "mission_id": {"type": "string"},
+    "current_gate": {"type": "string"},
+    "gates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "status"],
+        "properties": {
+          "id": {"type": "string"},
+          "status": {"enum": ["NOT_STARTED", "BLOCKED", "IN_PROGRESS", "READY_FOR_REVIEW", "DONE", "FAILED", "APPEALING"]},
+          "deadline": {"type": ["string", "null"]},
+          "evidence": {"type": "array", "items": {"type": "string"}},
+          "dependencies": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "risks": {"type": "array", "items": {"type": "string"}},
+    "next_action": {"type": "string"}
+  }
+}

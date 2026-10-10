@@ -57,6 +57,7 @@ cria-agents tools sync
 | QA & Release Guardian | valida testes, builds, APK e critérios de conclusão |
 | Security & Privacy Guardian | revisa segredos, dados pessoais e riscos operacionais |
 | BOXE DE CRIA Carousel Orchestrator | transforma temas em carrosséis evidence-first, didáticos, 2.5D e prompts autônomos portáteis entre IAs |
+| Academic Mission Orchestrator | conduz missões acadêmicas longas com gates, evidência, ética, bolsa, finanças e relocação |
 
 ## BOXE DE CRIA Carousel Orchestrator
 
@@ -71,3 +72,14 @@ Use `SYSTEM_PROMPT.md` como instrução principal em ChatGPT, Claude, Gemini ou 
 Agentes não substituem engenharia. Eles transformam intenção em tarefas verificáveis, executam dentro de limites claros e entregam evidência do que foi modificado e testado.
 
 Consulte `docs/ARCHITECTURE.md` e `AGENTS.md` antes de acrescentar novas funções.
+
+
+## Academic Mission Orchestrator
+
+O pacote portátil vive em:
+
+`agents/academic-mission-orchestrator/`
+
+Use `SYSTEM_PROMPT.md` para ativação completa em outra plataforma, `ACTIVATE.md` para ativação compacta e `PRIVATE_CONTEXT_TEMPLATE.md` para fornecer dados do candidato **somente em ambiente privado**.
+
+O pacote público não contém documentos pessoais, dados de saúde, credenciais, proposta viva de seleção ou outros dados sensíveis.

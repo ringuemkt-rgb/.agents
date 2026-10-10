@@ -254,6 +254,48 @@
       "topic_opportunity_engine": "agents/boxe-de-cria-carousel-orchestrator/TOPIC_OPPORTUNITY_ENGINE.md",
       "content_graph_engine": "agents/boxe-de-cria-carousel-orchestrator/CONTENT_GRAPH_ENGINE.md",
       "gemini_image_adapter": "agents/boxe-de-cria-carousel-orchestrator/GEMINI_PRODUCTION.md"
+    },
+    {
+      "id": "academic-mission-orchestrator",
+      "name": "Academic Mission Orchestrator",
+      "version": "1.0.0",
+      "role": "Runs long-horizon academic missions using evidence ledgers, gate-based execution, academic-integrity controls, scholarship strategy and relocation planning.",
+      "instructions": "agents/academic-mission-orchestrator/ACTIVATE.md",
+      "system_prompt": "agents/academic-mission-orchestrator/SYSTEM_PROMPT.md",
+      "skill": "agents/academic-mission-orchestrator/SKILL.md",
+      "architecture": "agents/academic-mission-orchestrator/ARCHITECTURE.md",
+      "manifest": "agents/academic-mission-orchestrator/manifest.json",
+      "capabilities": [
+        "academic-admissions",
+        "call-for-applications-audit",
+        "document-forensics",
+        "affirmative-action-compliance",
+        "cv-barema-analysis",
+        "research-methodology",
+        "scientific-evidence-synthesis",
+        "measurement-validation",
+        "academic-integrity-gate",
+        "communication-guardian",
+        "scholarship-strategy",
+        "financial-transition-planning",
+        "relocation-planning",
+        "privacy-security",
+        "mission-state-machine",
+        "red-team"
+      ],
+      "requires": [
+        "repository-guardian",
+        "security-privacy-guardian"
+      ],
+      "forbidden": [
+        "fabricate-evidence",
+        "guarantee-admission",
+        "guarantee-scholarship",
+        "publish-private-candidate-data",
+        "send-evaluative-material-to-potential-evaluator-without-integrity-check",
+        "equate-working-software-with-scientific-validation",
+        "close-gate-without-evidence"
+      ]
     }
   ]
 }

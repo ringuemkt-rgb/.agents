@@ -1,16 +1,158 @@
 {
   "schema_version": 1,
   "tools": [
-    {"id": "agent-sprite-forge", "repository": "https://github.com/0x0funky/agent-sprite-forge.git", "ref": "main", "destination": ".vendor/agent-sprite-forge", "install_commands": ["python -m pip install -r requirements.txt"], "enabled": true},
-    {"id": "sprite-gen", "repository": "https://github.com/aldegad/sprite-gen.git", "ref": "main", "destination": ".vendor/sprite-gen", "install_commands": ["python -m pip install -e ."], "enabled": true},
-    {"id": "spec-kit", "repository": "https://github.com/github/spec-kit.git", "ref": "main", "destination": ".vendor/spec-kit", "install_commands": [], "enabled": true},
-    {"id": "game-master", "repository": "https://github.com/Sstobo/Claude-Code-Game-Master.git", "ref": "main", "destination": ".vendor/game-master", "install_commands": [], "enabled": true},
-    {"id": "game-development-reference", "repository": "https://github.com/HermeticOrmus/claude-code-game-development.git", "ref": "claude/game-dev-repository-017nfLKbbabCj73wES1Mvkpb", "destination": ".vendor/game-development-reference", "install_commands": [], "enabled": true},
-    {"id": "agent-game-forge", "repository": "https://github.com/0x0funky/agent-game-forge.git", "ref": "main", "destination": ".vendor/agent-game-forge", "install_commands": [], "enabled": true},
-    {"id": "character-animation-creator", "repository": "https://github.com/tachikomared/character-animation-creator-skill.git", "ref": "main", "destination": ".vendor/character-animation-creator", "install_commands": [], "enabled": true},
-    {"id": "image-cockpit", "repository": "https://github.com/dreiachse-cyber/image-cockpit-for-codex-workflows.git", "ref": "main", "destination": ".vendor/image-cockpit", "install_commands": [], "enabled": false},
-    {"id": "asreview", "repository": "https://github.com/asreview/asreview.git", "ref": "master", "destination": ".vendor/asreview", "install_commands": ["python -m pip install asreview"], "enabled": false, "role": "systematic-review-screening"},
-    {"id": "pyalex", "repository": "https://github.com/J535D165/pyalex.git", "ref": "main", "destination": ".vendor/pyalex", "install_commands": ["python -m pip install pyalex"], "enabled": false, "role": "unbounded-scholarly-search"},
-    {"id": "awesome-evidence-synthesis", "repository": "https://github.com/evidencesynthesis-tools/awesome-evidence-synthesis.git", "ref": "main", "destination": ".vendor/awesome-evidence-synthesis", "install_commands": [], "enabled": false, "role": "oss-catalog"}
+    {
+      "id": "agent-sprite-forge",
+      "repository": "https://github.com/0x0funky/agent-sprite-forge.git",
+      "ref": "main",
+      "destination": ".vendor/agent-sprite-forge",
+      "install_commands": [
+        "python -m pip install -r requirements.txt"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "sprite-gen",
+      "repository": "https://github.com/aldegad/sprite-gen.git",
+      "ref": "main",
+      "destination": ".vendor/sprite-gen",
+      "install_commands": [
+        "python -m pip install -e ."
+      ],
+      "enabled": true
+    },
+    {
+      "id": "spec-kit",
+      "repository": "https://github.com/github/spec-kit.git",
+      "ref": "main",
+      "destination": ".vendor/spec-kit",
+      "install_commands": [],
+      "enabled": true
+    },
+    {
+      "id": "game-master",
+      "repository": "https://github.com/Sstobo/Claude-Code-Game-Master.git",
+      "ref": "main",
+      "destination": ".vendor/game-master",
+      "install_commands": [],
+      "enabled": true
+    },
+    {
+      "id": "game-development-reference",
+      "repository": "https://github.com/HermeticOrmus/claude-code-game-development.git",
+      "ref": "claude/game-dev-repository-017nfLKbbabCj73wES1Mvkpb",
+      "destination": ".vendor/game-development-reference",
+      "install_commands": [],
+      "enabled": true
+    },
+    {
+      "id": "agent-game-forge",
+      "repository": "https://github.com/0x0funky/agent-game-forge.git",
+      "ref": "main",
+      "destination": ".vendor/agent-game-forge",
+      "install_commands": [],
+      "enabled": true
+    },
+    {
+      "id": "character-animation-creator",
+      "repository": "https://github.com/tachikomared/character-animation-creator-skill.git",
+      "ref": "main",
+      "destination": ".vendor/character-animation-creator",
+      "install_commands": [],
+      "enabled": true
+    },
+    {
+      "id": "image-cockpit",
+      "repository": "https://github.com/dreiachse-cyber/image-cockpit-for-codex-workflows.git",
+      "ref": "main",
+      "destination": ".vendor/image-cockpit",
+      "install_commands": [],
+      "enabled": false
+    },
+    {
+      "id": "asreview",
+      "repository": "https://github.com/asreview/asreview.git",
+      "ref": "master",
+      "destination": ".vendor/asreview",
+      "install_commands": [
+        "python -m pip install asreview"
+      ],
+      "enabled": false,
+      "role": "systematic-review-screening"
+    },
+    {
+      "id": "pyalex",
+      "repository": "https://github.com/J535D165/pyalex.git",
+      "ref": "main",
+      "destination": ".vendor/pyalex",
+      "install_commands": [
+        "python -m pip install pyalex"
+      ],
+      "enabled": false,
+      "role": "unbounded-scholarly-search"
+    },
+    {
+      "id": "awesome-evidence-synthesis",
+      "repository": "https://github.com/evidencesynthesis-tools/awesome-evidence-synthesis.git",
+      "ref": "main",
+      "destination": ".vendor/awesome-evidence-synthesis",
+      "install_commands": [],
+      "enabled": false,
+      "role": "oss-catalog"
+    },
+    {
+      "id": "langgraph",
+      "repository": "https://github.com/langchain-ai/langgraph.git",
+      "ref": "main",
+      "destination": ".vendor/langgraph",
+      "install_commands": [],
+      "enabled": false,
+      "role": "durable-agent-orchestration"
+    },
+    {
+      "id": "smolagents",
+      "repository": "https://github.com/huggingface/smolagents.git",
+      "ref": "main",
+      "destination": ".vendor/smolagents",
+      "install_commands": [],
+      "enabled": false,
+      "role": "bounded-specialist-agents"
+    },
+    {
+      "id": "paperqa2",
+      "repository": "https://github.com/Future-House/paper-qa.git",
+      "ref": "main",
+      "destination": ".vendor/paper-qa",
+      "install_commands": [],
+      "enabled": false,
+      "role": "scientific-rag"
+    },
+    {
+      "id": "docling",
+      "repository": "https://github.com/docling-project/docling.git",
+      "ref": "main",
+      "destination": ".vendor/docling",
+      "install_commands": [],
+      "enabled": false,
+      "role": "document-parsing"
+    },
+    {
+      "id": "presidio",
+      "repository": "https://github.com/microsoft/presidio.git",
+      "ref": "main",
+      "destination": ".vendor/presidio",
+      "install_commands": [],
+      "enabled": false,
+      "role": "pii-detection-redaction"
+    },
+    {
+      "id": "browser-use",
+      "repository": "https://github.com/browser-use/browser-use.git",
+      "ref": "main",
+      "destination": ".vendor/browser-use",
+      "install_commands": [],
+      "enabled": false,
+      "role": "browser-automation-with-human-gates"
+    }
   ]
 }
