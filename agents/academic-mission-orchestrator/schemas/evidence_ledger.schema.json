@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence Ledger",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["claim_id", "claim", "state", "materiality"],
+    "properties": {
+      "claim_id": {"type": "string"},
+      "claim": {"type": "string"},
+      "state": {"enum": ["VERIFIED_PRIMARY", "VERIFIED_CORROBORATED", "PARTIALLY_SUPPORTED", "INFERENCE", "PROPOSED", "UNVERIFIED", "CONTRADICTED", "EVIDENCE_GAP"]},
+      "source": {"type": ["string", "null"]},
+      "source_date": {"type": ["string", "null"]},
+      "source_type": {"type": ["string", "null"]},
+      "materiality": {"enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"]},
+      "recheck_date": {"type": ["string", "null"]},
+      "notes": {"type": ["string", "null"]}
+    }
+  }
+}
