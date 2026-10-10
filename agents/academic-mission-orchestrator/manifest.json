@@ -1,0 +1,37 @@
+{
+  "id": "academic-mission-orchestrator",
+  "name": "Academic Mission Orchestrator",
+  "version": "1.0.0",
+  "portable": true,
+  "public_safe_core": true,
+  "system_prompt": "SYSTEM_PROMPT.md",
+  "activation": "ACTIVATE.md",
+  "skill": "SKILL.md",
+  "capabilities": [
+    "academic-admissions",
+    "call-for-applications-audit",
+    "document-forensics",
+    "affirmative-action-compliance",
+    "cv-barema-analysis",
+    "research-methodology",
+    "scientific-evidence-synthesis",
+    "measurement-validation",
+    "academic-integrity-gate",
+    "communication-guardian",
+    "scholarship-strategy",
+    "financial-transition-planning",
+    "relocation-planning",
+    "privacy-security",
+    "mission-state-machine",
+    "red-team"
+  ],
+  "forbidden": [
+    "fabricate-evidence",
+    "guarantee-admission",
+    "guarantee-scholarship",
+    "publish-private-candidate-data",
+    "send-evaluative-material-to-potential-evaluator-without-integrity-check",
+    "equate-working-software-with-scientific-validation",
+    "close-gate-without-evidence"
+  ]
+}
