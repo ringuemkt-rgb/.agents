@@ -1,0 +1,33 @@
+{
+  "name": "Hermes FORJA Adaptive NVIDIA",
+  "version": "2.1.0",
+  "release_date": "2026-07-15",
+  "target_os": ["Windows 10", "Windows 11"],
+  "python_requires": ">=3.11",
+  "components": {
+    "agent_runtime": "NousResearch Hermes Agent",
+    "local_inference": "Ollama + Qwen 3.5 selected by RAM",
+    "fast_provider": "NVIDIA NIM minimaxai/minimax-m3",
+    "expert_flow": "Hermes Mixture of Agents with NVIDIA, Hugging Face, OpenRouter, and local fallback",
+    "adaptive_learning": "FORJA Foundry candidate/evaluate/promote/outcome/rollback/quarantine"
+  },
+  "security": {
+    "hermes_approvals": "smart",
+    "cron_dangerous_commands": "deny",
+    "foundry_eval_network": "disabled by default",
+    "promotion_threshold": 0.85,
+    "hash_binding": true,
+    "automatic_recovery": "rollback when backup exists; otherwise quarantine after 3 consecutive failures",
+    "secrets_in_archive": false
+  },
+  "validation": {
+    "unit_tests": 8,
+    "unit_test_result": "passed",
+    "candidate_lifecycle": "passed",
+    "lifecycle_score": 1.0,
+    "lifecycle_verdict": "auto-promote",
+    "pip_install_smoke": "passed",
+    "yaml_parse": "passed",
+    "powershell_runtime_parse": "not executed; static delimiter validation only"
+  }
+}
