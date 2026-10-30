@@ -112,3 +112,96 @@ Uma futura integração com Qwen local pode evitar enviar dados de documentos a 
 7. Política de privacidade, retenção, exclusão e avaliação de ameaças antes de hospedagem.
 
 **Não declarar uma inscrição realizada sem comprovante oficial.**
+
+
+## v0.3 — MCP, Grok Responses, autonomia persistente e supervisão
+
+### MCP local (SDK Python v2)
+
+```bash
+# Ambiente virtual Python 3.11+:
+python -m pip install "mcp[cli]>=2,<3"
+cd agents/academic-mission-orchestrator/scholarship-intelligence
+mcp dev mcp_server.py
+```
+
+A interface MCP expõe apenas leitura do registro público, triagem por preferências
+de interesse, consulta de política e verificação de fontes. O comando opcional
+`grok_review_public_opportunity` exige **duas opções privadas**:
+`SCHOLARSHIP_ALLOW_PAID_ANALYSIS=1` e `XAI_API_KEY`.
+Nenhum desses valores deve ir para o Git. O cliente MCP deve ser LOCAL,
+não publicar um endpoint sem autenticação na internet.
+
+### Grok via xAI Responses API
+
+A integração agora usa `POST https://api.x.ai/v1/responses` (não o endpoint
+legado de chat). O modelo padrão poderá ser atualizado pela variável
+`XAI_MODEL`. Somente metadados estritamente permitidos da oportunidade pública
+são transmitidos. Sem `XAI_API_KEY`, falha sem qualquer chamada.
+Este adaptador não fornece ferramentas a Grok nem permite que texto remoto
+conceda permissões; ele não acessa documentos do candidato. Limites de tokens
+e orçamento de API devem ser monitorados na plataforma xAI.
+
+### Fila persistente, falhas e retomada
+
+```bash
+# Execute fora do repositório; o caminho é privado.
+python mission_runtime.py --db "$HOME/scholarship-private/jobs.sqlite3" \
+  enqueue --source-id watch-000 --action PUBLIC_DISCOVER
+python mission_runtime.py --db "$HOME/scholarship-private/jobs.sqlite3" run-once
+python mission_runtime.py --db "$HOME/scholarship-private/jobs.sqlite3" status
+
+# Rotina local: reusa SQLite, respeita orçamento de até 6 fontes por execução
+python monitor.py --db "$HOME/scholarship-private/jobs.sqlite3"
+```
+
+Tarefas registradas usam IDs públicos sem dados pessoais e uma lease para
+retomar tentativas interrompidas. Falhas transitórias têm **até quatro
+tentativas** com backoff. CAPTCHA, pedido de autenticação, robots.txt, mudança
+de portal e falha desconhecida passam a `WAITING_HUMAN`. Não há repetição sem
+limite, evasão de controle anti-bot ou execução opaca.
+
+### Política de capacidades
+
+- `ALLOW_AUTONOMOUS`: apenas leitura pública, análise pública e elaboração local.
+- `REQUIRE_ONE_TIME_APPROVAL`: preencher em portal, upload, submissão, envio
+  externo, pagamentos, assinatura ou exportação de dados privados.
+- `HUMAN_ONLY`: senha, segundo fator, biometria e CAPTCHA. Agente jamais
+  pode tentar obter, contornar ou coletar esses fatores.
+- `DENY_HOST` ou `DENY_UNRECOGNIZED`: bloqueado.
+
+`permission_guard.py` emite permissões **únicas, com escopo e prazo**, só via
+terminal interativo local; o mecanismo não está conectado a um executor de
+submissão, que ainda não foi implementado. Não interpretar uma permissão como
+confirmação de matrícula ou como autorização da universidade.
+
+### Monitoramento GitHub Actions
+
+A workflow `.github/workflows/scholarship-public-monitor.yml` inclui
+`workflow_dispatch` e agendamento diário 08:17 na Bahia, com leitura pública,
+artefato de status sem PII e permissões `contents: read`.
+**O agendamento só terá efeito após merge na branch padrão** do repositório.
+GitHub Actions usa máquina efêmera: o artefato guarda o status da execução,
+mas não mantém uma fila SQLite entre runs. Para memória contínua usar servidor
+privado ou cron local com disco persistente.
+
+### Tratamento de alterações e bloqueios
+
+Quando um edital é retificado, nenhuma inscrição deve ser considerada concluída
+automaticamente. Valide novamente versão, prazo, formulário e anexos.
+Quando um portal falha: classifique a falha, tente novamente apenas para erros
+transitórios e preserve um checkpoint. Caso haja bloqueio institucional,
+reconcilie manualmente com o suporte oficial. Não usar evasão de limites
+de acesso, identidades falsas, proxies para driblar bloqueios ou engenharia
+social para conseguir credenciais.
+
+### Limites reais da entrega
+
+Os módulos executáveis e testes são verificados em GitHub CI; a integração
+MCP com cliente real, os portais universitários, o navegador guiado por agente
+e a chamada faturável a Grok **não foram submetidos a testes E2E aqui**.
+Nenhuma inscrição ou matrícula foi enviada; sem implantação contínua,
+não existe um agente permanentemente online.
+
+Documentos do candidato ficam em cofre privado com consentimento granular e
+acesso mínimo; não conceda acesso indiscriminado a aplicações remotas.
