@@ -164,10 +164,17 @@ class MissionQueue:
             "SELECT state, COUNT(*) AS count FROM jobs GROUP BY state")}
 
 
+def source_index(registry: dict) -> dict[str, str]:
+    sources = {}
+    for idx, record in enumerate(registry["watch_urls"]):
+        sources[f"watch-{idx:03d}"] = record["url"]
+    sources.update({x["id"]: x["official_url"] for x in registry["opportunities"]})
+    return sources
+
+
 def perform(job: dict, registry: dict, fetcher: Callable | None = None):
     hosts = registry["allowed_hosts"]
-    sources = {x["label"]: x["url"] for x in registry["watch_urls"]}
-    sources.update({x["id"]:x["official_url"] for x in registry["opportunities"]})
+    sources = source_index(registry)
     if job["source_id"] not in sources:
         raise ValueError("Fonte desconhecida no registro autorizado")
     url = sources[job["source_id"]]
@@ -226,8 +233,7 @@ def main(argv=None):
     queue=MissionQueue(args.db)
     try:
         if args.command=="enqueue":
-            ids={x["label"] for x in registry["watch_urls"]}
-            ids.update(x["id"] for x in registry["opportunities"])
+            ids = set(source_index(registry))
             if args.source_id not in ids:
                 p.error("Fonte não encontrada no registro")
             job_id=f"{args.action.lower()}:{args.source_id}"
