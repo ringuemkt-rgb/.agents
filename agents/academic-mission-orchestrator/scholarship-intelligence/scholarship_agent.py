@@ -14,7 +14,9 @@ import os
 from pathlib import Path
 import re
 import sys
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, urljoin
+from html.parser import HTMLParser
+import time
 from urllib.request import Request, build_opener, HTTPRedirectHandler
 from urllib.robotparser import RobotFileParser
 
@@ -181,6 +183,70 @@ def scan_source(url: str, allowed_hosts: list[str]) -> dict:
             "requires_manual_check": True}
 
 
+class LinkCollector(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.links = []
+        self._href = None
+
+    def handle_starttag(self, tag, attrs):
+        if tag.lower() == "a":
+            self._href = dict(attrs).get("href")
+
+    def handle_data(self, data):
+        if self._href:
+            self.links.append((self._href, data.strip()))
+
+    def handle_endtag(self, tag):
+        if tag.lower() == "a":
+            self._href = None
+
+
+def discover_page(url: str, allowed_hosts: list[str]) -> dict:
+    """Discover *leads* from one public, official HTML page; no verification claim."""
+    if not official_url(url, allowed_hosts):
+        raise ValueError("URL fora da allowlist")
+    parts = urlsplit(url)
+    robots = RobotFileParser()
+    robots.set_url(f"https://{parts.hostname}/robots.txt")
+    try:
+        robots.read()
+    except Exception:
+        return {"url": url, "status": "ROBOTS_UNAVAILABLE", "leads": []}
+    if not robots.can_fetch("ScholarshipIntelligence/0.1", url):
+        return {"url": url, "status": "ROBOTS_DISALLOWED", "leads": []}
+    opener = build_opener(SafeRedirect(allowed_hosts))
+    req = Request(url, headers={"User-Agent": "ScholarshipIntelligence/0.1 (academic research)"})
+    try:
+        with opener.open(req, timeout=12) as response:
+            kind = response.headers.get("Content-Type", "").lower()
+            if "html" not in kind:
+                return {"url": url, "status": "NOT_HTML", "leads": []}
+            html = response.read(1_000_000).decode("utf-8", errors="replace")
+    except Exception as exc:
+        return {"url": url, "status": type(exc).__name__, "leads": []}
+    parser = LinkCollector()
+    parser.feed(html)
+    leads = {}
+    for href, label in parser.links:
+        target = urljoin(url, href)
+        if not official_url(target, allowed_hosts):
+            continue
+        haystack = (label + " " + target).lower()
+        if not any(word in haystack for word in
+                   ("bolsa", "mestrado", "pós-gradua", "pos-gradua", "edital",
+                    "seleção", "selecao", "procap", "ppg", "bolsista")):
+            continue
+        leads[target] = {
+            "url": target, "label": label[:180],
+            "status": "DISCOVERED", "evidence_url": url,
+            "notice": "Link candidato; verificar edital primário, prazo e ator de inscrição",
+        }
+        if len(leads) >= 50:
+            break
+    return {"url": url, "status": "DISCOVERED_LEADS", "leads": list(leads.values())}
+
+
 def public_grok_review(item: dict, model: str | None = None) -> str:
     """Send ONLY public opportunity metadata to xAI; optional proprietary provider."""
     key = os.environ.get("XAI_API_KEY")
@@ -214,6 +280,8 @@ def main(argv=None):
     parser.add_argument("--registry", default=str(Path(__file__).with_name("sources.json")))
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("validate")
+    discovery = sub.add_parser("discover")
+    discovery.add_argument("--max-pages", type=int, default=3)
     rank_p = sub.add_parser("rank")
     rank_p.add_argument("--profile", required=True, help="arquivo LOCAL, não versionado")
     rank_p.add_argument("--today", default=date.today().isoformat())
@@ -229,6 +297,13 @@ def main(argv=None):
         validate_record(item, hosts)
     if args.command == "validate":
         print(f"OK: {len(items)} registros, allowlist de {len(hosts)} domínios.")
+    elif args.command == "discover":
+        results = []
+        for i, entry in enumerate(registry.get("watch_urls", [])[:max(0, min(args.max_pages, 30))]):
+            if i:
+                time.sleep(1.5)
+            results.append(discover_page(entry["url"], hosts))
+        print(json.dumps(results, indent=2, ensure_ascii=False))
     elif args.command == "rank":
         profile = read_json(args.profile)
         rows = [rank(item, profile, date.fromisoformat(args.today)) for item in items]
