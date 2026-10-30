@@ -1,0 +1,16 @@
+# Contexto de candidato nunca deve ser versionado
+.env
+.env.*
+!.env.example
+private/
+secrets/
+profiles/
+output/
+*.sqlite3
+*.db
+*.pdf
+*.docx
+*.xlsx
+*.zip
+__pycache__/
+.pytest_cache/
