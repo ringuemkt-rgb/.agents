@@ -1,0 +1,28 @@
+name: Academic scholarship intelligence checks
+on:
+  push:
+    paths:
+      - 'agents/academic-mission-orchestrator/scholarship-intelligence/**'
+      - '.github/workflows/scholarship-intelligence.yml'
+  pull_request:
+    paths:
+      - 'agents/academic-mission-orchestrator/scholarship-intelligence/**'
+      - '.github/workflows/scholarship-intelligence.yml'
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check syntax
+        run: |
+          python -m py_compile agents/academic-mission-orchestrator/scholarship-intelligence/scholarship_agent.py
+          python -m py_compile agents/academic-mission-orchestrator/scholarship-intelligence/browser_assist.py
+      - name: Validate catalog
+        run: python agents/academic-mission-orchestrator/scholarship-intelligence/scholarship_agent.py validate
+      - name: Unit tests (offline)
+        run: python -m unittest discover -s agents/academic-mission-orchestrator/scholarship-intelligence/tests -v
