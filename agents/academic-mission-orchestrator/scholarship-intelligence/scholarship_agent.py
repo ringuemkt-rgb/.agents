@@ -149,22 +149,34 @@ class SafeRedirect(HTTPRedirectHandler):
         return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 
+def robots_allowed(url: str, allowed_hosts: list[str]) -> bool:
+    """Fail closed if robots.txt cannot be read safely with exact-host redirects."""
+    if not official_url(url, allowed_hosts):
+        return False
+    parts = urlsplit(url)
+    robots_url = f"https://{parts.hostname}/robots.txt"
+    opener = build_opener(SafeRedirect(allowed_hosts))
+    try:
+        req = Request(robots_url, headers={"User-Agent": "ScholarshipIntelligence/0.2"})
+        with opener.open(req, timeout=8) as response:
+            body = response.read(262145)
+            if len(body) > 262144:
+                return False
+        robot = RobotFileParser()
+        robot.parse(body.decode("utf-8", errors="replace").splitlines())
+        return robot.can_fetch("ScholarshipIntelligence/0.2",url)
+    except Exception:
+        return False
+
+
 def scan_source(url: str, allowed_hosts: list[str]) -> dict:
     """Low-volume public source monitor. No login, CAPTCHA, or form submission."""
     if not official_url(url, allowed_hosts):
         raise ValueError("URL não permitida")
-    parsed = urlsplit(url)
-    robots_url = f"https://{parsed.hostname}/robots.txt"
-    robot = RobotFileParser()
-    robot.set_url(robots_url)
-    try:
-        robot.read()
-    except Exception:
-        return {"url": url, "status": "ROBOTS_UNAVAILABLE", "requires_manual_check": True}
-    if not robot.can_fetch("ScholarshipIntelligence/0.1", url):
+    if not robots_allowed(url, allowed_hosts):
         return {"url": url, "status": "ROBOTS_DISALLOWED", "requires_manual_check": True}
     opener = build_opener(SafeRedirect(allowed_hosts))
-    req = Request(url, headers={"User-Agent": "ScholarshipIntelligence/0.1 (public academic source monitor)"})
+    req = Request(url, headers={"User-Agent": "ScholarshipIntelligence/0.2 (public academic source monitor)"})
     with opener.open(req, timeout=12) as response:
         data = response.read(2_000_001)
         if len(data) > 2_000_000:
@@ -206,17 +218,10 @@ def discover_page(url: str, allowed_hosts: list[str]) -> dict:
     """Discover *leads* from one public, official HTML page; no verification claim."""
     if not official_url(url, allowed_hosts):
         raise ValueError("URL fora da allowlist")
-    parts = urlsplit(url)
-    robots = RobotFileParser()
-    robots.set_url(f"https://{parts.hostname}/robots.txt")
-    try:
-        robots.read()
-    except Exception:
-        return {"url": url, "status": "ROBOTS_UNAVAILABLE", "leads": []}
-    if not robots.can_fetch("ScholarshipIntelligence/0.1", url):
+    if not robots_allowed(url, allowed_hosts):
         return {"url": url, "status": "ROBOTS_DISALLOWED", "leads": []}
     opener = build_opener(SafeRedirect(allowed_hosts))
-    req = Request(url, headers={"User-Agent": "ScholarshipIntelligence/0.1 (academic research)"})
+    req = Request(url, headers={"User-Agent": "ScholarshipIntelligence/0.2 (academic research)"})
     try:
         with opener.open(req, timeout=12) as response:
             kind = response.headers.get("Content-Type", "").lower()
