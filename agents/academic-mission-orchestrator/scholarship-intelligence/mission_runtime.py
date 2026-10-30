@@ -14,6 +14,7 @@ import re
 import sqlite3
 import time
 from typing import Callable
+from urllib.error import HTTPError, URLError
 
 from scholarship_agent import read_json, scan_source, discover_page, official_url
 
@@ -209,7 +210,17 @@ def process_one(queue: MissionQueue, registry: dict, fetcher: Callable | None = 
             queue.fail(job["id"],result["error"],now=now)
         else:
             queue.complete(job["id"],result,now=now)
-    except (TimeoutError, ConnectionError):
+    except HTTPError as exc:
+        if exc.code in (408, 425, 429, 500, 502, 503, 504):
+            kind = "TRANSIENT"
+        elif exc.code in (401, 403):
+            kind = "AUTH_REQUIRED"
+        elif exc.code in (404, 410):
+            kind = "PORTAL_CHANGED"
+        else:
+            kind = "MANUAL_REVIEW"
+        queue.fail(job["id"], kind, now=now)
+    except (TimeoutError, ConnectionError, URLError):
         queue.fail(job["id"],"TRANSIENT",now=now)
     except Exception:
         # No error message, URL, applicant data or source body in the audit log.
