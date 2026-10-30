@@ -32,6 +32,23 @@ python scholarship_agent.py rank --profile /CAMINHO-PRIVADO/perfil.json --today 
 python scholarship_agent.py scan --id ppgef-uesb-uesc-2027
 ```
 
+## Barema e conferência de documentos (sem inventar pontos)
+
+Preencha o arquivo de critérios a partir do **edital real e de suas retificações**;
+o `criteria.example.json` é didático, NÃO é o barema oficial da UEL.
+O arquivo de evidências e os caminhos para comprovantes ficam apenas no seu
+computador privado. Cada critério precisa do link da fonte primária e a evidência
+precisa estar marcada `human_verified` com referência local.
+
+```bash
+python application_auditor.py \\
+  --rules /CAMINHO-PRIVADO/criterios-oficiais.json \\
+  --evidence /CAMINHO-PRIVADO/provas.json
+```
+
+Sem prova, a nota simulada é zero. Essa simulação não substitui homologação
+pela banca e não deve ser usada sem revisar caps, unidades e pontuações reais.
+
 ## Navegador local — rascunho sem envio
 
 ```bash
