@@ -38,6 +38,15 @@ class ScholarshipTests(unittest.TestCase):
                          {"interests":["educação física"]},date(2026,10,30))
         self.assertTrue(any("institucional" in s for s in row["reasons"]))
 
+    def test_link_collector_rejects_non_official_targets(self):
+        from urllib.parse import urljoin
+        parser = agent.LinkCollector()
+        parser.feed('<a href="/editais/bolsas">Bolsas</a><a href="https://evil.test/bolsa">Bolsa falsa</a>')
+        urls = [urljoin(self.item["official_url"], href) for href, label in parser.links
+                if "bolsa" in (label + href).lower()]
+        allowed = [u for u in urls if agent.official_url(u, self.hosts)]
+        self.assertEqual(allowed, ["https://www.uesb.br/editais/bolsas"])
+
     def test_requires_human_and_evidence(self):
         with self.assertRaises(PermissionError):
             agent.transition("APPLICATION_DRAFT","SUBMITTED_CONFIRMED","receipt-123")
