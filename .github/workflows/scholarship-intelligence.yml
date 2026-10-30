@@ -22,6 +22,7 @@ jobs:
         run: |
           python -m py_compile agents/academic-mission-orchestrator/scholarship-intelligence/scholarship_agent.py
           python -m py_compile agents/academic-mission-orchestrator/scholarship-intelligence/browser_assist.py
+          python -m py_compile agents/academic-mission-orchestrator/scholarship-intelligence/application_auditor.py
       - name: Validate catalog
         run: python agents/academic-mission-orchestrator/scholarship-intelligence/scholarship_agent.py validate
       - name: Unit tests (offline)
