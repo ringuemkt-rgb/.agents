@@ -205,3 +205,28 @@ não existe um agente permanentemente online.
 
 Documentos do candidato ficam em cofre privado com consentimento granular e
 acesso mínimo; não conceda acesso indiscriminado a aplicações remotas.
+
+## Cofre de documentos local (v0.3)
+
+Usa criptografia autenticada AES-256-GCM com derivação de chave scrypt
+(`cryptography>=46,<47`). A frase secreta é solicitada por `getpass`,
+não é passada como parâmetro da linha de comando nem enviada a Grok ou ao MCP.
+
+```bash
+python -m pip install "cryptography>=46,<47"
+python private_vault.py seal \
+  --input "$HOME/documentos-privados/diploma.pdf" \
+  --output "$HOME/scholarship-private/cofre/diploma.enc"
+
+# Decriptação somente sob decisão do titular e em pasta privada:
+python private_vault.py unseal \
+  --input "$HOME/scholarship-private/cofre/diploma.enc" \
+  --output "$HOME/scholarship-private/temp/diploma.pdf"
+```
+
+O arquivo de saída é criado com permissão `0600`, sem sobrescrever
+arquivos existentes. A decriptação cria um ARQUIVO EM TEXTO CLARO; não a use
+numa pasta sincronizada/publicada. Recomenda-se também criptografia do disco,
+backup controlado e remoção segura dos temporários. Não existe recuperação
+automática da frase secreta; perdê-la pode tornar os arquivos irrecuperáveis.
+**O cofre não está conectado ao Google Drive nem aos formulários nesta versão.**
