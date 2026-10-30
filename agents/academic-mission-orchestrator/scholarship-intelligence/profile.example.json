@@ -1,0 +1,14 @@
+{
+  "_AVISO": "MODELO FICTÍCIO. Copie para fora do repositório público. Não publique dados pessoais ou de saúde.",
+  "interests": ["educação física", "exercício físico", "saúde", "controle motor"],
+  "preferred_states": ["BA", "ES", "PR"],
+  "degree_fields": [],
+  "documents": {
+    "diploma": "PENDENTE_VALIDACAO",
+    "historico_oficial": "PENDENTE_VALIDACAO",
+    "lattes": "PENDENTE_VALIDACAO",
+    "orcid": "PENDENTE_VALIDACAO"
+  },
+  "consent_external_llm": false,
+  "notes": "Não inclua CPF, RG, telefone, laudo, endereço, datas sensíveis nem tokens."
+}

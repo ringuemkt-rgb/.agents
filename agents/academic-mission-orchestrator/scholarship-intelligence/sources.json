@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-10-30",
+  "source_policy": "Mantenha apenas fontes oficiais; revisite edital e retificações antes da ação. Registros não garantem cota de bolsa.",
+  "allowed_hosts": [
+    "www.uesb.br",
+    "www2.uesb.br",
+    "www.uesc.br",
+    "uesc.br",
+    "pos.uel.br",
+    "fapes.es.gov.br",
+    "www.gov.br",
+    "gov.br",
+    "www.ufes.br",
+    "prppg.ufes.br",
+    "www.fapesb.ba.gov.br",
+    "fapesb.ba.gov.br",
+    "www.cnpq.br",
+    "www.capes.gov.br"
+  ],
+  "opportunities": [
+    {
+      "id": "ppgef-uesb-uesc-2027",
+      "title": "Mestrado acadêmico em Educação Física — UESB/UESC",
+      "state": "BA",
+      "level": "mestrado",
+      "institution": "UESB/UESC",
+      "application_actor": "candidate",
+      "status": "VERIFIED_OFFICIAL",
+      "official_url": "https://www.uesb.br/noticias/selecao-para-mestrado-em-educacao-fisica-prorroga-prazo-de-inscricoes/",
+      "evidence_date": "2026-10-15",
+      "deadline": "2026-11-02",
+      "topics": [
+        "educação física",
+        "atividade física",
+        "saúde",
+        "exercício físico",
+        "autismo"
+      ],
+      "notes": "Prorrogação até 2/11/2026; enviar ao canal informado no edital. Inscrição não assegura bolsa. Conferir anexos e documentos.",
+      "funding": "A verificar após admissão."
+    },
+    {
+      "id": "uel-pef-2027-1",
+      "title": "Mestrado em Educação Física — PEF UEL/UEM",
+      "state": "PR",
+      "level": "mestrado",
+      "institution": "UEL/UEM",
+      "application_actor": "candidate",
+      "status": "VERIFIED_OFFICIAL",
+      "official_url": "https://pos.uel.br/pef/editais/",
+      "evidence_date": "2026-10-21",
+      "deadline": "2026-10-29",
+      "topics": [
+        "educação física",
+        "controle motor",
+        "desenvolvimento motor",
+        "exercício físico",
+        "autismo"
+      ],
+      "notes": "Edital 21/2026 retificado. Prazo informado no planejamento vigente; reconferir eventual nova retificação. Bolsa é seleção distinta.",
+      "funding": "Bolsas dependem de cotas e seleção interna."
+    },
+    {
+      "id": "fapes-procap-mestrado-2027",
+      "title": "FAPES edital 26/2026 PROCAP Mestrado",
+      "state": "ES",
+      "level": "mestrado",
+      "institution": "FAPES",
+      "application_actor": "program",
+      "status": "VERIFIED_OFFICIAL",
+      "official_url": "https://fapes.es.gov.br/edital-aberto-forma%C3%A7%C3%A3o-cient%C3%ADfica",
+      "evidence_date": "2026-10-27",
+      "deadline": "2026-11-16",
+      "topics": [
+        "pesquisa",
+        "mestrado",
+        "educação física",
+        "saúde"
+      ],
+      "notes": "Chamada para programas de pós-graduação capixabas; candidato não a submete diretamente. Após ingresso, confirmar seleção interna no PPG.",
+      "funding": "Bolsas institucionais, sujeitas à seleção do PPG."
+    }
+  ],
+  "watch_urls": [
+    {
+      "label": "CAPES bolsas",
+      "url": "https://www.gov.br/capes/pt-br/acesso-a-informacao/acoes-e-programas/bolsas"
+    },
+    {
+      "label": "CNPq",
+      "url": "https://www.gov.br/cnpq/pt-br"
+    },
+    {
+      "label": "FAPESB Bahia",
+      "url": "https://www.fapesb.ba.gov.br/"
+    },
+    {
+      "label": "FAPES Espírito Santo",
+      "url": "https://fapes.es.gov.br/edital-aberto-forma%C3%A7%C3%A3o-cient%C3%ADfica"
+    },
+    {
+      "label": "UEL PEF",
+      "url": "https://pos.uel.br/pef/editais/"
+    },
+    {
+      "label": "UESB UESC PPGEF",
+      "url": "https://www2.uesb.br/ppg/ppgef/?page_id=40"
+    }
+  ]
+}

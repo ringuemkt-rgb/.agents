@@ -1,0 +1,33 @@
+name: Scholarship Intelligence - Public Watch
+on:
+  workflow_dispatch:
+  schedule:
+    # 08:17 in Bahia (UTC-3). Runs only after merge to the default branch.
+    - cron: "17 11 * * *"
+permissions:
+  contents: read
+concurrency:
+  group: scholarship-public-watch
+  cancel-in-progress: false
+jobs:
+  scan-official-sites:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Visit allowed public sources without personal data
+        run: |
+          python agents/academic-mission-orchestrator/scholarship-intelligence/monitor.py \
+            --max-sources 6 --out scholarship-public-status.json
+      - name: Upload status-only artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: scholarship-public-status
+          path: scholarship-public-status.json
+          retention-days: 7
+          if-no-files-found: error

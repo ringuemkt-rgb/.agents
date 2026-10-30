@@ -1,0 +1,43 @@
+name: Academic scholarship intelligence checks
+on:
+  push:
+    paths:
+      - 'agents/academic-mission-orchestrator/scholarship-intelligence/**'
+      - '.github/workflows/scholarship-intelligence.yml'
+  pull_request:
+    paths:
+      - 'agents/academic-mission-orchestrator/scholarship-intelligence/**'
+      - '.github/workflows/scholarship-intelligence.yml'
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Install isolated vault crypto dependency
+        run: python -m pip install "cryptography>=46,<47" "mcp>=2,<3"
+      - name: Check syntax
+        run: |
+          python -m py_compile agents/academic-mission-orchestrator/scholarship-intelligence/scholarship_agent.py
+          python -m py_compile agents/academic-mission-orchestrator/scholarship-intelligence/browser_assist.py
+          python -m py_compile agents/academic-mission-orchestrator/scholarship-intelligence/application_auditor.py
+          python -m py_compile agents/academic-mission-orchestrator/scholarship-intelligence/mission_runtime.py
+          python -m py_compile agents/academic-mission-orchestrator/scholarship-intelligence/llm_gateway.py
+          python -m py_compile agents/academic-mission-orchestrator/scholarship-intelligence/permission_guard.py
+          python -m py_compile agents/academic-mission-orchestrator/scholarship-intelligence/mcp_server.py
+          python -m py_compile agents/academic-mission-orchestrator/scholarship-intelligence/monitor.py
+          python -m py_compile agents/academic-mission-orchestrator/scholarship-intelligence/private_vault.py
+      - name: Verify MCP Python SDK v2 server import
+        run: |
+          PYTHONPATH=agents/academic-mission-orchestrator/scholarship-intelligence \
+            python -c "import mcp_server; print('MCP SDK v2 import OK')"
+      - name: Validate catalog
+        run: python agents/academic-mission-orchestrator/scholarship-intelligence/scholarship_agent.py validate
+      - name: Unit tests (offline)
+        run: python -m unittest discover -s agents/academic-mission-orchestrator/scholarship-intelligence/tests -v

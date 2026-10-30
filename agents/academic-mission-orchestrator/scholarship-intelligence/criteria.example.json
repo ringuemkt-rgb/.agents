@@ -1,0 +1,20 @@
+{
+  "_AVISO": "DADOS FICTÍCIOS. NÃO use a pontuação exemplificativa como barema real.",
+  "official_hosts": ["pos.uel.br"],
+  "barema_rules": [
+    {
+      "id": "item_exemplo",
+      "points_per_unit": 1,
+      "cap_points": 3,
+      "official_source_url": "https://pos.uel.br/pef/editais/",
+      "note": "EXEMPLO DIDÁTICO, não representa pontuação oficial."
+    }
+  ],
+  "documents": [
+    {
+      "id": "diploma",
+      "mandatory": true,
+      "official_source_url": "https://pos.uel.br/pef/editais/"
+    }
+  ]
+}
