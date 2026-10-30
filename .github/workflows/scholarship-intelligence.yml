@@ -18,6 +18,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Install isolated vault crypto dependency
+        run: python -m pip install "cryptography>=46,<47"
       - name: Check syntax
         run: |
           python -m py_compile agents/academic-mission-orchestrator/scholarship-intelligence/scholarship_agent.py
@@ -28,6 +30,7 @@ jobs:
           python -m py_compile agents/academic-mission-orchestrator/scholarship-intelligence/permission_guard.py
           python -m py_compile agents/academic-mission-orchestrator/scholarship-intelligence/mcp_server.py
           python -m py_compile agents/academic-mission-orchestrator/scholarship-intelligence/monitor.py
+          python -m py_compile agents/academic-mission-orchestrator/scholarship-intelligence/private_vault.py
       - name: Validate catalog
         run: python agents/academic-mission-orchestrator/scholarship-intelligence/scholarship_agent.py validate
       - name: Unit tests (offline)
