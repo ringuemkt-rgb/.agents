@@ -22,6 +22,7 @@ as regras do `SYSTEM_PROMPT.md`, `AGENTS.md` e `PRIVACY_SECURITY.md` superiores.
 ```bash
 cd agents/academic-mission-orchestrator/scholarship-intelligence
 python scholarship_agent.py validate
+python scholarship_agent.py discover --max-pages 3  # somente links candidatos; não comprova edital aberto
 python -m unittest discover -s tests -v
 
 # Fora do repositório: copiar profile.example.json para um diretório privado e ajustar
@@ -85,7 +86,7 @@ Uma futura integração com Qwen local pode evitar enviar dados de documentos a 
 
 ## Próximos incrementos técnicos necessários
 
-1. Descoberta incremental e deduplicação de novas chamadas CAPES, CNPq, FAPESB, FAPES e PPGs.
+1. Ampliar a descoberta inicial de links oficiais já incluída no CLI com crawling incremental, cache, deduplicação, comparação histórica e conectores por agência.
 2. Ingestão PDF com Docling, captura de seções de requisitos/prazos/bolsas e citações por página.
 3. Baremas determinísticos com comprovantes privados e bloqueio de itens não pontuáveis.
 4. Integração autenticada opt-in com Google Drive/Gmail e cofre privado com controle de acesso.
