@@ -20,7 +20,7 @@ import time
 from urllib.request import Request, build_opener, HTTPRedirectHandler
 from urllib.robotparser import RobotFileParser
 
-VERSION = "0.1.0"
+VERSION = "0.2.0"
 STATES = (
     "DISCOVERED", "VERIFIED_OFFICIAL", "APPLICATION_DRAFT",
     "SUBMITTED_CONFIRMED", "ADMITTED", "FUNDING_SELECTED",
@@ -248,32 +248,9 @@ def discover_page(url: str, allowed_hosts: list[str]) -> dict:
 
 
 def public_grok_review(item: dict, model: str | None = None) -> str:
-    """Send ONLY public opportunity metadata to xAI; optional proprietary provider."""
-    key = os.environ.get("XAI_API_KEY")
-    if not key:
-        raise RuntimeError("XAI_API_KEY ausente — nenhum dado foi transmitido")
-    from urllib.request import urlopen
-    payload = {
-        "model": model or os.environ.get("XAI_MODEL", "grok-4.7"),
-        "messages": [
-            {"role": "system", "content":
-             "Analise exclusivamente os metadados públicos. Não infira elegibilidade, "
-             "datas ou bolsa sem edital primário. Liste lacunas e citações."},
-            {"role": "user", "content": json.dumps({
-                k: item.get(k) for k in (
-                    "title", "official_url", "deadline", "application_actor",
-                    "topics", "notes", "evidence_date")}, ensure_ascii=False)},
-        ],
-    }
-    req = Request("https://api.x.ai/v1/chat/completions",
-                  data=json.dumps(payload).encode("utf-8"),
-                  headers={"Authorization": f"Bearer {key}",
-                           "Content-Type": "application/json"},
-                  method="POST")
-    with urlopen(req, timeout=40) as response:
-        result = json.load(response)
-    return result["choices"][0]["message"]["content"]
-
+    """Review PUBLIC opportunity metadata using the current xAI Responses API."""
+    from llm_gateway import grok_public_review
+    return grok_public_review(item, model=model)
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Scholarship Intelligence — triagem auditável")
