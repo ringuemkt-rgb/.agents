@@ -49,3 +49,24 @@ cadeia de suprimento e política de processamento de dados antes de implantar.
 - FAPESB: https://www.fapesb.ba.gov.br/
 
 Lembrete: a presença de URL no catálogo não prova edital aberto.
+
+## MCP 2026 e Grok: implementação atual
+
+- SDK MCP Python **v2**: https://github.com/modelcontextprotocol/python-sdk
+  (`from mcp.server import MCPServer`). Atenção: `FastMCP` legado
+  (`mcp.server.fastmcp`) pertence à API v1 e não é usado pelo novo módulo.
+- xAI Grok: https://docs.x.ai/developers/model-capabilities/text/best-practices
+  (Responses API `/v1/responses`, Chat Completions legado).
+- Qwen3-8B (Apache-2.0): https://huggingface.co/Qwen/Qwen3-8B
+- BGE-M3 (MIT): https://huggingface.co/BAAI/bge-m3
+- Qwen3-Embedding-0.6B (Apache-2.0):
+  https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
+
+**Não confundir catálogo com instalação.** MCP local é um servidor de
+ferramentas restritas; modelos de texto podem produzir recomendações, mas
+não recebem shell, credenciais, acesso irrestrito à web ou submissão.
+
+Critérios de integração: manutenção ativa, licença, dados enviados,
+armazenamento, gastos, capacidade offline, vulnerabilidades, escape de
+prompt injection, compatibilidade, custo de inferência e testes em ambiente
+controlado. Não executar código novo de terceiros sem revisar a versão.
