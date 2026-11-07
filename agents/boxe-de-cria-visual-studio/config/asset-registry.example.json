@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "notice": "EXEMPLO VAZIO. Nenhum arquivo-mestre de logo ou fotografia foi enviado/validado neste repositório.",
+  "assets": [],
+  "required_fields_per_asset": [
+    "asset_id",
+    "type",
+    "origin",
+    "rights_status",
+    "usage_scope",
+    "sha256",
+    "reviewed_by"
+  ],
+  "logo_sha256_validation_required": true,
+  "private_consent_records_must_never_be_public": true
+}
