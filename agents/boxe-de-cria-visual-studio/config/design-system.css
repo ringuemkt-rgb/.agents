@@ -1,0 +1,55 @@
+/*
+ * BOXE DE CRIA — reference stylesheet for Lovable handoff.
+ * Not automatically installed, imported or deployed. Keep scoped to .bdc-theme.
+ * Font files not bundled. Official brand marks must be immutable external assets.
+ */
+.bdc-theme {
+  --bdc-ink: #0B0B0B;
+  --bdc-gold: #C9A24E;
+  --bdc-red: #B33939;
+  --bdc-paper: #F3F3F3;
+  --bdc-graphite: #242424;
+  --bdc-outline: #585858;
+  --bdc-radius: 12px;
+  --bdc-gutter: clamp(16px, 4vw, 48px);
+  --bdc-display: "Oswald", "Arial Narrow", Arial, sans-serif;
+  --bdc-body: "Inter", Arial, sans-serif;
+  background: var(--bdc-ink);
+  color: var(--bdc-paper);
+  font-family: var(--bdc-body);
+  line-height: 1.55;
+  color-scheme: dark;
+}
+.bdc-theme *, .bdc-theme *::before, .bdc-theme *::after { box-sizing: border-box; }
+.bdc-theme .bdc-container { width: min(100% - 2 * var(--bdc-gutter), 1320px); margin-inline: auto; }
+.bdc-theme h1, .bdc-theme h2, .bdc-theme h3 { font-family: var(--bdc-display); line-height: 1.17; letter-spacing: .01em; }
+.bdc-theme .bdc-kicker { font-size: .8rem; font-weight: 700; letter-spacing: .08em; color: var(--bdc-gold); text-transform: uppercase; }
+.bdc-theme .bdc-grid { display: grid; gap: 20px; grid-template-columns: repeat(12, minmax(0, 1fr)); }
+.bdc-theme .bdc-grid > * { grid-column: span 4; min-width: 0; }
+.bdc-theme .bdc-card { background: var(--bdc-graphite); border: 1px solid var(--bdc-outline); border-radius: var(--bdc-radius); overflow: hidden; }
+.bdc-theme .bdc-card img { display: block; width: 100%; height: auto; }
+.bdc-theme .bdc-article-title { font-size: clamp(1.25rem, 2.4vw, 2.5rem); overflow-wrap: anywhere; }
+.bdc-theme .bdc-sponsored {
+  display: inline-flex; padding: .25em .5em; border-radius: 4px;
+  border: 1px solid var(--bdc-gold); color: var(--bdc-gold);
+  font: 700 .75rem var(--bdc-body); text-transform: uppercase; letter-spacing: .04em;
+}
+.bdc-theme a { color: var(--bdc-paper); text-underline-offset: .2em; }
+.bdc-theme a:hover { color: var(--bdc-gold); }
+.bdc-theme :focus-visible { outline: 3px solid var(--bdc-gold); outline-offset: 3px; }
+.bdc-theme .bdc-record { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.bdc-theme .bdc-portrait { aspect-ratio: 4 / 5; background: var(--bdc-graphite); overflow: hidden; }
+.bdc-theme .bdc-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: var(--portrait-object-position, center); }
+@media (max-width: 900px) { .bdc-theme .bdc-grid > * { grid-column: span 6; } }
+@media (max-width: 600px) {
+  .bdc-theme .bdc-grid { gap: 12px; }
+  .bdc-theme .bdc-grid > * { grid-column: span 12; }
+  .bdc-theme .bdc-article-title { font-size: clamp(1.25rem, 6vw, 1.8rem); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bdc-theme *, .bdc-theme *::before, .bdc-theme *::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

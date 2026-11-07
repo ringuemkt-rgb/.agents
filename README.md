@@ -87,3 +87,7 @@ O pacote público não contém documentos pessoais, dados de saúde, credenciais
 ## BDC Media & Revenue Agent
 
 O agente editorial e comercial portátil para ChatGPT, Grok e outras IAs está em [`agents/boxe-de-cria-media-revenue/`](agents/boxe-de-cria-media-revenue/). Inclui skills de jornalismo, dados de atletas, SEO, AdSense, vendas, integrações e runtime Python testável. Nenhuma publicação ou campanha publicitária é acionada automaticamente.
+
+## BDC Visual Identity & Creative Studio
+
+Módulo oficial de identidade e produção gráfica do portal BOXE DE CRIA: [`agents/boxe-de-cria-visual-studio/`](agents/boxe-de-cria-visual-studio/). Inclui 10 skills, tokens de marca, sete presets responsivos, governança de logomarcas/fotografia, template SVG editável, checklist Lovable e testes de contraste/proveniência. Prompt portátil para ChatGPT e Grok. **Não inclui fotos ou logomarcas oficiais e não faz deploy do site.**

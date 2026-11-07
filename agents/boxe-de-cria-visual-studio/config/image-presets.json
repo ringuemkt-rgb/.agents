@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "presets": {
+    "news_hero": {
+      "width": 1600,
+      "height": 900,
+      "safe_area_percent": 7,
+      "purpose": "Imagem editorial hero 16:9, foto real com direitos ou ilustração marcada",
+      "contains_required_logo": false
+    },
+    "article_card": {
+      "width": 1200,
+      "height": 675,
+      "safe_area_percent": 7,
+      "purpose": "Card de notícia com imagem responsiva 16:9",
+      "contains_required_logo": false
+    },
+    "open_graph": {
+      "width": 1200,
+      "height": 630,
+      "safe_area_percent": 7,
+      "purpose": "Prévia de compartilhamento social",
+      "contains_required_logo": false
+    },
+    "social_portrait": {
+      "width": 1080,
+      "height": 1350,
+      "safe_area_percent": 8,
+      "purpose": "Post 4:5 com safe areas para mobile",
+      "contains_required_logo": true
+    },
+    "fighter_portrait": {
+      "width": 960,
+      "height": 1200,
+      "safe_area_percent": 7,
+      "purpose": "Ficha de atleta com foto real autorizada ou avatar neutro",
+      "contains_required_logo": false
+    },
+    "event_poster": {
+      "width": 1080,
+      "height": 1350,
+      "safe_area_percent": 8,
+      "purpose": "Card de evento com data e card verificados",
+      "contains_required_logo": true
+    },
+    "fisio_hero": {
+      "width": 1600,
+      "height": 900,
+      "safe_area_percent": 7,
+      "purpose": "Visualização científica e explicação biomecânica verificada",
+      "contains_required_logo": false
+    }
+  }
+}

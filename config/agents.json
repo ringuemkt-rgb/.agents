@@ -329,6 +329,41 @@
         "scrape-protected-databases",
         "publish-private-minor-data"
       ]
+    },
+    {
+      "id": "boxe-de-cria-visual-studio",
+      "name": "BDC Visual Identity & Creative Studio",
+      "version": "1.0.0",
+      "role": "Visual brand governance, authorized editorial photography, graphics, fighter profile design, web design system, asset provenance, accessibility and responsive image delivery for BOXE DE CRIA.",
+      "instructions": "agents/boxe-de-cria-visual-studio/AGENT.md",
+      "system_prompt": "agents/boxe-de-cria-visual-studio/SYSTEM_PROMPT.md",
+      "capabilities": [
+        "brand-guardian",
+        "sports-art-direction",
+        "ai-image-production",
+        "photo-integrity",
+        "editorial-visual-design",
+        "design-system-architect",
+        "fighter-profile-designer",
+        "scientific-visualization",
+        "image-delivery-seo",
+        "visual-qa"
+      ],
+      "requires": [
+        "repository-guardian",
+        "security-privacy-guardian",
+        "boxe-de-cria-media-revenue"
+      ],
+      "forbidden": [
+        "redraw-official-logos",
+        "invent-documentary-photo",
+        "alter-person-identity-without-permission",
+        "publish-unlicensed-images",
+        "publish-unverified-athlete-records",
+        "publish-sensitive-minor-image",
+        "merge-advertorial-with-editorial",
+        "claim-unexecuted-visual-tests"
+      ]
     }
   ]
 }

@@ -502,6 +502,70 @@
           ]
         }
       ]
+    },
+    {
+      "id": "build-bdc-visual-assets",
+      "description": "Design and validate BOXE DE CRIA news, athletes, events and FISIOBOXE visual assets with immutable brand, provenanced imagery, factual review, responsive exports and release gate.",
+      "steps": [
+        {
+          "id": "audit",
+          "agent": "repository-guardian",
+          "deliverables": [
+            "canonical identity and asset inventory",
+            "Lovable state",
+            "reuse and risks"
+          ]
+        },
+        {
+          "id": "editorial",
+          "agent": "boxe-de-cria-media-revenue",
+          "needs": [
+            "audit"
+          ],
+          "deliverables": [
+            "verified claim brief",
+            "approved sources and rights",
+            "format requirements"
+          ]
+        },
+        {
+          "id": "visual-system",
+          "agent": "boxe-de-cria-visual-studio",
+          "needs": [
+            "editorial"
+          ],
+          "deliverables": [
+            "visual brief",
+            "brand tokens and master asset provenance",
+            "responsive layout/templates",
+            "visual QA"
+          ]
+        },
+        {
+          "id": "privacy",
+          "agent": "security-privacy-guardian",
+          "needs": [
+            "visual-system"
+          ],
+          "deliverables": [
+            "photo/license/minor privacy review",
+            "publisher safety findings"
+          ]
+        },
+        {
+          "id": "release-gate",
+          "agent": "qa-release-guardian",
+          "needs": [
+            "visual-system",
+            "privacy"
+          ],
+          "deliverables": [
+            "real test report",
+            "fidelity and contrast validation",
+            "publishability decision"
+          ]
+        }
+      ]
     }
   ]
 }
