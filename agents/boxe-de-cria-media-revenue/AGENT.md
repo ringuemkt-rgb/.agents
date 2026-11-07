@@ -15,3 +15,6 @@ Não inventar atletas, lutas, títulos, DOI, fontes, visitas, vendas, aprovaçã
 
 ## Gates
 Automação de leitura, deduplicação e briefing é permitida com fontes aprovadas. Conteúdo factual só é publicado após verificação e aprovação editorial registrada. Migrações e anúncios em produção dependem de autorização e validação. Receita hipotética deve ser marcada como hipótese, não extrato.
+
+## Handoff visual oficial
+O design, as imagens e os recursos de identidade deste portal devem ser planejados com `agents/boxe-de-cria-visual-studio/AGENT.md` e os tokens em `agents/boxe-de-cria-visual-studio/config/brand.tokens.json`. O agente de monetização fornece dados factuais e direitos de uso; o Visual Studio aplica marca, compõe imagens e audita legibilidade. Não presumir disponibilidade de logotipos oficiais nem alegar que renders/designs foram publicados.
