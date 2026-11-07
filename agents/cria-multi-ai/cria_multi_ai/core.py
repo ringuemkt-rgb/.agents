@@ -149,6 +149,33 @@ def respond(question: str, evidence: list[dict], provider: str = 'none') -> dict
     return {"status": "generated", "answer": answer, "sources": citations, "model": model}
 
 
+
+def model_status() -> dict:
+    """Read-only local availability probe. Never downloads weights or calls paid APIs."""
+    import urllib.request
+    ollama = {"server": False, "model": "qwen3.5:4b", "installed": False}
+    try:
+        with urllib.request.urlopen("http://127.0.0.1:11434/api/tags", timeout=1.5) as res:
+            data = json.load(res)
+        ollama["server"] = True
+        ollama["installed"] = any(
+            str(model.get("name", "")).split("-")[0].startswith("qwen3.5:4b")
+            for model in data.get("models", []) if isinstance(model, dict)
+        )
+    except (OSError, ValueError, TimeoutError):
+        pass
+    home = Path(os.environ.get("HF_HOME", str(Path.home() / ".cache/huggingface")))
+    snapshots = home / "hub" / "models--BAAI--bge-m3" / "snapshots"
+    cached = snapshots.is_dir() and any(p.is_dir() for p in snapshots.iterdir())
+    return {
+        "ollama": ollama,
+        "bge_m3_cache_dir_present": bool(cached),
+        "hf_token_env_present": bool(os.environ.get("HF_TOKEN")),
+        "remote_inference_enabled": os.environ.get("CRIA_ENABLE_HF_INFERENCE") == "YES",
+        "all_models_running": False,  # this is a probe, not a model inference execution
+        "billed_calls": 0,
+    }
+
 def health() -> dict:
     with tempfile.TemporaryDirectory() as tmp:
         memory = Memory(str(Path(tmp) / 'health.sqlite'))
@@ -161,14 +188,35 @@ def health() -> dict:
 
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description='CRIA Multi-AI: offline-first document RAG')
-    parser.add_argument('command', choices=['health', 'add', 'search', 'ask'])
+    parser.add_argument('command', choices=['health', 'add', 'search', 'ask', 'snapshot', 'restore', 'cloud-upload', 'cloud-list', 'cloud-download', 'keygen', 'model-status'])
     parser.add_argument('value', nargs='?', default='')
     parser.add_argument('--db', default=str(Path.home() / '.local/share/cria-multi-ai/memory.sqlite'))
     parser.add_argument('--provider', choices=['none', 'ollama', 'hf'], default='none')
+    parser.add_argument('--cloud-folder', default=os.getenv('CRIA_DRIVE_FOLDER_ID', ''))
     parser.add_argument('--embed-local', action='store_true', help='run BGE-M3 locally (optional download)')
     args = parser.parse_args(argv)
     if args.command == 'health':
         report = health()
+    elif args.command == 'model-status':
+        report = model_status()
+    elif args.command == 'keygen':
+        from .cloud import keygen
+        report = {'key': keygen(), 'instruction': 'Store in a password manager, never in Git or Google Drive'}
+    elif args.command in {'snapshot', 'restore', 'cloud-upload', 'cloud-list', 'cloud-download'}:
+        from .cloud import snapshot, restore, drive_upload, drive_list, drive_download
+        if args.command == 'snapshot':
+            report = snapshot(args.db, args.value)
+        elif args.command == 'restore':
+            report = restore(args.db, args.value)
+        elif args.command == 'cloud-list':
+            report = {'files': drive_list(args.cloud_folder, os.getenv('GOOGLE_DRIVE_ACCESS_TOKEN', ''))}
+        elif args.command == 'cloud-upload':
+            report = drive_upload(args.value, args.cloud_folder, os.getenv('GOOGLE_DRIVE_ACCESS_TOKEN', ''))
+        else:
+            remote_id, _, local_path = args.value.partition(':')
+            if not remote_id or not local_path:
+                raise ValueError('For cloud-download, pass ID:local-path.enc')
+            report = drive_download(remote_id, os.getenv('GOOGLE_DRIVE_ACCESS_TOKEN', ''), local_path)
     else:
         path = Path(args.db).expanduser()
         path.parent.mkdir(parents=True, exist_ok=True)

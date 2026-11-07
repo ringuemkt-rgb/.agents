@@ -1,0 +1,13 @@
+# Dados e credenciais nunca devem ser versionados
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.enc
+*.env
+.env*
+*.key
+*.pem
+!*.example
+__pycache__/
+.pytest_cache/
