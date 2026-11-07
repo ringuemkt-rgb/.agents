@@ -296,6 +296,39 @@
         "equate-working-software-with-scientific-validation",
         "close-gate-without-evidence"
       ]
+    },
+    {
+      "id": "boxe-de-cria-media-revenue",
+      "name": "BDC Media & Revenue Agent",
+      "version": "1.0.0",
+      "role": "Portable, evidence-first combat-sports media, fighter data, SEO, AdSense and commercial operations for BOXE DE CRIA.",
+      "instructions": "agents/boxe-de-cria-media-revenue/AGENT.md",
+      "system_prompt": "agents/boxe-de-cria-media-revenue/SYSTEM_PROMPT.md",
+      "capabilities": [
+        "news-radar",
+        "fact-checking",
+        "editorial-qa",
+        "fighter-records",
+        "seo-search",
+        "adsense",
+        "commercial",
+        "finance",
+        "legal-privacy",
+        "lovable-engineering",
+        "model-portability",
+        "qa-release"
+      ],
+      "requires": [
+        "repository-guardian",
+        "security-privacy-guardian"
+      ],
+      "forbidden": [
+        "publish-unverified-content",
+        "fake-sports-records",
+        "invalid-adsense-traffic",
+        "scrape-protected-databases",
+        "publish-private-minor-data"
+      ]
     }
   ]
 }
