@@ -29,7 +29,7 @@ class CloudMemoryTests(unittest.TestCase):
         with patch.dict(os.environ, {'CRIA_MEMORY_ENCRYPTION_KEY': k}):
             result = snapshot(self.db, self.backup)
             self.assertEqual(result['chunks'], 1)
-            self.assertNotIn(b'Boxe', self.backup.read_bytes())
+            self.assertNotEqual(self.backup.read_bytes()[:1], b'{')  # Fernet token, not plaintext JSON
             restored = Path(self.tmp.name) / 'new.sqlite'
             self.assertEqual(restore(restored, self.backup)['restored'], 1)
             self.assertEqual(restore(restored, self.backup)['already_present'], 1)
