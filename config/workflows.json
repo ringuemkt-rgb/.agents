@@ -440,6 +440,68 @@
           ]
         }
       ]
+    },
+    {
+      "id": "build-bdc-media-revenue",
+      "description": "Develop evidence-first BOXE DE CRIA news, Brazilian fighter directory and legitimate monetization with human publication gates.",
+      "steps": [
+        {
+          "id": "audit",
+          "agent": "repository-guardian",
+          "deliverables": [
+            "repo inventory",
+            "existing Lovable/GitHub status",
+            "risks"
+          ]
+        },
+        {
+          "id": "plan",
+          "agent": "product-architect",
+          "needs": [
+            "audit"
+          ],
+          "deliverables": [
+            "scoped feature spec",
+            "acceptance criteria",
+            "financial assumptions"
+          ]
+        },
+        {
+          "id": "build",
+          "agent": "boxe-de-cria-media-revenue",
+          "needs": [
+            "plan"
+          ],
+          "deliverables": [
+            "tested data/editorial implementation",
+            "audit logs",
+            "revenue model"
+          ]
+        },
+        {
+          "id": "security",
+          "agent": "security-privacy-guardian",
+          "needs": [
+            "build"
+          ],
+          "deliverables": [
+            "privacy and safety review",
+            "adsense compliance checks"
+          ]
+        },
+        {
+          "id": "release-gate",
+          "agent": "qa-release-guardian",
+          "needs": [
+            "build",
+            "security"
+          ],
+          "deliverables": [
+            "actual tests",
+            "go/no-go and blockers"
+          ]
+        }
+      ]
     }
   ]
 }

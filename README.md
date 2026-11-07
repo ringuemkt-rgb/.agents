@@ -83,3 +83,7 @@ O pacote portátil vive em:
 Use `SYSTEM_PROMPT.md` para ativação completa em outra plataforma, `ACTIVATE.md` para ativação compacta e `PRIVATE_CONTEXT_TEMPLATE.md` para fornecer dados do candidato **somente em ambiente privado**.
 
 O pacote público não contém documentos pessoais, dados de saúde, credenciais, proposta viva de seleção ou outros dados sensíveis.
+
+## BDC Media & Revenue Agent
+
+O agente editorial e comercial portátil para ChatGPT, Grok e outras IAs está em [`agents/boxe-de-cria-media-revenue/`](agents/boxe-de-cria-media-revenue/). Inclui skills de jornalismo, dados de atletas, SEO, AdSense, vendas, integrações e runtime Python testável. Nenhuma publicação ou campanha publicitária é acionada automaticamente.
