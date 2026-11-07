@@ -1,0 +1,50 @@
+name: CRIA Multi-AI offline CI
+
+on:
+  pull_request:
+    paths:
+      - 'agents/cria-multi-ai/**'
+      - '.github/workflows/cria-multi-ai.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'agents/cria-multi-ai/**'
+      - '.github/workflows/cria-multi-ai.yml'
+  schedule:
+    - cron: '23 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cria-multi-ai-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    defaults:
+      run:
+        working-directory: agents/cria-multi-ai
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Unit tests (no remote inference)
+        run: python -m unittest discover -s tests -v
+      - name: Health check (no remote inference)
+        run: python -m cria_multi_ai health > health.json
+      - name: Check health status
+        run: python -c "import json; assert json.load(open('health.json'))['status'] == 'pass'"
+      - name: Upload offline health report
+        uses: actions/upload-artifact@v4
+        with:
+          name: cria-multi-ai-health-${{ matrix.python-version }}
+          path: agents/cria-multi-ai/health.json
+          retention-days: 7
