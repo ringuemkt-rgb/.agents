@@ -30,7 +30,7 @@ def render_template(preset: str, title: str, section: str, out: Path) -> dict:
     title_font = max(27, round(w * (0.053 if w >= 1200 else 0.062)))
     if h > w:
         title_font = round(title_font * 0.93)
-    line_count = min(3, max(1, int(avail // (title_font * 0.56))))
+    line_count = max(12, min(42, int(avail // (title_font * 0.56))))
     # Conservative width bound for uppercase display text and mobile previews.
     lines = wrap(title, width=line_count, break_long_words=False)
     if len(lines) > 3:
