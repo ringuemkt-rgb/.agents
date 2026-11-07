@@ -1,0 +1,42 @@
+name: BDC Visual Studio CI
+
+on:
+  pull_request:
+    paths:
+      - "agents/boxe-de-cria-visual-studio/**"
+      - "config/agents.json"
+      - "config/workflows.json"
+      - ".github/workflows/bdc-visual-studio.yml"
+  push:
+    branches: [main]
+    paths:
+      - "agents/boxe-de-cria-visual-studio/**"
+      - "config/agents.json"
+      - "config/workflows.json"
+
+permissions:
+  contents: read
+
+jobs:
+  verify-visual-studio:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run unit tests
+        run: python -m unittest discover -s agents/boxe-de-cria-visual-studio/tests -v
+      - name: Brand tokens, presets and empty registry
+        run: |
+          python agents/boxe-de-cria-visual-studio/runtime/visual_qa.py tokens
+          python agents/boxe-de-cria-visual-studio/runtime/visual_qa.py presets
+          python agents/boxe-de-cria-visual-studio/runtime/visual_qa.py registry --manifest agents/boxe-de-cria-visual-studio/config/asset-registry.example.json
+      - name: Build editable SVG proof and manifest
+        run: |
+          python agents/boxe-de-cria-visual-studio/runtime/template_gen.py --preset open_graph --title "Treinamento e tecnica no boxe" --section "FISIOBOXE" --output var/proof.svg
+          python -c "import xml.etree.ElementTree as ET; ET.parse('var/proof.svg')"
+          python -c "import json; d=json.load(open('var/proof.manifest.json')); assert d['state']=='template_not_publishable'"
