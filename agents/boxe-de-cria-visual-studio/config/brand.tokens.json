@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "brand": "BOXE DE CRIA",
+  "design_system_version": "1.0.0",
+  "colors": {
+    "ink": "#0B0B0B",
+    "gold": "#C9A24E",
+    "red": "#B33939",
+    "paper": "#F3F3F3",
+    "graphite": "#242424"
+  },
+  "semantic": {
+    "background": "ink",
+    "background_secondary": "graphite",
+    "text_primary": "paper",
+    "accent": "gold",
+    "accent_secondary": "red",
+    "text_on_gold": "ink",
+    "text_on_red": "paper"
+  },
+  "typography": {
+    "display": {
+      "preferred": "Oswald",
+      "fallback": [
+        "Arial Narrow",
+        "Arial",
+        "sans-serif"
+      ]
+    },
+    "body": {
+      "preferred": "Inter",
+      "fallback": [
+        "Arial",
+        "sans-serif"
+      ]
+    },
+    "display_alternative": "Bebas Neue",
+    "no_bundled_font_files": true
+  },
+  "layout": {
+    "grid_columns": 12,
+    "min_safe_area_percent": 7,
+    "body_contrast_ratio_min": 4.5,
+    "large_text_contrast_ratio_min": 3,
+    "default_mobile_breakpoints_px": [
+      320,
+      390,
+      768,
+      1024
+    ]
+  },
+  "policies": {
+    "logo": "original_asset_immutable_sha256_verified",
+    "real_photo": "preserve_identity_context_and_rights",
+    "fictional_news_photo": "prohibited",
+    "verified_results": "only_from_editorial_approved_sources",
+    "scientific_diagrams": "expert_review_required",
+    "minor_image": "sensitive_approval_required"
+  }
+}
