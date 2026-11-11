@@ -96,3 +96,8 @@ Módulo oficial de identidade e produção gráfica do portal BOXE DE CRIA: [`ag
 ## SATOSHI CRIA Growth OS
 
 Agente portátil de marketing e captação de alunos de artes marciais em Guarapari: [agents/satoshi-cria-growth-os/](agents/satoshi-cria-growth-os/). Inclui validação determinística de horários e assinatura profissional, regras de privacidade e contratos opcionais de integração com Grok e Manus. **Sem credenciais, dados reais de alunos ou arquivos-mestres de marcas no repositório público.**
+
+
+## CRIA Apparel Studio — camisas e uniformes de Boxe
+
+Extensão do [BDC Visual Identity & Creative Studio](agents/boxe-de-cria-visual-studio/skills/apparel-design/SKILL.md): linhas para alunos, treinadores e coleções premium, auditoria de fidelidade da logo, pré-impressão e testes com bloqueio de produção sem arquivo-mestre autorizado e prova física.

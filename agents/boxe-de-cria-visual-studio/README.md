@@ -39,3 +39,17 @@ O SVG é **layout editável com espaços reservados**, nunca notícia pronta nem
 
 ## Limites
 As skills são contratos reutilizáveis por modelos de IA; instalar apenas estes arquivos não disponibiliza motores de renderização, Adobe, Penpot ou acesso Lovable. Render, compressão WebP/AVIF, testes visuais com navegador e publicação exigem ferramentas e execução reais.
+
+
+## CRIA APPAREL — Design de camisas e uniformes
+
+A [skill de vestuário](skills/apparel-design/SKILL.md) define as linhas Alunos, Treinador e Premium, além de métodos de estampa, matriz visual e auditoria de produção. Manual: [APPAREL_MANUAL.md](docs/APPAREL_MANUAL.md); ficha para fornecedores: [PRODUCTION_BRIEF.md](templates/PRODUCTION_BRIEF.md).
+
+Rodar QA sem bibliotecas externas:
+
+```bash
+python agents/boxe-de-cria-visual-studio/runtime/apparel_qa.py --input agents/boxe-de-cria-visual-studio/examples/student_training_tee.json --gate concept
+python -m unittest discover -s agents/boxe-de-cria-visual-studio/tests -v
+```
+
+**Mockup != arte pronta de estamparia.** Somente produção autorizada com arquivo original rastreado e amostra física aprovada. Nunca salvar assets privados de marca no GitHub público.
