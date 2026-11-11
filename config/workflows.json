@@ -613,6 +613,54 @@
           ]
         }
       ]
+    },
+    {
+      "id": "plan-boxing-class",
+      "description": "Create deterministic, source-auditable non-contact boxing lesson materials with human approval.",
+      "steps": [
+        {
+          "id": "source-audit",
+          "agent": "repository-guardian",
+          "deliverables": [
+            "public/private source boundaries confirmed",
+            "class time facts checked"
+          ]
+        },
+        {
+          "id": "privacy-safety",
+          "agent": "security-privacy-guardian",
+          "needs": [
+            "source-audit"
+          ],
+          "deliverables": [
+            "no PII/licensed assets",
+            "non-contact default"
+          ]
+        },
+        {
+          "id": "lesson",
+          "agent": "satoshi-cria-growth-os",
+          "needs": [
+            "privacy-safety"
+          ],
+          "deliverables": [
+            "six-stage plan",
+            "original SVG illustration",
+            "evaluation rubric",
+            "source limitations"
+          ]
+        },
+        {
+          "id": "final-review",
+          "agent": "qa-release-guardian",
+          "needs": [
+            "lesson"
+          ],
+          "deliverables": [
+            "tests and human coach review decision"
+          ]
+        }
+      ]
     }
   ]
 }

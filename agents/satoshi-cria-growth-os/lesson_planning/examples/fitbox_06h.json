@@ -1,0 +1,14 @@
+{
+  "class_id": "fitbox-boxe-matutino",
+  "start_time": "06:00",
+  "duration_min": 40,
+  "week": 1,
+  "session": 1,
+  "population": "adultos iniciantes",
+  "contact": false,
+  "equipment": [
+    "marcação no chão",
+    "cones",
+    "alvo de espuma"
+  ]
+}

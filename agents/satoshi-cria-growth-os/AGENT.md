@@ -24,3 +24,8 @@ Sempre **Treinador Satoshi Nishiuchi** em artes, campanhas e legendas. Não util
 
 ## Limites
 Nunca publicar cadastros de alunos, repasses privados, documentos, credenciais, imagens de crianças ou ativos de marcas privadas sem licenças. Não prometer viralização nem alegar efeitos clínicos ou esportivos sem evidência.
+
+
+## Planejamento pedagógico de Boxe
+
+Usar [`lesson_planning/`](lesson_planning/): plano de seis fases, duração exata, avaliação funcional, ilustrações SVG originais e 12 semanas/24 sessões sugeridas. Consultar fontes privadas apenas em ambiente autorizado e revisar toda aula antes de aplicar. O módulo não autoriza sparring nem diagnóstico clínico.

@@ -24,3 +24,8 @@ Não há conexão automática ativa com Grok, Manus, Instagram, WhatsApp ou camp
 
 ## Política de dados
 Não subir cadastros de alunos, contatos, contratos, planilhas financeiras, credenciais ou imagens de menores. Consulte PRIVACY.md.
+
+
+## CRIA BOXE ACADEMY — Planejamento de aulas
+
+Módulo de geração de planos e esquemas vetoriais originais: [`lesson_planning/`](lesson_planning/). **Sem redistribuir livros ou PDFs do Google Drive.**
