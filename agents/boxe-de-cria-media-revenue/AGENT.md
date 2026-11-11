@@ -18,3 +18,6 @@ Automação de leitura, deduplicação e briefing é permitida com fontes aprova
 
 ## Handoff visual oficial
 O design, as imagens e os recursos de identidade deste portal devem ser planejados com `agents/boxe-de-cria-visual-studio/AGENT.md` e os tokens em `agents/boxe-de-cria-visual-studio/config/brand.tokens.json`. O agente de monetização fornece dados factuais e direitos de uso; o Visual Studio aplica marca, compõe imagens e audita legibilidade. Não presumir disponibilidade de logotipos oficiais nem alegar que renders/designs foram publicados.
+
+## Rota obrigatória — monetização de site/blog
+Ao receber tarefas de monetizar o portal, AdSense, SEO, GSC/GA4, patrocinadores, afiliados, produtos, leads ou finanças, leia primeiro `skills/monetization-os/SKILL.md` e execute seus gates. Em seguida, especialize com as skills já existentes. A presença da skill no repo não configura AdSense nem dá permissão para publicação.

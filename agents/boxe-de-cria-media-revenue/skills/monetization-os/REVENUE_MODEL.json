@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "currency": "BRL",
+  "period": "monthly",
+  "status": "hypothetical_not_observed",
+  "assumptions": {
+    "base_pageviews": 10000,
+    "eligible_share": 0.8,
+    "page_rpm_scenarios_brl": {
+      "low": 2,
+      "base": 5,
+      "high": 10
+    },
+    "guide_price": 39,
+    "technical_analysis_price": 79,
+    "personal_package_price": 240,
+    "sponsor_package_price": 200
+  },
+  "formulae": {
+    "eligible_pageviews": "pageviews * eligible_share",
+    "ads": "eligible_pageviews * page_rpm_brl / 1000",
+    "products": "paid_units * product_price",
+    "sponsors": "received_sponsor_contracts * contractual_value",
+    "total_revenue": "ads_real + products_paid + services_paid + sponsor_cash_received + affiliate_cash_received",
+    "operating_result": "total_revenue - variable_costs - fixed_costs - taxes"
+  },
+  "mandatory_fields": [
+    "source",
+    "observed_period",
+    "data_freshness",
+    "attribution",
+    "payment_status",
+    "refunds",
+    "fees",
+    "costs",
+    "confidence"
+  ],
+  "prohibited": [
+    "invented_adsense_income",
+    "fabricated_ad_clicks",
+    "unverified_sales",
+    "unlicensed_fight_media",
+    "publish_without_review"
+  ],
+  "workflow_targets": {
+    "weekly": "SEO + content quality + leads",
+    "monthly": "revenue reconciliation + page RPM + offers",
+    "quarterly": "access rights + editorial legal + portfolio performance"
+  },
+  "notes": [
+    "Assumptions are examples, not quotes, actual CPM/RPM, seller prices or promises.",
+    "Use verified pageviews and realized revenue before replacing hypothetical values.",
+    "Revenue may be zero even when pageviews are positive.",
+    "All experiments depend on consent and rights."
+  ],
+  "sources": [
+    "https://support.google.com/adsense/answer/48182?hl=pt-BR",
+    "https://support.google.com/adsense/answer/91205?hl=pt-BR",
+    "https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=pt-br"
+  ]
+}
