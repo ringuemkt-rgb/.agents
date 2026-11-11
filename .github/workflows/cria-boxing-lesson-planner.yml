@@ -1,0 +1,26 @@
+name: CRIA Boxing Lesson Planner CI
+on:
+  push:
+    paths:
+      - 'agents/satoshi-cria-growth-os/lesson_planning/**'
+      - 'agents/satoshi-cria-growth-os/public_facts.json'
+      - '.github/workflows/cria-boxing-lesson-planner.yml'
+  pull_request:
+    paths:
+      - 'agents/satoshi-cria-growth-os/lesson_planning/**'
+      - 'agents/satoshi-cria-growth-os/public_facts.json'
+      - '.github/workflows/cria-boxing-lesson-planner.yml'
+jobs:
+  deterministic-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Unit tests
+        run: python -m unittest discover -s agents/satoshi-cria-growth-os/lesson_planning/tests -v
+      - name: Sample generation smoke
+        run: |
+          python agents/satoshi-cria-growth-os/lesson_planning/src/lesson_planner.py --input agents/satoshi-cria-growth-os/lesson_planning/examples/fitbox_06h.json --output /tmp/aula
+          python -c "import json; assert json.load(open('/tmp/aula/plan.json'))['end']=='06:40'"
