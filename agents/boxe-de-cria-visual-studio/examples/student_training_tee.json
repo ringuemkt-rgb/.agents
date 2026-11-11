@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "collection": "CRIA TRAINING 01",
+  "brand": "BOXE DE CRIA",
+  "audience": "alunos",
+  "product": "camiseta",
+  "cut": "unissex",
+  "visual": {
+    "base_color": "ink",
+    "accent_colors": [
+      "gold",
+      "paper"
+    ],
+    "logo_mode": "original_unmodified",
+    "logo_master": {
+      "status": "pendente",
+      "sha256": null,
+      "approved_for_use": false
+    },
+    "front": "Logo completo centrado com respiro; dimensões pendentes de prova de tamanho",
+    "back": "TURMA DE BOXE; assinatura curta opcional (aprovada pela marca)",
+    "secondary_marks": "nenhuma até obter arte auxiliar oficial"
+  },
+  "manufacturing": {
+    "fabric_composition": null,
+    "fabric_gsm": null,
+    "printing_method": "a_confirmar",
+    "color_proof_approved": false,
+    "size_chart_approved": false,
+    "physical_sample_approved": false,
+    "supplier": null
+  },
+  "claims": [],
+  "third_party_brands": [],
+  "third_party_approvals": [],
+  "status": "CONCEITO",
+  "notes": "Sem arquivos da marca, fotos, contatos, custos, nomes de alunos ou segredos. Mockup não é arte pronta para fabricar."
+}

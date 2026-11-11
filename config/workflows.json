@@ -661,6 +661,56 @@
           ]
         }
       ]
+    },
+    {
+      "id": "build-bdc-apparel",
+      "description": "Create BOXE DE CRIA apparel concepts, technical pack drafts, and printed garment readiness checks without exposing brand masters or supplier private data.",
+      "steps": [
+        {
+          "id": "audit",
+          "agent": "repository-guardian",
+          "deliverables": [
+            "canonical tokens and master logo availability",
+            "product intent"
+          ]
+        },
+        {
+          "id": "brand",
+          "agent": "boxe-de-cria-visual-studio",
+          "needs": [
+            "audit"
+          ],
+          "deliverables": [
+            "original logo policy",
+            "front/back design",
+            "source/provenance state",
+            "textile method recommendation"
+          ]
+        },
+        {
+          "id": "privacy",
+          "agent": "security-privacy-guardian",
+          "needs": [
+            "brand"
+          ],
+          "deliverables": [
+            "third party brand rights",
+            "no client/private production data committed"
+          ]
+        },
+        {
+          "id": "release",
+          "agent": "qa-release-guardian",
+          "needs": [
+            "privacy"
+          ],
+          "deliverables": [
+            "concept or print gate",
+            "test report",
+            "human production approval"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,40 @@
+name: BDC Apparel Studio CI
+on:
+  push:
+    paths:
+      - 'agents/boxe-de-cria-visual-studio/skills/apparel-design/**'
+      - 'agents/boxe-de-cria-visual-studio/docs/APPAREL_MANUAL.md'
+      - 'agents/boxe-de-cria-visual-studio/templates/PRODUCTION_BRIEF.md'
+      - 'agents/boxe-de-cria-visual-studio/runtime/apparel_qa.py'
+      - 'agents/boxe-de-cria-visual-studio/tests/test_apparel_qa.py'
+      - 'agents/boxe-de-cria-visual-studio/examples/student_training_tee.json'
+      - '.github/workflows/bdc-apparel-studio.yml'
+  pull_request:
+    paths:
+      - 'agents/boxe-de-cria-visual-studio/skills/apparel-design/**'
+      - 'agents/boxe-de-cria-visual-studio/docs/APPAREL_MANUAL.md'
+      - 'agents/boxe-de-cria-visual-studio/templates/PRODUCTION_BRIEF.md'
+      - 'agents/boxe-de-cria-visual-studio/runtime/apparel_qa.py'
+      - 'agents/boxe-de-cria-visual-studio/tests/test_apparel_qa.py'
+      - 'agents/boxe-de-cria-visual-studio/examples/student_training_tee.json'
+      - '.github/workflows/bdc-apparel-studio.yml'
+jobs:
+  QA:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Apparel unit tests
+        run: python -m unittest discover -s agents/boxe-de-cria-visual-studio/tests -p 'test_apparel_qa.py' -v
+      - name: Concept validation succeeds
+        run: python agents/boxe-de-cria-visual-studio/runtime/apparel_qa.py --input agents/boxe-de-cria-visual-studio/examples/student_training_tee.json --gate concept
+      - name: Print-ready gate rejects incomplete master
+        run: |
+          if python agents/boxe-de-cria-visual-studio/runtime/apparel_qa.py --input agents/boxe-de-cria-visual-studio/examples/student_training_tee.json --gate print; then
+            echo "Error: incomplete concept was erroneously accepted as print-ready"
+            exit 1
+          else
+            echo "Correctly blocked missing master/specimen"
+          fi
