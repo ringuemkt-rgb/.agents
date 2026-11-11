@@ -89,3 +89,21 @@ O mockup de alunos estava visualmente alinhado pela paleta e pela apresentação
 - retirar promessas de "tecido respirável / alta durabilidade" sem amostra e ficha de malha;
 - não afirmar que sleeve-icon ou etiqueta sejam arte oficial;
 - obter arquivo transparente/vetorial, fornecedor, modelagem e lote antes da ficha final.
+
+## 10. Complemento visual recebido — 11/11/2026
+
+A nova série de dez páginas introduz expressamente o **ratel** como símbolo, grafismo de luvas vermelhas suspensas, marcadores de manga e nuca e uma linha mais urbana `FIGHTWEAR`. A marca continua sujeita à fidelidade do arquivo original — não recriar símbolo a partir de screenshot.
+
+**Status das páginas:** referência fornecida pelo usuário, não identidade homologada para impressão. A auditoria de versões e os dez hashes estão em [APPAREL_REFERENCE_AUDIT_2026-11.md](APPAREL_REFERENCE_AUDIT_2026-11.md); conjuntos de cores e rotas têxteis em [apparel.reference-manual.json](../config/apparel.reference-manual.json).
+
+**Dois produtos alternativos, não combinações:**
+- Uniforme técnico (poliéster proposto, gramatura 150–160 g/m² ilustrada, sublimação total). Confirmar se o fabricante produz painéis coloridos antes da costura e verificar prova de cor.
+- Camiseta lifestyle algodão penteado 30/1 proposta, serigrafia. Confirmar composição, gramatura verdadeira, tinta, registro e lote de produção.
+
+**Variações de logo:** ratel branco isolado, ratel dourado (render ilustrativo), assinatura vertical com Fightwear, assinatura horizontal de etiqueta e versão antiga com coroa. Escolher lockup e master oficial caso a caso; não sintetizar fusão ou trocar caracteres.
+
+**Dimensões:** nuca ~5,5 cm, manga ~4 cm, redução em torno de 15 mm para símbolo impresso/45 px digital são valores **representados nas imagens**, não parâmetros gerais finais. Aplicar teste físico, não presumir legibilidade em bordado.
+
+**Linguagem:** `Nascido da rua. Forjado na disciplina.` e `Feito para vencer` aparecem como propostas editoriais; não vender como slogans formalmente aprovados sem verificar. `RATEL SPORTS` e `FIGHTWEAR` também precisam de hierarquia clara de marca.
+
+**Nota de segurança de arquivo:** os PNGs de referência estão anexados na conversa original e não foram enviados ao repositório público. O hash documenta as imagens e não demonstra disponibilidade futura nem garante que o master exista.

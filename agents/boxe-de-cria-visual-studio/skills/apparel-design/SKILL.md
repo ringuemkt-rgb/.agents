@@ -1,7 +1,7 @@
 ---
 name: boxe-de-cria-apparel-design
 description: Identidade, modelagem visual, mockup, briefing técnico e auditoria para camisas, uniformes de alunos, regatas, rashguards e coleções BOXE DE CRIA. Preserve o logo original e só libere para produção após validações.
-version: 1.0.0
+version: 1.1.0
 ---
 
 # BOXE DE CRIA — Apparel Design Master Skill
@@ -46,3 +46,12 @@ Brief + arte conceitual (somente se pedida) + vistas frente/costas + ficha técn
 
 ## Compatibilidade
 Instruções Markdown portáveis para ChatGPT, Grok e Manus. Isso não conecta APIs nem instala motores gráficos. Para conteúdo de marketing use o Growth OS; para editorial use o Visual Studio. Não atribua sucesso de fabricação a mockups sintéticos.
+
+## Extensão — manual visual fornecido (11/11/2026)
+- Ler [a perícia das dez referências](../../docs/APPAREL_REFERENCE_AUDIT_2026-11.md) e o [manifesto das variantes](../../config/apparel.reference-manual.json) antes de desenhar qualquer camisa. Essas imagens são referência, não original vetorial de produção.
+- Símbolo identificado nas referências: **ratel**. Preservar olho, focinho, curva e recortes sem trocar a espécie, fazer reinterpretção por IA ou distorcer geometria.
+- Duas paletas candidatas conflitantes: NÃO substituir os tokens canônicos até aprovação explícita da nova versão. Nunca misturar vermelho de uma versão com tons de outra por acaso.
+- Distinguir assinatura `BOXE DE CRIA`, assinatura `FIGHTWEAR`, ratel isolado, selo da nuca e manga. Requer arquivo original aprovado para cada uso.
+- Manter **duas rotas de fabricação independentes**: poliéster dry-fit + sublimação total, versus algodão + serigrafia, com fichas e orçamentos separados.
+- As dimensões e gramaturas apresentadas nas imagens são **hipóteses do manual visual**, não especificações comprovadas de fábrica. Revalidar com confecção, tamanho e prova física.
+- Páginas do manual apresentam distorções de microtexto, instruções inconsistentes e logos de conceito; refazer todo texto como tipografia editável e usar somente arte original.

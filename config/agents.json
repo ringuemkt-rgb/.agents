@@ -333,7 +333,7 @@
     {
       "id": "boxe-de-cria-visual-studio",
       "name": "BDC Visual Identity & Creative Studio",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "role": "Visual brand governance, authorized editorial photography, graphics, fighter profile design, web design system, asset provenance, accessibility and responsive image delivery for BOXE DE CRIA.",
       "instructions": "agents/boxe-de-cria-visual-studio/AGENT.md",
       "system_prompt": "agents/boxe-de-cria-visual-studio/SYSTEM_PROMPT.md",
@@ -352,7 +352,11 @@
         "boxing-class-uniform-production",
         "textile-print-preflight",
         "original-logo-sha256-gate",
-        "shirt-front-back-spec"
+        "shirt-front-back-spec",
+        "apparel-manual-reference-forensics",
+        "ratel-symbol-fidelity",
+        "apparel-palette-version-governance",
+        "textile-route-separation"
       ],
       "requires": [
         "repository-guardian",
