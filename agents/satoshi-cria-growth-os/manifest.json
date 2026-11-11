@@ -1,0 +1,20 @@
+{
+  "name": "satoshi-cria-growth-os",
+  "version": "1.0.0",
+  "description": "Agente público de marketing esportivo e validação de briefing em Guarapari/ES",
+  "repository": "https://github.com/ringuemkt-rgb/.agents",
+  "entrypoint": "AGENT.md",
+  "system_prompt": "SYSTEM_PROMPT.md",
+  "public_facts": "public_facts.json",
+  "runtime": "src/growth_cli.py",
+  "requires_python": ">=3.10",
+  "integrations": [
+    "grok-function-tools",
+    "manus-v2-task-preview",
+    "generic-json-cli"
+  ],
+  "secrets": "environment-only",
+  "data_policy": "public facts and templates only; financial, CRM and licensed assets private",
+  "default_permissions": "read-only",
+  "write_actions": "explicit approval"
+}

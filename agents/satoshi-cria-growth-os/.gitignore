@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.sqlite
+*.db
+*.xlsx
+*.xls
+*.csv
+.env*
+*.pem
+*.key
+*.png
+*.jpg
+*.jpeg
+*.mp4
+secrets/
+private/
+crm/

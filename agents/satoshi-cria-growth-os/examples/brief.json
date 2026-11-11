@@ -1,0 +1,15 @@
+{
+  "class_id": "fitbox-boxe-matutino",
+  "academy": "FIT BOX",
+  "start_time": "06:00",
+  "weekdays_iso": [
+    2,
+    4
+  ],
+  "trainer": "Treinador Satoshi Nishiuchi",
+  "headline": "BOXE ÀS 6H — FIT BOX",
+  "body": "Terça e quinta. Aprenda fundamentos técnicos em Guarapari.",
+  "cta": "Peça informações à recepção.",
+  "redraw_official_logo": false,
+  "recreate_faces": false
+}
