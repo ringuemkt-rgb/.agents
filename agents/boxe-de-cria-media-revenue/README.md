@@ -24,3 +24,5 @@ O site precisa de Git Sync próprio; a mera presença do agente no hub não o mo
 
 ## Licenças
 Código original MIT; marcas e logotipos BOXE DE CRIA não são licenciados a terceiros.
+## BDC Site Monetization OS
+Skill orquestradora para monetização do site/blog: [skills/monetization-os/SKILL.md](skills/monetization-os/SKILL.md). O [RUNBOOK](skills/monetization-os/RUNBOOK.md), o [modelo de receita](skills/monetization-os/REVENUE_MODEL.json) e os [critérios de aceitação](skills/monetization-os/ACCEPTANCE.md) permitem auditoria de AdSense, SEO, GSC, patrocinadores, afiliados e produtos sem inventar integrações ou renda. A ativação de serviços externos e deploy do Lovable continua condicionada a conexão e aprovação.
