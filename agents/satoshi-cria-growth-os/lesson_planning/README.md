@@ -38,3 +38,8 @@ SVGs esquemáticos originais (não extraídos dos livros) ilustram jab e footwor
 
 ## Integração Grok e Manus
 Ambos podem consumir o JSON gerado e a orientação em [SYSTEM_PROMPT.md](SYSTEM_PROMPT.md). Não há controle remoto da academia, das contas, do Google Drive nem publicação automática de aulas. Referências privadas não devem ser copiadas para prompts públicos.
+
+
+## Infográficos técnicos — padrão de qualidade
+
+Ver [`INFOGRAPHIC_PLAYBOOK.md`](INFOGRAPHIC_PLAYBOOK.md) para critérios editoriais, normativos e de diagramação de anatomia do ringue, zonas de pontuação, manoplas e estratégias táticas, com auditoria e proteção das marcas originais.
