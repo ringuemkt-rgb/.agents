@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "source_date": "2026-11-11",
+  "reference_status": "user_supplied_unverified_for_production",
+  "user_supplied_files": [
+    {
+      "id": "M01",
+      "filename": "1000365273.png",
+      "dimensions_px": [
+        1536,
+        1024
+      ],
+      "sha256": "db487b7b767b0c9139d0967919dde6139c924598731a47c458e36d01aa528a41",
+      "summary": "Painel de variantes do símbolo e bordados/patches, inclui erros textuais não homologáveis",
+      "original_bytes_in_public_repo": false
+    },
+    {
+      "id": "M02",
+      "filename": "1000365262.png",
+      "dimensions_px": [
+        1087,
+        1536
+      ],
+      "sha256": "e58bea4634a11761a210fa803773c809509c929a22faee338c90451ce82b10ab",
+      "summary": "Manual de símbolo Ratel e regras de geometria, negativos, proteção, medidas mínimas sugeridas",
+      "original_bytes_in_public_repo": false
+    },
+    {
+      "id": "M03",
+      "filename": "1000365260.png",
+      "dimensions_px": [
+        1087,
+        1536
+      ],
+      "sha256": "13636b48b2c6046b45c2c0d631a3de50669846caa7d405f14532f580cc37b648",
+      "summary": "Paleta cromática, proporções ilustrativas e usos em produto/comunicação",
+      "original_bytes_in_public_repo": false
+    },
+    {
+      "id": "M04",
+      "filename": "1000365264.png",
+      "dimensions_px": [
+        1087,
+        1536
+      ],
+      "sha256": "fa6671ade3c014cc0eb69fea302a5e421e75a7f6e684f2ec56ac0dc82466493b",
+      "summary": "Camiseta técnica com luvas pendentes, versão de logo e medidas propostas para painéis",
+      "original_bytes_in_public_repo": false
+    },
+    {
+      "id": "M05",
+      "filename": "1000365265.png",
+      "dimensions_px": [
+        1087,
+        1536
+      ],
+      "sha256": "f965db03b7b4a5da9644bf0c3bf6f5ea53ac85248ef12a03e56bc3b2595c1139",
+      "summary": "Tipografia condensada, hierarquia e aplicação editorial",
+      "original_bytes_in_public_repo": false
+    },
+    {
+      "id": "M06",
+      "filename": "1000365267.png",
+      "dimensions_px": [
+        1087,
+        1536
+      ],
+      "sha256": "a5262c459633d66885b75802c6c7b88f42de02e3937f237ceaf6d3fb862f6893",
+      "summary": "Sistema de estampa alternativa algodão e serigrafia, tamanhos aproximados",
+      "original_bytes_in_public_repo": false
+    },
+    {
+      "id": "M07",
+      "filename": "1000365256.png",
+      "dimensions_px": [
+        1229,
+        1536
+      ],
+      "sha256": "562bebfe023fc75ee7686e13d86676f1fed6cd26a79e9d160ad47e05ade73d9d",
+      "summary": "Identidade RatEL, wordmark Fightwear, posicionamento de slogans e assinatura",
+      "original_bytes_in_public_repo": false
+    },
+    {
+      "id": "M08",
+      "filename": "1000365257.png",
+      "dimensions_px": [
+        1229,
+        1536
+      ],
+      "sha256": "78cbf226d4f611665e32dca4f818e7d6258299e88f912694c840c2993ac43d67",
+      "summary": "Packaging, etiquetas, tag swing, caixa, papel de seda e lacre",
+      "original_bytes_in_public_repo": false
+    },
+    {
+      "id": "M09",
+      "filename": "1000365258.png",
+      "dimensions_px": [
+        1536,
+        1536
+      ],
+      "sha256": "820dec736811a9a07b8f5b840fcffda3bcf68ef6be34801a7f8c8f1a49a1fe17",
+      "summary": "Ratel branco isolado sobre preto, referência de contraste visual, não vetor de produção",
+      "original_bytes_in_public_repo": false
+    },
+    {
+      "id": "M10",
+      "filename": "1000365255.png",
+      "dimensions_px": [
+        1536,
+        1289
+      ],
+      "sha256": "3b3b960b2161270b855121eeb9b74eabe4daabbe3355fadb237ecb0f96589a85",
+      "summary": "Ficha técnica visual com luvas vermelhas, outra paleta e poliéster sublimado",
+      "original_bytes_in_public_repo": false
+    }
+  ],
+  "canonical_brand_tokens": "config/brand.tokens.json",
+  "palette_alternatives": [
+    {
+      "id": "manual-m03",
+      "source": "M03",
+      "status": "PENDENTE_HOMOLOGACAO",
+      "colors": {
+        "black": "#0A0A0A",
+        "white": "#FFFFFF",
+        "red": "#E50914",
+        "graphite": "#1E1E1E",
+        "gold": "#D4AF37"
+      }
+    },
+    {
+      "id": "product-m10",
+      "source": "M10",
+      "status": "PENDENTE_HOMOLOGACAO",
+      "colors": {
+        "black": "#0A0A0A",
+        "white": "#F2F2F2",
+        "red": "#D92323",
+        "graphite": "#3A3A3A"
+      }
+    }
+  ],
+  "logo_lockups": [
+    {
+      "id": "ratel-symbol-white",
+      "source": [
+        "M02",
+        "M07",
+        "M09"
+      ],
+      "status": "REFERENCIA_VISUAL_MASTER_PENDENTE"
+    },
+    {
+      "id": "ratel-symbol-gold",
+      "source": [
+        "M01",
+        "M02"
+      ],
+      "status": "REFERENCIA_VISUAL_MASTER_PENDENTE"
+    },
+    {
+      "id": "wordmark-fightwear",
+      "source": [
+        "M07",
+        "M08"
+      ],
+      "status": "REFERENCIA_VISUAL_MASTER_PENDENTE"
+    },
+    {
+      "id": "wordmark-current-with-crown",
+      "source": [
+        "M01"
+      ],
+      "status": "REFERENCIA_VISUAL_MASTER_PENDENTE"
+    },
+    {
+      "id": "sleeve-nape-patches",
+      "source": [
+        "M01",
+        "M04",
+        "M06"
+      ],
+      "status": "REFERENCIA_VISUAL_MASTER_PENDENTE"
+    }
+  ],
+  "garment_routes": [
+    {
+      "id": "technical-polyester-sublimation",
+      "source": [
+        "M04",
+        "M10"
+      ],
+      "proposed_fabric": "100% poliester dry-fit",
+      "proposed_gsm_range": [
+        150,
+        160
+      ],
+      "process": "sublimacao_total",
+      "status": "EXEMPLO_NAO_VALIDADO",
+      "requirements": "Aprovar ficha do fornecedor, estampar painéis claros antes de confecção para obter fundo preto"
+    },
+    {
+      "id": "cotton-screenprint",
+      "source": [
+        "M06"
+      ],
+      "proposed_fabric": "algodao penteado 30/1",
+      "proposed_gsm_range": null,
+      "process": "serigrafia",
+      "status": "EXEMPLO_NAO_VALIDADO",
+      "requirements": "Aprovar tecido, tinta, matriz, prova física, dimensões e custo"
+    }
+  ],
+  "placement_samples": [
+    {
+      "id": "nape-symbol",
+      "source": "M02,M06",
+      "suggested_width_mm": 55,
+      "status": "ILLUSTRATED_NOT_APPROVED"
+    },
+    {
+      "id": "sleeve-symbol",
+      "source": "M02,M06",
+      "suggested_width_mm": 40,
+      "status": "ILLUSTRATED_NOT_APPROVED"
+    },
+    {
+      "id": "minimum-symbol-print",
+      "source": "M02",
+      "suggested_width_mm": 15,
+      "status": "ILLUSTRATED_NOT_APPROVED"
+    },
+    {
+      "id": "minimum-symbol-digital",
+      "source": "M02",
+      "suggested_width_px": 45,
+      "status": "ILLUSTRATED_NOT_APPROVED"
+    }
+  ],
+  "known_blockers": [
+    "full official master files of logo lockups not verified",
+    "palette alternatives conflict with existing canonical tokens and each other",
+    "polyester sublimation and cotton screenprint are separate products",
+    "some screenshots contain distorted/unreliable microtext",
+    "logo placement sizes depend on garment size and supplier",
+    "packaging materials/weights are design concepts, not a verified quote",
+    "red glove motif seen in illustrations does not imply print-ready vector art"
+  ],
+  "print_status": "BLOCKED_UNTIL_MASTER_COLOR_TECHPACK_AND_PHYSICAL_SAMPLE_APPROVAL"
+}

@@ -53,3 +53,8 @@ python -m unittest discover -s agents/boxe-de-cria-visual-studio/tests -v
 ```
 
 **Mockup != arte pronta de estamparia.** Somente produção autorizada com arquivo original rastreado e amostra física aprovada. Nunca salvar assets privados de marca no GitHub público.
+
+
+### Referências enviadas — novembro de 2026
+
+As dez páginas visuais de identidade e estampas foram auditadas sem inserir imagens privadas no GitHub: [perícia de versões](docs/APPAREL_REFERENCE_AUDIT_2026-11.md) • [manifesto JSON](config/apparel.reference-manual.json). São **referências em análise**, não uma atualização automática da paleta canônica nem arquivos de produção.

@@ -8,6 +8,9 @@ on:
       - 'agents/boxe-de-cria-visual-studio/runtime/apparel_qa.py'
       - 'agents/boxe-de-cria-visual-studio/tests/test_apparel_qa.py'
       - 'agents/boxe-de-cria-visual-studio/examples/student_training_tee.json'
+      - 'agents/boxe-de-cria-visual-studio/docs/APPAREL_REFERENCE_AUDIT_2026-11.md'
+      - 'agents/boxe-de-cria-visual-studio/config/apparel.reference-manual.json'
+      - 'agents/boxe-de-cria-visual-studio/tests/test_apparel_reference_manual.py'
       - '.github/workflows/bdc-apparel-studio.yml'
   pull_request:
     paths:
@@ -17,6 +20,9 @@ on:
       - 'agents/boxe-de-cria-visual-studio/runtime/apparel_qa.py'
       - 'agents/boxe-de-cria-visual-studio/tests/test_apparel_qa.py'
       - 'agents/boxe-de-cria-visual-studio/examples/student_training_tee.json'
+      - 'agents/boxe-de-cria-visual-studio/docs/APPAREL_REFERENCE_AUDIT_2026-11.md'
+      - 'agents/boxe-de-cria-visual-studio/config/apparel.reference-manual.json'
+      - 'agents/boxe-de-cria-visual-studio/tests/test_apparel_reference_manual.py'
       - '.github/workflows/bdc-apparel-studio.yml'
 jobs:
   QA:
@@ -27,7 +33,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Apparel unit tests
-        run: python -m unittest discover -s agents/boxe-de-cria-visual-studio/tests -p 'test_apparel_qa.py' -v
+        run: python -m unittest discover -s agents/boxe-de-cria-visual-studio/tests -p 'test_apparel_*.py' -v
       - name: Concept validation succeeds
         run: python agents/boxe-de-cria-visual-studio/runtime/apparel_qa.py --input agents/boxe-de-cria-visual-studio/examples/student_training_tee.json --gate concept
       - name: Print-ready gate rejects incomplete master
