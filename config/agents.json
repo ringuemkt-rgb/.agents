@@ -364,6 +364,37 @@
         "merge-advertorial-with-editorial",
         "claim-unexecuted-visual-tests"
       ]
+    },
+    {
+      "id": "satoshi-cria-growth-os",
+      "name": "Satoshi CRIA Growth OS",
+      "version": "1.0.0",
+      "role": "Human-supervised, privacy-first marketing, brand authority and lead acquisition agent for combat sports in Guarapari/ES.",
+      "instructions": "agents/satoshi-cria-growth-os/AGENT.md",
+      "system_prompt": "agents/satoshi-cria-growth-os/SYSTEM_PROMPT.md",
+      "manifest": "agents/satoshi-cria-growth-os/manifest.json",
+      "capabilities": [
+        "local-market-positioning",
+        "sports-brand-governance",
+        "lead-funnel-design",
+        "boxing-schedule-validation",
+        "content-brief-qa",
+        "grok-function-tool-adapter",
+        "manus-v2-preview"
+      ],
+      "requires": [
+        "repository-guardian",
+        "security-privacy-guardian"
+      ],
+      "forbidden": [
+        "publish-private-crm",
+        "expose-revenue-share",
+        "redraw-official-logos",
+        "reconstruct-real-faces",
+        "publish-without-approval",
+        "spend-without-approval",
+        "invent-class-schedule"
+      ]
     }
   ]
 }

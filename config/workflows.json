@@ -566,6 +566,53 @@
           ]
         }
       ]
+    },
+    {
+      "id": "run-satoshi-growth-os",
+      "description": "Audit public class facts, prepare a sports marketing brief, verify claims and require human publication approval.",
+      "steps": [
+        {
+          "id": "audit",
+          "agent": "repository-guardian",
+          "deliverables": [
+            "canonical agent location",
+            "source inventory"
+          ]
+        },
+        {
+          "id": "privacy",
+          "agent": "security-privacy-guardian",
+          "needs": [
+            "audit"
+          ],
+          "deliverables": [
+            "no PII or licensed assets in public scope"
+          ]
+        },
+        {
+          "id": "marketing",
+          "agent": "satoshi-cria-growth-os",
+          "needs": [
+            "privacy"
+          ],
+          "deliverables": [
+            "validated briefing",
+            "conversion target",
+            "CTA and factual status"
+          ]
+        },
+        {
+          "id": "final-review",
+          "agent": "qa-release-guardian",
+          "needs": [
+            "marketing"
+          ],
+          "deliverables": [
+            "real test results",
+            "human approval gate"
+          ]
+        }
+      ]
     }
   ]
 }

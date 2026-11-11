@@ -1,0 +1,57 @@
+{
+  "tools": [
+    {
+      "type": "function",
+      "name": "validate_marketing_brief",
+      "description": "Validate official coach title, schedule and marketing claims; read-only",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "class_id": {
+            "type": "string"
+          },
+          "academy": {
+            "type": "string"
+          },
+          "start_time": {
+            "type": "string"
+          },
+          "weekdays_iso": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "trainer": {
+            "type": "string"
+          },
+          "headline": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          },
+          "cta": {
+            "type": "string"
+          },
+          "redraw_official_logo": {
+            "type": "boolean"
+          },
+          "recreate_faces": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "class_id",
+          "academy",
+          "start_time",
+          "weekdays_iso",
+          "trainer",
+          "headline",
+          "cta"
+        ],
+        "additionalProperties": true
+      }
+    }
+  ]
+}

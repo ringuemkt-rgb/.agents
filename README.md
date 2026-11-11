@@ -91,3 +91,8 @@ O agente editorial e comercial portátil para ChatGPT, Grok e outras IAs está e
 ## BDC Visual Identity & Creative Studio
 
 Módulo oficial de identidade e produção gráfica do portal BOXE DE CRIA: [`agents/boxe-de-cria-visual-studio/`](agents/boxe-de-cria-visual-studio/). Inclui 10 skills, tokens de marca, sete presets responsivos, governança de logomarcas/fotografia, template SVG editável, checklist Lovable e testes de contraste/proveniência. Prompt portátil para ChatGPT e Grok. **Não inclui fotos ou logomarcas oficiais e não faz deploy do site.**
+
+
+## SATOSHI CRIA Growth OS
+
+Agente portátil de marketing e captação de alunos de artes marciais em Guarapari: [agents/satoshi-cria-growth-os/](agents/satoshi-cria-growth-os/). Inclui validação determinística de horários e assinatura profissional, regras de privacidade e contratos opcionais de integração com Grok e Manus. **Sem credenciais, dados reais de alunos ou arquivos-mestres de marcas no repositório público.**

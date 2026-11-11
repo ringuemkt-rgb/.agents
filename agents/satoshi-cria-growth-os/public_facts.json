@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-10",
+  "city": "Guarapari",
+  "region": "ES",
+  "professional_title": "Treinador Satoshi Nishiuchi",
+  "classes": [
+    {
+      "id": "fitbox-boxe-matutino",
+      "academy": "FIT BOX",
+      "discipline": "Boxe",
+      "weekday_iso": [
+        2,
+        4
+      ],
+      "start_time": "06:00",
+      "time_zone": "America/Sao_Paulo",
+      "status": "CONFIRMADO_PELO_USUARIO",
+      "end_time": null,
+      "public_price": null
+    },
+    {
+      "id": "ctrk-boxe-meiodia",
+      "academy": "CTRK",
+      "discipline": "Boxe",
+      "weekday_iso": [
+        2,
+        4
+      ],
+      "start_time": "12:00",
+      "time_zone": "America/Sao_Paulo",
+      "status": "CONFIRMADO_PELO_USUARIO",
+      "end_time": null,
+      "public_price": null
+    }
+  ],
+  "proposed_not_active": [
+    "FIT BOX — segunda turma vespertina: horário ainda não confirmado"
+  ]
+}
