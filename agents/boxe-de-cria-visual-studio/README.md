@@ -58,3 +58,8 @@ python -m unittest discover -s agents/boxe-de-cria-visual-studio/tests -v
 ### Referências enviadas — novembro de 2026
 
 As dez páginas visuais de identidade e estampas foram auditadas sem inserir imagens privadas no GitHub: [perícia de versões](docs/APPAREL_REFERENCE_AUDIT_2026-11.md) • [manifesto JSON](config/apparel.reference-manual.json). São **referências em análise**, não uma atualização automática da paleta canônica nem arquivos de produção.
+
+
+## QA de artes comerciais das academias (novembro 2026)
+
+Campanhas da FIT BOX, CTRK e demais marcas parceiras devem passar pelo [CRIA Marketing Release Gate](../satoshi-cria-growth-os/docs/MARKETING_RELEASE_STANDARD.md). O validador protege grafia, título do treinador, agenda, promessa, canal de conversão e proveniência declarada de fotos e logos. A revisão visual real do arquivo continua humana.

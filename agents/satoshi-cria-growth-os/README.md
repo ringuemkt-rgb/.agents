@@ -29,3 +29,11 @@ Não subir cadastros de alunos, contatos, contratos, planilhas financeiras, cred
 ## CRIA BOXE ACADEMY — Planejamento de aulas
 
 Módulo de geração de planos e esquemas vetoriais originais: [`lesson_planning/`](lesson_planning/). **Sem redistribuir livros ou PDFs do Google Drive.**
+
+
+## Revisão estratégica e gate de publicação (novembro 2026)
+
+- [Auditoria-mestre das frentes e pendências](docs/MASTER_STRATEGIC_AUDIT_2026-11-16.md)
+- [Padrão de campanha e revisão humana](docs/MARKETING_RELEASE_STANDARD.md)
+- Validador offline: `src/marketing_release_qa.py`, exemplo em `examples/fitbox_story_campaign.json`.
+- O script **não verifica visualmente pixels da imagem**, não acessa Instagram e não publica; ele evita promessas e especificações erradas no briefing e exige aprovação humana.

@@ -356,7 +356,8 @@
         "apparel-manual-reference-forensics",
         "ratel-symbol-fidelity",
         "apparel-palette-version-governance",
-        "textile-route-separation"
+        "textile-route-separation",
+        "cross-brand-creative-release-policy"
       ],
       "requires": [
         "repository-guardian",
@@ -393,7 +394,11 @@
         "boxing-lesson-planning",
         "12-week-boxing-curriculum",
         "original-schematic-svg",
-        "non-contact-lesson-validation"
+        "non-contact-lesson-validation",
+        "creative-release-prepublication-qa",
+        "brand-copy-title-guard",
+        "manual-photo-logo-integrity-gate",
+        "marketing-funnel-kpi-definitions"
       ],
       "requires": [
         "repository-guardian",

@@ -29,3 +29,8 @@ Nunca publicar cadastros de alunos, repasses privados, documentos, credenciais, 
 ## Planejamento pedagógico de Boxe
 
 Usar [`lesson_planning/`](lesson_planning/): plano de seis fases, duração exata, avaliação funcional, ilustrações SVG originais e 12 semanas/24 sessões sugeridas. Consultar fontes privadas apenas em ambiente autorizado e revisar toda aula antes de aplicar. O módulo não autoriza sparring nem diagnóstico clínico.
+
+
+## Gate editorial (16/11/2026)
+
+Toda campanha deverá usar [`docs/MARKETING_RELEASE_STANDARD.md`](docs/MARKETING_RELEASE_STANDARD.md), gerar um briefing JSON verificável e executar `src/marketing_release_qa.py` com `--gate draft` antes da arte. Antes de publicar, exigir arquivos oficiais, inspeção real do render final, autorização da academia e `--gate publish`. O gate não publica. Nunca usar “Prof. Satoshi”; não inventar promoção, urgência, vagas, gratuidade ou data final. Análise transversal: [`docs/MASTER_STRATEGIC_AUDIT_2026-11-16.md`](docs/MASTER_STRATEGIC_AUDIT_2026-11-16.md).
