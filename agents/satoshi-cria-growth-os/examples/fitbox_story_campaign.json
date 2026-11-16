@@ -1,0 +1,43 @@
+{
+  "campaign_type": "class_signup",
+  "brand": "FIT BOX",
+  "class_id": "fitbox-boxe-matutino",
+  "start_time": "06:00",
+  "weekdays_iso": [
+    2,
+    4
+  ],
+  "end_time": null,
+  "coach": "Treinador Satoshi Nishiuchi",
+  "format": "story",
+  "width": 1080,
+  "height": 1920,
+  "headline": "BOXE PARA INICIANTES",
+  "body": "Aprenda os fundamentos do Boxe com treino progressivo e acompanhamento do treinador.",
+  "cta": "Envie BOXE6H no Direct da FIT BOX",
+  "cta_channel": "direct",
+  "price": null,
+  "price_verified": false,
+  "verified_claims": [],
+  "assets": {
+    "logo": {
+      "present": true,
+      "mode": "original_overlay",
+      "source_sha256": null,
+      "owner_permission": null,
+      "manual_visual_checked": false
+    },
+    "photo": {
+      "present": true,
+      "mode": "original_overlay",
+      "source_sha256": null,
+      "manual_visual_checked": false
+    }
+  },
+  "manual_text_checked": false,
+  "manual_layout_checked": false,
+  "human_publication_approval": false,
+  "contains_identifiable_minor": false,
+  "contains_private_leads": false,
+  "contains_unconsented_testimonial": false
+}
